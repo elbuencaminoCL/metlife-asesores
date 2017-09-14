@@ -1,0 +1,167 @@
+
+	.card {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border: 0;
+		border-left: 10px solid;
+	}
+
+	.card_container {
+		padding: 1rem 1rem 0.3rem 1rem;
+		background-color: white;
+    &--even-padding {
+      padding: 1rem;
+    }
+	}
+
+	.card_container--blue {
+		background-color: $primary-accent;
+	}
+
+	.card_row_1 {
+		padding-bottom: 10px;
+	}
+
+	.card_row_2 {
+		padding-top: 10px;
+	}
+
+	.card-blue {
+		border-color: $primary;
+		.card_icon {
+			color: $primary;
+		}
+	}
+
+  .card_help {
+    border-radius: 3px;
+    height: 100%;
+    .card_container {
+      width: 100%;
+      height: 100%;
+      padding: 40px 20px;
+    }
+  }
+
+	.card-gray {
+		border: 1px solid $medium-gray;
+		border-radius: 4px;
+		padding: 15px !important;
+		div {
+			margin-bottom: 15px;
+		}
+	}
+
+	.card-green {
+		border-color: $accident;
+		.card_icon {
+			color: $accident;
+		}
+	}
+
+	.card_item {
+		line-height: 1.2;
+		&:nth-of-type( even ) {
+			margin-bottom: 8px;
+		}
+		&:nth-of-type( odd ) {
+			margin-bottom: 0;
+		}
+	}
+
+	.card_sub-title {
+		margin-bottom: 10px;
+	}
+
+	.card_title {
+		margin-bottom: 10px;
+	}
+
+	.card_icon {
+		font-size: 50px;
+	}
+
+	.card_more {
+		margin: 10px 0;
+		i {
+			font-size: 24px;
+			position: relative;
+			top: 3px;
+		}
+	}
+
+	.card-pink {
+		border-color: $pink;
+		.card_icon {
+			color: $pink;
+		}
+	}
+
+	.card_list-item-link {
+		padding-left: 3rem;
+	}
+
+	.card_irow {
+		min-height: 62px;
+	}
+
+  .card_irow .fa-angle-right {
+    margin-top: 15px;
+  }
+
+	.see_detail {
+		position: relative;
+		top: 10px;
+		a {
+			position: relative;
+			top: -5px;
+			left: 53px;
+		}
+	}
+
+	.openContent {
+		&.is-open {
+			i {
+				transform: rotate( 180deg );
+			}
+		}
+	}
+
+	.toggleContent {
+		height: 0;
+		opacity: 0;
+		padding: 0;
+		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
+		visibility: hidden;
+		&.is-open {
+			height: auto;
+			opacity: 1;
+			padding: 0 0 1rem 0;
+			visibility: visible;
+		}
+		&.number-dividend {
+			padding: 0;
+		}
+    &.no-padding-bottom {
+      padding-bottom: 0px;
+    }
+	}
+
+	table {
+		.toggleContent {
+			display: block !important;
+			&.is-open {
+				display: table !important;
+			}
+		}
+	}
+
+	@media screen and ( min-width: 62em )  {
+
+		.card-gray {
+			div {
+				margin-bottom: 0;
+			}
+		}
+
+	}

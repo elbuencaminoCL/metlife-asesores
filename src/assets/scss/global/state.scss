@@ -1,0 +1,37 @@
+
+	@import './color.scss';
+
+	.state::after {
+		border-radius: 50%;
+		content: '';
+		position: absolute;
+	}
+
+	.active::after,
+	.inactive::after,
+	.pending::after {
+		height: 17px;
+		width: 17px;
+		margin-left: 5px;
+		margin-top: 4px;
+	}
+
+	.active::after {
+		background-color: $secondary;
+	}
+
+	.inactive::after {
+		background-color: $error;
+	}
+
+	.pending::after {
+		background-color: $information;
+	}
+
+	.bullet-point::after {
+		background-color: $secondary-accent;
+		height: 10px;
+		left: 0;
+		top: 6px;
+		width: 10px;
+	}

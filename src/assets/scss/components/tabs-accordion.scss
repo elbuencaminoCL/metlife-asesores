@@ -1,0 +1,107 @@
+
+  .resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 40px 10px 13px 10px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .resp-accordion {
+    cursor: pointer;
+    display: none;
+    background-color: white;
+    color: $black;
+    > h5 {
+      padding-right: 30px;
+      font-size: 16px;
+    }
+  }
+
+  .resp-tab-content {
+    display: none;
+  }
+
+  .resp-accordion {
+    font-size: 28px;
+    margin: 0px;
+    margin-top: 1rem;
+    padding: 20px 9px;
+    position: relative;
+    &.resp-tab-active {
+      border-bottom: 0;
+      &:before {
+        background-color: $primary;
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: calc(100% - 1px);
+      }
+    }
+  }
+
+  .tab-accordion-green .resp-accordion,
+  .tab-accordion-green .tab-accordion {
+    &:before {
+      background-color: $accident !important;
+    }
+  }
+
+  .tab-accordion-pink .resp-accordion,
+  .tab-accordion-pink .tab-accordion {
+    &:before {
+      background-color: $pink !important;
+    }
+  }
+
+  @media only screen and (max-width: 62em) {
+
+    ul.resp-tabs-list {
+      display: none;
+    }
+
+    .resp-accordion {
+      display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+      border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+      border: none;
+      float: none;
+      width: 100%;
+      min-height: 100px;
+      clear: none;
+    }
+
+    .resp-accordion-closed {
+      display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+      border-bottom: 1px solid #c1c1c1 !important;
+    }
+
+    .tab-accordion-green .resp-accordion,
+    .tab-accordion-green .tab-accordion {
+      color: $black !important;
+    }
+
+    .tab-accordion-pink .resp-accordion,
+    .tab-accordion-pink .tab-accordion {
+      color: $black !important;
+    }
+  }
+
+  @media screen and (min-width: 62em) {
+    .resp-accordion-closed {
+      display: block !important;
+    }
+  }
