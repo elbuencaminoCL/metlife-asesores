@@ -57,6 +57,10 @@
 		width: 100%;
 	}
 
+  .nav_list_header {
+    justify-content: space-between;
+  }
+
 	@media screen and ( min-width: 62em ) {
 
 		.menu {

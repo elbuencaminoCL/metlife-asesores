@@ -74,6 +74,9 @@ $gutter-lg: 15px;
 
 .u-divider {
   border-top: 2px solid $gray;
+  &.space {
+    padding-top: 15px;
+  }
 }
 
 .u-section {

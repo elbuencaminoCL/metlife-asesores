@@ -1,53 +1,42 @@
 
 title: Reporte Resúmen Indicadores
 
-description:
+indicators:
   -
     desc: Indicador A
+    num-1: '500'
+    num-2: '4'
+    num-3: '3'
+    num-4: '85%'
   -
     desc: Indicador B
+    num-1: '100'
+    num-2: '7'
+    num-3: '5'
+    num-4: '60%'
   -
     desc: Indicador C
+    num-1: '12'
+    num-2: '9'
+    num-3: '12'
+    num-4: '113%'
   -
     desc: Indicador D
-  -
-    desc: Indicador E
-  -
-    desc: Indicador E
-
-indicators: 
-  -
-    num-1: '500'
-    num-2: '100'
-    num-3: '12'
-    num-4: '45'
-    num-5: '4'
-    num-6: '4'
-  -
-    num-1: '4'
-    num-2: '7'
+    state: success
+    num-1: '45'
+    num-2: '45'
     num-3: '9'
-    num-4: '45'
-    num-5: '3'
-    num-6: '10'
-  -
-    num-1: '3'
-    num-2: '5'
-    num-3: '12'
-    num-4: '9'
-    num-5: '4'
-    num-6: '7'
-  -
-    num-1: '85%'
-    num-2: '60%'
-    num-3: '113%'
     num-4: '20%'
-    num-5: '90%'
-    num-6: '70%'
-
-
-
-
-
-
-
+  -
+    desc: Indicador E
+    num-1: '4'
+    num-2: '3'
+    num-3: '4'
+    num-4: '90%'
+  -
+    desc: Indicador E
+    state: error
+    num-1: '4'
+    num-2: '10'
+    num-3: '7'
+    num-4: '70%'

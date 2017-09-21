@@ -4,22 +4,37 @@
 }
 
 .banner_content {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    transform: translateY(-50%);
-    .banner_grid {
-      margin-right: 30px
-    }
-
-    .banner_title {
-      text-shadow: 1px 1px black;
-      padding-bottom: 60px;
-      color: white;
-      margin-left: -15px;
-    }
-    .banner_desc {
-      padding-bottom: 50px;
-    }
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  .banner_grid {
+    margin-right: 30px
   }
+
+  .banner_title {
+    text-shadow: 1px 1px black;
+    padding-bottom: 60px;
+    color: white;
+    margin-left: -15px;
+  }
+  .banner_desc {
+    padding-bottom: 50px;
+  }
+}
+
+.metclub_img {
+  min-height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+@media screen and ( min-width: 75em ) {
+
+  .metclub_img {
+    min-height: 156px;
+  }
+}

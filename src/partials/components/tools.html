@@ -1,0 +1,68 @@
+
+<div class="tools_container u-container">
+  <div class="tools_row u-row gutter-xs">
+    <div class="tools_col col-xs-12 col-md-4 card_white u-space">
+      <div class="card_container z-depth-2">
+        <h5 class="u-space">Cumpleaños</h5>
+        <div>
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div class="u-divider space">
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div class="u-divider space">
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div class="center-xs u-divider space">
+          <div class="button_container"><a href="#" class="button button-primary">Ver todos</a> </div>                   
+        </div>
+      </div>
+    </div>
+
+    <div class="tools_col col-xs-12 col-md-4 card_white u-space">
+      <div class="card_container z-depth-2">
+        <h5 class="u-space">Herramientas</h5>
+        <div>
+          <a href="#"><i></i>Sometimiento</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div class="u-divider space">
+          <a href="#"><i></i>Cotizador</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div class="u-divider space u-space">
+          <a href="#"><i></i>Cotizador</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div class="center-xs">
+          <a href="#" class="button button-primary">Ver todas</a>
+        </div>
+      </div>
+    </div>  
+
+    <div class="tools_col col-xs-12 col-md-4 card_white u-space"> 
+      <div class="card_container z-depth-2">
+        <h5 class="u-space">{{tools.title}}</h5> 
+ 
+          {{#each tools.indicators}}      
+            <div class="u-row indicators_row">
+              <div class="col-xs-4"> 
+                <p class="f-small">{{desc}}</p>  
+              </div>              
+              <div class="col-xs-2 center-xs"><p class="f-small">{{num-1}}</p></div>
+              <div class="col-xs-2 center-xs"><p class="f-small">{{num-2}}</p></div>
+              <div class="col-xs-2 center-xs"><p class="f-small">{{num-3}}</p></div>
+              <div class="col-xs-2 center-xs {{state}} information col-5"><p class="f-small">{{num-4}}</p></div>
+            </div>
+          {{/each}} 
+           
+        <div class="center-xs button_container">
+          <a href="#" class="button button-primary">Descargar informe</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
