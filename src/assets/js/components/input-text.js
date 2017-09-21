@@ -1,5 +1,5 @@
 
-	import './../lib/classie';
+	import './../lib/classie.js';
 
 	(function() {
 		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim

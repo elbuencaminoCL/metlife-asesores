@@ -1,0 +1,72 @@
+
+<div class="cards-tools_container u-container">
+  <div class="cards-tools_row u-row gutter-xs">
+    <div class="cards-tools_col col-xs-12 col-md-4 card_white">
+      <div class="card_container z-depth-2">
+        <h6>Cumpleaños</h6>
+        <div>
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div>
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div>
+          <a href="#">Constanza Isabel Palma Richardson <br>Corvalan</a>
+          <p>35 años</p>
+        </div>
+        <div class="center-xs">
+          <a href="#" class="button button-primary">Ver todos</a>          
+        </div>
+      </div>
+    </div>
+
+    <div class="cards-tools_col col-xs-12 col-md-4 card_white">
+      <div class="card_container z-depth-2">
+        <h6>Herramientas</h6>
+        <div>
+          <a href="#"><i></i>Sometimiento</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div>
+          <a href="#"><i></i>Cotizador</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div>
+          <a href="#"><i></i>Cotizador</a>
+          <p>Descripción corta de la herramienta, en dos renglones, texto simulado.</p>
+        </div>
+        <div class="center-xs">
+          <a href="#" class="button button-primary">Ver todas</a>
+        </div>
+      </div>
+    </div>  
+
+    <div class="cards-tools_col col-xs-12 col-md-4 card_white"> 
+      <div class="card_container z-depth-2">
+        <h6 class="u-space">{{tools.title}}</h6> 
+        <div class="u-row u-space">
+          <div class="col-xs-12 col-sm-4">
+            {{#each tools.description}}  
+              <p class="f-small">{{desc}}</p>  
+            {{/each}}
+          </div>
+          {{#each tools.indicators}}
+            <div class="col-xs-12 col-sm-2 center-xs">
+              <p class="f-small">{{num-1}}</p>
+              <p class="f-small">{{num-2}}</p>
+              <p class="f-small">{{num-3}}</p>
+              <p class="f-small">{{num-4}}</p>
+              <p class="f-small">{{num-5}}</p>
+              <p class="f-small">{{num-6}}</p>
+            </div>
+          {{/each}} 
+        </div>          
+        <div class="center-xs">
+          <a href="#" class="button button-primary">Descargar informe</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
