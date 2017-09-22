@@ -71,7 +71,7 @@
 	}
 
 	.tabs-panel {
-		padding: 2rem 19px;
+		padding: 0;
 	}
 
 	.tabs_row {
@@ -150,19 +150,28 @@
 	}
 
 
-	.tabs_wrap-green {
-		.tabs-subtitle {
-			border-color: $accident;
+	.tabs-title {
+    background-color: $medium-gray;
+    width: 275px;
+    margin-top: 5px;
+    a {
+      color: white;
+      text-decoration: underline;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    &.is-active {
+      margin-top: 0;
+      a {
+        background-color: $primary;
+				color: $white;
+        text-decoration: none;
+        font-weight: bold;
+        height: 63px;
+			}
 		}
-		.tabs-title {
-			&.is-active {
-				a {
-					color: $accident;
-				}
-			}
-			a:before {
-				background-color: $accident;
-			}
+		a:before {
+			background-color: $accident;
 		}
 	}
 
