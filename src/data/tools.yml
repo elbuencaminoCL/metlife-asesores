@@ -8,35 +8,39 @@ indicators:
     num-2: '4'
     num-3: '3'
     num-4: '85%'
+    state: information
   -
     desc: Indicador B
     num-1: '100'
     num-2: '7'
     num-3: '5'
     num-4: '60%'
+    state: error
   -
     desc: Indicador C
     num-1: '12'
     num-2: '9'
     num-3: '12'
     num-4: '113%'
-  -
-    desc: Indicador D
     state: success
+  -
+    desc: Indicador D    
     num-1: '45'
     num-2: '45'
     num-3: '9'
     num-4: '20%'
+    state: error
   -
     desc: Indicador E
     num-1: '4'
     num-2: '3'
     num-3: '4'
     num-4: '90%'
+    state: success
   -
     desc: Indicador E
-    state: error
     num-1: '4'
     num-2: '10'
     num-3: '7'
     num-4: '70%'
+    state: error

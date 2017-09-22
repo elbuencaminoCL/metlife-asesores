@@ -42,46 +42,14 @@
       width: 100%;
       height: 100%;
       padding: 40px 30px 30px;
+
       .indicators_row { 
         position: relative;
-        &:nth-child(2){
-          padding-top: 10px;
-          .col-5:nth-child(5) {
-            padding-right: 10px;
-            &.success, &.error, &.information {
-              &::after {
-                content: '';
-                position: absolute;
-                right: -10px;
-                bottom: 12px;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%; 
-              }
-            }
-            &.success {
-              &::after {
-                background-color: $success;                
-              }           
-            }
-            &.success {
-              &::after {
-                background-color: $success;                
-              }           
-            }
-            &.success {
-              &::after {
-                background-color: $success;                
-              }           
-            }         
-          }
-        }
-
-        &:nth-child(3) {
-          border-top: 1px solid $gray;
-          padding-top: 10px;
-          :nth-child(5) {
-            padding-right: 10px;
+        border-bottom: 1px solid $gray;
+        padding-top: 10px;
+        .bullet_col {
+          padding-right: 10px;
+          &.success, &.error, &.information {
             &::after {
               content: '';
               position: absolute;
@@ -90,79 +58,24 @@
               width: 8px;
               height: 8px;
               border-radius: 50%; 
-              background-color: $error; 
             }
           }
-        }
-        &:nth-child(4){
-          border-top: 1px solid $gray;
-          padding-top: 10px;
-          :nth-child(5) {
-            padding-right: 10px;
+          &.success {
             &::after {
-              content: '';
-              position: absolute;
-              right: -10px;
-              bottom: 12px;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%; 
-              background-color: $success; 
-            }
+              background-color: $success;                
+            }           
           }
-        }
-        &:nth-child(5){
-          border-top: 1px solid $gray;
-          padding-top: 10px;
-          :nth-child(5) {
-            padding-right: 10px;
+          &.error {
             &::after {
-              content: '';
-              position: absolute;
-              right: -10px;
-              bottom: 12px;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%; 
-              background-color: $error; 
-            }
+              background-color: $error;                
+            }           
           }
-        }
-        &:nth-child(6){
-          border-top: 1px solid $gray;
-          padding-top: 10px;
-          :nth-child(5) {
-            padding-right: 10px;
+          &.information {
             &::after {
-              content: '';
-              position: absolute;
-              right: -10px;
-              bottom: 12px;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%; 
-              background-color: $success; 
-            }
-          }
-        }
-        &:nth-child(7){
-          border-top: 1px solid $gray;
-          border-bottom: 1px solid $gray;
-          padding-top: 10px;
-          :nth-child(5) {
-            padding-right: 10px;
-            &::after {
-              content: '';
-              position: absolute;
-              right: -10px;
-              bottom: 12px;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%; 
-              background-color: $error; 
-            }
-          }
-        }
+              background-color: $information;                
+            }           
+          }         
+        }        
       }
     }
     .card_container_uf {
@@ -171,22 +84,6 @@
       padding: 15px 15px 7px;      
     }
   }
-
-	.card-gray {
-		border: 1px solid $medium-gray;
-		border-radius: 4px;
-		padding: 15px !important;
-		div {
-			margin-bottom: 15px;
-		}
-	}
-
-	.card-green {
-		border-color: $accident;
-		.card_icon {
-			color: $accident;
-		}
-	}
 
 	.card_item {
 		line-height: 1.2;
@@ -219,13 +116,6 @@
 		}
 	}
 
-	.card-pink {
-		border-color: $pink;
-		.card_icon {
-			color: $pink;
-		}
-	}
-
 	.card_list-item-link {
 		padding-left: 3rem;
 	}
@@ -237,53 +127,6 @@
   .card_irow .fa-angle-right {
     margin-top: 15px;
   }
-
-	.see_detail {
-		position: relative;
-		top: 10px;
-		a {
-			position: relative;
-			top: -5px;
-			left: 53px;
-		}
-	}
-
-	.openContent {
-		&.is-open {
-			i {
-				transform: rotate( 180deg );
-			}
-		}
-	}
-
-	.toggleContent {
-		height: 0;
-		opacity: 0;
-		padding: 0;
-		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
-		visibility: hidden;
-		&.is-open {
-			height: auto;
-			opacity: 1;
-			padding: 0 0 1rem 0;
-			visibility: visible;
-		}
-		&.number-dividend {
-			padding: 0;
-		}
-    &.no-padding-bottom {
-      padding-bottom: 0px;
-    }
-	}
-
-	table {
-		.toggleContent {
-			display: block !important;
-			&.is-open {
-				display: table !important;
-			}
-		}
-	}
 
   .card_blue {
     background-color: $primary-accent;
@@ -299,17 +142,34 @@
   .card_banner {
     background-color: rgba(255, 255 , 255, 0.85);
     padding: 25px;
+    height: 100%
+  }
+
+  .banner_tab_row {
+    border: 2px solid $primary-accent;
+    border-radius: 3px;
+  }
+
+  .advised, .policy {
+    padding: 10px;
+    color: $primary-accent;
+    font-weight: bold;
+    font-size: 14px;    
+  }
+
+  .advised{
+    background-color: white;
+    color: $primary-accent;
+  }
+
+  .policy {
+    background-color: $primary-accent;
+    color: white;
   }
 
 
 
 	@media screen and ( min-width: 62em )  {
-
-		.card-gray {
-			div {
-				margin-bottom: 0;
-			}
-		}
 
     .card_white {
       border-radius: 3px;

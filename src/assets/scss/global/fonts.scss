@@ -47,79 +47,83 @@
 			line-height: 1.2;
 			margin-bottom: 3px;
 		}
-		&.jump_line {
-			line-height: 1.5;
-			margin-bottom: 0;
-		}
+    &.zero {
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
 	}
 
-	.f-bigger {
-		font-size: 20px;
-		line-height: 1.2;
-	}
+  .F {
+    text-transform: uppercase;
+  }
+  
+  .f-bigger {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
-	.f-big {
-		font-size: 18px;
-		line-height: 1.2;
-	}
+  .f-big {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 
-	.f-normal {
-		font-size: 16px;
-		line-height: 1.2;
-	}
+  .f-normal {
+    font-size: 16px;
+    line-height: 1.2;
+  }
 
-	.f-link {
-		border-bottom: 1px solid $link-hover;
-		color: $link-rest;
-		line-height: 1.2;
-		&:hover {
-			border-bottom: 1px solid transparent;
-			color: $link-hover;
-		}
-	}
+  .f-small {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 
-	.f-link-white {
-		color: white;
-		&:hover {
-			border-bottom: 1px solid white;
-			color: white;
-		}
-	}
+  .f-tiny {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 
-	.f-small {
-		font-size: 14px;
-		line-height: 1.2;
-	}
+  .f-link {
+    border-bottom: 1px solid $link-hover;
+    color: $link-rest;
+    line-height: 1.2;
+    &:hover {
+      border-bottom: 1px solid transparent;
+      color: $link-hover;
+    }
+  }
 
-	.f-tiny {
-		font-size: 12px;
-		line-height: 1.2;
-	}
+  .f-link-white {
+    color: white;
+    &:hover {
+      border-bottom: 1px solid white;
+      color: white;
+    }
+  }
 
-	.f-legal {
-		font-size: 12px;
-		color: $dark-gray-3;
-		line-height: 16px;
-	}
+  .f-legal {
+    font-size: 12px;
+    color: $dark-gray-3;
+    line-height: 16px;
+  }
 
   .f-error {
     color: $error;
     font-weight: 100;
     padding: 5px 10px;
   }
+
   .f-impago {
-  	color: $error;
-  }
-   .f-activa {
-  	color: $success;
-  }
-  .f-pendiente {
-  	color: $warning;
+    color: $error;
   }
 
-  .F {
-    text-transform: uppercase;
+   .f-activa {
+    color: $success;
   }
+  
+  .f-pendiente {
+    color: $warning;
+  }
+
 
 
   @media screen and ( min-width: 48em ) {
