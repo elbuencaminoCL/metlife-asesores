@@ -51,8 +51,53 @@
       </div> 
 
       <div class="col-xs-12 end-xs">
-        <a href="#" class="button button-primary">Actualizar información</a>
+        <a href="#" class="button button-primary" data-open="clientProfileModal">Actualizar información</a>
       </div>              
     </div>
   </div>        
 </div> 
+
+<!--Modal actualizar información-->
+
+<section>
+  <div class="reveal_container">
+    <div class="reveal_row u-row reveal" id="clientProfileModal" data-reveal>
+      <div class="col-xs-12">
+        <h4 class="u-space center-xs">Actualización tus datos de contacto</h4>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="u-row gutter-xs">
+          <div class="col-xs-12 col-md-4">
+            <label>Teléfono móvil</label>
+            <input type="text" name="">
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <label>Teléfono móvil alternativo</label>
+            <input type="text" name="">
+          </div>
+          
+          <div class="col-xs-12 col-md-4">
+            <label>Teléfono fijo</label>
+            <input type="text" name="">
+          </div>
+
+          <div class="col-xs-12 col-md-8">
+            <label>Correo Electrónico</label>
+            <input type="text" name="">
+          </div>
+        </div>
+      </div>        
+
+      <div class="col-xs-12 middle-xs center-xs end-sm u-space">
+        <a data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-3">Cancelar</a>
+        <button class="button button-small button-full-xs clientProfileUpdateData" data-close aria-label="Close modal" type="button">Actualizar</button>
+      </div>
+
+      <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>    
+</section>

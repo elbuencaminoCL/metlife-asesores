@@ -1,4 +1,6 @@
 
+@import './../global/color.scss';
+
 .banner_col {
   position: relative;
 }
@@ -37,6 +39,18 @@
 
 .tool_icons {
   max-width: 40px;
+}
+
+.search_ico {
+  position: relative;
+  padding-left: 40px;
+  i {
+    color: $primary-accent;
+    font-size: 40px;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+  }
 }
 
 
