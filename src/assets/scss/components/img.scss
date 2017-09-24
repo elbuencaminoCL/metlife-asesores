@@ -11,9 +11,12 @@
   right: 0;
   left: 0;
   transform: translateY(-50%);
+  .card_banner_xs{
+    position: initial;
+  }
   .banner_title {
     text-shadow: 1px 1px black;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     color: white;
   }
   .banner_desc {
@@ -22,7 +25,7 @@
 }
 
 .banner_img {
-  height: 700px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -34,7 +37,8 @@
 }
 
 .tool_ico-1 {
-  max-width: 50px;
+  max-width: 48px;
+  padding-left: 5px;
 }
 
 .tool_icons {
@@ -58,7 +62,13 @@
 @media screen and ( min-width: 48em ) {
   
   .banner_img {
-    height: 600px;
+    height: 400px;
+  }
+
+  .banner_content {
+    .banner_title {
+      padding-bottom: 50px;
+    }
   }
 
 }
@@ -71,11 +81,19 @@
     height: 500px;
   }
 
+  .tool_ico-1 {
+    padding-left: 0;
+  }
+
 }
 
 
 
 @media screen and ( min-width: 75em ) {
+
+  .banner_img {
+    height: 500px;
+  }
 
   .metclub_img {
     min-height: 156px;

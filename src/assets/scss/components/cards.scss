@@ -150,22 +150,8 @@
     border-radius: 3px;
   }
 
-  .advised, .policy {
-    padding: 10px;
-    color: $primary-accent;
-    font-weight: bold;
-    font-size: 14px;    
-  }
+ 
 
-  .advised{
-    background-color: white;
-    color: $primary-accent;
-  }
-
-  .policy {
-    background-color: $primary-accent;
-    color: white;
-  }
 
 
 
@@ -179,10 +165,15 @@
         height: 100%;
         padding: 40px 30px 30px;
         .button_container {
-          position: absolute;
-          bottom: 30px;
-          left: 0;
-          right: 0;
+          position: unset;
+          margin-top: 75px;
+          div {
+            position: absolute;
+            bottom: 30px;
+            margin: 0 auto; 
+            left: 0;
+            right: 0;          
+          }
         }
         .title_space {
           min-height: 52px;
