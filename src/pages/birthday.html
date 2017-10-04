@@ -1,0 +1,32 @@
+
+{{> header }}
+
+<section class="birthday u-section">
+  <div class="birthday_container u-container">
+    {{> breadcrumb-birthday }}
+    <div class="birthday_row u-row">
+      <div class="birthday_col col-xs-12 center-xs u-space">
+        <h1>Cumpleaños</h1>
+      </div>
+
+      <div class="birthday_tabs_container middle-xs u-row" data-tabs id="example-tabs">
+        <div class="col-xs-12 col-md-4 end-xs tabs-title is-active">
+          <a href="#panel1" aria-selected="true">Ayer</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4 tabs-title center-xs">
+          <a data-tabs-target="panel2" href="#panel2">Hoy (10)</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4 start-xs tabs-title">
+          <a data-tabs-target="panel3" href="#panel3">Mañana</a>
+        </div>
+      </div>
+
+      <div class=" col-xs-12 card_white">
+        {{> tabs-table }}
+      </div>
+
+    </div>
+  </div>
+</section>
