@@ -10,6 +10,7 @@ import Foundation from 'foundation-sites';
 
 // Components
 import './components/select';
+import './components/open-content';
 
 
 $(document).foundation();

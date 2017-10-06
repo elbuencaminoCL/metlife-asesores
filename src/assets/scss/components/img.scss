@@ -30,10 +30,13 @@
   object-fit: cover;
 }
 
-.metclub_img {
-  min-height: 180px;
-  object-fit: cover;
-  width: 100%;
+.metclub_figure {
+  height: 100%;
+  .metclub_img {
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .tool_ico-1 {
@@ -93,10 +96,6 @@
 
   .banner_img {
     height: 500px;
-  }
-
-  .metclub_img {
-    min-height: 156px;
   }
 
 }
