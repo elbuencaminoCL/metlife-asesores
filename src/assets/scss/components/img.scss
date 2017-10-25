@@ -1,38 +1,38 @@
 
-@import './../global/color.scss';
+@import './../global/colors.scss';
 
-.banner_col {
+.banner-col {
   position: relative;
 }
 
-.banner_content {
+.banner-content {
   position: absolute;
   top: 50%;
   right: 0;
   left: 0;
   transform: translateY(-50%);
-  .card_banner_xs{
+  .card-banner-xs{
     position: initial;
   }
-  .banner_title {
+  .banner-title {
     text-shadow: 1px 1px black;
     padding-bottom: 0;
     color: white;
   }
-  .banner_desc {
+  .banner-desc {
     padding-bottom: 50px;
   }
 }
 
-.banner_img {
+.banner-img {
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
 
-.metclub_figure {
+.metclub-figure {
   height: 100%;
-  .metclub_img {
+  .metclub-img {
     min-height: 100%;
     object-fit: cover;
     width: 100%;
@@ -64,12 +64,12 @@
 
 @media screen and ( min-width: 48em ) {
   
-  .banner_img {
+  .banner-img {
     height: 400px;
   }
 
-  .banner_content {
-    .banner_title {
+  .banner-content {
+    .banner-title {
       padding-bottom: 50px;
     }
   }
@@ -80,7 +80,7 @@
 
 @media screen and ( min-width: 62em ) {
   
-  .banner_img {
+  .banner-img {
     height: 500px;
   }
 
@@ -94,7 +94,7 @@
 
 @media screen and ( min-width: 75em ) {
 
-  .banner_img {
+  .banner-img {
     height: 500px;
   }
 

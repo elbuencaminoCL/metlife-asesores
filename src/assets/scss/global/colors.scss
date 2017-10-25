@@ -1,0 +1,99 @@
+
+// Main palette
+  $primary: #0090DA;
+  $primary-accent: #0060A2;
+  $primary-light: #E9F2FE;
+  $secondary-accent: #7A9816;
+  $secondary: #A4CE4E;
+
+// Line of business palette
+  $accident: #1FC2A2;
+  $accident-light: #7FEFD9;
+  $annuities-light: #FCC13D;
+  $annuities: #EFA020;
+  $colective-light: #BDA7F2;
+  $colective: #896EB3;
+  $expiration: #FFF3E9;
+  $general-light: #54D1A1;
+  $general: #348C6F;
+  $green: #B7DD58;
+  $mortgages-light: #FA9663;
+  $mortgages: #E57339;
+  $pink-accent: #bb0a4f;
+  $pink: #DB0A5B;
+  $single-light: #0E5DAE;
+  $single: #0A3C6C;
+
+// Escala de grises
+  $black: #000;
+  $dark-gray: #333;
+  $dark-gray-2: #666;
+  $dark-gray-3: #999;
+  $medium-gray: #BBB;
+  $gray: #DEDEDE;
+  $white: #FFF;
+  $white-light: #F8F8F8;
+  $white-light-2: #F2F2F2;
+  $white-light-3: #F5F5F5;
+
+// Utility
+  $active-border: #1A71AA;
+  $error: #EB4646;
+  $error-border: #EA4848;
+  $error-light: #FCECEC;
+  $information: #FFC600;
+  $success: #7A9816;
+  $success-light: #E4EAD0;
+  $warning: #E57339;
+
+// Link
+  $link-hover: #1A79AF;
+  $link-rest: #007ABC;
+
+
+
+//Color de fuente
+
+  .f-black {
+    color: $black;
+  }
+
+  .f-green {
+    color: $secondary-accent;
+  }
+
+  .f-primary {
+    color: $primary;
+  }
+
+  .f-primary-accent {
+    color: $primary-accent;
+  }
+
+  .f-pink {
+    color: $pink;
+  }
+
+  .f-red {
+    color: $error;
+  }
+
+  .f-white {
+    color: $white;
+  }
+
+
+
+//color de fondo
+
+  .bg-clarity {
+    background-color: rgba(255, 255 , 255, 0.85);
+  }
+
+  .bg-primary {
+    background-color: $primary;
+  }
+
+  .bg-white {
+    background-color: $white;
+  }

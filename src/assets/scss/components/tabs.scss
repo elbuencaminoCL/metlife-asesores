@@ -1,44 +1,5 @@
 
-	@import './../global/color.scss';
-
-	.tab-accordion,
-	.tab-accordion-pink .resp-accordion,
-	.tab-accordion-pink .tab-accordion,
-	.tab-accordion-green .resp-accordion,
-	.tab-accordion-green .tab-accordion {
-		flex-grow: 0;
-		position: relative;
-		transition: color 0.3s;
-		&:before {
-			background-color: $primary;
-			bottom: 0;
-			content: '';
-			height: 4px;
-			left: -20px;
-			position: absolute;
-			transform: scale3d(0, 1, 1);
-			transition: transform 0.1s;
-			width: calc(100% + 40px);
-		}
-
-		h5 {
-			font-size: 16px;
-			font-weight: 600;
-		}
-
-		&.resp-tab-active {
-			.tab_arrow {
-				i {
-					transform: rotate(-180deg);
-				}
-			}
-			&:before {
-				transform: scale3d(1, 1, 1);
-				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-				transition-duration: 0.3s;
-			}
-		}
-	}
+	@import './../global/colors.scss';
 
 	.tabs {
 		border-bottom: 1px solid $primary;
@@ -55,99 +16,6 @@
 		}
 	}
 
-	.tabs_col_white {
-		min-height: 70px;
-	}
-
-	.tabs-content {
-		border-bottom-left-radius: 3px;
-		border-bottom-right-radius: 3px;
-		border: 0;
-	}
-	.tabs_content_subtitle{
-		padding: 0;
-		margin: 0;
-		line-height: 1.2;
-	}
-
-	.tabs-panel {
-		padding: 0;
-	}
-
-	.tabs_row {
-		padding: 0 1.6rem;
-	}
-
-	.tabs_irow-empty {
-		min-height: 52px;
-	}
-
-	.tabs_irow-empty-multi-line {
-		min-height: 78px;
-	}
-
-	.tabs-subtitle {
-		border-bottom: 2px solid $primary;
-		margin-bottom: 1rem;
-		padding: 0 0 1rem 0;
-	}
-
-	.tabs-subtitle-profile {
-		border-bottom: 1px solid $medium-gray;
-		margin-bottom: 1rem;
-		padding: 0 0 10px 0;
-	}
-
-	.tab-accordion,
-	.tab-accordion-pink .resp-accordion,
-	.tab-accordion-pink .tab-accordion,
-	.tab-accordion-green .resp-accordion,
-	.tab-accordion-green .tab-accordion {
-		flex-grow: 0;
-		position: relative;
-		transition: color 0.3s;
-		&:before {
-			background-color: $primary;
-			bottom: 0;
-			content: '';
-			height: 4px;
-			left: 15px;
-			position: absolute;
-			transform: scale3d(0, 1, 1);
-			transition: transform 0.1s;
-			width: calc(80% + 10px);
-		}
-
-		h5 {
-			font-size: 16px;
-			font-weight: 600;
-		}
-
-		&.resp-tab-active {
-			.tab_arrow {
-				i {
-					transform: rotate(-180deg);
-				}
-			}
-			&:before {
-				transform: scale3d(1, 1, 1);
-				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-				transition-duration: 0.3s;
-			}
-		}
-	}
-
-	.tab-accordion-pink {
-		&:before {
-			background-color: $pink;
-		}
-	}
-
-	.tab-accordion-green {
-		&:before {
-			background-color: $accident;
-		}
-	}
 
   .birthday_tabs_container {
     margin: 0 auto;
@@ -184,8 +52,7 @@
 		}
 	}
 
-
-	.tab_arrow {
+	.tab-arrow {
 		position: relative;
 		i {
 			position: absolute;
@@ -195,7 +62,7 @@
 	}
 
 	.resp-tab-active {
-		.tab_arrow {
+		.tab-arrow {
 			i {
 				transform: rotate(-180deg);
 			}
@@ -213,46 +80,7 @@
 		// border-right: 1px solid $medium-gray;
 	}
 
-  .tab_advised {
-    position: relative;
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;     
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;     
-    }    
-    &::before {
-      border-top: 10px solid white;
-      z-index: 2;
-      bottom: -8px;
-    }
-    &::after {
-      border-top: 10px solid $primary-accent;
-      bottom: -11px;
-    }
-  }
-
-  .advised, .policy {
-    padding: 10px;
-    color: $primary-accent;
-    font-weight: bold;
-    font-size: 14px;    
-  }
-
-  .advised{
-    background-color: white;
-    color: $primary-accent;
-  }
-
-  .policy {
-    background-color: $primary-accent;
-    color: white;
-  }
+  
 
 
 
