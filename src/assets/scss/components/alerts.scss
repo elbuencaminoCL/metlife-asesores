@@ -2,9 +2,9 @@
 @import './../global/colors.scss';
 
 .alert {
-	border: 1px solid;
-	border-radius: 3px;
-	padding: 1rem .6rem;
+  border-radius: 3px;
+  border: 1px solid;
+  padding: 1rem .6rem;
 }
 
 .alert_desc {
@@ -12,11 +12,11 @@
 }
 
 .alert-error {
-	background-color: $error-light;
-	border-color: $error-border;
+  background-color: $error-light;
+  border-color: $error-border;
 }
 
 .alert-success {
-	background-color: $success-light;
-	border-color: $success;
+  background-color: $success-light;
+  border-color: $success;
 }

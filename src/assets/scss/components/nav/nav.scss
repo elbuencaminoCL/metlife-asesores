@@ -1,4 +1,28 @@
 
+//Breakpoint xtreme-small (xs)
+
+.menu {
+  & > li {
+    & > a {
+      font-size: 14px;
+      padding: 1.5rem 0px !important;
+      strong {
+        border-bottom: 1px solid transparent;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $primary;
+        border-bottom: 0;
+        color: white;
+        strong {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
 .nav-sticky {
   .nav-sub {
     transition: all .3s cubic-bezier( .4,0,.2,1 );
@@ -9,7 +33,7 @@
     }
   }
   .is-stuck {
-    .nav__menu > li > a {
+    .nav-menu > li > a {
       padding: .5rem 0;
     }
     .nav-sub {
@@ -23,31 +47,15 @@
   }
 }
 
-.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-  border-color: white transparent transparent !important;
+.nav-sub {
+  background-color: white;
+  padding: 1rem 0;
 }
 
-
-.nav__menu {
-	& > li {
-		& > a {
-			font-size: 14px;
-			padding: 1.5rem 0px !important;
-			strong {
-				border-bottom: 1px solid transparent;
-			}
-			&:hover,
-			&:active,
-			&:focus {
-				background-color: $primary;
-				border-bottom: 0;
-				color: white;
-				strong {
-					border-bottom: 1px solid white;
-				}
-			}
-		}
-	}
+.nav-sub__image {
+  img {
+    max-width: 120px;
+  }
 }
 
 .sticky {
@@ -60,12 +68,18 @@
 
 @media screen and ( min-width: 62em ) {
 
-	.nav__menu {
+	.menu {
 		& > li {
 			& > a {
 				padding: 1.5rem 40px;
 			}
 		}
 	}
+
+  .nav-sub__image {
+    img {
+      max-width: 150px;
+    }
+  }
 
 }

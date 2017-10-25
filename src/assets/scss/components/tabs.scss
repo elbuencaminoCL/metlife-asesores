@@ -1,94 +1,90 @@
 
-	@import './../global/colors.scss';
+@import './../global/colors.scss';
 
-	.tabs {
-		border-bottom: 1px solid $primary;
-		border: 0;
-		display: flex;
-		overflow-x: auto;
-		overflow-y: hidden;
-		padding: 0 10px;
-		position: relative;
-		white-space: nowrap;
-		width: 100%;
-		&:before {
-			display: none;
-		}
+.tabs {
+	border-bottom: 1px solid $primary;
+	border: 0;
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0 10px;
+	position: relative;
+	white-space: nowrap;
+	width: 100%;
+	&:before {
+		display: none;
 	}
+}
 
+.birthday_tabs_container {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 75px;
+}
 
-  .birthday_tabs_container {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 75px;
+.tabs-title {
+  background-color: $primary;
+  width: 380px;
+  a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
   }
-
-	.tabs-title {
-    background-color: $primary;
-    width: 380px;
+  &.is-active {
+    margin-top: 0;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     a {
-      color: white;
-      font-size: 18px;
-      text-transform: uppercase;
-      outline: none;
-    }
-    &.is-active {
-      margin-top: 0;
-      height: 100%;
-      background-color: white;
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-      a {
-        background-color: white;        
-				color: $primary-accent;
-        font-weight: bold;
-        border: none;
-        &.is-focus {
-          background-color: red;
-        }
-			}
-		}
-		a:before {
-			background-color: $accident;
+      background-color: white;        
+			color: $primary-accent;
+      font-weight: bold;
+      border: none;
+      &.is-focus {
+        background-color: red;
+      }
 		}
 	}
+	a:before {
+		background-color: $accident;
+	}
+}
 
+.tab-arrow {
+	position: relative;
+	i {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+}
+
+.resp-tab-active {
 	.tab-arrow {
-		position: relative;
 		i {
-			position: absolute;
-			top: 0;
-			right: 10px;
+			transform: rotate(-180deg);
 		}
 	}
+}
 
-	.resp-tab-active {
-		.tab-arrow {
-			i {
-				transform: rotate(-180deg);
-			}
-		}
+.tabs_wrap & > div {
+	min-height: 433px;
+}
+
+.tabs_wrapper {
+	background-color: $white;
+	// border-top: 1px solid $medium-gray;
+	// border-left: 1px solid $medium-gray;
+	// border-right: 1px solid $medium-gray;
+}
+
+
+
+@media screen and ( min-width: 62em ) {
+
+	.tabs_wrap_container {
+		border: 1px solid #bbb;
 	}
-
-	.tabs_wrap & > div {
-		min-height: 433px;
-	}
-
-	.tabs_wrapper {
-		background-color: $white;
-		// border-top: 1px solid $medium-gray;
-		// border-left: 1px solid $medium-gray;
-		// border-right: 1px solid $medium-gray;
-	}
-
   
-
-
-
-
-	@media screen and ( min-width: 62em ) {
-
-		.tabs_wrap_container {
-			border: 1px solid #bbb;
-		}
-    
-	}
+}

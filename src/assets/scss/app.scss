@@ -57,18 +57,11 @@
 @import 'global/colors';
 @import 'global/grid';
 @import 'global/buttons';
-@import 'global/input-text';
-@import 'global/select';
 @import 'global/shadow';
-@import 'global/lists';
-@import 'global/table';
 @import 'global/pagination';
-@import 'global/loading';
-@import 'global/state';
 @import 'global/utilities';
 
 @import 'components/nav/nav';
-@import 'components/nav/nav-sub';
 @import 'components/nav/off-canvas';
 @import 'components/footer';
 @import 'components/cards';
@@ -77,9 +70,12 @@
 @import 'components/alerts';
 @import 'components/accordion';
 @import 'components/animate-login';
-@import 'components/tabs-accordion';
-@import 'components/img';
+@import 'components/metclub';
 @import 'components/banner';
+
+@import '_lib/input-text';
+@import '_lib/select';
+@import '_lib/table';
 
 @import 'pages/login';
 @import 'pages/forms';

@@ -17,15 +17,15 @@
 }
 
 .accordion-item {
-	background-color: white;
-	border: 1px solid $dark-gray;
-	border-radius: 3px;
-	margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid $dark-gray;
+  margin-bottom: 1rem;
 	&.is-active {
 		.accordion-title {
-			background-color: white;
-			border-bottom: 2px solid $primary;
-			color: $black;
+      background-color: white;
+      border-bottom: 2px solid $primary;
+      color: $black;
 			&:before {
 				content: "\f077";
 			}
@@ -34,9 +34,9 @@
 }
 
 .accordion-title {
-	border: 0;
-	padding: 14px 40px 14px 0;
-	text-align: left;
+  border: 0;
+  padding: 14px 40px 14px 0;
+  text-align: left;
 	h5 {
 		display: inline-block;
 	}

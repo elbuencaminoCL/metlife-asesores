@@ -2,19 +2,19 @@
 	@import './colors.scss';
 
 	.button {
-		border: 0;
-		border-radius: 3px;
-		box-shadow: none;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 0;
-		outline: none;
-		padding: 13px 20px;
-		text-transform: uppercase;
-		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
+    border-radius: 3px;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    outline: none;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    transition: all .2s cubic-bezier( .4, 0, .2, 1 );
 	}
 
 	.button--primary {
@@ -31,21 +31,12 @@
 		}
 	}
 
-	.button--secondary {
-		background-color: $secondary;
-		color: $dark-gray-2;
-		&:hover {
-			background-color: $green;
-			text-decoration: underline;
-		}
-	}
-
 	.button--link {
-		background-color: transparent;
-		border-bottom: 1px solid transparent;
-		color: $link-rest;
-		line-height: 1.2;
-		padding: 0;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    color: $link-rest;
+    line-height: 1.2;
+    padding: 0;
 		&:hover {
 			background-color: transparent;
 			color: $link-hover;
@@ -56,22 +47,11 @@
 		}
 	}
 
-	// Sizes
-
-  .button-full {
-		display: block;
-		width: 100%;
-	}
-
-  .button-full-xs {
-		display: block;
-		width: 100%;
-    @media screen and (min-width: 48em) {
-      display: inline-block;
-      width: auto;
+  .button--secondary {
+    background-color: $secondary;
+    color: $dark-gray-2;
+    &:hover {
+      background-color: $green;
+      text-decoration: underline;
     }
-	}
-
-	.button-small {
-		font-size: 12px;
-	}
+  }
