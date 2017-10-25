@@ -17,44 +17,21 @@
 		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
 	}
 
-	.button-primary {
+	.button--primary {
 		background-color: $primary;
 		color: $white;
 		&:hover {
 			background-color: $primary-accent;
 			text-decoration: underline;
 		}
-		&.button-disabled {
+		&.disabled {
 			&:hover {
 				background-color: $primary;
 			}
 		}
 	}
 
-	.button-green {
-		background-color: $secondary;
-		color: $dark-gray-2;
-		&:hover {
-			background-color: $secondary-accent;
-			text-decoration: underline;
-		}
-		&.button-disabled {
-			&:hover {
-				background-color: $secondary;
-			}
-		}
-	}
-
-	.button-pink {
-		background-color: $pink-accent;
-		color: $white;
-		&:hover {
-			background-color: $pink;
-			text-decoration: underline;
-		}
-	}
-
-	.button-dark {
+	.button--secondary {
 		background-color: $secondary;
 		color: $dark-gray-2;
 		&:hover {
@@ -63,38 +40,7 @@
 		}
 	}
 
-	.button-secondary {
-		background-color: white;
-		border: 2px solid $link-rest;
-		color: $link-rest;
-		&:hover {
-			background-color: $link-rest;
-			color: white;
-		}
-	}
-
-	.button-secondary-bg {
-		background-color: $link-hover;
-		border: 2px solid $white;
-		color: $white;
-		&:hover {
-			background-color: $white;
-			color: $link-hover;
-			text-decoration: underline;
-		}
-	}
-
-	.button-transparent {
-		background-color: white;
-		border: 1px solid $white-light;
-		&:hover {
-			background-color: $white-light-2;
-			color: $primary;
-		}
-	}
-
-
-	.button-link {
+	.button--link {
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
 		color: $link-rest;
@@ -107,14 +53,6 @@
 		&:focus,
 		&:active {
 			background-color: transparent;
-		}
-	}
-
-	.button-disabled {
-		opacity: .4 !important;
-		&:hover {
-			cursor: default;
-			text-decoration: none;
 		}
 	}
 

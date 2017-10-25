@@ -1,74 +1,71 @@
 
-	.nav {
-		background-color: $primary-accent;
-	}
+.nav-sticky {
+  .nav-sub {
+    transition: all .3s cubic-bezier( .4,0,.2,1 );
+  }
+  .nav-sub__image {
+    img {
+      transition: all .3s cubic-bezier( .4,0,.2,1 );
+    }
+  }
+  .is-stuck {
+    .nav__menu > li > a {
+      padding: .5rem 0;
+    }
+    .nav-sub {
+      padding: 11px 0;
+    }
+    .nav-sub__image {
+      img {
+        max-width: 120px;
+      }
+    }
+  }
+}
 
-	.double-nav_sticky {
-		.sub-nav {
-			transition: all .3s cubic-bezier( .4,0,.2,1 );
-		}
-		.sub-nav_image {
-			img {
-				transition: all .3s cubic-bezier( .4,0,.2,1 );
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+  border-color: white transparent transparent !important;
+}
+
+
+.nav__menu {
+	& > li {
+		& > a {
+			font-size: 14px;
+			padding: 1.5rem 0px !important;
+			strong {
+				border-bottom: 1px solid transparent;
 			}
-		}
-		.is-stuck {
-			.menu > li > a {
-				padding: .5rem 0;
-			}
-			.sub-nav {
-				padding: 11px 0;
-			}
-			.sub-nav_image {
-				img {
-					max-width: 120px;
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: $primary;
+				border-bottom: 0;
+				color: white;
+				strong {
+					border-bottom: 1px solid white;
 				}
 			}
 		}
 	}
+}
 
-	.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-		border-color: white transparent transparent !important;
-	}
+.sticky {
+	width: 100%;
+}
 
-	.menu {
+
+
+//Breakpoint medium (md)
+
+@media screen and ( min-width: 62em ) {
+
+	.nav__menu {
 		& > li {
 			& > a {
-				font-size: 14px;
-				padding: 1.5rem 0px !important;
-				strong {
-					border-bottom: 1px solid transparent;
-				}
-				&:hover,
-				&:active,
-				&:focus {
-					background-color: $primary;
-					border-bottom: 0;
-					color: white;
-					strong {
-						border-bottom: 1px solid white;
-					}
-				}
+				padding: 1.5rem 40px;
 			}
 		}
 	}
 
-	.sticky {
-		width: 100%;
-	}
-
-  .nav_list_header {
-    justify-content: space-between;
-  }
-
-	@media screen and ( min-width: 62em ) {
-
-		.menu {
-			& > li {
-				& > a {
-					padding: 1.5rem 40px;
-				}
-			}
-		}
-
-	}
+}
