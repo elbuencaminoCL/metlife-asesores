@@ -1,7 +1,4 @@
 # The Grid
-
-<p class="lead">Problem: You've got tons of content, each needing different sized cells, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
-
 ---
 
 ## Overview
@@ -21,11 +18,29 @@ In the Grid you can nest cells down as far as you'd like. Just embed grid-x insi
 Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create cells.
 
 ```html
-<div class="grid-x">
-  <div class="small-6 medium-4 large-3 cell">...</div>
-  <div class="small-6 medium-8 large-9 cell">...</div>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col">        
+      </div>
+    </div>
+  </div>
+</section>
 ```
+
+<section class="section bg-primary space-bottom">
+  <div class="container container--normal bg-error">
+    <div class="row row-xs-1 row-md-2 bg-primary-accent">
+      <div class="col-xs-12 col-md-6 bg-secondary"> 
+        <p>Column</p>       
+      </div>
+      <div class="col-xs-12 col-md-6 bg-secondary">
+        <p>Column</p>        
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <div class="grid-x display">
   <div class="small-12 large-4 cell">4</div>

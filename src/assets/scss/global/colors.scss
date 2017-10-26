@@ -90,6 +90,10 @@
     background-color: rgba(255, 255 , 255, 0.85);
   }
 
+  .bg-error {
+    background-color: $error;
+  }
+
   .bg-primary {
     background-color: $primary;
   }
@@ -98,6 +102,12 @@
     background-color: $primary-accent;
   }
 
+  .bg-secondary {
+    background-color: $secondary;
+  }
+
   .bg-white {
     background-color: $white;
   }
+
+  
