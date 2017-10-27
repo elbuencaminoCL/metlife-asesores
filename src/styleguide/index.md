@@ -20,6 +20,11 @@
   </div>
 </div>
 
+
+
+## Grid
+
+```html_example
 <section class="section">
   <div class="container">
     <div class="row row-xs-3 row-sm-3 row-md-3 row-lg-3">
@@ -29,6 +34,7 @@
     </div>
   </div>
 </section>
+```
 
 
 
