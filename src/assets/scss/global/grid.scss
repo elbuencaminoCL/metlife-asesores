@@ -11,6 +11,11 @@ $section-sm: 3rem 20px;
 $section-md: 3rem 20px;
 $section-lg: 3rem 0;
 
+$section-margin-xs: 3rem;
+$section-margin-sm: 3rem;
+$section-margin-md: 3rem;
+$section-margin-lg: 3rem;
+
 $space-top-xs: 30px;
 $space-top-sm: 30px;
 $space-top-md: 30px;
@@ -26,11 +31,11 @@ $space-bottom-lg: 30px;
 .container {
   margin: 0 auto;
   max-width: $grid;
-  &.container--normal {
-    max-width: 960px;
-  }
-  &.container--short {
+  &.container-short {
     max-width: 560px;
+  }
+  &.container-normal {
+    max-width: 960px;
   }
 }
 
@@ -52,8 +57,8 @@ $space-bottom-lg: 30px;
   .row-xs-#{$n} {
     @for $i from 1 through 12 {
       & > .col-xs-#{$i} {
-        flex-basis: calc(99.9% * #{$i}/12 - ( #{$gutter-xs} - #{$gutter-xs} * #{$i}/12));
-        max-width: calc(99.9% * #{$i}/12 - ( #{$gutter-xs} - #{$gutter-xs} * #{$i}/12));
+        flex-basis: calc(100% * #{$i}/12 - ( #{$gutter-xs} - #{$gutter-xs} * #{$i}/12));
+        max-width: calc(100% * #{$i}/12 - ( #{$gutter-xs} - #{$gutter-xs} * #{$i}/12));
         margin-right: $gutter-xs;
         @if $n > 1 {
           &:nth-of-type( #{$n}n + #{$n} ) {
@@ -76,7 +81,6 @@ $space-bottom-lg: 30px;
     }
   }
 }
-
 
 
 /* Align horizontal */
@@ -119,6 +123,7 @@ $space-bottom-lg: 30px;
   justify-content: space-between;
 }
 /* /Align space content */
+
 
 
 
@@ -172,7 +177,7 @@ $space-bottom-lg: 30px;
   @for $n from 1 through 12 {
     .row-xs-#{$n} {
       @for $i from 1 through 12 {
-        & > .col-xs-#{$i}.col-sm-#{$i} {
+        & > .col-sm-#{$i} {
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
               margin-right: 30px;
@@ -183,12 +188,13 @@ $space-bottom-lg: 30px;
     }
   }
 
+
   @for $n from 1 through 12 {
     .row-sm-#{$n} {
       @for $i from 1 through 12 {
         & > .col-sm-#{$i} {
-          flex-basis: calc(99.9% * #{$i}/12 - ( #{$gutter-sm} - #{$gutter-sm} * #{$i}/12));
-          max-width: calc(99.9% * #{$i}/12 - ( #{$gutter-sm} - #{$gutter-sm} * #{$i}/12));
+          flex-basis: calc(100% * #{$i}/12 - ( #{$gutter-sm} - #{$gutter-sm} * #{$i}/12));
+          max-width: calc(100% * #{$i}/12 - ( #{$gutter-sm} - #{$gutter-sm} * #{$i}/12));
           margin-right: $gutter-sm;
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
@@ -213,6 +219,11 @@ $space-bottom-lg: 30px;
   }
 
   /* Align horizontal */
+  .start-sm {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
   .center-sm {
     justify-content: center;
     text-align: center;
@@ -223,25 +234,18 @@ $space-bottom-lg: 30px;
     text-align: end;
   }
 
-  .start-sm {
-    justify-content: flex-start;
-    text-align: start;
-  }
-  /* /Align horizontal */
-
   /* Align vertical */
-  .bottom-sm {
-    align-items: flex-end;
+  .top-sm {
+    align-items: flex-start;
   }
 
   .middle-sm {
     align-items: center;
   }
 
-  .top-sm {
-    align-items: flex-start;
+  .bottom-sm {
+    align-items: flex-end;
   }
-  /* /Align vertical */
 
   /* Align space content */
   .around-sm {
@@ -251,9 +255,6 @@ $space-bottom-lg: 30px;
   .between-sm {
     justify-content: space-between;
   }
-  /* /Align space content */
-
-
 
   /* Order */
   .first-sm {
@@ -263,9 +264,6 @@ $space-bottom-lg: 30px;
   .last-sm {
     order: 1;
   }
-  /* /Order */
-
-
 
   /* Spaces */
   .space-bottom {
@@ -275,9 +273,6 @@ $space-bottom-lg: 30px;
   .space-top {
     margin-bottom: $space-top-sm;
   }
-  /* /Spaces */
-
-
 
   /* Display */
   .hide-sm {
@@ -287,9 +282,8 @@ $space-bottom-lg: 30px;
   .show-sm {
     display: block;
   }
-  /* /Display */
-}
 
+}
 
 
 @media screen and (min-width: 62em) {
@@ -298,10 +292,12 @@ $space-bottom-lg: 30px;
     padding: $section-md;
   }
 
+
   @for $n from 1 through 12 {
+    .row-xs-#{$n},
     .row-sm-#{$n} {
       @for $i from 1 through 12 {
-        & > .col-sm-#{$i}.col-md-#{$i} {
+        & > .col-md-#{$i} {
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
               margin-right: 30px;
@@ -316,8 +312,8 @@ $space-bottom-lg: 30px;
     .row-md-#{$n} {
       @for $i from 1 through 12 {
         & > .col-md-#{$i} {
-          flex-basis: calc(99.9% * #{$i}/12 - ( #{$gutter-md} - #{$gutter-md} * #{$i}/12));
-          max-width: calc(99.9% * #{$i}/12 - ( #{$gutter-md} - #{$gutter-md} * #{$i}/12));
+          flex-basis: calc(100% * #{$i}/12 - ( #{$gutter-md} - #{$gutter-md} * #{$i}/12));
+          max-width: calc(100% * #{$i}/12 - ( #{$gutter-md} - #{$gutter-md} * #{$i}/12));
           margin-right: $gutter-md;
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
@@ -341,9 +337,12 @@ $space-bottom-lg: 30px;
     }
   }
 
-
-
   /* Align horizontal */
+  .start-md {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
   .center-md {
     justify-content: center;
     text-align: center;
@@ -354,25 +353,18 @@ $space-bottom-lg: 30px;
     text-align: end;
   }
 
-  .start-md {
-    justify-content: flex-start;
-    text-align: start;
-  }
-  /* /Align horizontal */
-
   /* Align vertical */
-  .bottom-md {
-    align-items: flex-end;
+  .top-md {
+    align-items: flex-start;
   }
 
   .middle-md {
     align-items: center;
   }
 
-  .top-md {
-    align-items: flex-start;
+  .bottom-md {
+    align-items: flex-end;
   }
-  /* /Align vertical */
 
   /* Align space content */
   .around-md {
@@ -382,9 +374,6 @@ $space-bottom-lg: 30px;
   .between-md {
     justify-content: space-between;
   }
-  /* /Align space content */
-
-
 
   /* Order */
   .first-md {
@@ -394,9 +383,6 @@ $space-bottom-lg: 30px;
   .last-md {
     order: 1;
   }
-  /* /Order */
-
-
 
   /* Spaces */
   .space-bottom {
@@ -406,9 +392,6 @@ $space-bottom-lg: 30px;
   .space-top {
     margin-bottom: $space-top-md;
   }
-  /* Spaces */
-
-
 
   /* Display */
   .hide-md {
@@ -421,18 +404,19 @@ $space-bottom-lg: 30px;
 
 }
 
-
-
 @media screen and (min-width: 75em) {
 
   .section {
     padding: $section-lg;
   }
 
+
   @for $n from 1 through 12 {
+    .row-xs-#{$n},
+    .row-sm-#{$n},
     .row-md-#{$n} {
       @for $i from 1 through 12 {
-        & > .col-md-#{$i}.col-lg-#{$i} {
+        & > .col-lg-#{$i} {
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
               margin-right: 30px;
@@ -447,8 +431,8 @@ $space-bottom-lg: 30px;
     .row-lg-#{$n} {
       @for $i from 1 through 12 {
         & > .col-lg-#{$i} {
-          flex-basis: calc(99.9% * #{$i}/12 - ( #{$gutter-lg} - #{$gutter-lg} * #{$i}/12));
-          max-width: calc(99.9% * #{$i}/12 - ( #{$gutter-lg} - #{$gutter-lg} * #{$i}/12));
+          flex-basis: calc(100% * #{$i}/12 - ( #{$gutter-lg} - #{$gutter-lg} * #{$i}/12));
+          max-width: calc(100% * #{$i}/12 - ( #{$gutter-lg} - #{$gutter-lg} * #{$i}/12));
           margin-right: $gutter-lg;
           @if $n > 1 {
             &:nth-of-type( #{$n}n + #{$n} ) {
@@ -472,9 +456,12 @@ $space-bottom-lg: 30px;
     }
   }
 
-  
-
   /* Align horizontal */
+  .start-lg {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
   .center-lg {
     justify-content: center;
     text-align: center;
@@ -485,29 +472,18 @@ $space-bottom-lg: 30px;
     text-align: end;
   }
 
-  .start-lg {
-    justify-content: flex-start;
-    text-align: start;
-  }
-  /* /Align horizontal */
-
-
-
   /* Align vertical */
-  .bottom-lg {
-    align-items: flex-end;
+  .top-lg {
+    align-items: flex-start;
   }
 
   .middle-lg {
     align-items: center;
   }
 
-  .top-lg {
-    align-items: flex-start;
+  .bottom-lg {
+    align-items: flex-end;
   }
-  /* /Align vertical */
-
-
 
   /* Align space content */
   .around-lg {
@@ -517,9 +493,6 @@ $space-bottom-lg: 30px;
   .between-lg {
     justify-content: space-between;
   }
-  /* /Align space content */
-
-
 
   /* Order */
   .first-lg {
@@ -529,9 +502,6 @@ $space-bottom-lg: 30px;
   .last-lg {
     order: 1;
   }
-  /* /Order */
-
-
 
   /* Spaces */
   .space-bottom {
@@ -541,9 +511,6 @@ $space-bottom-lg: 30px;
   .space-top {
     margin-bottom: $space-top-lg;
   }
-  /* /Spaces */
-
-
 
   /* Display */
   .hide-lg {
@@ -553,6 +520,5 @@ $space-bottom-lg: 30px;
   .show-lg {
     display: block;
   }
-  /* /Display */
 
 }
