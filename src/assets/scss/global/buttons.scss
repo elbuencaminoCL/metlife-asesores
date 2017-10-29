@@ -1,12 +1,6 @@
 
 @import './colors.scss';
 
-a &.button {
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 .button {
   border-radius: 3px;
   border: 0;
