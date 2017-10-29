@@ -28,9 +28,9 @@
 <section class="section">
   <div class="container">
     <div class="row row-xs-3 row-sm-3 row-md-3 row-lg-3">
-      <div class="col-xs-10 col-sm-7 col-md-2 col-lg-4 bg-primary pd-10">dfsdf</div>
-      <div class="col-xs-1 col-sm-3 col-md-8 col-lg-5 bg-primary pd-10">sdfs</div>
-      <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3 bg-primary pd-10">fsdf</div>           
+      <div class="col-xs-10 col-sm-7 col-md-2 col-lg-4 bg-primary pd-10"></div>
+      <div class="col-xs-1 col-sm-3 col-md-8 col-lg-5 bg-primary pd-10"></div>
+      <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3 bg-primary pd-10"></div>           
     </div>
   </div>
 </section>
@@ -94,21 +94,21 @@
   <div class="col-xs-3">
     <div class="color-block">
       <span class="bg-primary-accent"></span>
-      Primary accent #0061A0;
+      Primary accent #0061A0
     </div>
   </div>
 
   <div class="col-xs-3">
     <div class="color-block">
       <span class="bg-secondary Secondary"></span>
-      Secondary #A4CE4E;
+      Secondary #A4CE4E
     </div>
   </div>
 
   <div class="col-xs-3">
     <div class="color-block">
       <span class="bg-secondary-accent Secondary accent"></span>
-      Secondary accent #7A9816;
+      Secondary accent #7A9816
     </div>
   </div>
 </div>

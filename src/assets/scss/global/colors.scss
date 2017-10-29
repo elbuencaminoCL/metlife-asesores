@@ -2,7 +2,7 @@
 // Main palette
   $primary-accent: #0061A0;
   $primary-hover: #0090DA;
-  $primary-light: #E9F2FE;
+  $primary-disabled: #80BCDE;
   $primary: #007ABC;
   $secondary-accent: #7A9816;
   $secondary-hover: #b7dd58;
@@ -64,6 +64,10 @@
     color: $secondary-accent;
   }
 
+  .f-legal {
+    color: $dark-gray-3;
+  }
+
   .f-primary {
     color: $primary;
   }
@@ -114,6 +118,10 @@
 
   .bg-white {
     background-color: $white;
+  }
+
+  .bg-white-light {
+    background-color: $white-light;
   }
 
   

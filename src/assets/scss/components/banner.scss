@@ -7,7 +7,7 @@
   left: 0;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   .card-banner-xs{
     position: initial;
@@ -23,35 +23,37 @@
 }
 
 .banner-img {
-  height: 300px;
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
 .banner-tab {
   border-radius: 3px;
-  border: 2px solid $primary-accent;
-  .banner-tab--client {
+  border: 2px solid $primary;
+  .banner-tab--client, .banner-tab--policy {
     position: relative;
-    &::before, &::after {
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;     
-      content: '';
-      height: 0;
-      left: 0;
-      margin: 0 auto;     
-      position: absolute;
-      right: 0;
-      width: 0;
-    }    
-    &::before {
-      border-top: 10px solid white;
-      bottom: -8px;
-      z-index: 2;
-    }
-    &::after {
-      border-top: 10px solid $primary-accent;
-      bottom: -11px;
+    &.is-active {
+      &::before, &::after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;     
+        content: '';
+        height: 0;
+        left: 0;
+        margin: 0 auto;     
+        position: absolute;
+        right: 0;
+        width: 0;
+      }    
+      &::before {
+        border-top: 10px solid white;
+        bottom: -8px;
+        z-index: 2;
+      }
+      &::after {
+        border-top: 10px solid $primary-accent;
+        bottom: -11px;
+      }
     }
   }
 }
@@ -60,19 +62,45 @@
 .banner-tab--policy {
   font-size: 14px;    
   font-weight: bold;
-  padding: 10px;
+  background-color: $primary;
+  color: white;
+  &.is-active {
+    background-color: white;
+    color: $primary;
+  }
 }
 
-.banner-tab--client {
-  background-color: white;
-  color: $primary-accent;
+
+
+/* Carousel, (código sobreescrito de foundation) */
+
+.orbit-bullets {
+  bottom: 45px;
+  margin: 10px;
+  button {
+    background-color: transparent;
+    border: 2px solid white;
+    &:hover {
+      background-color: $primary;
+    }
+    &.is-active {
+      background-color: white;
+    }
+  } 
 }
 
-.banner-tab--policy {
-  background-color: $primary-accent;
-  color: $white;
+.orbit-figure {
+  height: 500px; 
 }
 
+.orbit-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+/* Carousel */
 
 
 // Breakpoint small (sm)

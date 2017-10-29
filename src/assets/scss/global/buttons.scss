@@ -1,6 +1,12 @@
 
 @import './colors.scss';
 
+a &.button {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .button {
   border-radius: 3px;
   border: 0;
@@ -30,7 +36,6 @@
   &:hover {
     background-color: transparent;
     color: $primary-hover;
-    border-bottom: 1px solid $primary-hover;
   }
   &:focus,
   &:active {
@@ -43,6 +48,7 @@
 	color: $white;
 	&:hover {
 		background-color: $primary-hover;
+    color: white;
   }
 	&.disabled {
 		&:hover {

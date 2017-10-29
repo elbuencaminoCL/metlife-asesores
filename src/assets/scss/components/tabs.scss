@@ -1,6 +1,22 @@
 
 @import './../global/colors.scss';
 
+.tab-size {
+  &.tab-size--left {
+    margin-left: -1px;
+  } 
+  &.tab-size--right {
+    margin-right: -2px;
+  }  
+  flex-basis: calc(8.333% * 5);
+  max-width: calc(8.333% * 5);
+  transition: all .3s cubic-bezier(.4,0,.2,1);  
+  &.is-active {
+    flex-basis: calc(8.333% * 7);
+    max-width: calc(8.333% * 7);
+  }
+}
+
 .tabs {
 	border-bottom: 1px solid $primary;
 	border: 0;
@@ -16,6 +32,18 @@
 	}
 }
 
+/* Clase foundation */
+
+.tabs-content {
+  background: none;
+}
+
+.tabs-panel {
+  padding: 0;
+}
+
+/* /Clase foundation */
+
 .birthday_tabs_container {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -24,12 +52,16 @@
 
 .tabs-title {
   background-color: $primary;
-  width: 380px;
   a {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     outline: none;
+    &.tab-carousel {
+      font-size: 14px;
+      text-transform: none;
+      padding: 15px;
+    }
   }
   &.is-active {
     margin-top: 0;
@@ -38,7 +70,7 @@
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     a {
       background-color: white;        
-			color: $primary-accent;
+			color: $primary;
       font-weight: bold;
       border: none;
       &.is-focus {

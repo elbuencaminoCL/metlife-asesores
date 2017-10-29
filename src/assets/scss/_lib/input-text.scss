@@ -110,7 +110,7 @@
 
 	.input__label-content {
 		display: block;
-		padding: 11px 0;
+		padding: 8px 0 0;
 		position: relative;
 		width: 100%;
 		z-index: 100;
@@ -157,7 +157,7 @@
 	}
 
 	.input__label-content--ichiro {
-		font-size: 16px;
+		font-size: 14px;
 		left: 0;
 		top: 0;
 		transition: all .3s cubic-bezier(.4,0,.2,1);

@@ -3,6 +3,7 @@
 
 body {
 	font-family: "Arial", sans-serif;
+  color: $dark-gray-2;
 }
 
 h1,
@@ -82,13 +83,18 @@ p {
   line-height: 1.2;
 }
 
-.f-link {
-  border-bottom: 1px solid $link-hover;
-  color: $link-rest;
-  line-height: 1.2;
+.f-link, .f-link-ico {
+  color: $primary-accent;
+  line-height: 1.5;
   &:hover {
-    border-bottom: 1px solid transparent;
-    color: $link-hover;
+    border-bottom: 1px solid $primary-hover;
+    color: $primary-hover;
+  }
+}
+
+.f-link-ico {
+  &:hover {
+    border-bottom: 0;
   }
 }
 
