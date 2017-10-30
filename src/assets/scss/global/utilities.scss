@@ -20,6 +20,10 @@
   padding: 30px;
 }
 
+.pd-bottom-5 {
+  padding-bottom: 5px;
+}
+
 .pd-left-10 {
   padding-left: 10px;
 }
@@ -42,6 +46,10 @@
 
 
 //margin
+.mg-0-auto {
+  margin: 0 auto;
+}
+
 .mg-bottom-0 {
   margin-bottom: 0;
 }
@@ -93,3 +101,11 @@
 
 
 
+@media screen and (min-width: 62em ) {
+ .toggleContent.toggleContent--responsive {
+    height: auto;
+    opacity: 1;
+    padding: 0 0 1rem 0;
+    visibility: visible;
+  }
+}

@@ -74,11 +74,12 @@
 @import 'components/banner';
 @import 'components/dropdown';
 @import 'components/indicators';
+@import 'components/news';
+@import 'components/forms';
+@import 'components/portfolio';
 
 @import '_lib/input-text';
 @import '_lib/select';
 @import '_lib/table';
 
 @import 'pages/login';
-@import 'pages/forms';
-@import 'pages/news';
