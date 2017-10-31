@@ -1,77 +1,84 @@
 
-<div class="container">
-  <div class="card card--green z-depth-2">
-    <div class="row row-xs-2">
-      <div class="col-xs-10">
-        <h4><strong><a href="{{root}}productos/mutuaria/mutuaria.html" data-limit="38">MetLife Crédito Hipotecario Universal</a></strong></h4>
-        <p>Póliza N° 312036709700</p>
-      </div>
+<div class="container space-bottom">
+  <div class="u-divider">
+    <h5>José Echeverría Soto</h5>
+    <p>14.765.342-9<a href="#">Jose.echeverria.s@miempresa.cl</a></p>
+  </div>
 
-      <div class="col-xs-2 end-xs">
-        <a href="{{root}}productos/mutuaria/mutuaria.html"><i class="card__icon fa fa-angle-right" aria-hidden="true"></i></a>
-      </div>
-    </div>
+  <div class="row space-bottom">
+    <figure>
+      <img src="{{root}}assets/images/icons/cel.png" class="max-width-10" />
+      <a href="#">+56 9 7456 789</a>
+    </figure>
+    <figure>
+      <img src="{{root}}assets/images/icons/cel.png" class="max-width-10" >
+      <a href="W">+56 9 7456 789</a>
+    </figure>
+  </div>
 
+  <div class="end-xs">
+    <a href="#">Descargar Ficha de Mantención</a>
+  </div>
 
-    <div class="row row-xs-1 row-md-6">
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Estado</strong> Vigente</p>
-      </div>
-
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Emitida</strong> 17/05/2009</p>
-      </div>
-
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Valor Póliza</strong> UF 2.14 / $ 52.000</p>
-      </div>
-
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Frecuencia:</strong> Semestral</p>
-      </div>
-
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Primas Pendientes</strong> 2</p>
-      </div>
-
-      <div class="col-xs-12 col-md-2">
-        <p class="f-small"><strong>Prima Total</strong> UF 2.14 / $ 52.000</p>
-      </div>      
-    </div>
-
-    <div class="col-xs-12 end-xs">
-      <p>
-        <a href="" class="f-link openContent" data-open-content="card-more-mutuaria">
-        <span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </a>
-      </p>
-    </div>
-
-
-    <section class=" toggleContent no-padding-bottom" data-toggle-content="card-more-mutuaria">
-
-      <div class="row u-divider">
-        <div class="col-xs-12">
-          <h6 class="card_sub-title"><strong>Otras Opciones</strong></h6>
-        </div>
-
-        <div class="col-xs-12">
-          <p><a href="">Ver Otros Medios de Pago</a></p>
-        </div>
-
-        <div class="col-xs-12">
-          <p><a href="">Descargar mi Dividendo</a></p>
-        </div>
-
-        <div class="col-xs-12">
-          <p><a href="" class="">Ver Histórico de mis Pagos</a></p>
-        </div>
-        <div class="col-xs-12">
-          <p><a href="" class="">Descargar mi Última Cartola Trimestral</a></p>
-        </div>
-      </div>
-    </section>
-
+  <div class="card card--blue z-depth-2 pd-15">
+    {{> card-data-profile }}
   </div>
 </div>
+
+
+
+<!-- Productos asociados a este cliente -->
+<div class="container">
+  <div class="row row-xs-1 row-md-5 u-divider space-bottom">
+    <div class="col-xs-12 col-md-4">
+      <h4>Productos Asociados a este Cliente:</h4>
+    </div>
+
+    <div class="col-xs-12 col-md-2">
+      <p>Proteccion y salud</p>
+    </div>
+
+    <div class="col-xs-12 col-md-2">
+      <p>Educación</p>
+    </div>
+
+    <div class="col-xs-12 col-md-2">
+      <p>Grandes proyectos</p>
+    </div>
+
+    <div class="col-xs-12 col-md-2">
+      <p>Jubilación</p>
+    </div>
+  </div>
+
+  <div class="card card--green z-depth-2 pd-15">
+    {{#each cards.card-green}}
+      {{> card-content }}
+    {{/each}}
+  </div>
+</div>
+
+<div class="container">
+  <div class="card card--gray z-depth-2 pd-15"> 
+    {{#each cards.card-gray}}
+      {{> card-content }}
+    {{/each}}
+  </div>
+</div>
+
+<div class="container">
+  <div class="card card--pink z-depth-2 pd-15"> 
+    {{#each cards.card-pink}}
+      {{> card-content }}
+    {{/each}}
+  </div>
+</div>
+
+<div class="container">
+  <div class="card card--yellow z-depth-2 pd-15"> 
+    {{#each cards.card-yellow}}
+      {{> card-content }}
+    {{/each}}
+  </div> 
+</div>
+<!-- /Productos asociados a este cliente -->

@@ -6,18 +6,48 @@
   border-bottom-left-radius: 4px;
   border: 0;
   border-left: 10px solid;
+  margin-bottom: 20px;
+
+  &.card--blue{
+    border-color: $primary;
+    .card__icon {
+      color: $primary;
+    }
+  }
+
+  &.card--gray {
+    border-color: $medium-gray;
+    .card__icon {
+      color: $medium-gray;
+    }
+  }
+
+  &.card--green {
+    border-color: $accident;
+    .card__icon {
+      color: $accident;
+    }
+  }
+
+  &.card--pink {
+    border-color: $pink;
+    .card__icon {
+      color: $pink;
+    }
+  }
+
+  &.card--yellow {
+    border-color: $information;
+    .card__icon {
+      color: $information;
+    }
+  }
+
 }
 
 .card-banner {    
   height: 100%;
   padding: 25px;
-}
-
-.card--green {
-  border-color: $accident;
-  .card__icon {
-    color: $accident;
-  }
 }
 
 .card-info-general {
