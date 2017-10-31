@@ -12,6 +12,10 @@
   padding: 15px;
 }
 
+.pd-15-i {
+  padding: 15px !important;
+}
+
 .pd-20 {
   padding: 20px;
 }
@@ -79,7 +83,6 @@
 
 
 /* Sizes */
-
 .mx-width-50 {
   max-width: 50px;
 }
@@ -87,25 +90,16 @@
 .mx-height-50 {
   max-height: 50px;
 }
-
 /* /Sizes */
 
 
 
 /* Dividing lines */
-
 .u-divider {
   border-bottom: 1px solid $medium-gray;
   padding-top: 8px;
 }
+/* /Dividing lines */
 
 
 
-@media screen and (min-width: 62em ) {
- .toggleContent.toggleContent--responsive {
-    height: auto;
-    opacity: 1;
-    padding: 0 0 1rem 0;
-    visibility: visible;
-  }
-}

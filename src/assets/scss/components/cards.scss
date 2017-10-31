@@ -1,9 +1,23 @@
 
 @import './../global/colors.scss';
 
+.card {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 0;
+  border-left: 10px solid;
+}
+
 .card-banner {    
   height: 100%;
   padding: 25px;
+}
+
+.card--green {
+  border-color: $accident;
+  .card__icon {
+    color: $accident;
+  }
 }
 
 .card-info-general {
@@ -48,3 +62,5 @@
     }         
   }        
 }
+
+

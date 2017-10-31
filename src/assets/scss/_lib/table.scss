@@ -341,3 +341,36 @@
 		}
 
 	}
+
+
+
+  /* Table-portfolio */
+  @media screen and (min-width: 62em ) {
+   .toggleContent.toggleContent--responsive {
+      height: auto;
+      opacity: 1;
+      padding: 0 0 1rem 0;
+      visibility: visible;
+    }
+  }
+
+  .table-100 {
+    max-width: 100px;
+    width: 100%;  
+  }
+
+  .table-150 {
+    max-width: 150px;
+    width: 100%;
+  }
+
+  .table-300 {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .table-360 {
+    max-width: 360px;
+    width: 100%;
+  }
+  /* /Table-portfolio */

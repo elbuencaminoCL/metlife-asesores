@@ -1,5 +1,10 @@
 'use strict';
 
+/* Deploy with Foundation */
+import gutil from 'gulp-util';
+import ftp from 'vinyl-ftp';
+/* /Deploy with Foundation */
+
 import plugins       from 'gulp-load-plugins';
 import yargs         from 'yargs';
 import browser       from 'browser-sync';
@@ -163,3 +168,28 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
+
+
+/* Deploy with Foundation */
+gulp.task( 'deploy', function () {
+  var conn = ftp.create({
+    host: 's2.fcomet.com',
+    user: 'elbuenca',
+    password: '37v7iH7Ywr',
+    parallel: 10,
+    log: gutil.log
+  });
+
+  var globs = [
+    'dist/**'
+  ];
+
+  // using base = '.' will transfer everything to /public_html correctly
+  // turn off buffering in gulp.src for best performance
+
+  return gulp.src( globs, { base: './dist', buffer: false } )
+          .pipe( conn.newer( '/public_html/metlife-asesores' ) ) // only upload newer files
+          .pipe( conn.dest( '/public_html/metlife-asesores' ) );
+
+});
+/* /Deploy with Foundation */
