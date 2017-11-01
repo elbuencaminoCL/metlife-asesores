@@ -1,4 +1,6 @@
 
+@import './../global/colors.scss';
+
 .support_form_container_search {
   background-color: white;
 }
@@ -7,4 +9,13 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 30px 0;
+}
+
+.form-table-container {
+  .form-table-row:nth-child(even) {
+    background-color: $white-light;
+  }
+  .form-table-row:nth-child(odd) {
+    background-color: white;
+  }
 }

@@ -1,8 +1,9 @@
 
 // Main palette
   $primary-accent: #0061A0;
-  $primary-hover: #0090DA;
   $primary-disabled: #80BCDE;
+  $primary-hover: #0090DA;
+  $primary-light: #008EDD;
   $primary: #007ABC;
   $secondary-accent: #7A9816;
   $secondary-hover: #b7dd58;
@@ -110,6 +111,10 @@
 
   .bg-primary-hover {
     background-color: $primary-hover;
+  }
+
+  .bg-primary-light {
+    background-color: $primary-light;
   }
 
   .bg-secondary {

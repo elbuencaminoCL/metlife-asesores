@@ -1,3 +1,28 @@
+---
+form-table:
+  -
+    name-form: Cuestionario para participar de carreras de motocicleta
+    category: Formulario de Evaluación
+    download: Descargar
+    send-email: Enviar
+  -
+    name-form: Cuestionario para participar de carreras de motocicleta
+    category: Formulario de Evaluación
+    download: Descargar
+    send-email: Enviar
+  -
+    name-form: Cuestionario para participar de carreras de motocicleta
+    category: Formulario de Evaluación
+    download: Descargar
+    send-email: Enviar
+  -
+    name-form: Cuestionario para participar de carreras de motocicleta
+    category: Formulario de Evaluación
+    download: Descargar
+    send-email: Enviar
+---
+
+
 
 {{> header }}
 
@@ -40,8 +65,51 @@
       </select>
     </div>
   </div>
+
+
+  <!-- Tabla de formularios -->
+  <div class="form-table-container space-bottom z-depth-1">
+    <div class="row row-xs-1 row-md-4 pd-10 bg-primary-light f-white">
+      <div class="col-xs-12 col-md-5">
+        <p>Nombre del Formulario</p>
+      </div>
       
-  <section class="pagination u-top">
+      <div class="col-xs-12 col-md-3">
+        <p>Categoria</p>
+      </div>
+      
+      <div class="col-xs-12 col-md-2">
+        <p>Descargar</p>
+      </div>
+
+      <div class="col-xs-12 col-md-2">
+        <p>Enviar por Email</p>
+      </div>
+    </div>
+
+    {{#each form-table}}   
+      <div class="row row-xs-1 row-md-4 form-table-row pd-10 middle-xs">
+        <div class="col-xs-12 col-md-5">
+          <p>{{name-form}}</p>
+        </div>
+        
+        <div class="col-xs-12 col-md-3">
+          <p>{{category}}</p>
+        </div>
+        
+        <div class="col-xs-12 col-md-2">
+          <p><a href="#" class="f-link">{{download}}</a></p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <a href="#" class="button button--primary button--full">{{send-email}}</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <!-- Tabla de formularios -->
+      
+  <section class="pagination mg-bottom-90">
     {{> pagination }}
   </section>
 </div>
