@@ -1,5 +1,5 @@
 
-.pagination_numbers_item, .pagination_numbers_dots {
+.pagination__numbers-item, .pagination__numbers-dots {
   background-color: white;
   border: 1px solid $gray;
   font-size: 14px;
@@ -12,7 +12,7 @@
   }
 }
 
-.pagination_new, .pagination_old, .pagination_numbers_item, .pagination_numbers_dots {
+.pagination__new, .pagination_old, .pagination__numbers-item, .pagination__numbers-dots {
   height: 25px;
   line-height: 25px;
   margin: 0 5px;
@@ -27,17 +27,17 @@
   }
 }
 
-.pagination_numbers {
+.pagination__numbers {
   padding: 0 20px;
 }
 
-.pagination_numbers_dots {
+.pagination__numbers-dots {
   background-color: transparent;
   border: none;
   width: auto;
 }
 
-.pagination_numbers_item {
+.pagination__numbers-item {
   &.is-active {
     background-color: $primary-accent;
     border-color: $primary-accent;

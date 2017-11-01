@@ -31,6 +31,7 @@ $space-bottom-lg: 30px;
 .container {
   margin: 0 auto;
   max-width: $grid;
+  padding: 0 15px;
   &.container-short {
     max-width: 560px;
   }
@@ -168,6 +169,10 @@ $space-bottom-lg: 30px;
 
 
 @media screen and (min-width: 48em) {
+  
+  .container {
+    padding: 0 15px;
+  }
 
   .section {
     padding: $section-sm;
@@ -288,6 +293,10 @@ $space-bottom-lg: 30px;
 
 @media screen and (min-width: 62em) {
 
+  .container {
+    padding: 0 15px;
+  }
+
   .section {
     padding: $section-md;
   }
@@ -406,6 +415,10 @@ $space-bottom-lg: 30px;
 
 @media screen and (min-width: 75em) {
 
+  .container {
+    padding: 0 15px;
+  }
+
   .section {
     padding: $section-lg;
   }
@@ -519,6 +532,14 @@ $space-bottom-lg: 30px;
 
   .show-lg {
     display: block;
+  }
+
+}
+
+@media screen and (min-width: 90em) {
+
+  .container {
+    padding: 0;
   }
 
 }
