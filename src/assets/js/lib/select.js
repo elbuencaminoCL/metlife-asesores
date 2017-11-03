@@ -10,7 +10,7 @@
  */
 
 
-import './classie';
+import classie from 'classie';
 
 ( function( window ) {
 
