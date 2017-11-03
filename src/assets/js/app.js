@@ -12,6 +12,7 @@ import Foundation from 'foundation-sites';
 import './components/select'; 
 import './components/open-content';
 import './components/input-text';
+import './components/modal';
 
 
 $(document).foundation();
