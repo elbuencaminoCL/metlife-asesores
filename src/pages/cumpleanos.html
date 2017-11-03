@@ -1,0 +1,244 @@
+---
+birthday-table-yesterday:
+  -
+    name: AYER
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+
+
+birthday-table-today:
+  -
+    name: HOY
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+
+
+birthday-table-tomorrow:
+  -
+    name: MAÑANA
+    rut: 15.674.834-9
+    birthday: 15.674.834-9
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+  -
+    name: Constanza Isabel Enríquez Compañon
+    rut: 15.674.834-9
+    birthday: 18/07/2017
+    age: 36 años
+    email: constanzaiecom@gmail.com
+    phone: +56 9 6472354
+---
+
+
+
+{{> header }}
+
+<section class="section">
+  <div class="container">
+    {{> breadcrumb-birthday }}
+    <h1 class="center-xs space-bottom">Cumpleaños</h1>
+
+    <!-- Tabs -->
+    <div class="row row-xs-1 row-md-3 no-gutter middle-xs space-bottom" data-tabs id="tabsBirthday">
+      <div class="col-xs-12 col-md-4 bg-secondary tabs-title center-xs">
+        <a href="#yesterday" aria-selected="true">Ayer</a>
+      </div>
+
+      <div class="col-xs-12 col-md-4 bg-white pd-10 tabs-title is-active center-xs z-depth-2">
+        <a data-tabs-target="today" href="#today">Hoy</a>
+      </div>
+
+      <div class="col-xs-12 col-md-4 bg-secondary tabs-title center-xs">
+        <a data-tabs-target="tomorrow" href="#tomorrow">Mañana</a>
+      </div>
+    </div>
+    <!-- /Tabs -->
+    
+
+    <!-- Contenido de los tabs -->
+    <div class="z-depth-2" data-tabs-content="tabsBirthday">
+      <!-- Tab ayer -->
+      <div class="tabs-panel" id="yesterday">
+        <div class="row row-xs-1 row-md-6">
+          <div class="col-xs-12 col-md-3"><p>Nombre</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>R.U.T.</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Fecha de Nacimiento</p></div>
+
+          <div class="col-xs-12 col-md-1"><p>Edad</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Email</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Teléfono</p></div>
+        </div>
+
+        {{#each birthday-table-yesterday}}
+          <div class="row row-xs-1 row-md-6">
+            <div class="col-xs-12 col-md-3">
+              <p>{{name}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{rut}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{birthday}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-1">
+              <p>{{age}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{email}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{phone}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <!-- /Tab ayer -->
+
+      <!-- Tab hoy -->
+      <div class="tabs-panel is-active" id="today">
+        <div class="row row-xs-1 row-md-6">
+          <div class="col-xs-12 col-md-3"><p>Nombre</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>R.U.T.</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Fecha de Nacimiento</p></div>
+
+          <div class="col-xs-12 col-md-1"><p>Edad</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Email</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Teléfono</p></div>
+        </div>
+
+        {{#each birthday-table-today}}
+          <div class="row row-xs-1 row-md-6">
+            <div class="col-xs-12 col-md-3">
+              <p>{{name}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{rut}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{birthday}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-1">
+              <p>{{age}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{email}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{phone}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <!-- /Tab hoy -->
+
+      <!-- Tab mañana -->
+      <div class="tabs-panel" id="tomorrow">
+        <div class="row row-xs-1 row-md-6">
+          <div class="col-xs-12 col-md-3"><p>Nombre Cliente</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>R.U.T.</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Fecha de Nacimiento</p></div>
+
+          <div class="col-xs-12 col-md-1"><p>Edad</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Email</p></div>
+
+          <div class="col-xs-12 col-md-2"><p>Teléfono</p></div>
+        </div>
+
+        {{#each birthday-table-tomorrow}}
+          <div class="row row-xs-1 row-md-6">
+            <div class="col-xs-12 col-md-3">
+              <p>{{name}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{rut}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{birthday}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-1">
+              <p>{{age}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{email}}</p>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+              <p>{{phone}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <!-- /Tab mañana -->
+
+    </div>
+    <!-- /Contenido de los tabs -->
+
+  </div>
+</section>

@@ -11,6 +11,7 @@ import Foundation from 'foundation-sites';
 // Components
 import './components/select';
 import './components/open-content';
+import './components/input-text';
 
 
 $(document).foundation();

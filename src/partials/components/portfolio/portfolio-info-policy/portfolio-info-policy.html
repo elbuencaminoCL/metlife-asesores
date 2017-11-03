@@ -1,0 +1,96 @@
+
+<div class="container">
+  <p class="f-big">Ver Información para:</p>
+  <section class="u-select space-bottom">
+    <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+      <option value="login.html" data-link="login.html">Metlife Seguros</option>
+      <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+    </select>
+  </section>
+
+  <div class="card card--pink z-depth-2 pd-15">
+    <h4>Información de la Póliza</h4> 
+    {{#each cards.card-pink}}
+      <p><strong>Póliza N°:</strong> {{ policy }}</p> 
+      <div class="row row-xs-1 row-md-6">
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Estado</strong> {{ state }}</p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Emitida</strong> {{ emit }}</p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Valor Póliza</strong> {{ value-policy }}</p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Frecuencia:</strong> {{ frequency }}</p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Primas Pendientes</strong> {{ bounty-pending }}</p>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <p class="f-small"><strong>Prima Total</strong> {{ bounty-total }}</p>
+        </div>      
+      </div>
+    {{/each}}
+
+    <p class="f-big u-divider">Detalle de Prima Total</p>
+    <div class="row row-xs-1 row-md-4">
+      <div class="col-xs-12 col-md-3">
+        <p><strong>Prima Básica:</strong></p>
+        <p>UF 15,02</p>
+      </div>
+      
+      <div class="col-xs-12 col-md-3">
+        <p><strong>Prima en Exceso:</strong></p>
+        <p>UF 2,15 / $52.000</p>
+      </div>
+      
+      <div class="col-xs-12 col-md-3">
+        <p><strong>Aportes:</strong></p>
+        <p>UF 2,15 / $52.000</p>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <p><strong>Aportes Extraorinarios Recurrentes:</strong></p>
+        <p>UF 2,15 / $52.000</p>
+      </div>
+    </div>
+
+    <p class="f-big"><strong>Prima Básica por Cobertura</strong></p>
+    <div class="row bg-primary pd-10 f-white">
+      <div class="table-370">
+        <p class="mg-bottom-0">Nombre cliente</p>
+      </div>
+
+      <div class="table-150">
+        <p>Tipo de Cliente</p>
+      </div>
+
+      <div class="table-150">
+        <p>Pagado Hasta</p>
+      </div>
+
+      <div class="table-150">
+        <p>Cobertura</p>
+      </div>
+
+      <div class="table-150">
+        <p>Cap.Asegurado</p>
+      </div>
+
+      <div class="table-200">
+        <p>Prima Básica</p>
+      </div>
+
+      <div class="table-200">
+        <p>Sobreprima</p>
+      </div>
+    </div>
+  </div>
+</div>

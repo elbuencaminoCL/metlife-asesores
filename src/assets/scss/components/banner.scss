@@ -1,8 +1,132 @@
 
-.banner_gutter_col {
-  padding: 0 15px;
+.banner-col {
+  position: relative;
 }
 
-.info_gutter_col {
-  padding-left: 15px;
+.banner-content {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  .card-banner-xs{
+    position: initial;
+  }
+  .banner-title {
+    color: white;
+    padding-bottom: 0;
+    text-shadow: 1px 1px black;
+  }
+  .banner-desc {
+    padding-bottom: 50px;
+  }
+}
+
+.banner-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner-tab {
+  border-radius: 3px;
+  border: 2px solid $primary;
+  .banner-tab--client, .banner-tab--policy {
+    position: relative;
+    &.is-active {
+      &::before, &::after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;     
+        content: '';
+        height: 0;
+        left: 0;
+        margin: 0 auto;     
+        position: absolute;
+        right: 0;
+        width: 0;
+      }    
+      &::before {
+        border-top: 10px solid white;
+        bottom: -8px;
+        z-index: 2;
+      }
+      &::after {
+        border-top: 10px solid $primary-accent;
+        bottom: -11px;
+      }
+    }
+  }
+}
+
+.banner-tab--client,
+.banner-tab--policy {
+  font-size: 14px;    
+  font-weight: bold;
+  background-color: $primary;
+  color: white;
+  &.is-active {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+
+
+/* Carousel, (código sobreescrito de foundation) */
+
+.orbit-bullets {
+  bottom: 45px;
+  margin: 10px;
+  button {
+    background-color: transparent;
+    border: 2px solid white;
+    &:hover {
+      background-color: $primary;
+    }
+    &.is-active {
+      background-color: white;
+    }
+  } 
+}
+
+.orbit-figure {
+  height: 500px; 
+}
+
+.orbit-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+/* Carousel */
+
+
+// Breakpoint small (sm)
+
+@media screen and ( min-width: 48em ) {
+
+  .banner-content {
+    .banner-title {
+      padding-bottom: 50px;
+    }
+  }
+  
+  .banner-img {
+    height: 400px;
+  }
+
+}
+
+
+
+// Breakpoint medium (md)
+
+@media screen and ( min-width: 62em ) {
+  
+  .banner-img {
+    height: 500px;
+  }
+
 }

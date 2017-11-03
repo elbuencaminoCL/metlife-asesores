@@ -1,0 +1,51 @@
+
+.minus-ico {
+  display: none;
+}
+
+.toggleContent {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  transition: all .3s cubic-bezier( .4, 0, .2, 1 );
+  visibility: hidden;
+  &.is-open {
+    height: auto;
+    opacity: 1;
+    padding: 0 0 1rem 0;
+    visibility: visible;
+    i {
+      &.plus-ico {
+        visibility: hidden;
+        opacity: 0;
+      }
+      &.minus-ico {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &.number-dividend {
+    padding: 0;
+  }
+  &.no-padding-bottom {
+    padding-bottom: 0px;
+  }
+}
+
+.openContent {
+  .indicators-span {
+    padding-left: 8px;
+  }
+  &.is-open {
+    i {
+      &.plus-ico {
+        display: none;
+      }
+      &.minus-ico {
+        display: initial;
+      }
+    }
+  }
+}
+

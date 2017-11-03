@@ -1,0 +1,53 @@
+
+<div class="row row-xs-2">
+  <div class="col-xs-10">
+    <h4><strong><a href="{{root}}productos/mutuaria/mutuaria.html" data-limit="38">{{ title }}</a></strong></h4>
+    <p><strong>Póliza N°:</strong> {{ policy }}</p> 
+  </div>
+
+  <div class="col-xs-2 end-xs">
+    <a href="{{root}}productos/mutuaria/mutuaria.html"><i class="card__icon fa fa-angle-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="row row-xs-1 row-md-6">
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Estado</strong> {{ state }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Emitida</strong> {{ emit }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Valor Póliza</strong> {{ value-policy }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Frecuencia:</strong> {{ frequency }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Primas Pendientes</strong> {{ bounty-pending }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-2">
+    <p class="f-small"><strong>Prima Total</strong> {{ bounty-total }}</p>
+  </div>      
+</div>
+
+<div class="col-xs-12 end-xs">
+  <p>
+    <a href="" class="f-link openContent" data-open-content="{{ more-information }}">
+    <span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+  </p>
+</div>
+
+<section class=" toggleContent no-padding-bottom" data-toggle-content="{{ more-information }}">
+  <div class="row u-divider">
+    <p>Detalle de prima total</p>
+  </div>
+</section>

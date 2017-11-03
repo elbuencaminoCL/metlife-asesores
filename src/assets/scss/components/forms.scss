@@ -1,0 +1,30 @@
+
+@import './../global/colors.scss';
+
+.support_form_container_search {
+  background-color: white;
+}
+
+.support-form-row {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.form-table-container {
+  .form-table-row:nth-child(even) {
+    background-color: $white-light;
+  }
+  .form-table-row:nth-child(odd) {
+    background-color: white;
+  }
+}
+
+.request {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.request__text-area {
+  min-height: 150px;
+}

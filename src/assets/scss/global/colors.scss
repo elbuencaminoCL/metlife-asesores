@@ -1,0 +1,136 @@
+
+// Main palette
+  $primary-accent: #0061A0;
+  $primary-disabled: #80BCDE;
+  $primary-hover: #0090DA;
+  $primary-light: #008EDD;
+  $primary: #007ABC;
+  $secondary-accent: #7A9816;
+  $secondary-hover: #b7dd58;
+  $secondary: #A4CE4E;
+
+// Line of business palette
+  $accident-light: #7FEFD9;
+  $accident: #1FC2A2;
+  $annuities-light: #FCC13D;
+  $annuities: #EFA020;
+  $colective-light: #BDA7F2;
+  $colective: #896EB3;
+  $expiration: #FFF3E9;
+  $general-light: #54D1A1;
+  $general: #348C6F;
+  $green: #B7DD58;
+  $mortgages-light: #FA9663;
+  $mortgages: #E57339;
+  $pink-accent: #BB0A4F;
+  $pink: #DB0A5B;
+  $single-light: #0E5DAE;
+  $single: #0A3C6C;
+
+// Escala de grises
+  $black-05: #F4F4F4;
+  $black: #000;
+  $dark-gray-2: #333;
+  $dark-gray-3: #999;
+  $dark-gray: #666;
+  $gray: #DEDEDE;
+  $medium-gray: #BBB;
+  $white-light-2: #F8F8F8;
+  $white-light: #F2F2F2;
+  $white: #FFF;
+
+// Utility
+  $active-border: #1A71AA;
+  $error-border: #EA4848;
+  $error-light: #FCECEC;
+  $error: #EB4646;
+  $information: #FFC600;
+  $success-light: #E4EAD0;
+  $success: #7A9816;
+  $warning: #E57339;
+
+// Link
+  $link-hover: #1A79AF;
+  $link-rest: #007ABC;
+
+
+
+//Color de fuente
+
+  .f-black {
+    color: $black;
+  }
+
+  .f-green {
+    color: $secondary-accent;
+  }
+
+  .f-legal {
+    color: $dark-gray-3;
+  }
+
+  .f-primary {
+    color: $primary;
+  }
+
+  .f-pink {
+    color: $pink;
+  }
+
+  .f-primary-accent {
+    color: $primary-accent;
+  }
+
+  .f-red {
+    color: $error;
+  }
+
+  .f-white {
+    color: $white;
+  }
+
+
+
+//color de fondo
+
+  .bg-clarity {
+    background-color: rgba(255, 255 , 255, 0.85);
+  }
+
+  .bg-error {
+    background-color: $error;
+  }
+
+  .bg-primary {
+    background-color: $primary;
+  }
+
+  .bg-primary-accent {
+    background-color: $primary-accent;
+  }
+
+  .bg-primary-hover {
+    background-color: $primary-hover;
+  }
+
+  .bg-primary-light {
+    background-color: $primary-light;
+  }
+
+  .bg-secondary {
+    background-color: $secondary;
+  }
+
+  .bg-secondary-accent {
+    background-color: $secondary-accent;
+  }
+
+  .bg-white {
+    background-color: $white;
+  }
+
+  .bg-white-light {
+    background-color: $white-light;
+  }
+
+  
