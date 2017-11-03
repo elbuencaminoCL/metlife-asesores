@@ -9,9 +9,10 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 // Components
-import './components/select';
+import './components/select'; 
 import './components/open-content';
 import './components/input-text';
+import './components/modal';
 
 
 $(document).foundation();
