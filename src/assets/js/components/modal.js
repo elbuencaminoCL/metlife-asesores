@@ -1,5 +1,7 @@
 import $ from 'jquery';
 
-setTimeout( () => {
-  $('#loginModal').foundation('open');
-}, 3000)
+if( $('#loginModal').length > 0 ) {
+  setTimeout( () => {
+    $('#loginModal').foundation('open');
+  }, 3000)
+}
