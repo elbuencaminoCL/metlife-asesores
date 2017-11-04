@@ -21,6 +21,10 @@
   width: 100%;
 }
 
+.button--full-xs {
+  width: 100%;
+}
+
 .button--link {
   background-color: transparent;
   border-bottom: 1px solid transparent;
@@ -79,4 +83,14 @@
 
 .button--xlarge {
   font-size: 18px;
+}
+
+
+
+@media screen and (min-width: 48em)  {
+  
+  .button--full-xs {
+    width: auto; 
+  }
+
 }

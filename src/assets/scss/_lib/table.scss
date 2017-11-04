@@ -181,6 +181,16 @@
     }
   }
 
+
+  .form-table-container {
+    .form-table-row:nth-child(even) {
+      background-color: $white-light;
+    }
+    .form-table-row:nth-child(odd) {
+      background-color: white;
+    }
+  }
+
 	@media screen and ( min-width: 48em ) {
 
 		.table-responsive {

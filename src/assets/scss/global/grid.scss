@@ -50,6 +50,9 @@ $space-bottom-lg: 30px;
 
 .section {
   padding: $section-xs;
+  .container {
+    padding: 0;
+  }
 }
 
 
@@ -169,13 +172,16 @@ $space-bottom-lg: 30px;
 
 
 @media screen and (min-width: 48em) {
-  
+
   .container {
     padding: 0 15px;
   }
 
   .section {
     padding: $section-sm;
+    .container {
+      padding: 0;
+    }
   }
 
 
@@ -299,6 +305,9 @@ $space-bottom-lg: 30px;
 
   .section {
     padding: $section-md;
+    .container {
+      padding: 0;
+    }
   }
 
 
@@ -385,6 +394,10 @@ $space-bottom-lg: 30px;
   }
 
   /* Order */
+  .first-xs{
+    order: 0;
+  }
+
   .first-md {
     order: -1;
   }
@@ -421,6 +434,9 @@ $space-bottom-lg: 30px;
 
   .section {
     padding: $section-lg;
+    .container {
+      padding: 0;
+    }
   }
 
 

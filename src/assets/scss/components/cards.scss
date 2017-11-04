@@ -55,20 +55,20 @@
   padding: 40px 30px 30px;
 }
 
-.indicators_row { 
+.indicators-row { 
   border-bottom: 1px solid $gray;
   padding-top: 10px;
   position: relative;
-  .bullet_col {
+  .bullet-col {
     padding-right: 10px;
     &.success, &.error, &.information {
       &::after {
         border-radius: 50%; 
-        bottom: 12px;
+        top: 18px;
         content: '';
         height: 8px;
         position: absolute;
-        right: -10px;
+        right: 0;
         width: 8px;
       }
     }
@@ -91,6 +91,90 @@
       }           
     }         
   }        
+}
+
+
+
+@media screen and (min-width: 62em) {
+
+  .indicators-row { 
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    position: relative;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%; 
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 15px;
+          width: 8px;
+        }
+      }
+
+      &.success {
+        &::after {
+          background-color: $success;                
+        }           
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;                
+        }           
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;                
+        }           
+      }         
+    }        
+  }
+}
+
+@media screen and (min-width: 75em) {
+
+  .indicators-row { 
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    position: relative;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%; 
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 30px;
+          width: 8px;
+        }
+      }
+
+      &.success {
+        &::after {
+          background-color: $success;                
+        }           
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;                
+        }           
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;                
+        }           
+      }         
+    }        
+  }
 }
 
 

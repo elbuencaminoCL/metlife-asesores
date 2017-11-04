@@ -71,6 +71,10 @@
     margin: 0 auto;
   }
 
+  .mg-bottom-xs-30 {
+    margin-bottom: 30px;
+  }
+
   .mg-bottom-0 {
     margin-bottom: 0;
   }
@@ -121,7 +125,17 @@
 
 /* Dividing lines */
 .u-divider {
+  border-bottom: 1px solid $gray;
+}
+
+.u-divider-policy {
+  border-bottom: 1px solid $gray;
+  padding-top: 10px;
+}
+
+.u-divider--calendar {
   border-bottom: 1px solid $medium-gray;
+  padding-bottom: 30px;
 }
 
 .u-divider-top {
@@ -130,7 +144,7 @@
 }
 
 .u-divider-top-15 {
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid $gray;
   padding-top: 15px;
 }
 
@@ -141,4 +155,12 @@
 /* /Dividing lines */
 
 
+
+@media screen and (min-width: 62em) {
+
+  .mg-bottom-xs {
+    margin-bottom: 0;
+  }
+
+}
 

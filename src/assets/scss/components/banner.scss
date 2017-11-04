@@ -4,11 +4,7 @@
 }
 
 .banner-content {
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 55%;
-  transform: translateY(-50%);
+  
   .card-banner-xs{
     position: initial;
   }
@@ -22,8 +18,8 @@
   }
 }
 
-.banner-img {
-  height: 100%;
+.orbit-image {
+  min-height: 350px;
   object-fit: cover;
   width: 100%;
 }
@@ -75,7 +71,7 @@
 /* Carousel, (código sobreescrito de foundation) */
 
 .orbit-bullets {
-  bottom: 45px;
+  bottom: 60px;
   margin: 10px;
   button {
     background-color: transparent;
@@ -89,13 +85,9 @@
   } 
 }
 
-.orbit-figure {
-  height: 500px; 
-}
-
 .orbit-title {
   position: absolute;
-  top: 10%;
+  top: 150px;
   left: 0;
   right: 0;
 }
@@ -107,15 +99,6 @@
 
 @media screen and ( min-width: 48em ) {
 
-  .banner-content {
-    .banner-title {
-      padding-bottom: 50px;
-    }
-  }
-  
-  .banner-img {
-    height: 400px;
-  }
 
 }
 
@@ -125,8 +108,26 @@
 
 @media screen and ( min-width: 62em ) {
   
-  .banner-img {
-    height: 500px;
+  .banner-content {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    .banner-title {
+      padding-bottom: 50px;
+    }
+  }
+
+  .orbit-image {
+    height: 600px;
+  }
+
+
+  .orbit-title {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
   }
 
 }

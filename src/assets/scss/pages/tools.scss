@@ -2,3 +2,21 @@
 .tools-simulator-img {
   min-width: 100px;
 }
+
+.value-uf-yesterday {
+  border-right: 2px solid white; 
+}
+
+.support-advisor-image {
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 62em) {
+
+  .value-uf-yesterday {
+    border-right: 0; 
+  }
+
+}
