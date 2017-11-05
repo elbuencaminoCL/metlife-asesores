@@ -12,8 +12,9 @@
   &.is-open {
     height: auto;
     opacity: 1;
-    padding: 0 0 1rem 0;
+    padding: 0;
     visibility: visible;
+    margin-top: 30px;
     i {
       &.plus-ico {
         visibility: hidden;
@@ -45,6 +46,17 @@
       &.minus-ico {
         display: initial;
       }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 62em) {
+  
+  .toggleContent {
+    &.is-open {
+      margin-top: 0;
     }
   }
 }
