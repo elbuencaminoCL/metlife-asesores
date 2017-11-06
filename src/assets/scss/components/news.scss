@@ -1,0 +1,13 @@
+
+@import './../global/colors.scss';
+
+.tag-news {
+  background-color: $primary-accent;
+  border-radius: 3px;
+  color: white;
+  padding: 1px 3px;
+  &:hover {
+    background-color: $primary-hover;
+    color: white;
+  }
+}
