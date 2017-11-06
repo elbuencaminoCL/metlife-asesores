@@ -1,0 +1,150 @@
+
+	@import './../global/colors.scss';
+
+	.login {
+		padding-bottom: 3rem;
+		background-color: $white-light;
+	}
+
+  .login__button {
+    margin-bottom: 0;
+  }
+
+	.login__container {
+		min-height: 500px;
+	}
+
+	.login__content {
+		background-color: white;
+		margin: 0 auto;
+		max-width: 400px;
+		padding: 5rem 1.6rem 0.5rem 1.6rem;
+	}
+
+  .login__desc {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 130%;
+  }
+
+	.login__form {
+		.u-field {
+			margin-top: 36px;
+		}
+		.u-space {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.login__form-pass {
+		margin-bottom: 5px;
+	}
+
+  .login__image {
+    min-height: 600px;
+    height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .login__image-2-complement {
+    border-right: 50px solid $secondary;
+    position: relative;
+  }
+
+	.login__list-item {
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+  .login__row {
+    background-color: #FFF;
+  }
+
+	.login__support {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.login__title {
+		margin-top: 3rem;
+		margin-bottom: 40px;
+	}
+	
+	
+
+	.recover_form p {
+		margin-top: 0.2rem;
+	}
+
+  .select_clave_nueva {
+    margin-top: 10px !important;
+    margin-bottom: 0;
+  }
+
+
+
+	@media screen and ( min-width: 62em ) {
+
+		.login_col {
+			&:first-of-type {
+				padding-right: 0;
+				position: relative;
+				&:after {
+					background-color: rgba( 0, 97, 160, .7 );
+					bottom: 0;
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 100px;
+				}
+			}
+			&:nth-of-type(2) {
+				border-right: 100px solid $secondary;
+				padding: 0 3rem;
+			}
+		}
+
+    .login__image-complement {
+      position: relative;
+      &:before {
+        background-color: $primary-accent;
+        bottom: 0;
+        content: "";
+        opacity: 0.7;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+      }
+    }
+
+		.login_image {
+			min-height: 600px;
+			img {
+				height: 100%;
+				max-height: none;
+			}
+		}
+
+		.change-pass_image {
+			img {
+				height: 100%;
+			}
+		}
+
+		.recover-pass_image {
+			img {
+				height: 100%;
+			}
+		}
+
+	}

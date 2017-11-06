@@ -1,0 +1,137 @@
+
+@import 'colors.scss';
+
+body {
+  font-family: "Arial", sans-serif;
+  color: $dark-gray-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", sans-serif;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 8px;
+  &.line_jump {
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+  &.mg-lh-0 {
+    line-height: initial;
+    margin-bottom: 0;
+  }
+}
+
+.F {
+  text-transform: uppercase;
+}
+
+.f-bigger {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.f-big {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.f-normal {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.f-small {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.f-tiny {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.f-link, .f-link-ico {
+  color: $primary-accent;
+  line-height: 1.5;
+  &:hover {
+    border-bottom: 1px solid $primary-hover;
+    color: $primary-hover;
+  }
+}
+
+.f-link-ico {
+  &:hover {
+    border-bottom: 0;
+  }
+}
+
+.f-link-white {
+  color: white;
+  &:hover {
+    border-bottom: 1px solid white;
+    color: white;
+  }
+}
+
+.f-legal {
+  color: $dark-gray-3;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.f-error {
+  color: $error;
+  font-weight: 100;
+  padding: 5px 10px;
+}
+
+.f-activa {
+  color: $success;
+}
+
+
+
+@media screen and ( min-width: 48em ) {
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+}

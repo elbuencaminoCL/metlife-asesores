@@ -1,0 +1,77 @@
+
+{{> nav-single}}
+
+<section class="login">
+	<div class="container login__container">
+		<div class="row row-xs-1 row-lg-2 login__row dual">
+			<div class="col-xs-12 col-lg-8 col-xs-full">
+        <div class="row row-xs-1 row-sm-2 row-lg-2">
+  				<div class="col-xs-12 col-sm-6 col-lg-7 col-xs-full">
+  					<figure class="login__image">
+  						<img src="{{root}}assets/images/login/login_intermediarios_1.jpg" class="objFit" alt="Imagen login" />
+  					</figure>
+  				</div>
+
+  				<div class="col-xs-12 col-sm-6 col-lg-5 hide-xs show-sm col-xs-full">
+  					<figure class="login__image login__image-complement">
+  						<img src="{{root}}assets/images/login/login_intermediarios_2.jpg" class="objFit" alt="Imagen login" />
+  					</figure>
+  				</div>
+        </div>
+			</div>
+
+			<div class="col-xs-12 col-lg-4 col-xs-full dual__content">
+				<div class="login__content section">
+					<div class="alert callout show-for-small-only" data-closable>
+					  <p>Este sitio no está enteramente optimizado para ser visto desde dispositivos móviles.</p>
+					  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<h3 class="login__title space-bottom center-xs"><strong>Acceso para Intermediarios Rentas Vitalicias</strong></h3>
+
+					<form class="login__form" id="loginForm" action="/productos/products.html" data-abide novalidate data-live-validate="true">
+						<section class="u-select space-bottom">
+							<select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+								<option value="login.html" data-link="login.html">Personas</option>
+								<option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+								<option value="login-intermediarios.html" data-link="login-intermediarios.html" selected>Intermediarios Rentas Vitalicias</option>
+								<option value="login-asesores.html" data-link="login-asesores.html">Asesores</option>
+							</select>
+						</section>
+
+						<section class="u-field space-bottom">
+							<span class="input input--ichiro">
+								<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
+								<label class="input__label input__label--ichiro" for="loginRut">
+									<span class="input__label-content input__label-content--ichiro">Ingrese su Rut</span>
+								</label>
+								<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+							</span>
+						</section>
+
+						<section class="u-field space-bottom login__form-pass">
+							<span class="input input--ichiro">
+								<input class="input__field input__field--ichiro" data-live-validate="true" type="password" id="loginPass" required />
+								<label class="input__label input__label--ichiro" for="loginPass">
+									<span class="input__label-content input__label-content--ichiro">Ingrese su clave</span>
+								</label>
+								<p class="form-error f-tiny">La clave ingresada es incorrecta.<br/>Por favor, vuelve a ingresarla.</p>
+							</span>
+						</section>
+
+						<section class="row row-xs-1">
+							<div class="col-xs-12 col-xs-full f-small u-space">
+								<p><a href="{{root}}2-recuperacion-clave/recover-pass.html" class="f-link">¿Olvidaste tu clave?</a></p>
+							</div>
+              
+							<div class="col-xs-12 col-xs-full end-xs">
+								<input type="submit" id="loginSubmit" class="button button-full button-primary" value="Ingresar">
+							</div>
+						</section>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

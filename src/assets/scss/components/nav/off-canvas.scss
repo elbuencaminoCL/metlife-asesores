@@ -1,0 +1,52 @@
+
+@import './../../global/colors.scss';
+
+.off-canvas {
+  background-color: $black-05;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.off-canvas--close {
+  cursor: pointer;
+  display: none;
+	i {
+		color: $primary-accent;
+	}
+}
+
+.off-canvas--full {
+  transform: translateX(-100%);
+  width: 100%;
+}
+
+.off-canvas__menu-item {
+  background-color: #e3e3e3;
+  position: relative;
+  a {
+    color: $dark-gray;
+    display: block;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 14px 10px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  i {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+}
+
+.off-canvas--open[aria-expanded="true"] {
+	.off-canvas--open-button {
+		display: none;
+	}
+	.off-canvas--close {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,17 @@
+
+.footer {
+	background-color: $black-05;
+	padding: 0 30px;
+}
+
+.footer__col {
+	&:nth-of-type(2) {
+		margin-bottom: 2rem;
+	}
+}
+
+.footer__container {
+  border-top: 1px solid $medium-gray;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}

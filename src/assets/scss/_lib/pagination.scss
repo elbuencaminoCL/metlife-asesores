@@ -1,0 +1,54 @@
+
+.pagination__numbers-item, .pagination__numbers-dots {
+  background-color: white;
+  border: 1px solid $gray;
+  font-size: 14px;
+  position: relative;
+  a, span {
+    display: block;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.pagination__new, .pagination_old, .pagination__numbers-item, .pagination__numbers-dots {
+  height: 25px;
+  line-height: 25px;
+  margin: 0 5px;
+  text-align: center;
+  width: 25px;
+}
+
+.pagination {
+  button {
+    border: 1px solid $gray;
+    height: 100%;
+  }
+}
+
+.pagination__numbers {
+  padding: 0 20px;
+}
+
+.pagination__numbers-dots {
+  background-color: transparent;
+  border: none;
+  width: auto;
+}
+
+.pagination__numbers-item {
+  &.is-active {
+    background-color: $primary-accent;
+    border-color: $primary-accent;
+    > a {
+      color: $white;
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,163 @@
+
+@import './../global/colors.scss';
+
+.card {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 0;
+  border-left: 10px solid;
+  margin-bottom: 20px;
+
+  &.card--blue{
+    border-color: $primary;
+    .card__icon {
+      color: $primary;
+    }
+  }
+
+  &.card--gray {
+    border-color: $medium-gray;
+    .card__icon {
+      color: $medium-gray;
+    }
+  }
+
+  &.card--green {
+    border-color: $accident;
+    .card__icon {
+      color: $accident;
+    }
+  }
+
+  &.card--pink {
+    border-color: $pink;
+    .card__icon {
+      color: $pink;
+    }
+  }
+
+  &.card--yellow {
+    border-color: $information;
+    .card__icon {
+      color: $information;
+    }
+  }
+
+}
+
+.card-banner {
+  height: 100%;
+  padding: 20px;
+}
+
+.card-banner__bells {
+  position: relative;
+  .button-bell {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.card-info-general {
+  height: 100%;
+  padding: 40px 30px 30px;
+}
+
+.card-tools {
+  position: relative;
+  .card-tools__button {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 62em) {
+
+  .indicators-row {
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    position: relative;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%;
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 15px;
+          width: 8px;
+        }
+      }
+
+      &.success {
+        &::after {
+          background-color: $success;
+        }
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;
+        }
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 75em) {
+
+  .indicators-row {
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    position: relative;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%;
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 30px;
+          width: 8px;
+        }
+      }
+
+      &.success {
+        &::after {
+          background-color: $success;
+        }
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;
+        }
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;
+        }
+      }
+    }
+  }
+}
