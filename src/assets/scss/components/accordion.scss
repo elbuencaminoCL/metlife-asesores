@@ -1,102 +1,52 @@
 
-	.accordion {
-		background-color: transparent;
-		table tbody th,
-		table tbody td {
-			padding: 4px 0.625rem;
-		}
+.accordion {
+	background-color: transparent;
+	table tbody td,
+	table tbody th {
+		padding: 4px 0.625rem;
 	}
+}
 
-	.accordion-content {
-		border: 0;
-		padding: 15px 0;
-		.tabs-subtitle {
-			border-bottom: 0;
-			padding-bottom: 0;
-		}
+.accordion-content {
+	border: 0;
+	padding: 15px 0;
+	.tabs-subtitle {
+		border-bottom: 0;
+		padding-bottom: 0;
 	}
+}
 
-	.accordion-item {
-		background-color: white;
-		border: 1px solid $dark-gray;
-		border-radius: 3px;
-		margin-bottom: 1rem;
-		&.is-active {
-			.accordion-title {
-				background-color: white;
-				border-bottom: 2px solid $primary;
-				color: $black;
-				&:before {
-					content: "\f077";
-				}
-			}
-		}
-	}
-
-	.accordion-title {
-		border: 0;
-		padding: 14px 40px 14px 0;
-		text-align: left;
-		h5 {
-			display: inline-block;
-		}
-		&:before {
-			color: $primary;
-			content: "\f078";
-			font: normal normal normal 14px/1 FontAwesome;
-		}
-		&:hover {
-			background-color: white;
-		}
-	}
-
-
-	.tabs_wrap-pink {
-
-		.accordion-item {
-			&.is-active {
-				.accordion-title {
-					border-bottom: 2px solid $pink;
-				}
-			}
-		}
+.accordion-item {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid $dark-gray;
+  margin-bottom: 1rem;
+	&.is-active {
 		.accordion-title {
+      background-color: white;
+      border-bottom: 2px solid $primary;
+      color: $black;
 			&:before {
-				color: $pink;
+				content: "\f077";
 			}
 		}
 	}
+}
 
-  .accordion.faq {
-    .accordion-item {
-      border-radius: 0;
-      border: none;
-      border-bottom: 0;
-      margin-bottom: 0;
-      &:last-child {
-        border-bottom: 1px solid $light-gray;
-        &:not(.is-active) > .accordion-title {
-          border-bottom: none;
-        }
-        .accordion-content {
-          border-bottom: none;
-        }
-      }
-      .accordion-title {
-      	border-bottom: 2px solid $light-gray;
-      	&:hover,
-      	&:focus {
-					background-color: transparent;
-      	}
-      }
-      .accordion-title {
-				font-size: 16px;
-				line-height: 1.5;
-      }
-      &.is-active {
-	      .accordion-title {
-					border-bottom: 2px solid $primary;
-	      }
-      }
-    }
-  }
+.accordion-title {
+  border: 0;
+  padding: 14px 40px 14px 0;
+  text-align: left;
+	h5 {
+		display: inline-block;
+	}
+	&:before {
+		color: $primary;
+		content: "\f078";
+		font: normal normal normal 14px/1 FontAwesome;
+	}
+	&:hover {
+		background-color: white;
+	}
+}
+

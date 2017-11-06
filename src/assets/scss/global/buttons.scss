@@ -1,139 +1,100 @@
 
-	@import './color.scss';
+@import './colors.scss';
 
-	.button {
-		border: 0;
-		border-radius: 3px;
-		box-shadow: none;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 0;
-		outline: none;
-		padding: 13px 20px;
-		text-transform: uppercase;
-		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
-	}
+.button {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  transition: all .2s cubic-bezier( .4, 0, .2, 1 );
+  &.disabled {
+    opacity: 0.6;
+  }
+}
 
-	.button-primary {
-		background-color: $primary;
-		color: $white;
+.button--full {
+  width: 100%;
+}
+
+.button--full-xs {
+  width: 100%;
+}
+
+.button--link {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  color: $primary-accent;
+  line-height: 1.2;
+  padding: 0;
+  &:hover {
+    background-color: transparent;
+    color: $primary-hover;
+  }
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.button--primary {
+	background-color: $primary;
+	color: $white;
+	&:hover {
+		background-color: $primary-hover;
+    color: white;
+  }
+	&.disabled {
+    background-color: $primary;
 		&:hover {
-			background-color: $primary-accent;
-			text-decoration: underline;
-		}
-		&.button-disabled {
-			&:hover {
-				background-color: $primary;
-			}
+			background-color: $primary;
 		}
 	}
+}
 
-	.button-green {
-		background-color: $secondary;
-		color: $dark-gray-2;
-		&:hover {
-			background-color: $secondary-accent;
-			text-decoration: underline;
-		}
-		&.button-disabled {
-			&:hover {
-				background-color: $secondary;
-			}
-		}
-	}
-
-	.button-pink {
-		background-color: $pink-accent;
-		color: $white;
-		&:hover {
-			background-color: $pink;
-			text-decoration: underline;
-		}
-	}
-
-	.button-dark {
-		background-color: $secondary;
-		color: $dark-gray-2;
-		&:hover {
-			background-color: $green;
-			text-decoration: underline;
-		}
-	}
-
-	.button-secondary {
-		background-color: white;
-		border: 2px solid $link-rest;
-		color: $link-rest;
-		&:hover {
-			background-color: $link-rest;
-			color: white;
-		}
-	}
-
-	.button-secondary-bg {
-		background-color: $link-hover;
-		border: 2px solid $white;
-		color: $white;
-		&:hover {
-			background-color: $white;
-			color: $link-hover;
-			text-decoration: underline;
-		}
-	}
-
-	.button-transparent {
-		background-color: white;
-		border: 1px solid $white-light;
-		&:hover {
-			background-color: $white-light-2;
-			color: $primary;
-		}
-	}
+.button--secondary {
+  background-color: $secondary;
+  color: $dark-gray-2;
+  &:hover {
+    background-color: $secondary-hover;
+    color: $dark-gray-2;
+  }
+}
 
 
-	.button-link {
-		background-color: transparent;
-		border-bottom: 1px solid transparent;
-		color: $link-rest;
-		line-height: 1.2;
-		padding: 0;
-		&:hover {
-			background-color: transparent;
-			color: $link-hover;
-		}
-		&:focus,
-		&:active {
-			background-color: transparent;
-		}
-	}
 
-	.button-disabled {
-		opacity: .4 !important;
-		&:hover {
-			cursor: default;
-			text-decoration: none;
-		}
-	}
 
-	// Sizes
+//button size
 
-  .button-full {
-		display: block;
-		width: 100%;
-	}
+.button--tiny {
+  font-size: 10px;
+}
 
-  .button-full-xs {
-		display: block;
-		width: 100%;
-    @media screen and (min-width: 48em) {
-      display: inline-block;
-      width: auto;
-    }
-	}
+.button--small {
+  font-size: 12px;
+}
 
-	.button-small {
-		font-size: 12px;
-	}
+.button--large{
+  font-size: 16px;
+}
+
+.button--xlarge {
+  font-size: 18px;
+}
+
+
+
+@media screen and (min-width: 48em)  {
+  
+  .button--full-xs {
+    width: auto; 
+  }
+
+}

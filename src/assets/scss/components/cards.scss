@@ -1,186 +1,165 @@
 
-  @import './../global/color.scss';
+@import './../global/colors.scss';
 
-	.card {
-		border-top-left-radius: 4px;
-		border-bottom-left-radius: 4px;
-		border: 0;
-		border-left: 10px solid;
-	}
+.card {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 0;
+  border-left: 10px solid;
+  margin-bottom: 20px;
 
-	.card_container {
-		padding: 1rem 1rem 0.3rem 1rem;
-		background-color: white;
-    &--even-padding {
-      padding: 1rem;
+  &.card--blue{
+    border-color: $primary;
+    .card__icon {
+      color: $primary;
     }
-	}
+  }
 
-	.card_container--blue {
-		background-color: $primary-accent;
-	}
+  &.card--gray {
+    border-color: $medium-gray;
+    .card__icon {
+      color: $medium-gray;
+    }
+  }
 
-	.card_row_1 {
-		padding-bottom: 10px;
-	}
+  &.card--green {
+    border-color: $accident;
+    .card__icon {
+      color: $accident;
+    }
+  }
 
-	.card_row_2 {
-		padding-top: 10px;
-	}
+  &.card--pink {
+    border-color: $pink;
+    .card__icon {
+      color: $pink;
+    }
+  }
 
-	.card-blue {
-		border-color: $primary;
-		.card_icon {
-			color: $primary;
-		}
-	}
+  &.card--yellow {
+    border-color: $information;
+    .card__icon {
+      color: $information;
+    }
+  }
 
-  .card_white {
-    border-radius: 3px;
+}
+
+.card-banner {    
+  height: 100%;
+  padding: 20px;
+}
+
+.card-banner__bells {
+  position: relative;
+  .button-bell {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.card-info-general {
+  height: 100%;
+  padding: 40px 30px 30px;
+}
+
+.card-tools {
+  position: relative;
+  .card-tools__button {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-top: 30px; 
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 62em) {
+
+  .indicators-row { 
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
     position: relative;
-    .card_container {
-      width: 100%;
-      height: 100%;
-      padding: 40px 30px 30px;
-
-      .indicators_row { 
-        position: relative;
-        border-bottom: 1px solid $gray;
-        padding-top: 10px;
-        .bullet_col {
-          padding-right: 10px;
-          &.success, &.error, &.information {
-            &::after {
-              content: '';
-              position: absolute;
-              right: -10px;
-              bottom: 12px;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%; 
-            }
-          }
-          &.success {
-            &::after {
-              background-color: $success;                
-            }           
-          }
-          &.error {
-            &::after {
-              background-color: $error;                
-            }           
-          }
-          &.information {
-            &::after {
-              background-color: $information;                
-            }           
-          }         
-        }        
-      }
-    }
-    .card_container_uf {
-      width: 100%;
-      height: 100%;
-      padding: 15px 15px 7px;      
-    }
-  }
-
-	.card_item {
-		line-height: 1.2;
-		&:nth-of-type( even ) {
-			margin-bottom: 8px;
-		}
-		&:nth-of-type( odd ) {
-			margin-bottom: 0;
-		}
-	}
-
-	.card_sub-title {
-		margin-bottom: 10px;
-	}
-
-	.card_title {
-		margin-bottom: 10px;
-	}
-
-	.card_icon {
-		font-size: 50px;
-	}
-
-	.card_more {
-		margin: 10px 0;
-		i {
-			font-size: 24px;
-			position: relative;
-			top: 3px;
-		}
-	}
-
-	.card_list-item-link {
-		padding-left: 3rem;
-	}
-
-	.card_irow {
-		min-height: 62px;
-	}
-
-  .card_irow .fa-angle-right {
-    margin-top: 15px;
-  }
-
-  .card_blue {
-    background-color: $primary-accent;
-    color: white;
-    &.title_metclub {
-      padding: 20px 30px 0 45px;
-    }
-    .card_container_uf {
-      padding: 15px 15px 7px;
-    }
-  }
-
-  .card_banner {
-    background-color: rgba(255, 255 , 255, 0.85);
-    padding: 25px;
-    height: 100%
-  }
-
-  .banner_tab_row {
-    border: 2px solid $primary-accent;
-    border-radius: 3px;
-  }
-  
-
-
-	@media screen and ( min-width: 62em )  {
-
-    .card_white {
-      border-radius: 3px;
-      position: relative;
-      .card_container {
-        width: 100%;
-        height: 100%;
-        padding: 40px 30px 30px;
-        .button_container {
-          position: unset;
-          margin-top: 75px;
-          div {
-            position: absolute;
-            bottom: 30px;
-            margin: 0 auto; 
-            left: 0;
-            right: 0;          
-          }
-        }
-        .title_space {
-          min-height: 52px;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%; 
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 15px;
+          width: 8px;
         }
       }
-      .card_container_uf {
-        width: 100%;
-        height: 100%;
-        padding: 15px 15px 7px;      
-      }
-    }
 
-	}
+      &.success {
+        &::after {
+          background-color: $success;                
+        }           
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;                
+        }           
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;                
+        }           
+      }         
+    }        
+  }
+}
+
+@media screen and (min-width: 75em) {
+
+  .indicators-row { 
+    border-bottom: 1px solid $gray;
+    padding-top: 10px;
+    position: relative;
+    .bullet-col {
+      padding-right: 10px;
+      &.success, &.error, &.information {
+        &::after {
+          border-radius: 50%; 
+          top: 18px;
+          content: '';
+          height: 8px;
+          position: absolute;
+          right: 30px;
+          width: 8px;
+        }
+      }
+
+      &.success {
+        &::after {
+          background-color: $success;                
+        }           
+      }
+
+      &.error {
+        &::after {
+          background-color: $error;                
+        }           
+      }
+
+      &.information {
+        &::after {
+          background-color: $information;                
+        }           
+      }         
+    }        
+  }
+}
+
+

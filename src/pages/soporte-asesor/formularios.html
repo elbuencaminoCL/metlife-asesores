@@ -1,0 +1,99 @@
+---
+form-table:
+  -
+    category: Categoria
+    name-form: Cuestionario para participar de carreras de motocicleta
+    desc: Etiam port seem menisuda magna molleso eusimdo
+    download: Descargar
+    send-email: Enviar por Correo
+  -
+    category: Categoria
+    name-form: Cuestionario para participar de carreras de motocicleta
+    desc: Etiam port seem menisuda magna molleso eusimdo
+    download: Descargar
+    send-email: Enviar por Correo
+  -
+    category: Categoria
+    name-form: Cuestionario para participar de carreras de motocicleta
+    desc: Etiam port seem menisuda magna molleso eusimdo
+    download: Descargar
+    send-email: Enviar por Correo
+  -
+    category: Categoria
+    name-form: Cuestionario para participar de carreras de motocicleta
+    desc: Etiam port seem menisuda magna molleso eusimdo
+    download: Descargar
+    send-email: Enviar por Correo
+---
+
+
+
+{{> header }}
+
+<div class="container">
+  {{> breadcrumb-support-advisor-form }}
+  <h1 class="center-xs space-bottom">Formularios</h1>
+</div>
+
+<div class="bg-white space-bottom pd-30">
+  <div class="container">
+    <a href="#" class="f-big">Búsqueda de Formularios</a>
+  </div>
+  <div class="space-bottom support-form-row">
+    <section class="space-bottom">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
+        <label class="input__label input__label--ichiro" for="loginRut">
+          <span class="input__label-content input__label-content--ichiro">Búsqueda por Nombre</span>
+        </label>
+        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+      </span>
+    </section>
+
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">Personas</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+        <option value="login-intermediarios.html" data-link="login-intermediarios.html">Intermediarios Rentas Vitalicias</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Categoria</option>
+      </select>
+    </section>
+
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">Personas</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+        <option value="login-intermediarios.html" data-link="login-intermediarios.html">Intermediarios Rentas Vitalicias</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Fecha</option>
+      </select>
+    </section>
+          
+    <div class="col-xs-12 col-md-4 end-md">
+      <a href="#" class="button button--primary disabled">Buscar</a>
+    </div>
+  </div>
+</div>
+
+<div class="container space-bottom">
+  <h4>341 resultados encontrados</h4>
+</div>
+
+<div class="bg-white">
+  <!-- Tabla de formularios -->
+    {{> support-advisor-forms-table }}
+  <!-- Tabla de formularios -->  
+
+  <section class="pagination mg-bottom-60">
+    {{> pagination }}
+  </section>  
+</div>
+
+
+
+<!-- Modal enviar formulario -->
+  {{> support-advisor-forms-modal }}
+<!-- /Modal enviar formulario -->
+
+
+
+

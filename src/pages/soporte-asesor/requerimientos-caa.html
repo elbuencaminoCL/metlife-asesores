@@ -1,0 +1,20 @@
+
+{{> header }}
+
+<div class="container">
+  {{> breadcrumb-support-advisor-request }}
+  <div class="request center-xs">
+    <h1 class="space-bottom">Requerimiento CAA</h1>
+    <section class="u-select space-bottom bg-white">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="#" data-link="#">1</option>
+        <option value="#" data-link="#">2</option>
+        <option value="#" data-link="#" selected>Seleccione un motivo de contacto</option>
+      </select>
+    </section>
+    <textarea class="request__text-area bg-white" placeholder="Escribe tu comentario..."></textarea>
+    <div class="end-xs">
+      <a href="#" class="button button--primary button--full-xs">Enviar</a>
+    </div>
+  </div>
+</div>

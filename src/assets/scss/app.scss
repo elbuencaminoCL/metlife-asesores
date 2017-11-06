@@ -54,22 +54,13 @@
 
 @import 'global/reset';
 @import 'global/fonts';
-@import 'global/color';
+@import 'global/colors';
 @import 'global/grid';
 @import 'global/buttons';
-@import 'global/input-text';
-@import 'global/select';
 @import 'global/shadow';
-@import 'global/lists';
-@import 'global/table';
-@import 'global/pagination';
-@import 'global/loading';
-@import 'global/state';
 @import 'global/utilities';
 
 @import 'components/nav/nav';
-@import 'components/nav/nav-sub';
-@import 'components/nav/nav-single';
 @import 'components/nav/off-canvas';
 @import 'components/footer';
 @import 'components/cards';
@@ -77,17 +68,26 @@
 @import 'components/breadcrumb';
 @import 'components/alerts';
 @import 'components/accordion';
-@import 'components/chart';
 @import 'components/animate-login';
 @import 'components/datepicker';
 @import 'components/tabs-accordion';
 @import 'components/legal';
-<<<<<<< HEAD
 @import 'components/img';
 @import 'components/banner';
-=======
 @import 'components/header';
->>>>>>> 0cf694f2561d1513faf999d57d2057038aa3ad0a
+@import 'components/metclub';
+@import 'components/banner';
+@import 'components/dropdown';
+@import 'components/indicators';
+@import 'components/news';
+@import 'components/forms';
+@import 'components/portfolio';
+@import 'components/reveal';
+
+@import '_lib/input-text';
+@import '_lib/select';
+@import '_lib/table';
+@import '_lib/pagination';
 
 @import 'pages/login';
-@import 'pages/forms';
+@import 'pages/tools';
