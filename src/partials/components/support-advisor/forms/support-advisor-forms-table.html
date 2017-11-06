@@ -1,0 +1,22 @@
+
+<div class="form-result-container container space-bottom pd-15-0">
+  
+  {{#each form-table}}   
+    <div class="form-result-row row row-xs-1 row-md-3 middle-xs u-divider">
+      <div class="col-xs-12 col-md-8">
+        <p class="mg-bottom-0"><em>{{category}}</em></p>
+        <a href="#"><strong>Cuestionario para participar de carreras de motocicleta</strong></a>
+        <p>{{desc}}</p>
+      </div>
+      
+      <div class="col-xs-12 col-md-2 end-xs">
+        <a href="#"><img src="./../../assets/images/icons/e-mail.png" class="form-download-ico" />{{download}}</a>
+      </div>
+      
+      <div class="col-xs-12 col-md-2 end-xs">
+        <a href="#"><img src="./../../assets/images/icons/shape.png" class="form-email-ico"/>{{send-email}}</a>
+        
+      </div>
+    </div>
+  {{/each}}
+</div>

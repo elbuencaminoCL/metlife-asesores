@@ -58,7 +58,6 @@
 @import 'global/grid';
 @import 'global/buttons';
 @import 'global/shadow';
-@import 'global/pagination';
 @import 'global/utilities';
 
 @import 'components/nav/nav';
@@ -82,6 +81,7 @@
 @import '_lib/input-text';
 @import '_lib/select';
 @import '_lib/table';
+@import '_lib/pagination';
 
 @import 'pages/login';
 @import 'pages/tools';

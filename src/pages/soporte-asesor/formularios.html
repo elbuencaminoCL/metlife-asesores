@@ -1,25 +1,29 @@
 ---
 form-table:
   -
+    category: Categoria
     name-form: Cuestionario para participar de carreras de motocicleta
-    category: Formulario de Evaluación
+    desc: Etiam port seem menisuda magna molleso eusimdo
     download: Descargar
-    send-email: Enviar
+    send-email: Enviar por Correo
   -
+    category: Categoria
     name-form: Cuestionario para participar de carreras de motocicleta
-    category: Formulario de Evaluación
+    desc: Etiam port seem menisuda magna molleso eusimdo
     download: Descargar
-    send-email: Enviar
+    send-email: Enviar por Correo
   -
+    category: Categoria
     name-form: Cuestionario para participar de carreras de motocicleta
-    category: Formulario de Evaluación
+    desc: Etiam port seem menisuda magna molleso eusimdo
     download: Descargar
-    send-email: Enviar
+    send-email: Enviar por Correo
   -
+    category: Categoria
     name-form: Cuestionario para participar de carreras de motocicleta
-    category: Formulario de Evaluación
+    desc: Etiam port seem menisuda magna molleso eusimdo
     download: Descargar
-    send-email: Enviar
+    send-email: Enviar por Correo
 ---
 
 
@@ -31,129 +35,65 @@ form-table:
   <h1 class="center-xs space-bottom">Formularios</h1>
 </div>
 
-<div class="bg-white space-bottom">
+<div class="bg-white space-bottom pd-30">
+  <div class="container">
+    <a href="#" class="f-big">Búsqueda de Formularios</a>
+  </div>
   <div class="space-bottom support-form-row">
-    <h4 class="space-bottom">Búsqueda</h4>
+    <section class="space-bottom">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
+        <label class="input__label input__label--ichiro" for="loginRut">
+          <span class="input__label-content input__label-content--ichiro">Búsqueda por Nombre</span>
+        </label>
+        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+      </span>
+    </section>
 
-    <div class="row row-xs-1 row-md-2">
-      <div class="col-xs-12 col-md-8">
-        <input type="text" name="" placeholder="Escribe un Nombre">
-      </div>
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">Personas</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+        <option value="login-intermediarios.html" data-link="login-intermediarios.html">Intermediarios Rentas Vitalicias</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Categoria</option>
+      </select>
+    </section>
 
-      <div class="col-xs-12 col-md-4">
-        <a href="#" class="button button--primary button--full">Buscar</a>
-      </div>
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">Personas</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+        <option value="login-intermediarios.html" data-link="login-intermediarios.html">Intermediarios Rentas Vitalicias</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Fecha</option>
+      </select>
+    </section>
+          
+    <div class="col-xs-12 col-md-4 end-md">
+      <a href="#" class="button button--primary disabled">Buscar</a>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row row-xs-1 row-md-3 space-bottom">
-    <div class="col-xs-12 col-md-8">
-      <h5>Se encontraron 234 formularios</h5>
-    </div>
+<div class="container space-bottom">
+  <h4>341 resultados encontrados</h4>
+</div>
 
-    <div class="col-xs-12 col-md-2">
-      <section class="u-select space-bottom">
-        <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-          <option value="#" data-link="#">Nombre</option>
-          <option value="#" data-link="#">Categoria</option>
-        </select>
-      </section>
-    </div>
-
-    <div class="col-xs-12 col-md-2">
-      <section class="u-select space-bottom">
-        <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-          <option value="#" data-link="#">Nombre</option>
-          <option value="#" data-link="#">Categoria</option>
-        </select>
-      </section>
-    </div>
-  </div>
-
-
+<div class="bg-white">
   <!-- Tabla de formularios -->
-  <div class="form-table-container space-bottom z-depth-1">
-    <div class="row row-xs-1 row-md-4 pd-10 bg-primary-light f-white">
-      <div class="col-xs-12 col-md-5">
-        <p>Nombre del Formulario</p>
-      </div>
-      
-      <div class="col-xs-12 col-md-3">
-        <p>Categoria</p>
-      </div>
-      
-      <div class="col-xs-12 col-md-2">
-        <p>Descargar</p>
-      </div>
+    {{> support-advisor-forms-table }}
+  <!-- Tabla de formularios -->  
 
-      <div class="col-xs-12 col-md-2">
-        <p>Enviar por Email</p>
-      </div>
-    </div>
-
-    {{#each form-table}}   
-      <div class="row row-xs-1 row-md-4 form-table-row pd-10 middle-xs">
-        <div class="col-xs-12 col-md-5">
-          <p>{{name-form}}</p>
-        </div>
-        
-        <div class="col-xs-12 col-md-3">
-          <p>{{category}}</p>
-        </div>
-        
-        <div class="col-xs-12 col-md-2">
-          <p><a href="#" class="f-link">{{download}}</a></p>
-        </div>
-
-        <div class="col-xs-12 col-md-2">
-          <a href="#" class="button button--primary button--full" data-open="supportAdvisorFormSend">{{send-email}}</a>
-        </div>
-      </div>
-    {{/each}}
-  </div>
-  <!-- Tabla de formularios -->
-      
-  <section class="pagination mg-bottom-90">
+  <section class="pagination mg-bottom-60">
     {{> pagination }}
-  </section>
+  </section>  
 </div>
 
 
 
 <!-- Modal enviar formulario -->
+  {{> support-advisor-forms-modal }}
+<!-- /Modal enviar formulario -->
 
-<div class="reveal" id="supportAdvisorFormSend" data-reveal>
-  <div class="space-top">
-    <h4 class="space-bottom center-xs">Enviar Formulario por Email</h4>
-    
-    <div class="row row-xs-2">
-      <div class="col-xs-5">
-        <label><strong>Para:</strong></label>
-        <input type="text" name="" placeholder="juancarlos.silva@gmail.com">
-      </div>
 
-      <div class="col-xs-7">
-        <label><strong>Asunto</strong></label>
-        <input type="text" name="" placeholder="Escribe un asunto">
-      </div>
-    </div>
-
-    <div class="row row-xs-2 middle-xs">
-      <div class="col-xs-8 end-xs">
-        <a data-close aria-label="Close modal" class="col-xs-12 col-sm-3">Cancelar</a>
-      </div>
-
-      <div class="col-xs-4">
-        <button class="button button--primary button--full clientProfileUpdateData" data-close aria-label="Close modal" type="button">Enviar</button>
-      </div>
-    </div>
-    
-    <button class="close-button" data-close aria-label="Cerrar modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
 
 

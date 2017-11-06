@@ -1,6 +1,15 @@
 
 @import './../global/colors.scss';
 
+.form-download-ico {
+  margin: 3px 10px 0 0;
+}
+
+.form-email-ico {
+  max-width: 12px;
+  margin-right: 10px;
+}
+
 .support_form_container_search {
   background-color: white;
 }
@@ -8,15 +17,12 @@
 .support-form-row {
   max-width: 600px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 
-.form-table-container {
-  .form-table-row:nth-child(even) {
-    background-color: $white-light;
-  }
-  .form-table-row:nth-child(odd) {
-    background-color: white;
+.form-result-container {
+  .form-result-row:nth-last-child(1) {
+    margin-bottom: 30px;
   }
 }
 

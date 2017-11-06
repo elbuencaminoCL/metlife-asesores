@@ -65,43 +65,18 @@
   padding: 40px 30px 30px;
 }
 
-.indicators-row { 
-  border-bottom: 1px solid $gray;
-  padding-top: 10px;
+.card-tools {
   position: relative;
-  .bullet-col {
-    padding-right: 10px;
-    &.success, &.error, &.information {
-      &::after {
-        border-radius: 50%; 
-        top: 18px;
-        content: '';
-        height: 8px;
-        position: absolute;
-        right: 0;
-        width: 8px;
-      }
-    }
-
-    &.success {
-      &::after {
-        background-color: $success;                
-      }           
-    }
-
-    &.error {
-      &::after {
-        background-color: $error;                
-      }           
-    }
-
-    &.information {
-      &::after {
-        background-color: $information;                
-      }           
-    }         
-  }        
+  .card-tools__button {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-top: 30px; 
+  }
 }
+
+
 
 
 
