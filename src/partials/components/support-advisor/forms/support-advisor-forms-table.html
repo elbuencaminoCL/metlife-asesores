@@ -1,21 +1,51 @@
 
-<div class="form-result-container container space-bottom pd-15-0">
+<div class="form-result-container container space-bottom pd-15">
   
   {{#each form-table}}   
-    <div class="form-result-row row row-xs-1 row-md-3 middle-xs u-divider">
+   <!--  <div class="form-result-row row row-xs-1 row-md-3 middle-xs u-divider">
+     <div class="col-xs-12 col-md-8">
+       <p class="mg-bottom-0"><em>{{category}}</em></p>
+       <a href="#"><strong>Cuestionario para participar de carreras de motocicleta</strong></a>
+       <p>{{desc}}</p>
+     </div>
+     
+     <div class="col-xs-12 col-md-2 end-xs">
+       <a href="#"><img src="./../../assets/images/icons/e-mail.png" class="form-download-ico" />{{download}}</a>
+     </div>
+     
+     <div class="col-xs-12 col-md-2 end-xs">
+       <a href="#"><img src="./../../assets/images/icons/shape.png" class="form-email-ico"/>{{send-email}}</a>        
+     </div>
+   </div> -->
+
+    <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
       <div class="col-xs-12 col-md-8">
-        <p class="mg-bottom-0"><em>{{category}}</em></p>
-        <a href="#"><strong>Cuestionario para participar de carreras de motocicleta</strong></a>
+        <div>
+          <p class="mg-bottom-0"><em>{{category}}</em></p>
+            <a href="" class="f-link openContent" data-open-content="form-results">
+              <strong>         
+                <span class="openContentText is-open" data-rest-text="{{name-form}}" data-open-text="{{name-form}}">{{name-form}}</span>
+              </strong>
+            </a>
+        </div>
         <p>{{desc}}</p>
       </div>
-      
-      <div class="col-xs-12 col-md-2 end-xs">
-        <a href="#"><img src="./../../assets/images/icons/e-mail.png" class="form-download-ico" />{{download}}</a>
-      </div>
-      
-      <div class="col-xs-12 col-md-2 end-xs">
-        <a href="#"><img src="./../../assets/images/icons/shape.png" class="form-email-ico"/>{{send-email}}</a>
-        
+
+      <div class="col-xs-12 col-md-4 toggleContent toggleContent--responsive" data-toggle-content="form-results">
+        <div class="space-bottom">
+          <p class="hide-md mg-lh-0"><strong>{{category}}</strong></p>
+          <p class="hide-md mg-bottom-0">{{desc}}</p>
+        </div>
+
+        <div class="row row-xs-2 no-gutter">
+          <div class="col-xs-6 mg-bottom-xs-15 mg-bottom-xs-15">
+            <a href="#"><img src="./../../assets/images/icons/e-mail.png" class="form-download-ico" />{{download}}</a>
+          </div>
+
+          <div class="col-xs-6 mg-bottom-xs-15 mg-bottom-xs-15">            
+            <a href="#"><img src="./../../assets/images/icons/shape.png" class="form-email-ico"/>{{send-email}}</a> 
+          </div>      
+        </div>
       </div>
     </div>
   {{/each}}
