@@ -1,22 +1,35 @@
 
-.tools-simulator-img {
-  min-width: 100px;
-}
-
-.value-uf-yesterday {
-  border-right: 2px solid white; 
-}
-
 .support-advisor-image {
   width: 100%;
 }
+
+.tools-simulator-img {
+  width: 100%;
+  min-height: 160px;
+  object-fit: cover;
+}
+
+.tools-simulator-row {
+  padding: 30px 15px;
+}
+
+.value-uf-yesterday {
+  border-right: 2px solid white;
+}
+
+
 
 
 
 @media screen and (min-width: 62em) {
 
   .value-uf-yesterday {
-    border-right: 0; 
+    border-right: 0;
   }
+
+  .tools-simulator-row {
+    padding: 30px 15px 15px 60px;
+  }
+
 
 }

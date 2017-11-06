@@ -9,7 +9,8 @@ $gutter-lg: 30px;
 $section-xs: 3rem 20px;
 $section-sm: 3rem 20px;
 $section-md: 3rem 20px;
-$section-lg: 3rem 0;
+$section-lg: 3rem 20px;
+$section-xlg: 3rem 0;
 
 $section-margin-xs: 3rem;
 $section-margin-sm: 3rem;
@@ -556,6 +557,13 @@ $space-bottom-lg: 30px;
 
   .container {
     padding: 0;
+  }
+
+  .section {
+    padding: $section-xlg;
+    .container {
+      padding: 0;
+    }
   }
 
 }

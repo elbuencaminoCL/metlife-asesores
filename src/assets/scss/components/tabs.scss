@@ -1,16 +1,15 @@
-
 @import './../global/colors.scss';
 
 .tab-size {
   &.tab-size--left {
     margin-left: -1px;
-  } 
+  }
   &.tab-size--right {
     margin-right: -2px;
-  }  
+  }
   flex-basis: calc(8.333% * 5);
   max-width: calc(8.333% * 5);
-  transition: all .3s cubic-bezier(.4,0,.2,1);  
+  transition: all .3s cubic-bezier(.4,0,.2,1);
   &.is-active {
     flex-basis: calc(8.333% * 7);
     max-width: calc(8.333% * 7);
@@ -18,18 +17,18 @@
 }
 
 .tabs {
-	border-bottom: 1px solid $primary;
-	border: 0;
-	display: flex;
-	overflow-x: auto;
-	overflow-y: hidden;
-	padding: 0 10px;
-	position: relative;
-	white-space: nowrap;
-	width: 100%;
-	&:before {
-		display: none;
-	}
+  border-bottom: 1px solid $primary;
+  border: 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 10px;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  &:before {
+    display: none;
+  }
 }
 
 /* Clase foundation */
@@ -61,7 +60,7 @@
     &.tab-carousel {
       font-size: 14px;
       text-transform: none;
-      padding: 15px;
+      padding: 13px;
     }
   }
   &.is-active {
@@ -70,54 +69,53 @@
     background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     a {
-      background-color: white;        
-			color: $primary;
+      background-color: white;
+      color: $primary;
       font-weight: bold;
       border: none;
       &.is-focus {
         background-color: red;
       }
-		}
-	}
-	a:before {
-		background-color: $accident;
-	}
+    }
+  }
+  a:before {
+    background-color: $accident;
+  }
 }
 
 .tab-arrow {
-	position: relative;
-	i {
-		position: absolute;
-		top: 0;
-		right: 10px;
-	}
+  position: relative;
+  i {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 }
 
 .resp-tab-active {
-	.tab-arrow {
-		i {
-			transform: rotate(-180deg);
-		}
-	}
+  .tab-arrow {
+    i {
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 .tabs_wrap & > div {
-	min-height: 433px;
+  min-height: 433px;
 }
 
 .tabs_wrapper {
-	background-color: $white;
-	// border-top: 1px solid $medium-gray;
-	// border-left: 1px solid $medium-gray;
-	// border-right: 1px solid $medium-gray;
+  background-color: $white;
+  // border-top: 1px solid $medium-gray;
+  // border-left: 1px solid $medium-gray;
+  // border-right: 1px solid $medium-gray;
 }
 
 
 
 @media screen and ( min-width: 62em ) {
 
-	.tabs_wrap_container {
-		border: 1px solid #bbb;
-	}
-  
-}
+  .tabs_wrap_container {
+    border: 1px solid #bbb;
+  }
+
