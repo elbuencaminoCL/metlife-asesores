@@ -1,44 +1,43 @@
 ---
 form-table:
   -
-    category: Categoria
-    name-form: Cuestionario para participar de carreras de motocicleta
-    desc: Etiam port seem menisuda magna molleso eusimdo
+    category: Seguros Colectivos
+    name-form: Solicitud de reembolso de gastos médicos
+    desc: 20171019-Solicitud-dereembolso-médico-C1020317
     download: Descargar
     send-email: Enviar por Correo
   -
-    category: Categoria
-    name-form: Cuestionario para participar de carreras de motocicleta
-    desc: Etiam port seem menisuda magna molleso eusimdo
+    category: Seguros Colectivos
+    name-form: Formulario de solicitud para reembolso dental
+    desc: 
     download: Descargar
     send-email: Enviar por Correo
   -
-    category: Categoria
-    name-form: Cuestionario para participar de carreras de motocicleta
-    desc: Etiam port seem menisuda magna molleso eusimdo
+    category: Seguros Colectivos
+    name-form: Designación de beneficiarios
+    desc: C1020317
     download: Descargar
     send-email: Enviar por Correo
   -
-    category: Categoria
-    name-form: Cuestionario para participar de carreras de motocicleta
-    desc: Etiam port seem menisuda magna molleso eusimdo
+    category: Seguros Colectivos
+    name-form: Solicitud de incorporación seguro colectivo de vida y salud
+    desc: C1110717
     download: Descargar
     send-email: Enviar por Correo
 ---
-
 
 
 {{> header }}
 
 <div class="container">
   {{> breadcrumb-support-advisor-form }}
-  <h1 class="center-xs space-bottom">Formularios</h1>
+  <div class="space-bottom center-xs">
+    <h1>Formularios</h1>
+    <p>Acá podrás descargar todos los formularios necesarios para iniciar la gestión que necesites.</p>
+  </div>
 </div>
 
 <div class="bg-white space-bottom pd-30">
-  <div class="container">
-    <a href="#" class="f-big">Búsqueda de Formularios</a>
-  </div>
   <div class="space-bottom support-form-row">
     <section class="space-bottom">
       <span class="input input--ichiro">
@@ -54,15 +53,16 @@ form-table:
       <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
         <option value="login.html" data-link="login.html">cat1</option>
         <option value="login-empresas.html" data-link="login-empresas.html">cat2</option>
-        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Categoria</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Selección de Categoria</option>
       </select>
     </section>
 
-    <section class="space-bottom bg-white">
-      <span class="input input--ichiro input--datepicker DatePickerStart">
-        <input class="input__field input__field--ichiro bg-white" placeholder="Desde" type="text" readonly="">
-        <i class="material-icons">date_range</i>
-      </span>
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">2016</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">2017</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Año de Publicación</option>
+      </select>
     </section>
           
     <div class="col-xs-12 col-md-4 end-md">
