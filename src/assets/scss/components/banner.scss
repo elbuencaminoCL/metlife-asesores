@@ -4,7 +4,7 @@
 }
 
 .banner-content {
-  
+
   .card-banner-xs{
     position: initial;
   }
@@ -32,15 +32,15 @@
     &.is-active {
       &::before, &::after {
         border-left: 10px solid transparent;
-        border-right: 10px solid transparent;     
+        border-right: 10px solid transparent;
         content: '';
         height: 0;
         left: 0;
-        margin: 0 auto;     
+        margin: 0 auto;
         position: absolute;
         right: 0;
         width: 0;
-      }    
+      }
       &::before {
         border-top: 10px solid white;
         bottom: -8px;
@@ -56,7 +56,7 @@
 
 .banner-tab--client,
 .banner-tab--policy {
-  font-size: 14px;    
+  font-size: 14px;
   font-weight: bold;
   background-color: $primary;
   color: white;
@@ -82,7 +82,7 @@
     &.is-active {
       background-color: white;
     }
-  } 
+  }
 }
 
 .orbit-title {
@@ -107,7 +107,7 @@
 // Breakpoint medium (md)
 
 @media screen and ( min-width: 62em ) {
-  
+
   .banner-content {
     left: 0;
     position: absolute;

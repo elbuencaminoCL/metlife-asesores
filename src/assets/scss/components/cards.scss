@@ -45,7 +45,7 @@
 
 }
 
-.card-banner {    
+.card-banner {
   height: 100%;
   padding: 20px;
 }
@@ -72,7 +72,7 @@
     bottom: 30px;
     left: 0;
     right: 0;
-    margin-top: 30px; 
+    margin-top: 30px;
   }
 }
 
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 62em) {
 
-  .indicators-row { 
+  .indicators-row {
     border-bottom: 1px solid $gray;
     padding-top: 10px;
     position: relative;
@@ -90,7 +90,7 @@
       padding-right: 10px;
       &.success, &.error, &.information {
         &::after {
-          border-radius: 50%; 
+          border-radius: 50%;
           top: 18px;
           content: '';
           height: 8px;
@@ -102,28 +102,28 @@
 
       &.success {
         &::after {
-          background-color: $success;                
-        }           
+          background-color: $success;
+        }
       }
 
       &.error {
         &::after {
-          background-color: $error;                
-        }           
+          background-color: $error;
+        }
       }
 
       &.information {
         &::after {
-          background-color: $information;                
-        }           
-      }         
-    }        
+          background-color: $information;
+        }
+      }
+    }
   }
 }
 
 @media screen and (min-width: 75em) {
 
-  .indicators-row { 
+  .indicators-row {
     border-bottom: 1px solid $gray;
     padding-top: 10px;
     position: relative;
@@ -131,7 +131,7 @@
       padding-right: 10px;
       &.success, &.error, &.information {
         &::after {
-          border-radius: 50%; 
+          border-radius: 50%;
           top: 18px;
           content: '';
           height: 8px;
@@ -143,23 +143,21 @@
 
       &.success {
         &::after {
-          background-color: $success;                
-        }           
+          background-color: $success;
+        }
       }
 
       &.error {
         &::after {
-          background-color: $error;                
-        }           
+          background-color: $error;
+        }
       }
 
       &.information {
         &::after {
-          background-color: $information;                
-        }           
-      }         
-    }        
+          background-color: $information;
+        }
+      }
+    }
   }
 }
-
-

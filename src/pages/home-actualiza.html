@@ -1,0 +1,79 @@
+{{> header }}
+
+<section class="space-bottom">
+  {{> carousel }}
+</section>
+
+<section class="space-bottom">
+  {{> value-uf }}
+</section>
+
+<section>
+  {{> info-general }}
+</section>
+
+<section class="space-bottom">
+  {{> policy-summary }}
+  
+</section>
+
+<section class="space-bottom">
+  {{> metclub }}
+</section>
+
+<section class="space-bottom">
+  {{> indicators }}
+</section>
+
+<section class="space-bottom">
+  {{> news }}
+</section>
+
+
+
+<!--Modal actualizar información-->
+<div class="reveal" id="homeModal" data-reveal>
+  <div class="reveal__content space-top">
+    <div>
+      <h4 class="space-bottom center-xs">Actualiza tus datos de contacto</h4>
+    </div>
+
+    <div>
+      <label><strong>Teléfono móvil:</strong></label>
+      <input type="text" name="">
+    </div>
+
+    <div>
+      <label><strong>Teléfono móvil alternativo:</strong></label>
+      <input type="text" name="">
+    </div>
+
+    <div>
+      <label><strong>Teléfono fijo:</strong></label>
+      <input type="text" name="">
+    </div>
+
+
+    <div class="space-bottom">
+      <label><strong>Correo Electrónico:</strong></label>
+      <div class="input-group">
+        <input class="input-group-field" type="email">
+        <span class="input-group-label">@metlife.cl</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-xs-2 middle-xs">
+    <div class="col-xs-8 end-xs">
+      <a data-close aria-label="Close modal" class="col-xs-12 col-sm-3">Cancelar</a>
+    </div>
+
+    <div class="col-xs-4">
+      <button class="button button--primary button--full clientProfileUpdateData" data-close aria-label="Close modal" type="button">Actualizar</button>
+    </div>
+  </div>
+
+  <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

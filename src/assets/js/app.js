@@ -1,3 +1,4 @@
+
 import $ from 'jquery';
 import whatInput from 'what-input';
 
@@ -13,6 +14,10 @@ import './components/select';
 import './components/open-content';
 import './components/input-text';
 import './components/modal';
+
+import './lib/foundation-explicit-pieces';
+import './lib/select';
+
 
 
 $(document).foundation();
