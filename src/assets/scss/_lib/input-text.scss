@@ -91,6 +91,10 @@
 		.form-error {
 			display: block;
 		}
+		.input__field {
+			background-color: $error-light;
+			border: 1px solid $error-border !important;
+		}
 	}
 
 	.input--ichiro--textarea {
