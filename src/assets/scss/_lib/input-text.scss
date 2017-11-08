@@ -85,10 +85,11 @@
 			outline: none;
 		}
 
-		&.parsley-error + .form-error {
-			bottom: -18px;
+	}
+
+	.fieldParent.field-error {
+		.form-error {
 			display: block;
-			position: absolute;
 		}
 	}
 
