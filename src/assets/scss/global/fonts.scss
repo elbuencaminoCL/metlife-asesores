@@ -18,6 +18,11 @@ h6 {
   margin: 0;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
 h1 {
   font-size: 48px;
 }
@@ -125,7 +130,6 @@ p {
 .f-shadow {
   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.85);
 }
-
 
 
 @media screen and ( min-width: 48em ) {
