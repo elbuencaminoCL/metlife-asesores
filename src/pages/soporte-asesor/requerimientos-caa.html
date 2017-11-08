@@ -2,20 +2,23 @@
 {{> header }}
 
 
-<form id="requirementsCAA" data-parsley-validate="">
+<form id="requirementsCAA" class="formValidateChange" data-parsley-validate="">
   <div class="container">
     {{> breadcrumb-support-advisor-request }}
-    <div class="section request center-xs">
-      <h1 class="space-bottom">Requerimiento CAA</h1>
-      <section class="u-select space-bottom bg-white">
-        <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;" required="">
-          <option value="#" data-link="#">1</option>
-          <option value="#" data-link="#">2</option>
-          <option value="#" data-link="#" selected>Filtrar</option>
-        </select>
-      </section>
+    <div class="section request">
+      <h1 class="space-bottom center-xs">Requerimiento CAA</h1>
+      <div class="fieldParent">
+        <section class="u-select bg-white">
+          <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+            <option value="#1">1</option>
+            <option value="#2">2</option>
+            <option value selected>Filtrar</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar un filtro.</p>
+      </div>
 
-      <div class="space-bottom">
+      <div class="space-bottom fieldParent">
         <span class="input input--ichiro mg-top-16">
           <textarea class="request__text-area" data-parsley-trigger="input" data-parsley-errors-messages-disabled placeholder="Escribe tu comentario..." id="requirementsCAATextare" required=""></textarea>
           <p class="form-error f-tiny">Ingresa tu comentario.</p>

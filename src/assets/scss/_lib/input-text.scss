@@ -93,7 +93,8 @@
 
 	.fieldParent.field-error {
 		.input__field,
-		.cs-select {
+		.cs-select,
+		.request__text-area {
 			background-color: $error-light;
 			border: 1px solid $error-border !important;
 		}
@@ -102,7 +103,8 @@
 			display: block;
 		}
 
-		.cs-select {
+		.cs-select,
+		.request__text-area {
 			border-radius: 3px;
 			span {
 				border: 0;
