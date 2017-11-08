@@ -83,6 +83,10 @@
     margin-bottom: 10px;
   }
 
+  .mg-bottom-12 {
+    margin-bottom: 12px;
+  }
+
   .mg-bottom-15 {
     margin-bottom: 15px;
   }
@@ -123,6 +127,10 @@
     margin-top: 60px;
   }
 
+  .mg-top-30 {
+    margin-top: 30px;
+  }
+
 /* /Spaces */
 
 
@@ -130,6 +138,14 @@
 /* Sizes */
 .max-width-10 {
   max-width: 10px;
+}
+
+.mx-width-40 {
+  max-width: 40px;
+}
+
+.mx-height-40 {
+  max-height: 40px;
 }
 
 .mx-width-50 {
@@ -154,12 +170,12 @@
 }
 
 .u-divider--calendar {
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid $gray;
   padding-bottom: 30px;
 }
 
 .u-divider-top {
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid $gray;
   padding-top: 8px;
 }
 
@@ -169,7 +185,7 @@
 }
 
 .u-divider-bottom {
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid $gray;
   padding-bottom: 5px;
 }
 /* /Dividing lines */

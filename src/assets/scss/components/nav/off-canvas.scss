@@ -1,9 +1,14 @@
 
 @import './../../global/colors.scss';
 
+.js-off-canvas-overlay.is-visible {
+  opacity: 0;
+}
+
 .off-canvas {
   background-color: $black-05;
-  margin-top: 50px;
+  height: 100%;
+  margin-top: 60px;
   padding: 20px 0;
 }
 
@@ -49,4 +54,8 @@
 	.off-canvas--close {
 		display: inline-block;
 	}
+}
+
+.off-canvas.is-transition-overlap.is-open {
+  box-shadow: none;
 }

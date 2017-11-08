@@ -1,7 +1,11 @@
 
 .support-advisor-image {
   width: 100%;
+  min-height: 160px;
+  object-fit: cover;
 }
+
+
 
 .tools-simulator-img {
   width: 100%;
@@ -11,6 +15,12 @@
 
 .tools-simulator-row {
   padding: 30px 15px;
+}
+
+.value-uf {
+  strong {
+    display: block;
+  }
 }
 
 .value-uf-yesterday {
@@ -23,12 +33,27 @@
 
 @media screen and (min-width: 62em) {
 
+  .value-uf {
+    strong {
+      display: inline-block;
+    }
+  }
+
   .value-uf-yesterday {
     border-right: 0;
   }
 
   .tools-simulator-row {
-    padding: 30px 15px 15px 60px;
+    padding: 0 15px 0 60px;
+    height: 100%;
+  }
+
+  .support-advisor-col {
+    padding: 0 20px 0 40px;
+  }
+
+  .support-advisor-row {
+    height: 100%;
   }
 
 

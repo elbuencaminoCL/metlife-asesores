@@ -1,20 +1,30 @@
 
 {{> header }}
 
-<div class="container">
-  {{> breadcrumb-support-advisor-request }}
-  <div class="section request center-xs">
-    <h1 class="space-bottom">Requerimiento CAA</h1>
-    <section class="u-select space-bottom">
-      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-        <option value="#" data-link="#">1</option>
-        <option value="#" data-link="#">2</option>
-        <option value="#" data-link="#" selected>Filtrar</option>
-      </select>
-    </section>
-    <textarea class="request__text-area" placeholder="Escribe tu comentario..."></textarea>
-    <div class="end-xs">
-      <a href="#" class="button button--primary">Enviar</a>
+
+<form id="requirementsCAA" data-parsley-validate="">
+  <div class="container">
+    {{> breadcrumb-support-advisor-request }}
+    <div class="section request center-xs">
+      <h1 class="space-bottom">Requerimiento CAA</h1>
+      <section class="u-select space-bottom bg-white">
+        <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;" required="">
+          <option value="#" data-link="#">1</option>
+          <option value="#" data-link="#">2</option>
+          <option value="#" data-link="#" selected>Filtrar</option>
+        </select>
+      </section>
+
+      <div class="space-bottom">
+        <span class="input input--ichiro mg-top-16">
+          <textarea class="request__text-area" data-parsley-trigger="input" data-parsley-errors-messages-disabled placeholder="Escribe tu comentario..." id="requirementsCAATextare" required=""></textarea>
+          <p class="form-error f-tiny">Ingresa tu comentario.</p>
+        </span>
+      </div>
+
+      <div class="end-xs">
+        <input type="submit" class="button button--primary" value="Enviar" />
+      </div>
     </div>
   </div>
-</div>
+</form>

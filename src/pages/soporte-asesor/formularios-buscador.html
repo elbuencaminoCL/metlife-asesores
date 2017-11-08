@@ -1,0 +1,46 @@
+
+{{> header }}
+
+<div class="container">
+  {{> breadcrumb-support-advisor-form }}
+  <div class="space-bottom center-xs">
+    <h1>Formularios</h1>
+    <p>Acá podrás descargar todos los formularios necesarios para iniciar la gestión que necesites.</p>
+  </div>
+</div>
+
+<div class="bg-white space-bottom pd-30">
+  <div class="space-bottom support-form-row">
+    <section class="space-bottom">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
+        <label class="input__label input__label--ichiro" for="loginRut">
+          <span class="input__label-content input__label-content--ichiro">Búsqueda por Nombre</span>
+        </label>
+        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+      </span>
+    </section>
+
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">cat1</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">cat2</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Categoria</option>
+      </select>
+    </section>
+
+    <section class="u-select space-bottom">
+      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+        <option value="login.html" data-link="login.html">2016</option>
+        <option value="login-empresas.html" data-link="login-empresas.html">2017</option>
+        <option value="login-asesores.html" data-link="login-asesores.html" selected>Filtrar por Fecha</option>
+      </select>
+    </section>
+          
+    <div class="col-xs-12 col-md-4 end-md">
+      <a href="#" class="button button--primary disabled">Buscar</a>
+    </div>
+  </div>
+</div>
+
+

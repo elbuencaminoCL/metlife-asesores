@@ -3,15 +3,25 @@
   <div class="reveal__content space-top">
     <h4 class="space-bottom center-xs">Enviar Formulario por Email</h4>
 
-    <div class="col-xs-12">
-      <label><strong>Para:</strong></label>
-      <input type="text" name="" placeholder="juancarlos.silva@gmail.com">
-    </div>
+    <section class="space-bottom">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="supportFormEmail" required />
+        <label class="input__label input__label--ichiro" for="supportFormEmail">
+          <span class="input__label-content input__label-content--ichiro">Correo Electrónico</span>
+        </label>
+        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+      </span>
+    </section>
 
-    <div class="col-xs-12">
-      <label><strong>Asunto</strong></label>
-      <input type="text" name="" placeholder="Escribe un asunto">
-    </div>
+    <section class="space-bottom">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="supportFormAffair" required />
+        <label class="input__label input__label--ichiro" for="supportFormAffair">
+          <span class="input__label-content input__label-content--ichiro">Asunto</span>
+        </label>
+        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+      </span>
+    </section>
   </div>
 
   <div class="row row-xs-2 middle-xs">

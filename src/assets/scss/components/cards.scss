@@ -50,22 +50,11 @@
   padding: 20px;
 }
 
-.card-banner__bells {
-  position: relative;
-  .button-bell {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-  }
-}
-
 .card-info-general {
-  height: 100%;
   padding: 40px 30px 30px;
 }
 
-.card-tools {
+.card-tools, {
   position: relative;
   .card-tools__button {
     position: absolute;
@@ -81,6 +70,28 @@
 
 
 @media screen and (min-width: 62em) {
+
+  .card-banner__bells {
+    position: relative;
+    .button-bell {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .card-info-general {
+    height: 100%;
+    position: relative;
+    .card-info-general__button {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      margin-top: 30px;
+    }
+  }
 
   .indicators-row {
     border-bottom: 1px solid $gray;
