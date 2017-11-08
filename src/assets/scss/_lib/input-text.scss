@@ -27,7 +27,7 @@
 		display: none;
 		line-height: 1.6;
 		margin-bottom: 0;
-		padding: 36px 0 0;
+		padding: 18px 0 0;
 		position: relative;
 	}
 
@@ -83,6 +83,12 @@
 		&:focus {
 			border: 1px solid $active-border !important;
 			outline: none;
+		}
+
+		&.parsley-error + .form-error {
+			bottom: -18px;
+			display: block;
+			position: absolute;
 		}
 	}
 
