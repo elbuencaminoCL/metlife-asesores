@@ -99,6 +99,10 @@
     margin-bottom: 15px;
   }
 
+  .mg-bottom-16 {
+    margin-bottom: 16px;
+  }
+
   .mg-bottom-22 {
     margin-bottom: 22px;
   }
@@ -127,6 +131,10 @@
     margin-right: 30px;
   }
 
+  .mg-top-xs-30 {
+    margin-top: 30px;
+  }
+
   .mg-top-16 {
     margin-top: 16px;
   }
@@ -144,6 +152,10 @@
 
 
 /* Sizes */
+
+.container-full-xs {
+  padding: 0;
+}
 
 .max-width-10 {
   max-width: 10px;
@@ -201,8 +213,19 @@
 
 
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 48em) {
+  
+  
+}
 
+
+
+@media screen and (min-width: 62em) {
+  
+  .container-full-xs {
+    padding: 0 15px;
+  }
+  
   .pd-0-15-md {
     padding: 0 15px;
   }
@@ -215,4 +238,17 @@
     margin-bottom: 0;
   }
 
+  .mg-top-xs-30 {
+    margin-top: 0;
+  }
+
+}
+
+
+
+@media screen and (min-width: 90em) {
+
+  .container-full-xs {
+    padding: 0;
+  }
 }

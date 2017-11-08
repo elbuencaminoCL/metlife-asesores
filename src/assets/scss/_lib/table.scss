@@ -9,6 +9,8 @@
 }
 
 .table-container {
+  max-width: 1440px;
+  margin: 0 auto;
   .table-row:nth-child(even) {
     background-color: $white-light;
   }
