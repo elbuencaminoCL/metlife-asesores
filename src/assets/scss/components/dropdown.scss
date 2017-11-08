@@ -13,7 +13,9 @@
     opacity: 1;
     padding: 0;
     visibility: visible;
-    margin-top: 30px;
+    &.mg-top-30 {
+      margin-top: 30px;
+    }
     i {
       &.plus-ico {
         visibility: hidden;
