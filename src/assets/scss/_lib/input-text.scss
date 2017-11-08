@@ -268,12 +268,20 @@
 		}
 	}
 
-  .input-group {
-    &.email {
-      border: 1px solid gray;
-      border-radius: 3px;
-    }
+  .input-group-label:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: #666;
+    max-height: 39px;
   }
+
+  .input-email {
+    border-right: 0 !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
 
 	@media screen and ( min-width: 62em ) {
 
