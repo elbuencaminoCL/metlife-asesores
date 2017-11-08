@@ -70,7 +70,6 @@
 
 
 
-
 //button size
 
 .button--tiny {
@@ -89,6 +88,21 @@
   font-size: 18px;
 }
 
+
+
+//Button pagination 
+
+.pagination__button {
+  background-color: white;
+}
+
+.pagination__numbers-item {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: 0;
+
+}
 
 
 @media screen and (min-width: 48em)  {
