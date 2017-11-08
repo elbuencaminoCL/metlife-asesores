@@ -248,6 +248,13 @@
 		}
 	}
 
+  .input-group {
+    &.email {
+      border: 1px solid gray;
+      border-radius: 3px;
+    }
+  }
+
 	@media screen and ( min-width: 62em ) {
 
 		.input_date {
