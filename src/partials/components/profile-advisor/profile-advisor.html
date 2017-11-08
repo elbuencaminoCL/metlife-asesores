@@ -70,45 +70,44 @@
 
 <!--Modal actualizar información-->
 <div class="reveal" id="clientProfileModal" data-reveal>
-  <form id="profileUpdate" data-parsley-validate>
+  <form id="profileUpdate" class="formValidateInput" data-parsley-validate>
     <div class="reveal__content">
       <h4 class="space-bottom center-xs">Actualiza tus datos de contacto</h4>
 
-      <div class="space-bottom">
+      <div class="space-bottom fieldParent">
         <span class="input input--ichiro mg-top-16">
           <input class="input__field input__field--ichiro" data-parsley-trigger="input" data-parsley-errors-messages-disabled data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" type="text" value="+56 9 7654 3476" id="modalProfileCellPhone" required="">
-          <p class="form-error f-tiny">Ingresa un teléfono móvil válido.</p>
           <label class="input__label input__label--ichiro" for="modalProfileCellPhone">
             <span class="input__label-content input__label-content--ichiro"><strong>Teléfono móvil:</strong></span>
           </label>
+          <p class="form-error f-tiny">Ingresa un teléfono móvil válido.</p>
         </span>
       </div>
 
-      <div class="space-bottom">
+      <div class="space-bottom fieldParent">
         <span class="input input--ichiro mg-top-16">
           <input class="input__field input__field--ichiro" data-parsley-trigger="input" data-parsley-errors-messages-disabled data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" type="text" value="+56 9 6634 3324" id="modalProfileCellPhoneAlternative" required="">
-          <p class="form-error f-tiny">Ingresa un teléfono móvil alternativo válido.</p>
           <label class="input__label input__label--ichiro" for="modalProfileCellPhoneAlternative">
             <span class="input__label-content input__label-content--ichiro"><strong>Teléfono móvil alternativo:</strong></span>
           </label>
+          <p class="form-error f-tiny">Ingresa un teléfono móvil alternativo válido.</p>
         </span>
       </div>
 
-      <div class="space-bottom">
+      <div class="space-bottom fieldParent">
         <span class="input input--ichiro mg-top-16">
           <input class="input__field input__field--ichiro" data-parsley-trigger="input" data-parsley-errors-messages-disabled data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" type="text" value="+56 2 5634 0909" id="modalProfilePhoneFix" required="">
-          <p class="form-error f-tiny">Ingresa un teléfono fijo válido.</p>
           <label class="input__label input__label--ichiro" for="modalProfilePhoneFix">
             <span class="input__label-content input__label-content--ichiro"><strong>Teléfono fijo:</strong></span>
           </label>
+          <p class="form-error f-tiny">Ingresa un teléfono fijo válido.</p>
         </span>
       </div>
 
-      <div class="space-bottom">
+      <div class="space-bottom fieldParent">
         <div class="input-group">
           <span class="input input--ichiro mg-top-16 input-group-field">
             <input class="input__field input__field--ichiro" data-parsley-trigger="change" data-parsley-errors-messages-disabled type="text" value="camila.galvez.leonard" id="modalProfilePhoneEmail" required="">
-            <p class="form-error f-tiny">Ingresa un correo electrónico.</p>
             <label class="input__label input__label--ichiro" for="modalProfilePhoneEmail">
               <span class="input__label-content input__label-content--ichiro"><strong>Correo Electrónico:</strong></span>
             </label>
@@ -116,6 +115,7 @@
 
           <span class="input-group-label mg-top-16">@metlife.cl</span>
         </div>
+        <p class="form-error f-tiny">Ingresa un correo electrónico.</p>
       </div>
     </div>
 
