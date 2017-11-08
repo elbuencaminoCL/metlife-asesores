@@ -84,6 +84,7 @@
   button {
     background-color: transparent;
     border: 2px solid white;
+    cursor: pointer;
     &:hover {
       background-color: $primary;
     }
