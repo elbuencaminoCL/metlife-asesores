@@ -92,12 +92,21 @@
 	}
 
 	.fieldParent.field-error {
+		.input__field,
+		.cs-select {
+			background-color: $error-light;
+			border: 1px solid $error-border !important;
+		}
+
 		.form-error {
 			display: block;
 		}
-		.input__field {
-			background-color: $error-light;
-			border: 1px solid $error-border !important;
+
+		.cs-select {
+			border-radius: 3px;
+			span {
+				border: 0;
+			}
 		}
 	}
 
