@@ -4,7 +4,11 @@
 /* Spaces */
 
   /* padding all */
-  .p-d-5 {
+  .pd-0-xs {
+    padding: 0;
+  }
+
+  .pd-5 {
     padding: 5px;
   }
 
@@ -136,6 +140,7 @@
 
 
 /* Sizes */
+
 .max-width-10 {
   max-width: 10px;
 }
@@ -193,6 +198,10 @@
 
 
 @media screen and (min-width: 62em) {
+
+  .pd-0-15-md {
+    padding: 0 15px;
+  }
 
   .mg-bottom-xs-30 {
     margin-bottom: 0;
