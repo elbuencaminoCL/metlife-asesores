@@ -1,4 +1,6 @@
 
+@import './../global/colors.scss';
+
 .pagination__numbers-item, .pagination__numbers-dots {
   background-color: white;
   border: 1px solid $gray;
@@ -13,22 +15,21 @@
 }
 
 .pagination__new, .pagination_old, .pagination__numbers-item, .pagination__numbers-dots {
-  height: 25px;
-  line-height: 25px;
-  margin: 0 5px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
-  width: 25px;
+  width: 30px;
 }
 
-.pagination {
+.pagination__new {
   button {
     border: 1px solid $gray;
+    color: $primary-accent;
     height: 100%;
+    &:hover {
+      color: $primary;
+    }
   }
-}
-
-.pagination__numbers {
-  padding: 0 20px;
 }
 
 .pagination__numbers-dots {
@@ -38,6 +39,12 @@
 }
 
 .pagination__numbers-item {
+  a {
+    &:hover {
+      background-color: $gray;
+      color: $primary;
+    }
+  }
   &.is-active {
     background-color: $primary-accent;
     border-color: $primary-accent;
