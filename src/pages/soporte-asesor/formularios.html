@@ -247,39 +247,47 @@ form-table:
   </div>
 </div>
 
-<div class="bg-white space-bottom pd-30">
-  <div class="space-bottom support-form-row">
-    <section class="space-bottom">
-      <span class="input input--ichiro">
-        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
-        <label class="input__label input__label--ichiro" for="loginRut">
-          <span class="input__label-content input__label-content--ichiro">Búsqueda por Nombre</span>
-        </label>
-        <p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
-      </span>
-    </section>
+<form id="forms" class="formValidateChange" data-parsley-validate="">
+  <div class="bg-white space-bottom pd-30">
+    <div class="space-bottom support-form-row">
+      <section class="space-bottom fieldParent">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="change" type="text" id="loginRut" required />
+          <label class="input__label input__label--ichiro" for="loginRut">
+            <span class="input__label-content input__label-content--ichiro">Búsqueda por Nombre</span>
+          </label>
+          <p class="form-error f-tiny">Debes ingresar un nombre.</p>
+        </span>
+      </section>
 
-    <section class="u-select space-bottom">
-      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-        <option value="login.html" data-link="login.html">cat1</option>
-        <option value="login-empresas.html" data-link="login-empresas.html">cat2</option>
-        <option value="login-asesores.html" data-link="login-asesores.html" selected>Selección de Categoria</option>
-      </select>
-    </section>
+      <div class="fieldParent space-bottom">
+        <section class="u-select" data-parsley-trigger="change">
+          <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+            <option value="cat1">cat1</option>
+            <option value="cat2">cat2</option>
+            <option value selected>Filtrar por Categoria</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
+      </div>
 
-    <section class="u-select space-bottom">
-      <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-        <option value="login.html" data-link="login.html">2016</option>
-        <option value="login-empresas.html" data-link="login-empresas.html">2017</option>
-        <option value="login-asesores.html" data-link="login-asesores.html" selected>Año de Publicación</option>
-      </select>
-    </section>
-          
-    <div class="col-xs-12 col-md-4 end-md">
-      <a href="#" class="button button--primary disabled">Buscar</a>
+      <div class="fieldParent space-bottom">
+        <section class="u-select">
+          <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value selected>Filtrar por Fecha</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una fecha.</p>
+      </div>
+
+      <div class="col-xs-12 col-md-4 end-md">
+        <input class="button button--primary" type="submit" value="Buscar" />
+      </div>
     </div>
   </div>
-</div>
+</form>
 
 <div class="container space-bottom">
   <h4>341 resultados encontrados</h4>
@@ -288,11 +296,11 @@ form-table:
 <div class="bg-white">
   <!-- Tabla de formularios -->
     {{> support-advisor-forms-table }}
-  <!-- Tabla de formularios -->  
+  <!-- Tabla de formularios -->
 
   <section class="pagination mg-bottom-60">
     {{> pagination }}
-  </section>  
+  </section>
 </div>
 
 
