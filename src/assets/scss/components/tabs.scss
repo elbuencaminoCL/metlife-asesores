@@ -9,7 +9,10 @@
   }
   flex-basis: calc(8.333% * 5);
   max-width: calc(8.333% * 5);
-  transition: all .3s cubic-bezier(.4,0,.2,1);
+  transition: width .5s;
+  &:hover {
+    background-color: none;
+  }
   &.is-active {
     flex-basis: calc(8.333% * 7);
     max-width: calc(8.333% * 7);
