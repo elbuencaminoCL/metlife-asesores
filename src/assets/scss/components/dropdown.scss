@@ -38,6 +38,7 @@
   }
   &.is-open {
     i {
+      transform: rotate(180deg);
       &.plus-ico {
         display: none;
       }
