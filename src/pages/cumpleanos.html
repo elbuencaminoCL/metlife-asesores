@@ -6,28 +6,28 @@ birthday-table-yesterday:
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
 
 
 birthday-table-today:
@@ -37,28 +37,28 @@ birthday-table-today:
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
 
 
 birthday-table-tomorrow:
@@ -68,14 +68,14 @@ birthday-table-tomorrow:
     birthday: 15.674.834-9
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
   -
     name: Constanza Isabel Enríquez Compañon
     rut: 15.674.834-9
     birthday: 18/07/2017
     age: 36 años
     email: constanzaiecom@gmail.com
-    phone: +56 9 6472354
+    phone: +56-9-6472354
 ---
 
 
@@ -87,10 +87,12 @@ birthday-table-tomorrow:
     {{> breadcrumb-birthday }}
     <h1 class="center-xs space-bottom">Cumpleaños</h1>
 
+    <input type="text" class="span2" id="dp1">
+
     <div class="row row-xs-2 row-sm-2 row-md-2">
       <div class="col-xs-6 col-sm-3 col-md-2">
         <span class="input input--ichiro input--datepicker DatePickerStart u-space">
-          <input class="input__field input__field--ichiro" placeholder="Desde" type="text" readonly="">
+          <input class="input__field input__field--ichiro" placeholder="Desde" type="text" readonly="" />
           <i class="material-icons">date_range</i>
         </span>
       </div>
@@ -161,9 +163,9 @@ birthday-table-tomorrow:
                 <p class="mg-bottom-0">{{email}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-2 center-lg mg-bottom-xs-15 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Teléfono</strong></p>
-                <p class="mg-bottom-0">{{phone}}</p>
+                <p class="mg-bottom-0"><a href="tel:{{phone}}">{{phone}}</a></p>
               </div>
             </div>
           </div>

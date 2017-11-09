@@ -19,5 +19,18 @@
     {{> footer}}
 
     <script src="{{root}}assets/js/app.js"></script>
+    <script>
+    $(function(){
+      $('#dp1').fdatepicker({
+        initialDate: '02-12-1989',
+        format: 'mm-dd-yyyy',
+        disableDblClickSelection: true,
+        leftArrow:'<<',
+        rightArrow:'>>',
+        closeIcon:'X',
+        closeButton: true
+      });
+    });
+    </script>
   </body>
 </html>
