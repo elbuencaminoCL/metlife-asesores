@@ -2,10 +2,10 @@
 <div class="row row-xs-1 row-md-2 gutter-md">
   <div class="col-xs-12 col-md-6 mg-bottom-xs-30">
     <div class="card-banner bg-clarity">
-      <p class="f-bigger space-bottom"><strong>Búsqueda de tus Clientes y Pólizas</strong></p>
+      <p class="f-bigger space-bottom"><strong>Quiero buscar información de mi Cartera por:</strong></p>
       <div class="row row-xs-2 center-xs no-gutter banner-tab mg-bottom-15" data-tabs id="tabsCard">
         <div class="tab-size tab-size--left banner-tab--client tabs-title is-active">
-          <a href="#clients" aria-selected="true" class="tab-carousel">Clientes</a>
+          <a href="#clients" aria-selected="true" class="tab-carousel">Cliente</a>
         </div>
 
         <div class="tab-size tab-size--right banner-tab--policy tabs-title">
@@ -13,64 +13,43 @@
         </div>
       </div>
 
-        <div class="tabs-content" data-tabs-content="tabsCard">
-          <form id="formClient" class="formValidateInput" data-parsley-validate="">
-            <div class="tabs-panel is-active" id="clients">
-              <div class="space-bottom fieldParent">
-                <span class="input input--ichiro">
-                  <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="loginRut" required />
-                  <label class="input__label input__label--ichiro" for="loginRut">
-                    <span class="input__label-content input__label-content--ichiro">R.U.T</span>
-                  </label>
-                  <p class="form-error f-tiny">No tenemos registrado este RUT. Por favor, revisa que esté correcto.</p>
-                </span>
-              </div>
+      <div class="tabs-content" data-tabs-content="tabsCard">
+        <div class="tabs-panel is-active" id="clients">
+          <div class="mg-bottom-15">
+            <input type="text" name="" placeholder="R.U.T." class="input-data full">
+          </div>
 
-              <div class="mg-bottom-15 fieldParent">
-                <span class="input input--ichiro">
-                  <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" data-live-validate="true" type="text" id="loginClient" required />
-                  <label class="input__label input__label--ichiro" for="loginClient">
-                    <span class="input__label-content input__label-content--ichiro">Cliente</span>
-                  </label>
-                  <p class="form-error f-tiny">Ingresa un Cliente válido.</p>
-                </span>
-              </div>
+          <div class="mg-bottom-15">
+            <input type="text" name="" placeholder="Nombre" class="input-data full">
+          </div>
 
-              <div class="row row-xs-1 row-md-2 middle-xs">
-                <div class="col-xs-12 col-md-6 center-xs start-md">
-                  <a href="#" class="f-link f-tiny">Búsqueda Avanzada</a>
-                </div>
-
-                <div class="col-xs-12 col-md-6 end-xs first-xs mg-bottom-xs-15">
-                  <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
-                </div>
-              </div>
+          <div class="row row-xs-1 row-sm-2 middle-xs">
+            <div class="col-xs-12 col-sm-6 center-xs start-sm">
+              <a href="#" class="f-link f-tiny">Búsqueda Avanzada</a>
             </div>
-          </form>
 
-          <form id="formPoliza" class="formValidateInput" data-parsley-validate="">
-            <div class="tabs-panel" id="policy">
-              <div class="row row-xs-2 mg-bottom-10">
-                <div class="col-xs-9 fieldParent">
-                  <span class="input input--ichiro">
-                    <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="loginPolicy" required />
-                    <label class="input__label input__label--ichiro" for="loginPolicy">
-                      <span class="input__label-content input__label-content--ichiro">Número de Póliza</span>
-                    </label>
-                    <p class="form-error f-tiny">Ingresa un número de póliza.</p>
-                  </span>
-                </div>
-
-                <div class="col-xs-3">
-                  <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
-                </div>
-              </div>
-
-              <div class="col-xs-12">
-                <a href="#" class="f-link f-tiny">Mostrar cartera completa</a>
-              </div>
+            <div class="col-xs-12 col-sm-6 end-xs first-xs last-sm mg-bottom-xs-15">
+              <a href="#" class="button button--primary button--full-xs">Buscar</a>
             </div>
-          </form>
+          </div>
+        </div>
+
+        <div class="tabs-panel" id="policy">
+          <div class="row row-xs-1">
+            <div class="col-xs-12">
+              <input type="text" name="" placeholder="Número de Póliza" class="input-data full">
+            </div>
+          </div>
+
+          <div class="row row-xs-2  row-sm-2 middle-xs">
+            <div class="col-xs-12 col-sm-6 center-xs start-sm">
+              <a href="#" class="f-link f-tiny">Búsqueda Avanzada</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 end-xs first-xs last-sm mg-bottom-xs-15">
+              <a href="#" class="button button--primary button--full-xs">Buscar</a>
+            </div>        
+          </div>
         </div>
       </div>
 
@@ -79,10 +58,10 @@
 
   <div class="col-xs-12 col-md-6 mg-bottom-xs-30 card-banner__bells">
     <div class="card-banner bg-clarity center-xs">
-      <p class="space-bottom f-bigger"><strong>Tus Campañas</strong></p>
-      <p class="space-bottom">Revisa acá las diferentes campañas que te permitirán proteger mejor a tus clientes, potenciando tu cartera.</p>
+      <p class="space-bottom f-bigger"><strong>Quiero gestionar mi Cartera</strong></p>
+      <p class="space-bottom">Revisa cómo alcanzar tus metas rentabilizando tu cartera mediante distintas campañas.</p>
       <div class="mg-top-60">
-        <div class="button-bell"><a href="#" class="button button--primary button--full-xs">Ver campañas</a></div>
+        <div class="button-bell"><a href="#" class="button button--primary button--full-xs">Ir</a></div>
       </div>
     </div>
   </div>
