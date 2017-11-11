@@ -4,11 +4,6 @@
   object-fit: cover;
 }
 
-.policy-img {
-  min-height: 424px;
-  object-fit: cover;
-}
-
 .indicators-row {
   border-bottom: 1px solid $gray;
   padding-top: 10px;
@@ -45,4 +40,9 @@
       }
     }
   }
+}
+
+.policy-img {
+  min-height: 424px;
+  object-fit: cover;
 }

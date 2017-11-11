@@ -35,3 +35,27 @@
   margin-bottom: 0;
   min-height: 150px;
 }
+
+.support-advisor-image {
+  width: 100%;
+  min-height: 160px;
+  object-fit: cover;
+}
+
+.support-advisor-row {
+  padding: 30px 15px 15px;
+}
+
+
+
+@media screen and (min-width: 62em) {
+  
+  .support-advisor-col {
+    padding: 0 20px 0 40px;
+  }
+
+  .support-advisor-row {
+    height: 100%;
+  }
+
+}

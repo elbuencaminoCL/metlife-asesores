@@ -1,0 +1,26 @@
+
+.value-uf {
+  strong {
+    display: block;
+  }
+}
+
+.value-uf-yesterday {
+  border-right: 2px solid white;
+}
+
+
+
+@media screen and (min-width: 62em) {
+
+  .value-uf {
+    strong {
+      display: inline-block;
+    }
+  }
+
+  .value-uf-yesterday {
+    border-right: 0;
+  }
+
+}

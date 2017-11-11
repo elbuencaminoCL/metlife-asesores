@@ -1,4 +1,16 @@
 
+.banner-tab--client,
+.banner-tab--policy {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: $primary;
+  color: white;
+  &.is-active {
+    background-color: white;
+    color: $primary;
+  }
+}
+
 .banner-col {
   position: relative;
 }
@@ -16,12 +28,6 @@
   .banner-desc {
     padding-bottom: 50px;
   }
-}
-
-.orbit-image {
-  min-height: 350px;
-  object-fit: cover;
-  width: 100%;
 }
 
 .banner-tab {
@@ -62,18 +68,6 @@
   }
 }
 
-.banner-tab--client,
-.banner-tab--policy {
-  font-size: 14px;
-  font-weight: bold;
-  background-color: $primary;
-  color: white;
-  &.is-active {
-    background-color: white;
-    color: $primary;
-  }
-}
-
 
 
 /* Carousel, (código sobreescrito de foundation) */
@@ -94,18 +88,23 @@
   }
 }
 
+.orbit-image {
+  min-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .orbit-title {
   position: absolute;
   top: 150px;
   left: 0;
   right: 0;
 }
-
 /* Carousel */
 
 
-// Breakpoint small (sm)
 
+// Breakpoint small (sm)
 @media screen and ( min-width: 48em ) {
 
 
@@ -131,7 +130,6 @@
   .orbit-image {
     height: 600px;
   }
-
 
   .orbit-title {
     position: absolute;

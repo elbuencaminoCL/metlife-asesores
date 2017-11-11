@@ -1,5 +1,23 @@
+
 .minus-ico {
   display: none;
+}
+
+.openContent {
+  .indicators-span {
+    padding-left: 8px;
+  }
+  &.is-open {
+    i {
+      transform: rotate(180deg);
+      &.plus-ico {
+        display: none;
+      }
+      &.minus-ico {
+        display: initial;
+      }
+    }
+  }
 }
 
 .toggleContent {
@@ -29,23 +47,6 @@
   }
   &.no-padding-bottom {
     padding-bottom: 0px;
-  }
-}
-
-.openContent {
-  .indicators-span {
-    padding-left: 8px;
-  }
-  &.is-open {
-    i {
-      transform: rotate(180deg);
-      &.plus-ico {
-        display: none;
-      }
-      &.minus-ico {
-        display: initial;
-      }
-    }
   }
 }
 

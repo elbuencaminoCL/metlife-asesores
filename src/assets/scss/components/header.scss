@@ -1,31 +1,33 @@
+
 .header{
-    background-color: white;
-    padding: 0 30px;
-    height: 78px;
-    .header_container{
-        padding-bottom: 1rem;
-		padding-top: 1rem;
-    }
+  background-color: white;
+  padding: 0 30px;
+  height: 78px;
+  .header_container{
+      padding-bottom: 1rem;
+	padding-top: 1rem;
+  }
 }
+
 .main {
-    height: 60px;
-    background-color: #0060A2;
-    ul {
-        list-style-type: none;
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 22px 55px 22px 55px;
-        font-size: 13px;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
+  height: 60px;
+  background-color: #0060A2;
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 22px 55px 22px 55px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
