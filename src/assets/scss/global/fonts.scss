@@ -24,7 +24,7 @@ textarea::placeholder {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 h2 {
@@ -132,7 +132,12 @@ p {
 }
 
 
+
 @media screen and ( min-width: 48em ) {
+
+  h1 {
+    font-size: 42px;
+  }
 
   h5 {
     font-size: 20px;
@@ -140,6 +145,16 @@ p {
 
   h6 {
     font-size: 16px;
+  }
+
+}
+
+
+
+@media screen and ( min-width: 62em ) {
+  
+  h1 {
+    font-size: 48px;
   }
 
 }

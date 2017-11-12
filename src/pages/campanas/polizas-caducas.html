@@ -1,0 +1,149 @@
+---
+expire-policies:
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    product: Metlife Crédito Hipotecario Universal
+    end-date: 23/05/2017
+    real-end-date: 23/05/2017
+    rehabilitation-bounty: 3 UF
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    product: Metlife Crédito Hipotecario Universal
+    end-date: 23/05/2017
+    real-end-date: 23/05/2017
+    rehabilitation-bounty: 7 UF
+  -
+    rut: 16357872-7
+    name: Constanza Isabel Palma Richardson Corvalan
+    number-policy: 312036709700
+    product: Metlife Crédito Hipotecario Universal
+    end-date: 23/05/2017
+    real-end-date: 23/05/2017
+    rehabilitation-bounty: 10 UF
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    product: Metlife Crédito Hipotecario Universal
+    end-date: 23/05/2017
+    real-end-date: 23/05/2017
+    rehabilitation-bounty: 3 UF
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    product: Metlife Crédito Hipotecario Universal
+    end-date: 23/05/2017
+    real-end-date: 23/05/2017
+    rehabilitation-bounty: 5 UF
+---
+
+{{>header}}
+
+
+<section class="pd-top-15">
+  <div class="container table-container">
+    <div class="hide-xs show-md">{{> breadcrumb-expire-policies}}</div>
+    <div class="center-xs space-bottom">
+      <h1>Pólizas Caducas</h1>
+      <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
+    </div>
+
+    <div class="row row-xs-1 row-sm-2 middle-xs">
+      <div class="col-xs-12 col-sm-3 mg-bottom-15">
+        <section class="u-select bg-white">
+          <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+            <option value="login.html" data-link="login.html">Período de Tiempo</option>
+            <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="col-xs-12 col-sm-9 end-xs mg-bottom-15">
+        <a href="#" class="f-link">Descrgar PDF</a>
+      </div>
+    </div>
+
+    <!-- Tab hoy -->
+    <div class="z-depth-1 space-bottom" id="today">
+      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
+        <div class="col-xs-12 col-md-2 col-lg-1">
+          <p class="mg-bottom-0">Rut Cliente</p>
+        </div>
+
+        <div class="col-xs-12 col-md-10 col-lg-11">
+          <div class="row row-xs-1 row-md-5 row-lg-6 no-gutter">
+
+            <div class="col-xs-12 col-md-2 col-lg-3 hide-xs show-md"><p class="mg-bottom-0">Nombre Cliente</p></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0">N° Poliza</p></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0">Producto</p></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md center-md"><p class="mg-bottom-0">Fecha de<br>Término</p></div>
+
+            <div class="col-xs-12 col-md-4 col-lg-2 hide-xs show-md"><p class="mg-bottom-0">Fecha de<br>Término Real</p></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0">Prima<br>Rehabilitación</p></div>
+          </div>
+        </div>
+      </div>
+
+      {{#each expire-policies}}
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
+          <div class="col-xs-12 col-md-2 col-lg-1">
+            <div class="col-xs-12">
+              <a href="" class="f-link openContent" data-open-content="tab-today{{@index}}">
+                <span class="openContentText is-open" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="tab-today{{@index}}">
+            <div class="row row-xs-1 row-md-5 row-lg-6 no-gutter mg-top-xs-30">
+              <div class="col-xs-12 col-md-2 col-lg-3 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
+                <p class="mg-bottom-0">{{name}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
+                <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15" >
+                <p class="hide-md mg-lh-0"><strong>Producto</strong></p>
+                <p class="mg-bottom-0">{{product}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-4 col-lg-2 mg-bottom-xs-15 center-md">
+                <p class="hide-md mg-lh-0"><strong>Fecha de Término</strong></p>
+                <p class="mg-bottom-0">{{end-date}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Fecha de Término Real</strong></p>
+                <p class="mg-bottom-0">{{real-end-date}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 col-lg-1 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Prima Rehabilitación</strong></p>
+                <p class="mg-bottom-0">{{rehabilitation-bounty}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <!-- /Tab hoy -->
+
+    <div class="pagination mg-bottom-90">
+      {{> pagination }}
+    </div>
+  </div>
+</section>
