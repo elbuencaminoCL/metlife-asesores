@@ -77,8 +77,8 @@
 		margin-top: 3rem;
 		margin-bottom: 40px;
 	}
-	
-	
+
+
 
 	.recover_form p {
 		margin-top: 0.2rem;
@@ -88,6 +88,24 @@
     margin-top: 10px !important;
     margin-bottom: 0;
   }
+
+
+
+	@media screen and ( min-width: 48em ) {
+		.login__image-complement {
+		  position: relative;
+		  &:before {
+		    background-color: $primary-accent;
+		    bottom: 0;
+		    content: "";
+		    opacity: 0.7;
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width: 80px;
+		  }
+		}
+	}
 
 
 
@@ -112,20 +130,6 @@
 				padding: 0 3rem;
 			}
 		}
-
-    .login__image-complement {
-      position: relative;
-      &:before {
-        background-color: $primary-accent;
-        bottom: 0;
-        content: "";
-        opacity: 0.7;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 80px;
-      }
-    }
 
 		.login_image {
 			min-height: 600px;
