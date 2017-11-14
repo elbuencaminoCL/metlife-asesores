@@ -130,6 +130,7 @@ birthday-table-tomorrow:
               <a href="" class="f-link openContent" data-open-content="tab-today{{@index}}">
                 <span class="openContentText is-open" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                 </span>
+                <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -165,8 +166,21 @@ birthday-table-tomorrow:
     </div>
     <!-- /Tab hoy -->
 
-    <div class="pagination mg-bottom-90">
-      {{> pagination }}
+    <div class="pagination__table">
+      <div class="pagination">
+        {{> pagination }}
+      </div>
+
+      <div class="pagination__select">
+        <section class="u-select" data-parsley-trigger="change">
+          <select class="cs-select cs-skin-border GeneralSelect bg-white" data-parsley-errors-messages-disabled required="">
+            <option value selected>10 items por página</option>
+            <option value="cat1">20 items por página</option>
+            <option value="cat2">30 items por página</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
+      </div>
     </div>
   </div>
 </section>
