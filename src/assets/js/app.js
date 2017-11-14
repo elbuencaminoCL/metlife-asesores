@@ -25,6 +25,7 @@ import './components/open-content';
 import './components/input-text';
 import './components/modal';
 import './components/validate-form';
+import './components/tabs-banner';
 
 import './lib/foundation-explicit-pieces';
 import './lib/select';
