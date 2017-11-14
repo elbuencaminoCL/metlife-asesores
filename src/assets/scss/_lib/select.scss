@@ -153,9 +153,9 @@ div.cs-active {
 .cs-skin-border ul span {
   backface-visibility: hidden;
   background-color: $white-light;
+  border: 1px solid $medium-gray;
   border-bottom: 0;
   border-top: 0;
-  border: 1px solid $medium-gray;
   color: $dark-gray-2;
   font-size: 13px;
   font-weight: bold;
@@ -443,7 +443,7 @@ div.active {
 	.u-select-sticky {
 		height: 40px !important;
 	}
-  
+
   .u-select-tag {
     max-width: 500px;
   }
