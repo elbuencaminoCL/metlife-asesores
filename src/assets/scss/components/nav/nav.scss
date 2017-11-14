@@ -4,8 +4,9 @@
 .menu {
   & > li {
     & > a {
+      display: inline-block;
       font-size: 14px;
-      padding: 23px 5px !important;
+      padding: 23px 5px;
       strong {
         border-bottom: 1px solid transparent;
       }
@@ -23,8 +24,13 @@
   }
 }
 
-.nav-main {
-  height: 60px;
+.is-stuck {
+  .menu {
+    & > li > a {
+      padding: .5rem 40px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
 .nav-main-container {
@@ -47,12 +53,10 @@
   }
   .is-stuck {
     .nav-main {
-      min-height: 40px;
       transition: all 0.3s ease-in-out;
     }
 
     .nav-main-row > li > a {
-      padding: 100px 0;
       transition: all 0.3s ease-in-out;
     }
 

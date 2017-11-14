@@ -95,6 +95,10 @@
 
 	}
 
+	.flatpickr-current-month input.cur-year {
+		border: 0 !important;
+	}
+
 	.fieldParent.field-error {
 		.input__field,
 		.cs-select,

@@ -143,6 +143,10 @@
     margin-right: 30px;
   }
 
+  .mg-top-xs-15 {
+    margin-top: 15px;
+  }
+
   .mg-top-xs-30 {
     margin-top: 30px;
   }
@@ -234,6 +238,14 @@
 
 @media screen and (min-width: 48em) {
 
+
+  .mg-right-sm-15 {
+    margin-right: 15px;
+  }
+
+  .mg-top-xs-15 {
+    margin-top: 0;
+  }
 
 }
 

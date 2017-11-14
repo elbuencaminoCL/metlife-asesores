@@ -11,6 +11,13 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+import flatpickr from 'flatpickr';
+import { Spanish } from "flatpickr/dist/l10n/es.js";
+
+flatpickr(".flatpickr", {
+	"locale": Spanish // locale for this instance only
+});
+
 // Components
 import './components/detect-ie';
 import './components/select';
@@ -19,7 +26,6 @@ import './components/input-text';
 import './components/modal';
 import './components/validate-form';
 
-require('./lib/datepicker.js');
 import './lib/foundation-explicit-pieces';
 import './lib/select';
 import './lib/parsley';
