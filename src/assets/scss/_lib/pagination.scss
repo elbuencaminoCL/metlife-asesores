@@ -33,7 +33,6 @@
 }
 
 
-
 .pagination__numbers-dots {
   background-color: transparent;
   border: none;
@@ -61,3 +60,15 @@
 }
 
 
+@media screen and (min-width: 48em) {
+  .pagination__table {
+    position: relative;
+  }
+
+  .pagination__select {
+    min-width: 200px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }
+}
