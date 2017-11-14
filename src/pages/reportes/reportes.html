@@ -1,0 +1,55 @@
+---
+reports:
+  -
+    title: CDI sometidos sin emitir
+    desc: Visualiza qué negocios están pendientes de sometimiento.
+    number-report: 04
+  -
+    title: Métricas de Agencia
+    desc: Gestiona tus metas de forma diaria, semanal y mensual.
+    number-report: 16
+  -
+    title: Registro de Atención
+    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    number-report: 11
+  -
+    title: Registro de Pendientes
+    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    number-report: 27
+  -
+    title: Reporte de FF.VV.
+    desc: Revisa el deatalle de tu producción histórica por mes.
+    number-report: 26
+  -
+    title: Cierre de Producción
+    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    number-report: 31
+---
+
+
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container">
+    {{> breadcrumb-reports }}
+    <h1 class="center-xs space-bottom">Reportes</h1>
+
+    <div class="row row-xs-1 row-md-3 center-xs mg-bottom-60">
+      {{# each reports}}
+        <div class="col-xs-12 col-md-4 space-bottom pd-30 bg-white z-depth-1">
+          <h4 class="space-bottom">{{title}}</h4>
+          <figure class="center-xs space-bottom row">
+            <img src="./../../assets/images/icons/report.png" class="mg-right-15" />
+            <p class="f-bigger"><strong>{{number-report}}</strong></p>
+          </figure>
+          <p class="space-bottom">{{desc}}</p>
+          <div>
+            <a href="#" class="button button--primary">Ver más</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>  
+</section>

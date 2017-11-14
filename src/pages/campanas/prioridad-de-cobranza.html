@@ -1,0 +1,245 @@
+---
+collection-priority-tab-1:
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 25
+    bounty-basic-net: 55.45
+    bounty-extra: 55.45
+    bounty-total: 55.45
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 42
+    bounty-basic-net: 117.65
+    bounty-extra: 117.65
+    bounty-total: 117.65
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 14
+    bounty-basic-net: 124.56
+    bounty-extra: 124.56
+    bounty-total: 124.56
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 23
+    bounty-basic-net: 34.67
+    bounty-extra: 34.67
+    bounty-total: 34.67
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 54
+    bounty-basic-net: 76.23
+    bounty-extra: 76.23
+    bounty-total: 76.23
+
+collection-priority-tab-2:
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 36
+    bounty-basic-net: 55.45
+    bounty-extra: 55.45
+    bounty-total: 55.45
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 13
+    bounty-basic-net: 117.65
+    bounty-extra: 117.65
+    bounty-total: 117.65
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 14
+    bounty-basic-net: 124.56
+    bounty-extra: 124.56
+    bounty-total: 124.56
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 25
+    bounty-basic-net: 34.67
+    bounty-extra: 34.67
+    bounty-total: 34.67
+  -
+    name: Juan Carlos Olave Infante
+    quantity-policy: 13
+    bounty-basic-net: 76.23
+    bounty-extra: 76.23
+    bounty-total: 76.23
+---
+
+
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container table-container">
+    <div class="hide-xs show-md">
+      {{> breadcrumb-collection-priority}}
+    </div>
+
+    <div class="col-xs-12 center-xs space-bottom">
+      <h1>Prioridad de Cobranza</h1>
+      <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
+    </div>
+
+    <div class="row row-xs-1 row-md-2 middle-xs" data-tabs id="table-collection-priority">
+      <!-- Tabs -->
+      <div class="col-xs-12 col-md-10">
+        <div class="row row-xs-1 row-md-4 no-gutter">
+          <div class="col-xs-12 col-md-3 tabs-title service-visits-tab is-active center-xs z-depth-1">
+            <a href="#tab-consolidated" aria-selected="true">Consolidado</a>
+          </div>
+
+          <div class="col-xs-12 col-md-3 tabs-title service-visits-tab center-xs z-depth-1">
+            <a data-tabs-target="tab-half" href="#tab-delayed-visits">Media</a>
+          </div>
+
+          <div class="col-xs-12 col-md-3 tabs-title service-visits-tab center-xs z-depth-1">
+            <a data-tabs-target="tab-high" href="#tab-delayed-visits">Alta</a>
+          </div>
+
+          <div class="col-xs-12 col-md-3 tabs-title service-visits-tab center-xs z-depth-1">
+            <a data-tabs-target="tab-urgent" href="#tab-delayed-visits">Urgente</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs -->
+
+      <div class="col-xs-12 col-md-2 end-xs">  
+        <a href="#" class="f-link">Descargar PDF</a>
+      </div>
+    </div>
+
+    
+    <div class="tabs-content" data-tabs-content="table-collection-priority">
+      <!-- Contenido del tab-1 (consolidado) -->
+      <div class="tabs-panel is-active" id="tab-consolidated">
+        <!-- Tabla consolidado -->
+        <div class="z-depth-1 space-bottom">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+            <div class="col-xs-12 col-md-3">
+              <p class="mg-bottom-0">Nombre GU</p>
+            </div>
+
+            <div class="col-xs-12 col-md-9">
+              <div class="row row-xs-1 row-md-4 no-gutter">
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Cantidad de Pólizas</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Básica Neta</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Exceso</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Total</p></div>
+              </div>
+            </div>
+          </div>
+
+          {{#each collection-priority-tab-1}}
+            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+              <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12">
+                  <a href="" class="f-link openContent" data-open-content="toggle-collection-priority-tab-1{{@index}}">
+                    <span class="openContentText is-open" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-collection-priority-tab-1{{@index}}">
+                <div class="row row-xs-1 row-md-4 no-gutter mg-top-xs-30">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Cantidad de Pólizas</strong></p>
+                    <p class="mg-bottom-0">{{quantity-policy}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Prima Básica Neta</strong></p>
+                    <p class="mg-bottom-0">{{bounty-basic-net}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
+                    <p class="hide-md mg-lh-0"><strong>Prima Exceso</strong></p>
+                    <p class="mg-bottom-0">{{bounty-extra}}</p>
+                  </div>  
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
+                    <p class="hide-md mg-lh-0"><strong>Prima Total</strong></p>
+                    <p class="mg-bottom-0">{{bounty-total}}</p>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        <!-- /Tabla consolidado -->
+      </div>
+      <!-- /Contenido del tab-1 (consolidado) -->
+
+
+      <!-- Contenido del tab-2 (media) -->
+      <div class="tabs-panel" id="tab-half">
+        <!-- Tabla media -->
+        <div class="z-depth-1 space-bottom">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+            <div class="col-xs-12 col-md-3">
+              <p class="mg-bottom-0">Rut Cliente</p>
+            </div>
+
+            <div class="col-xs-12 col-md-9">
+              <div class="row row-xs-1 row-md-4 no-gutter">
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Cantidad de Pólizas</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Básica Neta</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Exceso</p></div>
+
+                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Prima Total</p></div>
+              </div>
+            </div>
+          </div>
+
+          {{#each collection-priority-tab-2}}
+            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+              <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12">
+                  <a href="" class="f-link openContent" data-open-content="toggle-collection-priority-tab-2{{@index}}">
+                    <span class="openContentText is-open" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-collection-priority-tab-2{{@index}}">
+                <div class="row row-xs-1 row-md-4 no-gutter mg-top-xs-30">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Cantidad de Pólizas</strong></p>
+                    <p class="mg-bottom-0">{{quantity-policy}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
+                    <p class="hide-md mg-lh-0"><strong>Prima Básica Neta</strong></p>
+                    <p class="mg-bottom-0">{{bounty-basic-net}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Prima Exceso</strong></p>
+                    <p class="mg-bottom-0">{{bounty-extra}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
+                    <p class="hide-md mg-lh-0"><strong>Prima Total</strong></p>
+                    <p class="mg-bottom-0">{{bounty-total}}</p>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        <!-- /Tabla media -->
+      </div>
+      <!-- /Contenido del tab-2 (media) -->
+
+      <div class="pagination mg-bottom-90">
+        {{> pagination }}
+      </div>
+
+    </div>
+  </div>
+</section>

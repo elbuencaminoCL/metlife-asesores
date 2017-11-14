@@ -1,0 +1,160 @@
+---
+retention-plan:
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    canal: Nombre del canal
+    request: Nombre del requerimiento
+    description: Descripción
+    creation: 12/05/2017
+    state-management: Estado AAA
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    canal: Nombre del canal
+    request: Nombre del requerimiento
+    description: Descripción
+    creation: 12/05/2017
+    state-management: Estado BBB
+  -
+    rut: 16357872-7
+    name: Constanza Isabel Palma Richardson Corvalan
+    number-policy: 312036709700
+    canal: Nombre del canal
+    request: Nombre del requerimiento
+    description: Descripción
+    creation: 12/05/2017
+    state-management: Estado CCC
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    canal: Nombre del canal
+    request: Nombre del requerimiento
+    description: Descripción
+    creation: 12/05/2017
+    state-management: Estado DDD
+  -
+    rut: 16357872-7
+    name: Jose Alfonso Genaro Rossel Palma
+    number-policy: 312036709700
+    canal: Nombre del canal
+    request: Nombre del requerimiento
+    description: Descripción
+    creation: 12/05/2017
+    state-management: Estado HHH
+---
+
+{{>header}}
+
+
+<section class="pd-top-15">
+  <div class="container table-container">
+    <div class="hide-xs show-md">{{> breadcrumb-retention-plan}}</div>
+    <div class="center-xs space-bottom">
+      <h1>Plan de Retención</h1>
+      <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
+    </div>
+
+    <div class="row row-xs-1 row-sm-2 middle-xs">
+      <div class="col-xs-12 col-sm-3 mg-bottom-15">
+        <section class="u-select bg-white">
+          <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+            <option value="login.html" data-link="login.html">Selecciona un Estado</option>
+            <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="col-xs-12 col-sm-9 end-xs mg-bottom-15">
+        <a href="#" class="f-link">Descrgar PDF</a>
+      </div>
+    </div>
+
+    <!-- Tabla plan de retención -->
+    <div class="z-depth-1 space-bottom" id="today">
+      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
+        <div class="col-xs-12 col-md-2 col-lg-1">
+          <p class="mg-bottom-0">Rut Cliente</p>
+        </div>
+
+        <div class="col-xs-12 col-md-10 col-lg-11">
+          <div class="row row-xs-1 row-md-7 no-gutter">
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Nombre Cliente</p></div>
+
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">N° Poliza</p></div>
+
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Canal</p></div>
+
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Requerimiento</p></div>
+
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Descripción</p></div>
+
+            <div class="col-xs-12 col-md-1 hide-xs show-md"><p class="mg-bottom-0">Creación</p></div>
+
+            <div class="col-xs-12 col-md-1 hide-xs show-md"><p class="mg-bottom-0">Estado Gestión</p></div>
+          </div>
+        </div>
+      </div>
+
+      {{#each retention-plan}}
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
+          <div class="col-xs-12 col-md-2 col-lg-1">
+            <div class="col-xs-12">
+              <a href="" class="f-link openContent" data-open-content="toggle-retention-plan{{@index}}">
+                <span class="openContentText is-open" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-retention-plan{{@index}}">
+            <div class="row row-xs-1 row-md-7 no-gutter mg-top-xs-30">
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
+                <p class="mg-bottom-0">{{name}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
+                <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
+                <p class="mg-bottom-0">{{canal}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Requerimiento</strong></p>
+                <p class="mg-bottom-0">{{request}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Descripción</strong></p>
+                <p class="mg-bottom-0">{{description}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-1 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Creación</strong></p>
+                <p class="mg-bottom-0">{{creation}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-1 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Estado Gestion</strong></p>
+                <p class="mg-bottom-0">{{state-management}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <!-- /Tabla plan de retención -->
+
+    <div class="pagination mg-bottom-90">
+      {{> pagination }}
+    </div>
+  </div>
+</section>
