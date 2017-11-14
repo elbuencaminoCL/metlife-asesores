@@ -285,6 +285,15 @@
     border-bottom-right-radius: 0;
   }
 
+  .inputWidth {
+    /* width: calc(100% - 120px); */
+    width: 100%;
+  }
+
+  .buttonRut, .buttonPolicy {
+    margin-top: -3px;
+  }
+
 
 
 	@media screen and ( min-width: 62em ) {
