@@ -43,11 +43,11 @@
 	}
 
   .login__image {
-    min-height: 600px;
     height: 100%;
     width: 100%;
     img {
       height: 100%;
+			max-height: 300px;
       object-fit: cover;
       width: 100%;
     }
@@ -131,7 +131,7 @@
 			}
 		}
 
-		.login_image {
+		.login__image {
 			min-height: 600px;
 			img {
 				height: 100%;
