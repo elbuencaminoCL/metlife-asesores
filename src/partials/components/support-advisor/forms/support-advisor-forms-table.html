@@ -2,20 +2,21 @@
 <div class="form-result-container container space-bottom pd-15">
 
   {{#each form-table}}
-    <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter u-divider">
+    <div class="row row-xs-1 row-md-2 pd-bottom-15 pd-top-15 table-row no-gutter u-divider">
       <div class="col-xs-12 col-md-7">
         <div>
-          <p class="mg-bottom-0"><em>{{category}}</em></p>
-          <a href="" class="f-link openContent" data-open-content="form-results">
+          <p class="hide-xs show-sm mg-bottom-0"><em>{{category}}</em></p>
+          <a href="" class="f-link openContent" data-open-content="form-results{{@index}}">
             <strong>
               <span class="openContentText is-open" data-rest-text="{{name-form}}" data-open-text="{{name-form}}">{{name-form}}</span>
             </strong>
+            <i class="fa fa-angle-down hide-sm" aria-hidden="true"></i>
           </a>
         </div>
         <p>{{desc}}</p>
       </div>
 
-      <div class="col-xs-12 col-md-5 toggleContent toggleContent--responsive" data-toggle-content="form-results">
+      <div class="col-xs-12 col-md-5 toggleContent toggleContent--responsive" data-toggle-content="form-results{{@index}}">
         <div class="space-bottom-small">
           <p class="hide-md mg-lh-0"><strong>{{category}}</strong></p>
           <p class="hide-md mg-bottom-0">{{desc}}</p>
