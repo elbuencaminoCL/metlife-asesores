@@ -27,7 +27,10 @@ $space-bottom-sm: 30px;
 $space-bottom-md: 30px;
 $space-bottom-lg: 30px;
 
-
+$space-bottom-small-xs: 15px;
+$space-bottom-small-sm: 15px;
+$space-bottom-small-md: 15px;
+$space-bottom-small-lg: 15px;
 
 .container {
   margin: 0 auto;
@@ -151,6 +154,10 @@ $space-bottom-lg: 30px;
 
 .space-bottom {
   margin-bottom: $space-bottom-xs;
+}
+
+.space-bottom-small {
+  margin-bottom: $space-bottom-small-xs;
 }
 
 .space-top {
