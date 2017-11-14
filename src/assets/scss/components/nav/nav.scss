@@ -1,4 +1,4 @@
-
+nav-main-container
 //Breakpoint xtreme-small (xs)
 
 .menu {
@@ -33,8 +33,34 @@
   }
 }
 
+.nav-main {
+  height: 60px;
+  .nav-main-col {
+    &:hover {
+      background-color: $primary-hover;
+    }
+    & > a {
+      display: inline-block;
+      font-size: 14px;
+      padding: 22px 5px;
+      strong {
+        border-bottom: 1px solid transparent;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        border-bottom: 0;
+        color: white;
+        strong {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
 .nav-main-container {
-  height: 100%;
+  height: 100%
 }
 
 .nav-sub {
@@ -54,10 +80,12 @@
   .is-stuck {
     .nav-main {
       transition: all 0.3s ease-in-out;
+      height: 30px;
     }
 
-    .nav-main-row > li > a {
+    .nav-main-row > div > a {
       transition: all 0.3s ease-in-out;
+      padding: 7px 5px;
     }
 
     .nav-menu > li > a {
