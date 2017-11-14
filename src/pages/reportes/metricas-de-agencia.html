@@ -1,0 +1,43 @@
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container">
+    {{> breadcrumb-agency-metrics }}
+    <div class="space-bottom center-xs">
+      <h1>Métricas de Agencia</h1>
+    </div>
+  </div>
+
+  <form id="formSearch" class="formValidateChange" data-parsley-validate="">
+    <div class="bg-white space-bottom pd-30">
+
+      <div class="container">
+        <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
+          <span class="openContentText is-open" data-rest-text="Seleccione un Reporte" data-open-text="Seleccione un Reporte">Seleccione un Reporte</span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+      </div>
+      <!-- Contenido formulario -->
+      <section class=" toggleContent no-padding-bottom" data-toggle-content="agency-metrics">
+        <div class="space-bottom support-form-row">    
+          <div class="fieldParent mg-bottom-15">
+            <section class="u-select" data-parsley-trigger="change">
+              <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+                <option value="cat1">cat1</option>
+                <option value="cat2">cat2</option>
+                <option value selected>Seleccione un período de tiempo</option>
+              </select>
+            </section>
+            <p class="form-error f-tiny">Debes seleccionar un período de tiempo.</p>
+          </div>
+
+          <div class="col-xs-12 col-md-4 end-md">
+            <input class="button button--primary" type="submit" value="Descargar" />
+          </div>
+        </div>
+      </section>
+      <!-- /Contenido formulario -->
+    </div>
+  </form>
+</section>
