@@ -5,7 +5,7 @@
   & > li {
     & > a {
       font-size: 14px;
-      padding: 1.5rem 0px !important;
+      padding: 23px 5px !important;
       strong {
         border-bottom: 1px solid transparent;
       }
@@ -23,6 +23,14 @@
   }
 }
 
+.nav-main {
+  height: 60px;
+}
+
+.nav-main-container {
+  height: 100%;
+}
+
 .nav-sub {
   background-color: white;
   padding: 16px 0;
@@ -38,12 +46,24 @@
     }
   }
   .is-stuck {
+    .nav-main {
+      min-height: 40px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-main-row > li > a {
+      padding: 100px 0;
+      transition: all 0.3s ease-in-out;
+    }
+
     .nav-menu > li > a {
       padding: .5rem 0;
     }
+
     .nav-sub {
       padding: 11px 0;
     }
+
     .nav-sub__image {
       img {
         max-width: 120px;
@@ -96,6 +116,10 @@
   z-index: 10;
 }
 
+.nav-main-row {
+  max-width: 840px;
+  margin: 0 auto;
+}
 
 
 //Breakpoint medium (md)

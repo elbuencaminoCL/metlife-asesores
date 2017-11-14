@@ -89,9 +89,13 @@
 }
 
 .orbit-image {
-  min-height: 350px;
+  min-height: 600px;
   object-fit: cover;
   width: 100%;
+}  
+
+.orbit-figure {
+  min-height: 600px;
 }
 
 .orbit-title {
