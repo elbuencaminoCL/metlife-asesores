@@ -6,7 +6,7 @@ retention-plan:
     number-policy: 312036709700
     canal: Nombre del canal
     request: Nombre del requerimiento
-    description: Descripción
+    description: Descripción mas larga
     creation: 12/05/2017
     state-management: Estado AAA
   -
@@ -62,14 +62,14 @@ retention-plan:
       <div class="col-xs-12 col-sm-3 mg-bottom-15">
         <section class="u-select bg-white">
           <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-            <option value="login.html" data-link="login.html">Selecciona un Estado</option>
+            <option value="login.html" data-link="login.html">Estado de Retención</option>
             <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
           </select>
         </section>
       </div>
 
-      <div class="col-xs-12 col-sm-9 end-xs mg-bottom-15">
-        <a href="#" class="f-link">Descrgar PDF</a>
+      <div class="col-xs-12 col-sm-9 mg-bottom-15">
+        <a href="#" class="f-link">Descargar PDF</a>
       </div>
     </div>
 
@@ -77,14 +77,14 @@ retention-plan:
     <div class="z-depth-1 space-bottom" id="today">
       <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
         <div class="col-xs-12 col-md-2 col-lg-1">
-          <p class="mg-bottom-0">Rut Cliente</p>
+          <p class="mg-bottom-0">R.U.T.</p>
         </div>
 
         <div class="col-xs-12 col-md-10 col-lg-11">
           <div class="row row-xs-1 row-md-7 no-gutter">
             <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Nombre Cliente</p></div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">N° Poliza</p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Poliza Nº</p></div>
 
             <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Canal</p></div>
 
@@ -92,7 +92,7 @@ retention-plan:
 
             <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Descripción</p></div>
 
-            <div class="col-xs-12 col-md-1 hide-xs show-md"><p class="mg-bottom-0">Creación</p></div>
+            <div class="col-xs-12 col-md-1 hide-xs show-md"><p class="mg-bottom-0">Fecha Solicitud</p></div>
 
             <div class="col-xs-12 col-md-1 hide-xs show-md"><p class="mg-bottom-0">Estado Gestión</p></div>
           </div>
@@ -118,7 +118,7 @@ retention-plan:
               </div>
 
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
+                <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
                 <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
               </div>
 
@@ -138,7 +138,7 @@ retention-plan:
               </div>
 
               <div class="col-xs-12 col-md-1 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Creación</strong></p>
+                <p class="hide-md mg-lh-0"><strong>Fecha Solicitud</strong></p>
                 <p class="mg-bottom-0">{{creation}}</p>
               </div>
 
