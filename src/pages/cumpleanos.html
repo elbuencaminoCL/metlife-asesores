@@ -85,24 +85,19 @@ birthday-table-tomorrow:
     {{> breadcrumb-birthday }}
     <h1 class="center-xs space-bottom">Cumpleaños de mis Clientes</h1>
 
-    <input type="text" class="span2" id="dp1">
-    <input class="flatpickr flatpickr-input" type="text" placeholder="Select Date.." readonly="readonly">
-
-    <div class="row row-xs-2 row-sm-2 row-md-2">
+    <div class="row row-xs-2 row-sm-2 row-md-2 space-bottom">
       <div class="col-xs-6 col-sm-3 col-md-2">
         <span class="input input--ichiro input--datepicker DatePickerStart u-space">
-          <input class="input__field input__field--ichiro" placeholder="Fecha Desde" type="text" readonly="">
+          <input class="input__field input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
           <i class="material-icons">date_range</i>
         </span>
       </div>
 
       <div class="col-xs-6 col-sm-3 col-md-2">
-        <section class="u-select space-bottom bg-white">
-          <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-            <option value="login.html" data-link="login.html">Fecha Hasta hasta</option>
-            <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
-          </select>
-        </section>
+        <span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+          <input class="input__field input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
+          <i class="material-icons">date_range</i>
+        </span>
       </div>
     </div>
 
