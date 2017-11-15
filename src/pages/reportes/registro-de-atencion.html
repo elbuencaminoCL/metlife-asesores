@@ -1,3 +1,72 @@
+---
+attention-record:
+  -
+    record: 465342657
+    date-entry: 17/08/2017 18:56:31
+    canal: Back
+    sub-canal: Recaudación
+    management: Ingreso Masivo
+    area: Recaudación
+    category: Forma de Pago
+    specifications: Suscripción PAT
+    state: Terminado
+    request: Ver RI
+    adj:
+    bit:
+    cs:
+    ao:
+    tt:
+  -
+    record: 465342657
+    date-entry: 17/08/2017 18:56:31
+    canal: Back
+    sub-canal: Recaudación
+    management: Ingreso Masivo
+    area: Recaudación
+    category: Forma de Pago
+    specifications: Suscripción PAT
+    state: Terminado
+    request: Ver RI
+    adj:
+    bit:
+    cs:
+    ao:
+    tt:
+  -
+    record: 465342657
+    date-entry: 17/08/2017 18:56:31
+    canal: Back
+    sub-canal: Recaudación
+    management: Ingreso Masivo
+    area: Recaudación
+    category: Forma de Pago
+    specifications: Suscripción PAT
+    state: Terminado
+    request: Ver RI
+    adj:
+    bit:
+    cs:
+    ao:
+    tt:
+  -
+    record: 465342657
+    date-entry: 17/08/2017 18:56:31
+    canal: Back
+    sub-canal: Recaudación
+    management: Ingreso Masivo
+    area: Recaudación
+    category: Forma de Pago
+    specifications: Suscripción PAT
+    state: Terminado
+    request: Ver RI
+    adj:
+    bit:
+    cs:
+    ao:
+    tt:
+---
+
+
 
 {{> header }}
 
@@ -46,90 +115,161 @@
     </div>
   </form>
 
-  <!-- Tabla CDI sometidos sin emitir -->
-  <div class="container table-container">
+  <!-- Tabla Registro de Atención -->
+  <div class="container table-record">
     <div class="z-depth-1 space-bottom">
       <div class="row bg-primary-hover f-white pd-10 no-gutter">
-        <div class="table-120">
-          <p class="mg-bottom-0">Rut Cliente</p>
+        <div class="table-100">
+          <p class="mg-bottom-0">Reg de Atención</p>
         </div>
 
-        <div class="table-1300">
+        <div class="table-1080">
           <div class="row">
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Fecha de Ingreso</p>
             </div>
 
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Canal</p>
             </div>
 
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Sub Canal</p>
             </div>
 
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Gestión</p>
             </div>
 
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Área</p>
             </div>
 
-            <div class="table-120">
+            <div class="table-100 hide-xs show-md">
               <p>Categoria</p>
             </div>
 
-            <div class="table-120">
-              <p>Especificaciones</p>
+            <div class="table-100 hide-xs show-md">
+              <p>Especific.</p>
+            </div>
+
+            <div class="table-100 hide-xs show-md">
+              <p>Estado</p>
+            </div>
+
+            <div class="table-100 hide-xs show-md">
+              <p>Req. Internos</p>
+            </div>
+
+            <div class="table-45 hide-xs show-md">
+              <p>Adj.</p>
+            </div>
+
+            <div class="table-45 hide-xs show-md">
+              <p>Bit.</p>
+            </div>
+
+            <div class="table-30 hide-xs show-md">
+              <p>CS</p>
+            </div>
+
+            <div class="table-30 hide-xs show-md">
+              <p>AO</p>
+            </div>
+
+            <div class="table-30 hide-xs show-md">
+              <p>TT</p>
             </div>
           </div>
         </div>
       </div>
 
-      {{#each cdi}}
-        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
-          <div class="col-xs-12 col-md-2 col-lg-1">
-            <div class="col-xs-12">
-              <a href="" class="f-link openContent" data-open-content="toggle-cdi{{@index}}">
-                <span class="openContentText is-open" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
-                </span>
-              </a>
-            </div>
+      {{#each attention-record}}
+        <div class="row pd-10 table-row no-gutter">
+          <div class="table-100">
+            <a href="" class="f-link openContent" data-open-content="toggle-attention-record{{@index}}">
+              <span class="openContentText is-open" data-rest-text="{{record}}" data-open-text="{{record}}">{{record}}
+              </span>
+            </a>
           </div>
 
-          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-cdi{{@index}}">
-            <div class="row row-xs-1 row-md-5 no-gutter mg-top-xs-30">
-              <div class="col-xs-12 col-md-4 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                <p class="mg-bottom-0">{{name}}</p>
+          <div class="table-1080 toggleContent toggleContent--responsive" data-toggle-content="toggle-attention-record{{@index}}">
+            <div class="row mg-top-xs-30">
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Fecha de Ingreso</strong></p>
+                <p class="mg-bottom-0 ww">{{date-entry}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>N° de CDI</strong></p>
-                <p class="mg-bottom-0">{{number-cdi}}</p>
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
+                <p class="mg-bottom-0 ww">{{canal}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
-                <p class="hide-md mg-lh-0"><strong>Fecha de Sometimiento</strong></p>
-                <p class="mg-bottom-0">{{submission-date}}</p>
+              <div class="table-100 mg-bottom-xs-15" >
+                <p class="hide-md mg-lh-0"><strong>Sub Canal</strong></p>
+                <p class="mg-bottom-0 ww">{{sub-canal}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Categoria</strong></p>
-                <p class="mg-bottom-0">{{category}}</p>
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Gestión</strong></p>
+                <p class="mg-bottom-0 ww">{{management}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Requisitos</strong></p>
-                <p class="mg-bottom-0">{{request}}</p>
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Área</strong></p>
+                <p class="mg-bottom-0 ww">{{area}}</p>
+              </div>
+
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Categoría</strong></p>
+                <p class="mg-bottom-0 ww">{{category}}</p>
+              </div>
+
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Especificaciones</strong></p>
+                <p class="mg-bottom-0 ww">{{specifications}}</p>
+              </div>
+
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Estado</strong></p>
+                <p class="mg-bottom-0 ww">{{state}}</p>
+              </div>
+
+              <div class="table-100 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Requisitos Internos</strong></p>
+                <p class="mg-bottom-0 ww"><a href="#">{{request}}</a></p>
+              </div>
+
+              <div class="table-45 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Adj.</strong></p>
+                <p class="mg-bottom-0 ww">{{adj}}</p>
+              </div>
+
+              <div class="table-45 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Bit.</strong></p>
+                <p class="mg-bottom-0 ww">{{bit}}</p>
+              </div>
+
+              <div class="table-30 bullet-col success">
+                <p class="hide-md mg-lh-0"><strong>CS</strong></p>
+                <p class="mg-bottom-0 ww">{{cs}}</p>
+              </div>
+
+              <div class="table-30">
+                <p class="hide-md mg-lh-0"><strong>AO</strong></p>
+                <p class="mg-bottom-0 ww">{{ao}}</p>
+              </div>
+
+              <div class="table-30">
+                <p class="hide-md mg-lh-0"><strong>TT</strong></p>
+                <p class="mg-bottom-0 ww">{{tt}}</p>
               </div>
             </div>
           </div>
         </div>
       {{/each}}
     </div>
-    <!-- /Tabla CDI sometidos sin emitir -->
+    <!-- /Tabla Registro de Atención -->
   </div>
 
 </section>
