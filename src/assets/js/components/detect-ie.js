@@ -16,6 +16,12 @@ function tkObjectFit() {
 }
 
 
+function modalInputExplorer() {
+  $( '.fieldParent' ).find('strong').addClass('input-top-up')
+  $( '.inputEmailMetlife' ).addClass('max-height-39')
+}
+
+
 function detectIE() {
   var ua = window.navigator.userAgent;
 
@@ -25,7 +31,7 @@ function detectIE() {
   var trident = ua.indexOf('Trident/');
   if (msie > 0 || trident > 0) {
     tkObjectFit();
-
+    modalInputExplorer();
   }
 
   // other browser

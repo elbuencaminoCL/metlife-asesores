@@ -23,3 +23,8 @@ $( '.heightInput' ).on( 'click', ( e ) => {
     $(e.currentTarget).addClass('dropdownOpen')
   }
 });
+
+
+$( '.modalInputExplorer' ).on( 'click', ( e ) => {
+  $( 'inputTop' ).addClass('inputTopUp')
+});
