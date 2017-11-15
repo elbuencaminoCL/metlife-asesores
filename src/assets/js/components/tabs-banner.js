@@ -1,22 +1,24 @@
 
 import $ from 'jquery'
 
-$( '.openContentInputRut' ).on( 'click', ( e ) => {
+let $dropdownRow
+
+$( '.heightInput' ).on( 'click', ( e ) => {
   e.preventDefault();
+  console.log('sdfshbdf')
 
-  $('.contentInputRut').removeClass('hide-xs')
-  $('.buttonRut').addClass('hide-xs')
-  $( '.openContentInputRut' ).removeClass('col-xs-9')
-  $( '.openContentInputRut' ).addClass('col-xs-12')
+  if( $(e.currentTarget).hasClass('dropdownOpen') ) {
+    const $bannerContentColTabs = parseInt($('.banner-content-col-tabs').css('bottom'))
+    const $result = $bannerContentColTabs + $dropdownRow
+    $('.banner-content-col-tabs').css('bottom', $result + 'px')
+    $(e.currentTarget).removeClass('dropdownOpen')
+  }
+  else {
+    $dropdownRow = $('.dropdownRow').height()
+    const $bannerContentColTabs = parseInt($('.banner-content-col-tabs').css('bottom'))
+    const $result = $bannerContentColTabs - $dropdownRow
+    $('.banner-content-col-tabs').css('bottom', $result + 'px')
 
-});
-
-$( '.openContentInputPolicy' ).on( 'click', ( e ) => {
-  e.preventDefault();
-
-  $('.contentInputPolicy').removeClass('hide-xs')
-  $('.buttonPolicy').addClass('hide-xs')
-  $( '.openContentInputPolicy' ).removeClass('col-xs-9')
-  $( '.openContentInputPolicy' ).addClass('col-xs-12')
-
+    $(e.currentTarget).addClass('dropdownOpen')
+  }
 });

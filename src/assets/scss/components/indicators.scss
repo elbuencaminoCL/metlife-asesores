@@ -1,8 +1,13 @@
 
+.indicators-figure {
+  max-height: 450px;
+}
+
 .indicators-img {
   min-height: 450px;
   object-fit: cover;
 }
+
 
 .indicators-row {
   border-bottom: 1px solid $gray;
@@ -42,7 +47,15 @@
   }
 }
 
+.policy-figure {
+  max-height: 420px;
+}
+
 .policy-img {
-  min-height: 424px;
+  min-height: 420px;
   object-fit: cover;
+}
+
+.policy-summary-col {
+  min-height: 420px;
 }
