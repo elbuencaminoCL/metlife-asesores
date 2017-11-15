@@ -16,7 +16,6 @@
 }
 
 .banner-content {
-
   .card-banner-xs{
     position: initial;
   }
@@ -88,19 +87,23 @@
   }
 }
 
+.orbit-container {
+  height: 300px !important;
+}
+
 .orbit-image {
-  min-height: 600px;
+  min-height: 500px;
   object-fit: cover;
   width: 100%;
 }  
 
 .orbit-figure {
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .orbit-title {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
 }
@@ -121,15 +124,32 @@
 @media screen and ( min-width: 62em ) {
 
   .banner-content {
-    bottom: 100px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 100%;
+    position: relative;
+    .banner-content-col-tabs { 
+      bottom: 100px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      &.height-50 {
+        bottom: 50px;
+      }
+    }
+
+    .banner-content-col {
+      bottom: 100px;
+      right: 0;
+      position: absolute;
+      width: 100%;
+    }
+
     .banner-title {
       padding-bottom: 50px;
     }
   }
+
+  .orbit-container {
+    height: 500px !important;
+  } 
 
   .orbit-image {
     height: 500px;
