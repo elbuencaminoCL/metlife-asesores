@@ -95,6 +95,10 @@
 
 	}
 
+	.input__field--no-border {
+		border: 0 !important;
+	}
+
 	.flatpickr-current-month input.cur-year {
 		border: 0 !important;
 	}
