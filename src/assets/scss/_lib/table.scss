@@ -29,7 +29,7 @@
 }
 
 .table-scroll {
-  width: 1200px;
+  overflow-y: hidden;
 }
 
 
@@ -112,8 +112,9 @@
 	}
 
   .table-scroll {
+    overflow-y: hidden !important;
+    overflow-x: scroll;
     width: 1200px;
-    
   }
 
 

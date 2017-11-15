@@ -15,3 +15,40 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+
+.footer__figure-logo {
+  min-width: 200px;
+}
+
+
+ 
+
+.bullet-item_footer {
+  position: relative;
+  &:before {
+    background-color: $medium-gray;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: -10px;
+    position: absolute;
+    top: 7px;
+    width: 4px;
+  }
+}
+
+.bulletItemFooterExplorer {
+  position: relative;
+  &:before {
+    background-color: $medium-gray;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: -10px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+  }
+}
+
+
