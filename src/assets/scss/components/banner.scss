@@ -75,8 +75,10 @@
   margin: 10px;
   button {
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
     cursor: pointer;
+    height: 10px;
+    width: 10px;
     &:hover {
       background-color: $primary;
     }
@@ -129,23 +131,17 @@
 @media screen and ( min-width: 62em ) {
 
   .banner-content {
-    position: relative;
-    .banner-content-col-tabs {
-      bottom: 125px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
-
-    .banner-content-col {
-      bottom: 125px;
-      right: 0;
-      position: absolute;
-      width: 100%;
-    }
-
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    width: 100%;
     .banner-title {
       padding-bottom: 50px;
+    }
+    .input__field,
+    .cs-skin-border > span {
+      border: 0 !important;
     }
   }
 
@@ -159,7 +155,7 @@
 
   .orbit-title {
     position: absolute;
-    top: 75px;
+    top: 45px;
     left: 0;
     right: 0;
   }

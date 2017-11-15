@@ -3,22 +3,27 @@ service-visits-tab-1:
   -
     rut: 16357872-7
     name: Jose Alfonso Genaro Rossel Palma
+    date: 16/09/2010
     number-policy: 312036709700
   -
     rut: 16357872-7
     name: Jose Alfonso Genaro Rossel Palma
+    date: 16/09/2010
     number-policy: 312036709700
   -
     rut: 16357872-7
     name: Constanza Isabel Palma Richardson Corvalan
+    date: 16/09/2010
     number-policy: 312036709700
   -
     rut: 16357872-7
     name: Jose Alfonso Genaro Rossel Palma
+    date: 16/09/2010
     number-policy: 312036709700
   -
     rut: 16357872-7
     name: Jose Alfonso Genaro Rossel Palma
+    date: 16/09/2010
     number-policy: 312036709700
 
 service-visits-tab-2:
@@ -60,7 +65,7 @@ service-visits-tab-2:
     </div>
 
     <div class="col-xs-12 center-xs space-bottom">
-      <h1>Visitas de Servicios</h1>
+      <h1>Visitas de Servicio</h1>
       <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
     </div>
 
@@ -95,7 +100,7 @@ service-visits-tab-2:
             </span>
           </div>
 
-          <div class="col-xs-12 col-md-4 end-xs">
+          <div class="col-xs-12 col-md-4">
             <a href="#" class="f-link">Descargar PDF</a>
           </div>
         </div>
@@ -110,16 +115,18 @@ service-visits-tab-2:
         <div class="z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
             <div class="col-xs-12 col-md-2 col-lg-2">
-              <p class="mg-bottom-0">Rut Cliente</p>
+              <p class="mg-bottom-0">R.U.T.</p>
             </div>
 
             <div class="col-xs-12 col-md-10 col-lg-10">
               <div class="row row-xs-1 row-md-3 no-gutter">
                 <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0">Nombre Cliente</p></div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">N° Poliza</p></div>
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Poliza Nº</p></div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0">Ficha</p></div>
+                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Fecha</p></div>
+
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Ficha de Mantención</p></div>
               </div>
             </div>
           </div>
@@ -142,13 +149,18 @@ service-visits-tab-2:
                     <p class="mg-bottom-0">{{name}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
-                    <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
+                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
                     <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
                   </div>
 
-                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
-                    <p class="hide-md mg-lh-0"><strong>Ficha</strong></p>
+                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Fecha</strong></p>
+                    <p class="mg-bottom-0">{{date}}</p>
+                  </div>
+
+                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                    <p class="hide-md mg-lh-0"><strong>Ficha de Mantención</strong></p>
                     <p class="mg-bottom-0"><a href="#" class="f-link">Descargar</a></p>
                   </div>                  
                 </div>
@@ -167,18 +179,18 @@ service-visits-tab-2:
         <div class="z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
             <div class="col-xs-12 col-md-2 col-lg-2">
-              <p class="mg-bottom-0">Rut Cliente</p>
+              <p class="mg-bottom-0">R.U.T.</p>
             </div>
 
             <div class="col-xs-12 col-md-10 col-lg-10">
               <div class="row row-xs-1 row-md-4 no-gutter">
                 <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0">Nombre Cliente</p></div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Fecha</p></div>
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Poliza Nº</p></div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">N° Poliza</p></div>
+                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Fecha</p></div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Ficha</p></div>
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0">Ficha de Mantención</p></div>
               </div>
             </div>
           </div>
@@ -201,18 +213,18 @@ service-visits-tab-2:
                     <p class="mg-bottom-0">{{name}}</p>
                   </div>
 
+                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
+                    <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
+                  </div>
+
                   <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
                     <p class="hide-md mg-lh-0"><strong>Fecha</strong></p>
                     <p class="mg-bottom-0">{{date}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                    <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
-                    <p class="mg-bottom-0"><a href="#">{{number-policy}}</a></p>
-                  </div>
-
                   <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
-                    <p class="hide-md mg-lh-0"><strong>Ficha</strong></p>
+                    <p class="hide-md mg-lh-0"><strong>Ficha de Mantención</strong></p>
                     <p class="mg-bottom-0"><a href="#" class="f-link">Descargar</a></p>
                   </div>                  
                 </div>

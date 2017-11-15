@@ -95,6 +95,10 @@
 
 	}
 
+	.input__field--no-border {
+		border: 0 !important;
+	}
+
 	.flatpickr-current-month input.cur-year {
 		border: 0 !important;
 	}
@@ -137,14 +141,14 @@
 		color: black;
 		display: inline-block;
 		font-weight: 400;
-		padding: 0 1em;
+		padding: 0 10px;
 		user-select: none;
 		width: 40%;
 	}
 
 	.input__label-content {
 		display: block;
-		padding: 8px 0 0;
+		padding: 6px 0 0;
 		position: relative;
 		width: 100%;
 		z-index: 100;
@@ -191,7 +195,8 @@
 	}
 
 	.input__label-content--ichiro {
-		font-size: 14px;
+		color: #666;
+		font-size: 16px;
 		left: 0;
 		top: 0;
 		transition: all .3s cubic-bezier(.4,0,.2,1);
@@ -217,8 +222,8 @@
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
 		font-size: 12.8px;
-		left: -16px;
-		top: -2rem;
+		left: -10px;
+		top: -28px;
 		z-index: -1;
 	}
 
@@ -276,7 +281,7 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-color: #666;
-    max-height: 34px;
+    max-height: 39px;
   }
 
   .input-email {
