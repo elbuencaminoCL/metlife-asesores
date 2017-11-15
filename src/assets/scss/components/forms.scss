@@ -2,12 +2,12 @@
 @import './../global/colors.scss';
 
 .form-download-ico {
-  margin: 3px 10px 0 0;
+  margin: 5px 0 0 0;
 }
 
 .form-email-ico {
   max-width: 12px;
-  margin-right: 10px;
+  margin: 4px 0 0 0;
 }
 
 .support_form_container_search {
@@ -52,7 +52,7 @@
 
 
 @media screen and (min-width: 62em) {
-  
+
   .support-advisor-col {
     padding: 0 20px 0 40px;
   }
