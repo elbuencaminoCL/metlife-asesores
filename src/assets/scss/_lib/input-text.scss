@@ -35,6 +35,15 @@
 		position: relative;
 	}
 
+  .inputError {
+    color: green;
+    display: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding: 10px 0 0;
+    position: relative;
+  }
+
 	.is-invalid-input:not(:focus) {
 		border: 1px solid $error-border !important;
 		background-color: #f9ecea;

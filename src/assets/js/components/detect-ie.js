@@ -20,6 +20,7 @@ function modalInputExplorer() {
   $( '.fieldParent' ).find('.inputIchiro').addClass('input-top-up')
   $( '.inputEmailMetlife' ).addClass('max-height-39')
   $( '.bullet-item_footer' ).addClass('bulletItemFooterExplorer')
+  $( '.input' ).find('.form-error').addClass('inputError')
 }
 
 
