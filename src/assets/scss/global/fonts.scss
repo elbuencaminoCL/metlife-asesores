@@ -119,7 +119,7 @@ p {
 
 .f-error {
   color: $error;
-  font-weight: 100;
+  font-weight: 100 !important;
   padding: 5px 10px;
 }
 
