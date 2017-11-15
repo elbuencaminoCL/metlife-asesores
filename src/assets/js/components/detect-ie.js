@@ -17,7 +17,7 @@ function tkObjectFit() {
 
 
 function modalInputExplorer() {
-  $( '.fieldParent' ).find('strong').addClass('input-top-up')
+  $( '.fieldParent' ).find('.inputIchiro').addClass('input-top-up')
   $( '.inputEmailMetlife' ).addClass('max-height-39')
 }
 
