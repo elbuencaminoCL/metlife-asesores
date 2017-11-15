@@ -109,6 +109,12 @@
 }
 /* Carousel */
 
+.input--filled {
+  .input-top-up {
+    position: relative;
+    top: -22px;
+  }
+}
 
 
 // Breakpoint small (sm)
@@ -130,9 +136,6 @@
       left: 0;
       position: absolute;
       width: 100%;
-      &.height-50 {
-        bottom: 50px;
-      }
     }
 
     .banner-content-col {
