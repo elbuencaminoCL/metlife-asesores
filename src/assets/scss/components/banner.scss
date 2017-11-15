@@ -31,7 +31,6 @@
 
 .banner-tab {
   border-radius: 3px;
-  border: 2px solid $primary;
   .banner-tab--client,
   .banner-tab--policy {
     position: relative;
@@ -95,7 +94,7 @@
   min-height: 500px;
   object-fit: cover;
   width: 100%;
-}  
+}
 
 .orbit-figure {
   min-height: 500px;
@@ -125,7 +124,7 @@
 
   .banner-content {
     position: relative;
-    .banner-content-col-tabs { 
+    .banner-content-col-tabs {
       bottom: 100px;
       left: 0;
       position: absolute;
@@ -149,7 +148,7 @@
 
   .orbit-container {
     height: 500px !important;
-  } 
+  }
 
   .orbit-image {
     height: 500px;
