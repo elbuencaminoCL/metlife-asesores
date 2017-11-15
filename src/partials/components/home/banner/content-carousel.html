@@ -1,5 +1,6 @@
+
 <div class="row row-xs-1 row-md-2 bottom-xs gutter-md">
-  <div class="col-xs-12 col-md-6 mg-bottom-xs-30">
+  <div class="col-xs-12 col-md-6 mg-bottom-xs-30 banner-content-col-tabs">
     <div class="card-banner bg-clarity">
       <p class="f-bigger space-bottom"><strong>Quiero buscar información de mi Cartera por:</strong></p>
       <div class="row row-xs-2 center-xs no-gutter banner-tab mg-bottom-15" data-tabs id="tabsCard">
@@ -16,29 +17,23 @@
         <form id="formClient" class="formValidateInput" data-parsley-validate="">
           <div class="tabs-panel is-active" id="clients">
 
-            <div class="fieldParent row row-xs-2 mg-bottom-5">
-              <div class="col-xs-9 openContentInputRut">
-                <span class="input input--ichiro">
-                  <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="loginRut" placeholder="R.U.T" required />
-                  <p class="form-error f-tiny pd-top-i-50">No tenemos registrado este RUT. Por favor, revisa que esté correcto.</p>
-                </span>
-              </div>
-
-              <div class="col-xs-3 end-xs buttonRut">
-                <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
-              </div>
+            <div class="mg-bottom-10 fieldParent">
+              <span class="input input--ichiro">
+                <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="loginRut" placeholder="R.U.T" required />
+                <p class="form-error f-tiny pd-top-i-50">No tenemos registrado este RUT. Por favor, revisa que esté correcto.</p>
+              </span>
             </div>
 
-            <div class="mg-bottom-5 fieldParent hide-xs contentInputRut">
+            <div class="mg-bottom-10 fieldParent">
               <span class="input input--ichiro">
                 <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" data-live-validate="true" type="text" placeholder="Nombre" id="loginClient" required />
                 <p class="form-error f-tiny pd-top-i-50">Ingresa un Cliente válido.</p>
               </span>
             </div>
-            
+
             <!-- Contenido desplegable de búsqueda avanzada -->
-            <section class=" toggleContent no-padding-bottom" data-toggle-content="search-advanced">
-              <div class="row row-xs-1 row-md-2 mg-bottom-15">
+            <section class=" toggleContent no-padding-bottom dropdownRow" data-toggle-content="search-advanced">
+              <div class="row row-xs-1 row-md-2">
                 <div class="col-xs-12 col-md-6 fieldParent mg-bottom-10">
                   <section class="u-select" data-parsley-trigger="change">
                     <select class="cs-select cs-skin-border bg-white GeneralSelect" data-parsley-errors-messages-disabled="" required="">
@@ -63,9 +58,9 @@
             <!-- /Contenido desplegable de búsqueda avanzada -->
 
             <!-- Tab cliente -->
-            <div class="row row-xs-1 row-sm-2 middle-xs hide-xs contentInputRut">
+            <div class="row row-xs-1 row-sm-2 middle-xs">
               <div class="col-xs-12 col-sm-6 center-xs start-sm mg-bottom-xs-15">
-                <a href="" class="openContent f-link f-tiny" data-open-content="search-advanced">
+                <a href="" class="openContent f-link f-tiny heightInput" data-open-content="search-advanced">
                   <span class="openContentText is-open" data-rest-text="Búsqueda Avanzada" data-open-text="Búsqueda Avanzada">Búsqueda Avanzada</span>
                 </a>
               </div>
@@ -80,22 +75,18 @@
 
         <form id="formPoliza" class="formValidateInput" data-parsley-validate="">
           <div class="tabs-panel" id="policy">
-            <div class="row row-xs-2">
-              <div class="col-xs-9 mg-bottom-5 fieldParent openContentInputPolicy">
+            <div class="row row-xs-1">
+              <div class="col-xs-12 mg-bottom-10 fieldParent">
                 <span class="input input--ichiro">
                   <input class="input__field input__field--ichiro" placeholder="Número de Póliza" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="loginPolicy" required />
                   <p class="form-error f-tiny pd-top-i-50">Ingresa un número de póliza.</p>
                 </span>
               </div>
-
-              <div class="col-xs-3 end-xs buttonPolicy">
-                <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
-              </div>
             </div>
-            
+
             <!-- Contenido desplegable de mostrar cartera completa-->
-            <section class=" toggleContent no-padding-bottom" data-toggle-content="portfolio-full">
-              <div class="row row-xs-1 row-md-2 mg-bottom-15">
+            <section class="dropdownRow toggleContent no-padding-bottom" data-toggle-content="portfolio-full">
+              <div class="row row-xs-1 row-md-2">
                 <div class="col-xs-12 col-md-6 fieldParent mg-bottom-10">
                   <section class="u-select" data-parsley-trigger="change">
                     <select class="cs-select cs-skin-border bg-white GeneralSelect" data-parsley-errors-messages-disabled="" required="">
@@ -121,9 +112,9 @@
 
 
             <!-- Tab póliza -->
-            <div class="row row-xs-1 row-sm-2 middle-xs hide-xs contentInputPolicy">
+            <div class="row row-xs-1 row-sm-2 middle-xs">
               <div class="col-xs-12 col-sm-6 center-xs start-sm mg-bottom-xs-15">
-                <a href="" class="openContent f-link f-tiny" data-open-content="portfolio-full">
+                <a href="" class="openContent f-link f-tiny heightInput" data-open-content="portfolio-full">
                   <span class="openContentText is-open" data-rest-text="Mostrar Cartera Completa" data-open-text="Mostrar Cartera Completa">Mostrar Cartera Completa</span>
                 </a>
               </div>
@@ -139,8 +130,8 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-md-6 mg-bottom-xs-30 card-banner__bells">
-    <div class="card-banner card-banner-bell bg-clarity center-xs">
+  <div class="col-xs-12 col-md-6 mg-bottom-xs-30 card-banner__bells banner-content-col">
+    <div class="card-banner bg-clarity center-xs">
       <p class="space-bottom f-bigger"><strong>Quiero Gestionar mi Cartera</strong></p>
       <p class="space-bottom">Revisa cómo alcanzar tus metas rentabilizando tu cartera mediante distintas campañas.</p>
       <div class="button-bell">

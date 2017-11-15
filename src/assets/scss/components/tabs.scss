@@ -2,10 +2,16 @@
 
 .tab-size {
   &.tab-size--left {
-    margin-left: -2px;
+    border: 2px solid $primary;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-right: 0;
   }
   &.tab-size--right {
-    margin-right: -2px;
+    border: 2px solid $primary;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-left: 0;
   }
   flex-basis: calc(8.333% * 5);
   max-width: calc(8.333% * 5);
