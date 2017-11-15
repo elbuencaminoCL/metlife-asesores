@@ -57,6 +57,9 @@ p {
     line-height: initial;
     margin-bottom: 0;
   }
+  &.ww {
+    word-wrap: break-word;
+  }
 }
 
 .F {
