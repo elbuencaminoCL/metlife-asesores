@@ -4,34 +4,42 @@ campaign:
     item: Asignación de Leads
     desc: Revisa un listado de clientes potenciales que esperan a que los contactes pronto.
     pending: 800
+    link: 'campana1.html'
   -
     item: Seguimiento de Leads
     desc: Registra las tareas y acciones que llevaste a cabo para contactar a los clientes potenciales.
     pending: 700
+    link: 'campana2.html'
   -
     item: Visitas de Servicios
     desc: Mantén un contacto cercano con tus clientes para estar presente en todas las etapas de su vida. Revisa el listado de tus clientes que debes visitar.
     pending: 50
+    link: 'campana3.html'
   -
     item: Estados de Mandato
     desc: Gestiona los mandatos PAT/PAC que no han podido ser instalados por tus clientes.
     pending: 700
+    link: 'campana3.html'
   -
     item: Pólizas no cobradas
     desc: Mantente alerte y revisa qué pólizas de tus clientes no han podido ser cobradas.
     pending: 50
+    link: 'campana3.html'
   -
     item: Pólizas Caducadas
     desc: Revisa el histórico de las pólizas caducadas de tus clientes y piensa cómo retomar contacto con ellos.
     pending: 50
+    link: 'campana3.html'
   -
     item: Prioridad de Cobranza
     desc: Haz un plan de cobranza de la póliza de tus clientes que aun no han sido pagadas, priorizadas de acuerdo a su fecha de emisión.
     pending: 700
+    link: 'campana3.html'
   -
     item: Plan de Retención
     desc: ¡No pierdas un cliente! Revisa quién requiere tu atención inmediata y traza un plan de retención.
     pending: 50
+    link: 'campana3.html'
 ---
 
 
@@ -53,7 +61,7 @@ campaign:
             <p><strong>Pendientes</strong></p>
           </div>
         </div>
-        
+
         {{#each campaign}}
         <div class="row row-xs-2 u-divider-policy">
           <div class="col-xs-10">
@@ -69,7 +77,7 @@ campaign:
             <section class=" toggleContent no-padding-bottom" data-toggle-content="campaign{{@index}}">
               <div class="pd-left-25 f-small">
                 {{desc}}
-                <p class="pd-top-5"><a href="#">Ir a Campaña</a></p>
+                <p class="pd-top-5"><a href="{{root}}{{link}}" class="f-link">Ir a Campaña</a></p>
               </div>
             </section>
             <!-- /Contenido del desplegable -->
@@ -78,7 +86,7 @@ campaign:
           <div class="col-xs-2 center-xs">
             <p>{{pending}}</p>
           </div>
-        </div>       
+        </div>
         {{/each}}
 
         <div class="pd-top-15">
