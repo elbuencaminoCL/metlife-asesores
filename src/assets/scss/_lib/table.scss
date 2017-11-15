@@ -74,6 +74,31 @@
 
 
 
+/* Table-record-attention */
+
+[class="table-*"] {
+  width: 80%;
+}
+
+.table-40 {
+  max-width: 40px;
+}
+
+.table-50 {
+  max-width: 50px;
+}
+
+.table-120 {
+  width: 120px;
+}
+.table-1300 {
+  width: 1300px;
+}
+
+/* /Table-record-attention */
+
+
+
 @media screen and (min-width: 62em ) {
 
  .toggleContent.toggleContent--responsive {

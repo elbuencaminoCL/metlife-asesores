@@ -4,20 +4,132 @@
 <section class="pd-top-15">
   <div class="container">
     {{> breadcrumb-attention-record}}
+    <h1 class="space-bottom center-xs">Registro de Atención</h1>
   </div>
-  <h1 class="space-bottom center-xs">Registro de Atención</h1>
-  <div class="row-xs-1 bg-white pd-15">
-    <h4 class="center-xs space-bottom">Búsqueda de tus Clientes Y Pólizas</h4>
-    <div class="col-xs-12 portfolio-col">
-      <div class="row row-xs-2 center-xs space-bottom no-gutter banner-tab" data-tabs id="tabsCard">
-        <div class="tab-size tab-size--left banner-tab--client tabs-title is-active">
-          <a href="#clients" aria-selected="true" class="tab-carousel">Clientes</a>
+
+  <form id="formSearch" class="formValidateChange" data-parsley-validate="">
+    <div class="bg-white space-bottom pd-30">
+      <div class="container">
+        <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
+          <span class="openContentText is-open" data-rest-text="Búsqueda de tus Clientes y Pólizas" data-open-text="Búsqueda de tus Clientes y Pólizas">Búsqueda de tus Clientes y Pólizas</span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Contenido del desplegable búsqueda de tus clientes y pólizas -->
+      <section class=" toggleContent no-padding-bottom" data-toggle-content="agency-metrics">
+        <div class="space-bottom support-form-row">    
+          <div class="fieldParent mg-bottom-15">
+            
+            <div class="row row-xs-2 center-xs space-bottom no-gutter banner-tab" data-tabs id="tabsCard">
+              <div class="tab-size tab-size--left banner-tab--client tabs-title is-active">
+                <a href="#clients" aria-selected="true" class="tab-carousel">Clientes</a>
+              </div>
+
+              <div class="tab-size tab-size--right banner-tab--policy tabs-title">
+                <a data-tabs-target="policy" href="#policy" class="tab-carousel">Póliza</a>
+              </div>
+            </div>
+
+            <div>
+              <input type="text" name="">
+            </div>
+
+            <div class="end-xs">
+              <a href="#" class="button button--primary">Buscar</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- /Contenido del desplegable búsqueda de tus clientes y pólizas -->
+    </div>
+  </form>
+
+  <!-- Tabla CDI sometidos sin emitir -->
+  <div class="container table-container">
+    <div class="z-depth-1 space-bottom">
+      <div class="row bg-primary-hover f-white pd-10 no-gutter">
+        <div class="table-120">
+          <p class="mg-bottom-0">Rut Cliente</p>
         </div>
 
-        <div class="tab-size tab-size--right banner-tab--policy tabs-title">
-          <a data-tabs-target="policy" href="#policy" class="tab-carousel">Póliza</a>
+        <div class="table-1300">
+          <div class="row">
+            <div class="table-120">
+              <p>Fecha de Ingreso</p>
+            </div>
+
+            <div class="table-120">
+              <p>Canal</p>
+            </div>
+
+            <div class="table-120">
+              <p>Sub Canal</p>
+            </div>
+
+            <div class="table-120">
+              <p>Gestión</p>
+            </div>
+
+            <div class="table-120">
+              <p>Área</p>
+            </div>
+
+            <div class="table-120">
+              <p>Categoria</p>
+            </div>
+
+            <div class="table-120">
+              <p>Especificaciones</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      {{#each cdi}}
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
+          <div class="col-xs-12 col-md-2 col-lg-1">
+            <div class="col-xs-12">
+              <a href="" class="f-link openContent" data-open-content="toggle-cdi{{@index}}">
+                <span class="openContentText is-open" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-cdi{{@index}}">
+            <div class="row row-xs-1 row-md-5 no-gutter mg-top-xs-30">
+              <div class="col-xs-12 col-md-4 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
+                <p class="mg-bottom-0">{{name}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>N° de CDI</strong></p>
+                <p class="mg-bottom-0">{{number-cdi}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                <p class="hide-md mg-lh-0"><strong>Fecha de Sometimiento</strong></p>
+                <p class="mg-bottom-0">{{submission-date}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Categoria</strong></p>
+                <p class="mg-bottom-0">{{category}}</p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>Requisitos</strong></p>
+                <p class="mg-bottom-0">{{request}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
     </div>
+    <!-- /Tabla CDI sometidos sin emitir -->
   </div>
+
 </section>
