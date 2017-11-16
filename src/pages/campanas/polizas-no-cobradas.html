@@ -51,24 +51,23 @@ uncollected-policies:
 
 <div class="container">
   <section class="pd-top-15">
-    <div class="container table-container">
+    <div class="table-container">
       {{> breadcrumb-uncollected-policies}}
       <div class="center-xs space-bottom">
         <h1>Pólizas no Cobradas</h1>
-        <p>Vigencia: 12/06/2017 al 30/08/2017</p>
       </div>
 
       <div class="row row-xs-1 row-sm-3 row-md-3 middle-xs">
-        <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
-          <span class="input input--ichiro input--datepicker DatePickerStart">
-            <input class="input__field input__field--ichiro" placeholder="Fecha Desde" type="text" readonly="">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <span class="input input--ichiro input--datepicker DatePickerStart mg-bottom-15">
+            <input class="input__field input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
             <i class="material-icons">date_range</i>
           </span>
         </div>
 
-        <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15 ">
-          <span class="input input--ichiro input--datepicker DatePickerStart">
-            <input class="input__field input__field--ichiro" placeholder="Fecha Hasta" type="text" readonly="">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <span class="input input--ichiro input--datepicker DatePickerEnd mg-bottom-15 ">
+            <input class="input__field input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
             <i class="material-icons">date_range</i>
           </span>
         </div>
@@ -83,7 +82,7 @@ uncollected-policies:
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-5 pd-left-20 mg-bottom-15">
-          <a href="#" class="f-link">Descargar PDF</a>
+          <a href="#" class="f-link f-small">Descargar PDF</a>
         </div>
       </div>
 
@@ -93,23 +92,22 @@ uncollected-policies:
           <div class="col-xs-12 col-md-2 col-lg-1">
             <p class="mg-bottom-0 f-small">R.U.T.</p>
           </div>
-
           <div class="col-xs-12 col-md-10 col-lg-11">
             <div class="row row-xs-1 row-md-5 row-lg-7 no-gutter">
 
-              <div class="col-xs-12 col-md-2 col-lg-4 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-4 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small">Frecuencia<br>Pago</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Frecuencia<br>Pago <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Primas <br>Pendientes</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Primas <br>Pend. <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-4 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Monto<br>Pend. UF</p></div>
+              <div class="col-xs-12 col-md-4 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Monto<br>Pend. UF <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Pagado<br> Hasta</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Pagado<br> Hasta <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Motivo</p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Motivo <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
             </div>
           </div>
         </div>
@@ -168,7 +166,7 @@ uncollected-policies:
       </div>
       <!-- /Tabla de pólizas no cobradas -->
 
-<div class="pagination__table">
+      <div class="pagination__table">
         <div class="pagination">
           {{> pagination }}
         </div>
