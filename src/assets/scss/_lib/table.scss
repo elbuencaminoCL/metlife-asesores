@@ -8,18 +8,8 @@
 	}
 }
 
-.table-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  .table-row:nth-child(even) {
-    background-color: $white-light;
-  }
-  .table-row:nth-child(odd) {
-    background-color: white;
-  }
-}
 
-.table-record, .table-birthday {
+.striped-table {
   .table-row:nth-child(even) {
     background-color: $white-light;
   }

@@ -42,14 +42,15 @@ expire-policies:
     rehabilitation-bounty: 5 UF
 ---
 
+
+
 {{>header}}
 
-
-<section class="container pd-top-15">
-  <div class="table-container">
-    <div class="hide-xs show-md">{{> breadcrumb-expire-policies}}</div>
-    <div class="center-xs space-bottom">
-      <h1>Pólizas Caducas</h1>
+<section class="pd-top-15">
+  <div class="container">
+    <div class="hide-xs show-md">
+      {{> breadcrumb-expire-policies}}
+      <h1 class="center-xs space-bottom">Pólizas Caducas</h1>
     </div>
 
     <div class="row row-xs-1 row-sm-3 row-md-3 middle-xs">
@@ -70,11 +71,12 @@ expire-policies:
         <div class="col-xs-12 col-sm-12 col-md-5 mg-bottom-15">
           <a href="#" class="f-link f-small">Descargar PDF</a>
         </div>
+
       </div>
     </div>
 
     <!-- Tabla de pólizas caducas -->
-    <div class="z-depth-1 space-bottom" id="today">
+    <div class="z-depth-1 space-bottom table-record" id="today">
       <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
         <div class="col-xs-12 col-md-2 col-lg-1">
           <p class="mg-bottom-0 f-small">R.U.T.</p>
@@ -148,9 +150,9 @@ expire-policies:
     <!-- /Tabla de pólizas caducas -->
 
     <div class="pagination__table">
-        <div class="pagination">
-          {{> pagination }}
-        </div>
+      <div class="pagination">
+        {{> pagination }}
+      </div>
 
         <div class="pagination__select pd-top-10">
           <section class="u-select" data-parsley-trigger="change">
@@ -162,6 +164,8 @@ expire-policies:
           </section>
           <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
         </div>
+
       </div>
+    </div>
   </div>
 </section>
