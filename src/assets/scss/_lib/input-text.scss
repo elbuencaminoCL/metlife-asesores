@@ -88,7 +88,7 @@
 	.input__field, .input-data {
 		-webkit-appearance: none; /* for box shadows to show on iOS */
 		border: 1px;
-		border-radius: 3px;
+		border-radius: 0;
 		border-color: $medium-gray;
 		color: $gray;
 		display: block;
@@ -96,6 +96,7 @@
 		padding: 0.8em;
 		position: relative;
 		width: 60%;
+		font-size: 13px;
     &.full {
       width: 100%;
       float: none;

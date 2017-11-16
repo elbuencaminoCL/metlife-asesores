@@ -157,6 +157,7 @@
     height: 500px;
   }
 
+<<<<<<< HEAD
   .orbit-container-title {
     position: relative;
     width: 1200px;
@@ -167,6 +168,13 @@
       left: 0;
       right: 0;
     }
+=======
+  .orbit-title {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+>>>>>>> a1e5b4a810c537a34b15ef989aef93629c1581b3
   }
 
 }
