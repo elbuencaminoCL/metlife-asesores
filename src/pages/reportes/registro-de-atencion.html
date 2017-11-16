@@ -87,9 +87,9 @@ attention-record:
 
       <!-- Contenido del desplegable búsqueda de tus clientes y pólizas -->
       <section class=" toggleContent no-padding-bottom" data-toggle-content="agency-metrics">
-        <div class="space-bottom support-form-row">    
+        <div class="space-bottom support-form-row">
           <div class="fieldParent mg-bottom-15">
-            
+
             <div class="row row-xs-2 center-xs space-bottom no-gutter banner-tab" data-tabs id="tabsCard">
               <div class="tab-size tab-size--left banner-tab--client tabs-title is-active">
                 <a href="#clients" aria-selected="true" class="tab-carousel">Clientes</a>
@@ -107,7 +107,7 @@ attention-record:
             <div class="end-xs">
               <a href="#" class="button button--primary">Buscar</a>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -270,22 +270,21 @@ attention-record:
       {{/each}}
     </div>
     <!-- /Tabla Registro de Atención -->
-  <div class="pagination__table">
-        <div class="pagination">
-          {{> pagination }}
-        </div>
+    <div class="pagination__table">
+      <div class="pagination">
+        {{> pagination }}
+      </div>
 
-        <div class="pagination__select pd-top-10">
-          <section class="u-select" data-parsley-trigger="change">
-            <select class="cs-select cs-skin-border GeneralSelect bg-white select__field--no-border" data-parsley-errors-messages-disabled required="">
-              <option value selected>10 items por página</option>
-              <option value="cat1">20 items por página</option>
-              <option value="cat2">30 items por página</option>
-            </select>
-          </section>
-          <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
-        </div>
+      <div class="pagination__select pd-top-10">
+        <section class="u-select" data-parsley-trigger="change">
+          <select class="cs-select cs-skin-border GeneralSelect bg-white select__field--no-border" data-parsley-errors-messages-disabled required="">
+            <option value selected>10 items por página</option>
+            <option value="cat1">20 items por página</option>
+            <option value="cat2">30 items por página</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
