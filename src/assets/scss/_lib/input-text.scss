@@ -39,12 +39,12 @@
     &.inputError {
       .form-error {
         color: $pink;
-        display: none;      
+        display: none;
         line-height: 1.6;
         margin-bottom: 0;
         padding: 0px 0 0;
         position: relative;
-      }     
+      }
     }
   }
 
@@ -96,7 +96,7 @@
 		padding: 0.8em;
 		position: relative;
 		width: 60%;
-		font-size: 13px;
+		font-size: 15px;
     &.full {
       width: 100%;
       float: none;
