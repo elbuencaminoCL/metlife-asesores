@@ -19,7 +19,7 @@
   }
 }
 
-.table-record {
+.table-record, .table-birthday {
   .table-row:nth-child(even) {
     background-color: $white-light;
   }
