@@ -42,39 +42,39 @@ expire-policies:
     rehabilitation-bounty: 5 UF
 ---
 
+
+
 {{>header}}
 
-
-<section class="container pd-top-15">
-  <div class="table-container">
-    <div class="hide-xs show-md">{{> breadcrumb-expire-policies}}</div>
-    <div class="center-xs space-bottom">
-      <h1>Pólizas Caducas</h1>
+<section class="pd-top-15">
+  <div class="container">
+    <div class="hide-xs show-md">
+      {{> breadcrumb-expire-policies}}
+      <h1 class="center-xs space-bottom">Pólizas Caducas</h1>
     </div>
 
     <div class="row row-xs-1 row-sm-3 row-md-3 middle-xs">
-        <div class="col-xs-12 col-sm-3 col-md-2">
-          <span class="input input--ichiro input--datepicker DatePickerStart u-space">
-            <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
-            <i class="material-icons">date_range</i>
-          </span>
-        </div>
+      <div class="col-xs-12 col-sm-3 col-md-2">
+        <span class="input input--ichiro input--datepicker DatePickerStart u-space">
+          <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
+          <i class="material-icons">date_range</i>
+        </span>
+      </div>
 
-        <div class="col-xs-12 col-sm-3 col-md-2">
-          <span class="input input--ichiro input--datepicker DatePickerEnd u-space">
-            <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
-            <i class="material-icons">date_range</i>
-          </span>
-        </div>
+      <div class="col-xs-12 col-sm-3 col-md-2">
+        <span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+          <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
+          <i class="material-icons">date_range</i>
+        </span>
+      </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-5 pd-left-20 mg-bottom-15">
-          <a href="#" class="f-link f-small">Descargar PDF</a>
-        </div>
+      <div class="col-xs-12 col-sm-12 col-md-5 pd-left-20 mg-bottom-15">
+        <a href="#" class="f-link f-small">Descargar PDF</a>
       </div>
     </div>
 
     <!-- Tabla de pólizas caducas -->
-    <div class="z-depth-1 space-bottom" id="today">
+    <div class="z-depth-1 space-bottom table-record" id="today">
       <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
         <div class="col-xs-12 col-md-2 col-lg-1">
           <p class="mg-bottom-0 f-small">R.U.T.</p>
@@ -148,20 +148,20 @@ expire-policies:
     <!-- /Tabla de pólizas caducas -->
 
     <div class="pagination__table">
-        <div class="pagination">
-          {{> pagination }}
-        </div>
-
-        <div class="pagination__select pd-top-10">
-          <section class="u-select" data-parsley-trigger="change">
-            <select class="cs-select cs-skin-border GeneralSelect bg-white select__field--no-border" data-parsley-errors-messages-disabled required="">
-              <option value selected>10 items por página</option>
-              <option value="cat1">20 items por página</option>
-              <option value="cat2">30 items por página</option>
-            </select>
-          </section>
-          <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
-        </div>
+      <div class="pagination">
+        {{> pagination }}
       </div>
+
+      <div class="pagination__select pd-top-10">
+        <section class="u-select" data-parsley-trigger="change">
+          <select class="cs-select cs-skin-border GeneralSelect bg-white select__field--no-border" data-parsley-errors-messages-disabled required="">
+            <option value selected>10 items por página</option>
+            <option value="cat1">20 items por página</option>
+            <option value="cat2">30 items por página</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
+      </div>
+    </div>
   </div>
 </section>
