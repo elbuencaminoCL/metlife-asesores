@@ -2,27 +2,27 @@
 reports:
   -
     title: CDI sometidos sin emitir
-    desc: Visualiza qué negocios están pendientes de sometimiento.
+    desc: Revisa qué negocios ingresaste pero aun no han sido emitidos.
     number-report: 04
   -
     title: Métricas de Agencia
-    desc: Gestiona tus metas de forma diaria, semanal y mensual.
+    desc: Revisa tu rendimiento de forma diaria, semanal y mensual.
     number-report: 16
   -
     title: Registro de Atención
-    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    desc: Revisa las solicitudes de tus clientes y en qué estado se encuentran.
     number-report: 11
   -
     title: Registro de Pendientes
-    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    desc: Gestiona las solicitudes pendientes de tus clientes.
     number-report: 27
   -
     title: Reporte de FF.VV.
-    desc: Revisa el deatalle de tu producción histórica por mes.
+    desc: Revisa en detalle tu producción histórica por mes.
     number-report: 26
   -
     title: Cierre de Producción
-    desc: Maecenas sed dima eget risy cvayis blandie si  amen not magna.
+    desc: Revisa los reportes de Comisión y Persistencia Smart 24.
     number-report: 31
 ---
 
@@ -39,10 +39,10 @@ reports:
       {{# each reports}}
         <div class="col-xs-12 col-md-4 space-bottom pd-30 bg-white z-depth-1">
           <h4 class="space-bottom">{{title}}</h4>
-          <figure class="center-xs space-bottom row">
+          <!-- <figure class="center-xs space-bottom row">
             <img src="./../../assets/images/icons/report.png" class="mg-right-15" />
             <p class="f-bigger"><strong>{{number-report}}</strong></p>
-          </figure>
+          </figure> -->
           <p class="space-bottom">{{desc}}</p>
           <div>
             <a href="#" class="button button--primary">Ver más</a>
