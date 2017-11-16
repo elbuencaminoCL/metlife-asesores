@@ -28,3 +28,16 @@ $( '.heightInput' ).on( 'click', ( e ) => {
 $( '.modalInputExplorer' ).on( 'click', ( e ) => {
   $( 'inputTop' ).addClass('inputTopUp')
 });
+
+/*Tabs campañas visitas de servicios*/
+$('.tabs-title').on('click', ( e ) => {
+  e.preventDefault();
+
+  if( $(e.currentTarget).hasClass('tabDelayed') ) {
+    $('.date-picker-row').removeClass('tab-delayed-date-picker')
+    console.log($('.date-picker-row').removeClass('tab-delayed-date-picker'))
+  }
+  else {
+    $('.date-picker-row').addClass('tab-delayed-date-picker')
+  }
+});
