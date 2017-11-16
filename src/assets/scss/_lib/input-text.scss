@@ -35,13 +35,17 @@
 		position: relative;
 	}
 
-  .inputError {
-    color: green;
-    display: none;
-    line-height: 1.6;
-    margin-bottom: 0;
-    padding: 10px 0 0;
-    position: relative;
+  .input--filled {
+    &.inputError {
+      .form-error {
+        color: $pink;
+        display: none;      
+        line-height: 1.6;
+        margin-bottom: 0;
+        padding: 0px 0 0;
+        position: relative;
+      }     
+    }
   }
 
 	.is-invalid-input:not(:focus) {
