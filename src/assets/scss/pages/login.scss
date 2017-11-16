@@ -6,6 +6,10 @@
 		background-color: $white-light;
 	}
 
+  .login-advisor-img {
+    min-height: 300px;
+  }
+
   .login__button {
     margin-bottom: 0;
   }
@@ -111,6 +115,10 @@
 
 
 	@media screen and ( min-width: 62em ) {
+    
+    .login-advisor-img {
+      min-height: 600px;
+    }
 
 		.login_col {
 			&:first-of-type {
