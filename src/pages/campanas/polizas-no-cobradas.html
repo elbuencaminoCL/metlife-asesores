@@ -51,24 +51,23 @@ uncollected-policies:
 
 <div class="container">
   <section class="pd-top-15">
-    <div class="container table-container">
+    <div class="table-container">
       {{> breadcrumb-uncollected-policies}}
       <div class="center-xs space-bottom">
         <h1>Pólizas no Cobradas</h1>
-        <p>Vigencia: 12/06/2017 al 30/08/2017</p>
       </div>
 
       <div class="row row-xs-1 row-sm-3 row-md-3 middle-xs">
-        <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
-          <span class="input input--ichiro input--datepicker DatePickerStart">
-            <input class="input__field input__field--ichiro" placeholder="Fecha Desde" type="text" readonly="">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <span class="input input--ichiro input--datepicker DatePickerStart u-space">
+            <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
             <i class="material-icons">date_range</i>
           </span>
         </div>
 
-        <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15 ">
-          <span class="input input--ichiro input--datepicker DatePickerStart">
-            <input class="input__field input__field--ichiro" placeholder="Fecha Hasta" type="text" readonly="">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+            <input class="input__field input__field--no-border input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
             <i class="material-icons">date_range</i>
           </span>
         </div>
@@ -168,7 +167,7 @@ uncollected-policies:
       </div>
       <!-- /Tabla de pólizas no cobradas -->
 
-<div class="pagination__table">
+      <div class="pagination__table">
         <div class="pagination">
           {{> pagination }}
         </div>
