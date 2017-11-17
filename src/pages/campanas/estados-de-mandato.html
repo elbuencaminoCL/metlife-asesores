@@ -46,15 +46,36 @@ state-mandate:
       {{> breadcrumb-state-mandate}}
       <h1 class="center-xs space-bottom">Estados de Mandatos</h1>
     </div>
-      
     <div class="row row-xs-1 row-sm-2 middle-xs">
       <div class="col-xs-12 col-sm-3 mg-bottom-15">
-        <section class="u-select bg-white">
-          <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
-            <option value="login.html" data-link="login.html">Estado Mandato</option>
-            <option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
-          </select>
-        </section>
+        <dl class="dropdown">
+          <dt>
+            <a href="#">
+              <span class="hida">Selecciona</span>
+              <p class="multiSel"></p>
+            </a>
+          </dt>
+
+          <dd>
+            <div class="mutliSelect">
+              <ul>
+                <li>
+                  <input type="checkbox" value="Pagado" />Pagado
+                </li>
+                <li>
+                  <input type="checkbox" value="Por Pagar" />Por Pagar
+                </li>
+                <li>
+                  <input type="checkbox" value="Vencido" />Vencido
+                </li>
+                <li>
+                  <input type="checkbox" value="Otro" />Otro
+                </li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+
       </div>
 
       <div class="col-xs-12 col-sm-9 mg-bottom-15">

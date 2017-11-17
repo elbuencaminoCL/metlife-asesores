@@ -1,0 +1,13 @@
+
+
+	@media screen and (min-width: 62em) {
+		.openContent {
+			color: #333;
+			cursor: default;
+			&:hover,
+			&:focus {
+				border-bottom: 0;
+				color: #333;
+			}
+		}
+	}
