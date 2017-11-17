@@ -126,6 +126,7 @@ div.cs-active {
   overflow: hidden;
   border: 0;
   width: 272px;
+  height: 39px;
 }
 
 .dropdown dt a span,
@@ -136,18 +137,19 @@ div.cs-active {
 }
 
 .dropdown dd ul {
-  background-color: white;
+  background-color: $white-light;
   border: 0;
   color: #333;
   display: none;
   left: 0px;
-  padding: 2px 15px 2px 5px;
+  padding: 10px;
   position: absolute;
   top: 2px;
-  width: 280px;
+  width: 272px;
   list-style: none;
-  height: 100px;
+  height: 145px;
   overflow: auto;
+  border: 1px solid $medium-gray;
 }
 
 .dropdown span.value {
