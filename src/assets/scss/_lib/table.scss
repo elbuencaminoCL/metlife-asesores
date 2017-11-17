@@ -18,9 +18,7 @@
   }
 }
 
-.table-scroll {
-  overflow-y: hidden;
-}
+
 
 
 /* Table-portfolio */
@@ -85,10 +83,29 @@
 /* /Table-record-attention */
 
 
-@media screen and ( min-width: 48em ) {
 
+@media screen and ( min-width: 48em ) {
+  
+  
 
 }
+
+
+
+@media screen and ( min-width: 868px ) {
+
+  .scroll-row {
+    width: 1200px;
+  }
+
+  .scroll-table {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+}
+
+
 
 @media screen and ( min-width: 62em ) {
 
@@ -101,11 +118,8 @@
 		}
 	}
 
-  .table-scroll {
-    overflow-y: hidden !important;
-    overflow-x: scroll;
-    width: 1200px;
-  }
+
+ 
 
 
   /* Table-record-attention */
