@@ -51,7 +51,7 @@ campaign:
     {{> breadcrumb-campaign }}
     <h1 class="center-xs space-bottom">Campañas</h1>
     <div class="row row-xs-1 row-md-2 no-gutter mg-bottom-60">
-      <div class="col-xs-12 col-md-8 bg-white pd-30 z-depth-2">
+      <div class="col-xs-12 col-md-8 bg-white pd-30 z-depth-2 allToggleOpen">
         <div class="row row-xs-2 u-divider-policy">
           <div class="col-xs-6">
             <p><strong>Campañas</strong></p>
@@ -66,7 +66,7 @@ campaign:
         <div class="row row-xs-2 u-divider-policy">
           <div class="col-xs-10">
             <p>{{name}}
-              <a href="" class="f-link openContent " data-open-content="campaign{{@index}}">
+              <a href="" class="f-link openContent" data-open-content="campaign{{@index}}">
                 <i class="fa fa-plus plus-ico" aria-hidden="true"></i>
                 <i class="fa fa-minus minus-ico" aria-hidden="true"></i>
                 <span class="openContentText is-open indicators-span" data-rest-text="{{item}}" data-open-text="{{item}}">{{item}}
@@ -74,7 +74,7 @@ campaign:
               </a>
             </p>
             <!-- Contenido del desplegable -->
-            <section class=" toggleContent no-padding-bottom" data-toggle-content="campaign{{@index}}">
+            <section class="toggleContent no-padding-bottom" data-toggle-content="campaign{{@index}}">
               <div class="pd-left-25 f-small">
                 {{desc}}
                 <p class="pd-top-5"><a href="{{root}}{{link}}" class="f-link">Ir a Campaña</a></p>
@@ -90,12 +90,12 @@ campaign:
         {{/each}}
 
         <div class="pd-top-15">
-          <a href="#" class="f-link f-small">Expandir Todas</a>
+          <a href="" class="f-link openContent allExpand">Expandir Todos</a>
         </div>
       </div>
 
       <div class="col-md-4 hide-xs show-md">
-        <figure>
+        <figure class="campaign-figure">
           <img src="{{root}}/assets/images/iStock-500779882.jpg" class="campaign-img z-depth-2 objFit">
         </figure>
       </div>

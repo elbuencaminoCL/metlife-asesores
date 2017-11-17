@@ -58,17 +58,14 @@ service-visits-tab-2:
 
 {{> header }}
 
-<section class="container pd-top-15">
-  <div class="table-container">
+<section class="pd-top-15">
+  <div class="container">
     <div class="hide-xs show-md">
       {{> breadcrumb-service-visits}}
+      <h1 class="center-xs space-bottom">Visitas de Servicio</h1>
     </div>
 
-    <div class="col-xs-12 center-xs space-bottom">
-      <h1>Visitas de Servicio</h1>
-    </div>
-
-    <div class="row row-xs-1 row-md-2 middle-xs" data-tabs id="table-service-visits">
+    <div class="row row-xs-1 row-md-3 middle-xs" data-tabs id="table-service-visits">
       <!-- Tabs -->
       <div class="col-xs-12 col-md-5">
         <div class="row row-xs-1 row-md-2 no-gutter">
@@ -76,56 +73,55 @@ service-visits-tab-2:
             <a href="#tab-visits-month" aria-selected="true">Visitas del mes</a>
           </div>
 
-          <div class="col-xs-12 col-md-6 tabs-title service-visits-tab center-xs">
+          <div class="col-xs-12 col-md-6 tabs-title service-visits-tab center-xs tabDelayed">
             <a data-tabs-target="tab-delayed-visits" href="#tab-delayed-visits">Visitas rezagadas</a>
           </div>
         </div>
       </div>
       <!-- Tabs -->
 
-      <div class="col-xs-12 col-md-7">
-        <div class="row row-xs-1 row-md-3 middle-xs">
-          <div class="col-xs-12 col-md-4 end-xs">
+      <div class="col-xs-12 col-md-5 date-picker-row tab-delayed-date-picker">
+        <div class="row row-xs-1 row-sm-2 row-md-2 middle-xs">
+          <div class="col-xs-12 col-sm-6 col-md-6 ">
             <span class="input input--ichiro input--datepicker DatePickerStart">
-              <input class="input__field input__field--ichiro bg-white" placeholder="Fecha Desde" type="text">
+              <input class="input__field input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
               <i class="material-icons">date_range</i>
             </span>
           </div>
 
-          <div class="col-xs-12 col-md-4 end-xs">
-            <span class="input input--ichiro input--datepicker DatePickerStart">
-              <input class="input__field input__field--ichiro bg-white" placeholder="Fecha Hasta" type="text" readonly="">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <span class="input input--ichiro input--datepicker DatePickerEnd">
+              <input class="input__field input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
               <i class="material-icons">date_range</i>
             </span>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <a href="#" class="f-link f-small">Descargar PDF</a>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="col-xs-12 col-md-2 end-xs">
+        <a href="#" class="f-link f-small">Descargar PDF</a>
+      </div>
+    </div>
     
     <div class="tabs-content" data-tabs-content="table-service-visits">
       <!-- Contenido del tab-1 (visitas del mes) -->
       <div class="tabs-panel is-active" id="tab-visits-month">
         <!-- Tabla visitas del mes -->
-        <div class="z-depth-1 space-bottom">
+        <div class="striped-table z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
             <div class="col-xs-12 col-md-2 col-lg-2">
-              <p class="mg-bottom-0 f-small">R.U.T.</p>
+              <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="col-xs-12 col-md-10 col-lg-10">
               <div class="row row-xs-1 row-md-3 no-gutter">
-                <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente</p></div>
+                <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº</p></div>
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha</p></div>
+                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Ficha de Mantención</p></div>
+                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Ficha de Mantención <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
               </div>
             </div>
           </div>
@@ -137,6 +133,7 @@ service-visits-tab-2:
                   <a href="" class="f-link openContent" data-open-content="toggle-service-visits-tab-1{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
                     </span>
+                    <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -175,7 +172,7 @@ service-visits-tab-2:
       <!-- Contenido del tab-2 (visitas rezagadas) -->
       <div class="tabs-panel" id="tab-delayed-visits">
         <!-- Tabla visitas rezagadas -->
-        <div class="z-depth-1 space-bottom">
+        <div class="striped-table z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
             <div class="col-xs-12 col-md-2 col-lg-2">
               <p class="mg-bottom-0 f-small">R.U.T.</p>
@@ -201,6 +198,7 @@ service-visits-tab-2:
                   <a href="" class="f-link openContent" data-open-content="toggle-service-visits-tab-2{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
                     </span>
+                    <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -242,7 +240,7 @@ service-visits-tab-2:
 
         <div class="pagination__select pd-top-10">
           <section class="u-select" data-parsley-trigger="change">
-            <select class="cs-select cs-skin-border GeneralSelect bg-white select__field--no-border" data-parsley-errors-messages-disabled required="">
+            <select class="cs-select cs-skin-border GeneralSelect bg-white select__field" data-parsley-errors-messages-disabled required="">
               <option value selected>10 items por página</option>
               <option value="cat1">20 items por página</option>
               <option value="cat2">30 items por página</option>
@@ -252,5 +250,5 @@ service-visits-tab-2:
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>

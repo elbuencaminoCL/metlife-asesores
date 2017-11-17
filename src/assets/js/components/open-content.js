@@ -43,3 +43,36 @@
     }
 
   });
+
+
+
+  /*Campañas Expandir todas*/
+  $('.allExpand').on( 'click', ( e ) => {
+    let $closestParent = $(e.currentTarget).closest('.allToggleOpen')
+    let $findOpenContent = $(e.currentTarget).closest('.allToggleOpen').find('.openContent')
+    let $findOpenContentText = $(e.currentTarget).closest('.allToggleOpen').find('.openContentText')
+    let $findToggleContent = $(e.currentTarget).closest('.allToggleOpen').find('.toggleContent')
+
+    let arrayOpen = []
+
+    $findToggleContent.each( (index, el) => {
+      if( $(el).hasClass('is-open') ) {
+        arrayOpen.push('true')
+      }
+      else {
+        arrayOpen.push('false')
+      }
+    })
+
+    let findArrayOpen = $.inArray('false', arrayOpen)
+
+    if( findArrayOpen >= 0 ) {
+      $findToggleContent.add($findOpenContent).add($findOpenContentText).addClass('is-open')
+      $(e.currentTarget).text('Cerrar Todos')
+    }
+    else {
+      $findToggleContent.add($findOpenContent).add($findOpenContentText).removeClass('is-open')
+      $(e.currentTarget).text('Expandir Todos')
+    }
+
+  });

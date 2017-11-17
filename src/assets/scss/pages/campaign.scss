@@ -1,6 +1,10 @@
 
 @import './../global/colors.scss';
 
+.campaign-figure {
+  max-height: 565px;
+}
+
 .campaign-img {
   min-height: 500px;
   object-fit: cover;
