@@ -89,46 +89,60 @@ uncollected-policies:
       <!-- Tabla de pólizas no cobradas -->
       <div class="striped-table z-depth-1 space-bottom scroll-table">
         <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter scroll-row">
-          <div class="col-xs-12 col-md-2 col-lg-1">
-            <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+          <div class="col-xs-12 col-md-3 col-lg-3">
+            <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
           </div>
-          <div class="col-xs-12 col-md-10 col-lg-11">
-            <div class="row row-xs-1 row-md-5 row-lg-7 no-gutter">
+          <div class="col-xs-12 col-md-9 col-lg-9">
+            <div class="row row-xs-1 row-md-7 row-lg-7 no-gutter">
 
-              <div class="col-xs-12 col-md-2 col-lg-4 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Frecuencia<br>Pago <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18">Frecuencia<br>Pago <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Primas <br>Pend. <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-1 col-lg-1 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18">Primas <br>Pend. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-4 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Monto<br>Pend. UF <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-1 col-lg-1 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18">Monto<br>Pend. UF <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small lh-18">Pagado<br> Hasta <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18">Pagado<br> Hasta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
 
-              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Motivo <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small">Motivo <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
             </div>
           </div>
         </div>
 
         {{#each uncollected-policies}}
-          <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter scroll-row">
-            <div class="col-xs-12 col-md-2 col-lg-1">
+          <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row no-gutter scroll-row">
+            <div class="col-xs-12 col-md-3 col-lg-3">
               <div class="col-xs-12">
-                <a href="" class="f-link openContent openContent--table f-small" data-open-content="toggle-uncollected-policies{{@index}}">
-                  <span class="openContentText is-open" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                <a href="" class="f-link openContent openContent--table f-small lh-inherit" data-open-content="toggle-uncollected-policies{{@index}}">
+                  <span class="openContentText is-open" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                   </span>
                   <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
 
-            <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-uncollected-policies{{@index}}">
-              <div class="row row-xs-1 row-md-5 row-lg-7 no-gutter mg-top-xs-30">
-                <div class="col-xs-12 col-md-2 col-lg-4 mg-bottom-xs-15">
-                  <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                  <p class="mg-bottom-0 f-small">{{name}}</p>
+            <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-uncollected-policies{{@index}}">
+              <div class="row row-xs-1 row-md-7 row-lg-7 no-gutter mg-top-xs-30">
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                  <p class="mg-bottom-0 f-small">{{rut}}</p>
                 </div>
 
                 <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
@@ -136,22 +150,22 @@ uncollected-policies:
                   <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
                 </div>
 
-                <div class="col-xs-12 col-md-2 col-lg-1 mg-bottom-xs-15" >
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15" >
                   <p class="hide-md mg-lh-0"><strong>Frecuencia de Pago</strong></p>
                   <p class="mg-bottom-0 f-small">{{freq-pay}}</p>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-lg-1 mg-bottom-xs-15">
+                <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
                   <p class="hide-md mg-lh-0"><strong>Primas Pendientes</strong></p>
                   <p class="mg-bottom-0 f-small">{{bounty-pending}}</p>
                 </div>
 
-                <div class="col-xs-12 col-md-2 col-lg-1 mg-bottom-xs-15">
+                <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
                   <p class="hide-md mg-lh-0"><strong>Monto UF</strong></p>
                   <p class="mg-bottom-0 f-small">{{amount-uf}}</p>
                 </div>
 
-                <div class="col-xs-12 col-md-2 col-lg-1 mg-bottom-xs-15">
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
                   <p class="hide-md mg-lh-0"><strong>Pagado Hasta</strong></p>
                   <p class="mg-bottom-0 f-small">{{paid-until}}</p>
                 </div>
