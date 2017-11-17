@@ -47,6 +47,44 @@
   }
 }
 
+.bullet-col {
+  position: relative;
+  &.success, &.error, &.information, &.disabled {
+    &::after {
+      border-radius: 50%;
+      top: 20px;
+      content: '';
+      height: 8px;
+      position: absolute;
+      left: 5px;
+      width: 8px;
+    }
+  }
+  &.success {
+    &::after {
+      background-color: $success;
+    }
+  }
+
+  &.error {
+    &::after {
+      background-color: $error;
+    }
+  }
+
+  &.information {
+    &::after {
+      background-color: $information;
+    }
+  }
+
+  &.disabled {
+    &::after {
+      background-color: $dark-gray-3;
+    }
+  }
+}
+
 .policy-figure {
   max-height: 420px;
 }
@@ -58,4 +96,18 @@
 
 .policy-summary-col {
   min-height: 420px;
+}
+
+
+
+@media screen and ( min-width: 62em ) {
+
+  .bullet-col {
+    &.success, &.error, &.information, &.disabled {
+      &::after {
+        top: 12px;
+      }
+    }
+  }
+
 }
