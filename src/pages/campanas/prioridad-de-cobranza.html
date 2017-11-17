@@ -66,31 +66,31 @@ collection-priority-tab-2:
 collection-priority-tab-3:
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 36
+    quantity-policy: 22
     bounty-basic-net: 55.45
     bounty-extra: 55.45
     bounty-total: 55.45
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 13
+    quantity-policy: 08
     bounty-basic-net: 117.65
     bounty-extra: 117.65
     bounty-total: 117.65
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 14
+    quantity-policy: 19
     bounty-basic-net: 124.56
     bounty-extra: 124.56
     bounty-total: 124.56
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 25
+    quantity-policy: 24
     bounty-basic-net: 34.67
     bounty-extra: 34.67
     bounty-total: 34.67
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 13
+    quantity-policy: 11
     bounty-basic-net: 76.23
     bounty-extra: 76.23
     bounty-total: 76.23
@@ -98,31 +98,31 @@ collection-priority-tab-3:
 collection-priority-tab-4:
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 36
+    quantity-policy: 44
     bounty-basic-net: 55.45
     bounty-extra: 55.45
     bounty-total: 55.45
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 13
+    quantity-policy: 17
     bounty-basic-net: 117.65
     bounty-extra: 117.65
     bounty-total: 117.65
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 14
+    quantity-policy: 37
     bounty-basic-net: 124.56
     bounty-extra: 124.56
     bounty-total: 124.56
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 25
+    quantity-policy: 36
     bounty-basic-net: 34.67
     bounty-extra: 34.67
     bounty-total: 34.67
   -
     name: Juan Carlos Olave Infante
-    quantity-policy: 13
+    quantity-policy: 21
     bounty-basic-net: 76.23
     bounty-extra: 76.23
     bounty-total: 76.23
@@ -173,29 +173,37 @@ collection-priority-tab-4:
       <div class="tabs-panel is-active" id="tab-consolidated">
         <!-- Tabla consolidado -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-10 no-gutter">
             <div class="col-xs-12 col-md-3">
               <p class="mg-bottom-0 f-small">Nombre Asesor <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="col-xs-12 col-md-9">
               <div class="row row-xs-1 row-md-4 no-gutter">
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Cantidad de Pólizas <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Cantidad de Pólizas <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Básica Neta <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Básica Neta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima en Exceso <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima en Exceso <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Total <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Total <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each collection-priority-tab-1}}
-            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+            <div class="row row-xs-1 row-md-2 pd-10 table-row no-gutter">
               <div class="col-xs-12 col-md-3">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent openContent--table" data-open-content="toggle-collection-priority-tab-1{{@index}}">
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-collection-priority-tab-1{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
@@ -238,29 +246,37 @@ collection-priority-tab-4:
       <div class="tabs-panel" id="tab-urgent">
         <!-- Tabla urgent -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-10 no-gutter">
             <div class="col-xs-12 col-md-3">
               <p class="mg-bottom-0 f-small">Nombre Asesor</p>
             </div>
 
             <div class="col-xs-12 col-md-9">
               <div class="row row-xs-1 row-md-4 no-gutter">
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Cantidad de Pólizas</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Cantidad de Pólizas <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Básica Neta</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Básica Neta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima en Exceso</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima en Exceso <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Total</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Total <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each collection-priority-tab-2}}
-            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+            <div class="row row-xs-1 row-md-2 pd-10 table-row no-gutter">
               <div class="col-xs-12 col-md-3">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent" data-open-content="toggle-collection-priority-tab-2{{@index}}">
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-collection-priority-tab-2{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
@@ -303,29 +319,37 @@ collection-priority-tab-4:
       <div class="tabs-panel" id="tab-high">
         <!-- Tabla alta -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-10 no-gutter">
             <div class="col-xs-12 col-md-3">
               <p class="mg-bottom-0 f-small">Nombre Asesor</p>
             </div>
 
             <div class="col-xs-12 col-md-9">
               <div class="row row-xs-1 row-md-4 no-gutter">
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Cantidad de Pólizas</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Cantidad de Pólizas <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Básica Neta</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Básica Neta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima en Exceso</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima en Exceso <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Total</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Total <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each collection-priority-tab-3}}
-            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+            <div class="row row-xs-1 row-md-2 pd-10 table-row no-gutter">
               <div class="col-xs-12 col-md-3">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent" data-open-content="toggle-collection-priority-tab-3{{@index}}">
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-collection-priority-tab-3{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
@@ -368,29 +392,37 @@ collection-priority-tab-4:
       <div class="tabs-panel" id="tab-half">
         <!-- Tabla media -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-15 no-gutter">
+          <div class="row row-xs-1 row-md-2 bg-primary-hover f-white pd-10 no-gutter">
             <div class="col-xs-12 col-md-3">
               <p class="mg-bottom-0 f-small">Nombre Asesor</p>
             </div>
 
             <div class="col-xs-12 col-md-9">
               <div class="row row-xs-1 row-md-4 no-gutter">
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Cantidad de Pólizas</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Cantidad de Pólizas <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Básica Neta</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Básica Neta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima en Exceso</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima en Exceso <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima Total</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Prima Total <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each collection-priority-tab-4}}
-            <div class="row row-xs-1 row-md-2 pd-15 table-row no-gutter">
+            <div class="row row-xs-1 row-md-2 pd-10 table-row no-gutter">
               <div class="col-xs-12 col-md-3">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent" data-open-content="toggle-collection-priority-tab-4{{@index}}">
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-collection-priority-tab-4{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>

@@ -72,32 +72,38 @@ birthday-table:
       <!-- Tabla Cumpleaños de mis clientes-->
       <div class="striped-table">
         <div class="z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15">
-            <div class="col-xs-12 col-md-3 col-lg-3">
+          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10">
+            <div class="col-xs-12 col-md-3 col-lg-4">
               <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
-            <div class="col-xs-12 col-md-9 col-lg-9">
-              <div class="row row-xs-1 row-md-4 row-lg-4 no-gutter">
-                <div class="col-xs-12 col-md-3 col-lg-4 hide-xs show-md">
-                  <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            <div class="col-xs-12 col-md-9 col-lg-8">
+              <div class="row row-xs-1 row-md-4 row-lg-4">
+                <div class="col-xs-12 col-md-3 col-lg-2 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small word-wrap">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
                 </div>
 
-                <div class="col-xs-12 col-md-3 col-lg-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha de Nacimiento <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 col-lg-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small word-wrap">Fecha de Nacimiento <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
 
-                <div class="col-xs-12 col-md-3 col-lg-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Correo Electrónico <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 col-lg-4 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small word-wrap">Correo Electrónico <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-3 col-lg-2 hide-xs show-md center-md start-lg"><p class="mg-bottom-0 f-small">Teléfono <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 col-lg-3 hide-xs show-md center-md start-lg">
+                  <p class="mg-bottom-0 f-small word-wrap">Teléfono <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each birthday-table}}
             <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row">
-              <div class="col-xs-12 col-md-3 col-lg-3">
+              <div class="col-xs-12 col-md-3 col-lg-4">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent openContent--table" data-open-content="toggle-birthday{{@index}}">
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-birthday{{@index}}">
                     <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
@@ -105,28 +111,28 @@ birthday-table:
                 </div>
               </div>
 
-              <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-birthday{{@index}}">
-                <div class="row row-xs-1 row-md-4 row-lg-4 no-gutter mg-top-xs-30">
-                  <div class="col-xs-12 col-md-3 col-lg-4 mg-bottom-xs-15 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-9 col-lg-8 toggleContent toggleContent--responsive" data-toggle-content="toggle-birthday{{@index}}">
+                <div class="row row-xs-1 row-md-4 row-lg-4 mg-top-xs-30">
+                  <div class="col-xs-12 col-md-3 col-lg-2 mg-bottom-xs-15 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>R.U.T</strong></p>
-                    <p class="mg-bottom-0 f-small">{{rut}}</p>
+                    <p class="mg-bottom-0 f-small word-wrap">{{rut}}</p>
                   </div>
 
                   <div class="col-xs-12 col-md-3 col-lg-3 mg-bottom-xs-15 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Fecha de Nacimiento / Edad</strong></p>
-                    <p class="mg-bottom-0 f-small">{{birthday}}, {{age}}</p>
+                    <p class="mg-bottom-0 f-small word-wrap">{{birthday}}, {{age}}</p>
                   </div>
 
 
 
-                  <div class="col-xs-12 col-md-3 col-lg-3 mg-bottom-xs-15 mg-bottom-xs-15">
+                  <div class="col-xs-12 col-md-3 col-lg-4 mg-bottom-xs-15 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Correo Electrónico</strong></p>
-                    <p class="mg-bottom-0 f-small"><a href="mailto:{{email}}" class="f-link">{{email}}</a></p>
+                    <p class="mg-bottom-0 f-small word-wrap"><a href="mailto:{{email}}" class="f-link">{{email}}</a></p>
                   </div>
 
-                  <div class="col-xs-12 col-md-3 col-lg-2 mg-bottom-xs-15 mg-bottom-xs-15 center-md start-lg">
+                  <div class="col-xs-12 col-md-3 col-lg-3 mg-bottom-xs-15 mg-bottom-xs-15 center-md start-lg">
                     <p class="hide-md mg-lh-0"><strong>Teléfono</strong></p>
-                    <p class="mg-bottom-0 f-small"><a href="tel:{{phone}}" class="f-link">{{phone}}</a></p>
+                    <p class="mg-bottom-0 f-small word-wrap"><a href="tel:{{phone}}" class="f-link">{{phone}}</a></p>
                   </div>
                 </div>
               </div>

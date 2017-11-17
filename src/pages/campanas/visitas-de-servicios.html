@@ -68,12 +68,12 @@ service-visits-tab-2:
     <div class="row row-xs-1 row-md-3 middle-xs" data-tabs id="table-service-visits">
       <!-- Tabs -->
       <div class="col-xs-12 col-md-5">
-        <div class="row row-xs-1 row-md-2 no-gutter">
-          <div class="col-xs-12 col-md-6 tabs-title service-visits-tab is-active center-xs">
+        <div class="row row-xs-1 row-sm-2 no-gutter">
+          <div class="col-xs-12 col-sm-6 tabs-title service-visits-tab is-active center-xs">
             <a href="#tab-visits-month" aria-selected="true">Visitas del mes</a>
           </div>
 
-          <div class="col-xs-12 col-md-6 tabs-title service-visits-tab center-xs tabDelayed">
+          <div class="col-xs-12 col-sm-6 mg-bottom-xs-15 tabs-title service-visits-tab center-xs tabDelayed">
             <a data-tabs-target="tab-delayed-visits" href="#tab-delayed-visits">Visitas rezagadas</a>
           </div>
         </div>
@@ -108,54 +108,62 @@ service-visits-tab-2:
       <div class="tabs-panel is-active" id="tab-visits-month">
         <!-- Tabla visitas del mes -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
-            <div class="col-xs-12 col-md-2 col-lg-2">
-              <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
-            <div class="col-xs-12 col-md-10 col-lg-10">
-              <div class="row row-xs-1 row-md-3 no-gutter">
-                <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+            <div class="col-xs-12 col-md-8 col-lg-8">
+              <div class="row row-xs-1 row-md-4 no-gutter">
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                 <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Ficha de Mantención <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Ficha de Mantención <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each service-visits-tab-1}}
-            <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
-              <div class="col-xs-12 col-md-2 col-lg-2">
+            <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row no-gutter">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent openContent--table" data-open-content="toggle-service-visits-tab-1{{@index}}">
-                    <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-service-visits-tab-1{{@index}}">
+                    <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
 
-              <div class="col-xs-12 col-md-10 col-lg-10 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
-                <div class="row row-xs-1 row-md-3 no-gutter mg-top-xs-30">
-                  <div class="col-xs-12 col-md-6 mg-bottom-xs-15">
-                    <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                    <p class="mg-bottom-0 f-small">{{name}}</p>
+              <div class="col-xs-12 col-md-8 col-lg-8 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
+                <div class="row row-xs-1 row-md-4 no-gutter mg-top-xs-30">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                    <p class="mg-bottom-0 f-small">{{rut}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
                     <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Fecha</strong></p>
                     <p class="mg-bottom-0 f-small">{{date}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
                     <p class="hide-md mg-lh-0"><strong>Ficha de Mantención</strong></p>
                     <p class="mg-bottom-0 f-small"><a href="#" class="f-link">Descargar</a></p>
                   </div>                  
@@ -173,54 +181,62 @@ service-visits-tab-2:
       <div class="tabs-panel" id="tab-delayed-visits">
         <!-- Tabla visitas rezagadas -->
         <div class="striped-table z-depth-1 space-bottom">
-          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
-            <div class="col-xs-12 col-md-2 col-lg-2">
-              <p class="mg-bottom-0 f-small">R.U.T.</p>
+          <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
-            <div class="col-xs-12 col-md-10 col-lg-10">
+            <div class="col-xs-12 col-md-8 col-lg-8">
               <div class="row row-xs-1 row-md-4 no-gutter">
-                <div class="col-xs-12 col-md-6 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                 <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha</p></div>
+                 <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
 
-                <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Ficha de Mantención</p></div>
+                <div class="col-xs-12 col-md-3 hide-xs show-md">
+                  <p class="mg-bottom-0 f-small">Ficha de Mantención <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
           {{#each service-visits-tab-2}}
-            <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
-              <div class="col-xs-12 col-md-2">
+            <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row no-gutter">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                 <div class="col-xs-12">
-                  <a href="" class="f-link openContent" data-open-content="toggle-service-visits-tab-2{{@index}}">
-                    <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+                  <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-service-visits-tab-1{{@index}}">
+                    <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                     </span>
                     <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
 
-              <div class="col-xs-12 col-md-10 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-2{{@index}}">
+              <div class="col-xs-12 col-md-8 col-lg-8 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
                 <div class="row row-xs-1 row-md-4 no-gutter mg-top-xs-30">
-                  <div class="col-xs-12 col-md-6 mg-bottom-xs-15">
-                    <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                    <p class="mg-bottom-0 f-small">{{name}}</p>
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                    <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                    <p class="mg-bottom-0 f-small">{{rut}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
                     <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>Fecha</strong></p>
                     <p class="mg-bottom-0 f-small">{{date}}</p>
                   </div>
 
-                  <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+                  <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
                     <p class="hide-md mg-lh-0"><strong>Ficha de Mantención</strong></p>
                     <p class="mg-bottom-0 f-small"><a href="#" class="f-link">Descargar</a></p>
                   </div>                  
