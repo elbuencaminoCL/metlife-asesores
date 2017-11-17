@@ -68,9 +68,11 @@
 
     if( findArrayOpen >= 0 ) {
       $findToggleContent.add($findOpenContent).add($findOpenContentText).addClass('is-open')
+      $(e.currentTarget).text('Cerrar Todos')
     }
     else {
       $findToggleContent.add($findOpenContent).add($findOpenContentText).removeClass('is-open')
+      $(e.currentTarget).text('Expandir Todos')
     }
 
   });
