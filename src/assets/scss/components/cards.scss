@@ -69,6 +69,22 @@
 }
 
 
+.card-reports {
+  position: relative;
+  min-height: 287px;
+  .card-reports-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.card-reports-container-buttons {
+  margin-top: 60px;
+}
+
+
 
 @media screen and (min-width: 62em) {
 

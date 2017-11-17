@@ -1,0 +1,70 @@
+---
+reports:
+  -
+    title: CDI sometidos sin emitir
+    desc: Revisa qué negocios ingresaste pero aun no han sido emitidos.
+    number-report: 04
+  -
+    title: Métricas de Agencia
+    desc: Revisa tu rendimiento de forma diaria, semanal y mensual.
+    number-report: 16
+  -
+    title: Registro de Atención
+    desc: Revisa las solicitudes de tus clientes y en qué estado se encuentran.
+    number-report: 11
+---
+
+
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container">
+    {{> breadcrumb-reports }}
+    <h1 class="center-xs space-bottom">Reportes</h1>
+
+    <div class="row row-xs-1 row-md-3 center-xs space-bottom">
+      {{# each reports}}
+        <div class="col-xs-12 col-md-4 space-bottom pd-30 bg-white z-depth-1 card-reports">
+          <h4 class="mg-bottom-60">{{title}}</h4>
+          <!-- <figure class="center-xs space-bottom row">
+            <img src="./../../assets/images/icons/report.png" class="mg-right-15" />
+            <p class="f-bigger"><strong>{{number-report}}</strong></p>
+          </figure> -->
+          <p class="space-bottom">{{desc}}</p>
+          <div class="card-reports-container-buttons">
+            <div class="card-reports-buttons"><a href="#" class="button button--primary">Ver más</a></div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="row row-xs-1 row-md-2 center-xs mg-bottom-60">
+      <div class="col-xs-12 col-md-4 space-bottom pd-30 bg-white z-depth-1 card-reports">
+        <h4 class="mg-bottom-60">Registro de Pendientes</h4>
+        <p class="space-bottom">Gestiona las solicitudes pendientes de tus clientes.</p>
+        <div class="card-reports-container-buttons">
+          <div class="card-reports-buttons"><a href="#" class="button button--primary">Ver más</a></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-8 space-bottom bg-primary">
+        <div class="row row-xs-1 row-md-2 center-xs no-gutter">
+          <div class=" col-xs-12 col-md-6 pd-30 card-reports">
+            <h4 class="f-white mg-bottom-60">Reporte de FF.VV.</h4>
+            <p class="f-white space-bottom">Revisa el detalle de tu producción histórica por mes.</p>
+            <div class="card-reports-container-buttons">
+              <div class="card-reports-buttons"><a href="#" class="button button--secondary">Ver más</a></div>
+            </div>
+          </div> 
+
+          <div class="col-xs-12 col-md-6 bg-primary">
+            <figure>
+              <img src="{{root}}assets/images/reports/report-img.png">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+  </div>  
+</section>
