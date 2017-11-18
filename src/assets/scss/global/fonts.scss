@@ -47,7 +47,7 @@ h6 {
   font-size: 16px;
 }
 
-p {
+p, span {
   margin-bottom: 8px;
   &.line_jump {
     line-height: 1.2;
@@ -57,7 +57,7 @@ p {
     line-height: initial;
     margin-bottom: 0;
   }
-  &.ww {
+  &.word-wrap {
     word-wrap: break-word;
   }
 }
@@ -136,6 +136,10 @@ p {
 
 .f-shadow {
   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.85);
+}
+
+.lh-inherit {
+  line-height: inherit;
 }
 
 

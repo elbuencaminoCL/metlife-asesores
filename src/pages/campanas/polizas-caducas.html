@@ -77,69 +77,81 @@ expire-policies:
 
     <!-- Tabla de pólizas caducas -->
     <div class="striped-table z-depth-1 space-bottom scroll-table">
-      <div class="row row-xs-1 row-sm-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter scroll-row">
-        <div class="col-xs-12 col-sm-2 col-lg-1">
-          <p class="mg-bottom-0 f-small">R.U.T.</p>
+      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10  scroll-row">
+        <div class="col-xs-12 col-md-3 col-lg-3">
+          <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
         </div>
 
-        <div class="col-xs-12 col-sm-10 col-lg-11">
-          <div class="row row-xs-1 row-sm-6 row-lg-6 no-gutter">
+        <div class="col-xs-12 col-md-9 col-lg-9">
+          <div class="row row-xs-1 row-md-6 row-lg-6 no-gutter">
 
-            <div class="col-xs-12 col-sm-3 col-lg-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente</p></div>
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-sm-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Poliza Nº</p></div>
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">Poliza Nº <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-sm-2 col-lg-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Producto</p></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">Producto <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-sm-2 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha de<br>Término</p></div>
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">Fecha de<br>Término <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-sm-2 col-lg-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha de<br>Término Real</p></div>
+            <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">Fecha de<br>Término Real <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-sm-1 col-lg-1 hide-xs show-md"><p class="mg-bottom-0 f-small">Prima para Rehabilitación</p></div>
+            <div class="col-xs-12 col-md-1 col-lg-1 hide-xs show-md">
+              <p class="mg-bottom-0 f-small word-wrap">Prima para Rehabilitación <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
           </div>
         </div>
       </div>
 
       {{#each expire-policies}}
-        <div class="row row-xs-1 row-sm-2 row-lg-2 pd-15 table-row no-gutter scroll-row">
-          <div class="col-xs-12 col-sm-2 col-lg-1">
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row  scroll-row">
+          <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="col-xs-12">
-              <a href="" class="f-link openContent" data-open-content="toggle-expire-policies{{@index}}">
-                <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+              <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-expire-policies{{@index}}">
+                <span class="openContentText is-open word-wrap" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                 </span>
                 <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-expire-policies{{@index}}">
-            <div class="row row-xs-1 row-sm-6 row-lg-6 no-gutter mg-top-xs-30">
-              <div class="col-xs-12 col-sm-3 col-lg-3 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                <p class="mg-bottom-0 f-small">{{name}}</p>
+          <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-expire-policies{{@index}}">
+            <div class="row row-xs-1 row-md-6 row-lg-6 no-gutter mg-top-xs-30">
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                <p class="mg-bottom-0 f-small">{{rut}}</p>
               </div>
 
-              <div class="col-xs-12 col-sm-2 col-lg-2 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
                 <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
               </div>
 
-              <div class="col-xs-12 col-sm-2 col-lg-3 mg-bottom-xs-15" >
+              <div class="col-xs-12 col-md-3 col-lg-3 mg-bottom-xs-15" >
                 <p class="hide-md mg-lh-0"><strong>Producto</strong></p>
                 <p class="mg-bottom-0 f-small">{{product}}</p>
               </div>
 
-              <div class="col-xs-12 col-sm-2 col-lg-1 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Fecha de Término</strong></p>
                 <p class="mg-bottom-0 f-small">{{end-date}}</p>
               </div>
 
-              <div class="col-xs-12 col-sm-2 col-lg-2 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Fecha de Término Real</strong></p>
                 <p class="mg-bottom-0 f-small">{{real-end-date}}</p>
               </div>
 
-              <div class="col-xs-12 col-sm-1 col-lg-1 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Prima Rehabilitación</strong></p>
                 <p class="mg-bottom-0 f-small">{{rehabilitation-bounty}}</p>
               </div>

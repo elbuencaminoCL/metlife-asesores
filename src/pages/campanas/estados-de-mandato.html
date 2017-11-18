@@ -47,11 +47,11 @@ state-mandate:
       <h1 class="center-xs space-bottom">Estados de Mandatos</h1>
     </div>
     <div class="row row-xs-1 row-sm-2 middle-xs">
-      <div class="col-xs-12 col-sm-3 mg-bottom-15">
+      <div class="col-xs-12 col-sm-3">
         <dl class="dropdown">
           <dt>
-            <a href="#">
-              <span class="hida">Selecciona</span>
+            <a href="#" class="multi-select-ico-arrow">
+              <span class="hida">Selecciona un Estado</span>
               <p class="multiSel"></p>
             </a>
           </dt>
@@ -60,16 +60,16 @@ state-mandate:
             <div class="mutliSelect">
               <ul>
                 <li>
-                  <input type="checkbox" value="Pagado" />Pagado
+                  <input type="checkbox" value="Pagado" class="multi-select-checkbox" />Pagado
                 </li>
                 <li>
-                  <input type="checkbox" value="Por Pagar" />Por Pagar
+                  <input type="checkbox" value="Por Pagar"  class="multi-select-checkbox"/>Por Pagar
                 </li>
                 <li>
-                  <input type="checkbox" value="Vencido" />Vencido
+                  <input type="checkbox" value="Vencido" class="multi-select-checkbox"/>Vencido
                 </li>
                 <li>
-                  <input type="checkbox" value="Otro" />Otro
+                  <input type="checkbox" value="Otro" class="multi-select-checkbox"/>Otro
                 </li>
               </ul>
             </div>
@@ -85,20 +85,20 @@ state-mandate:
 
     <!-- Tabla estados de mandato -->
     <div class="striped-table z-depth-1 space-bottom">
-      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
-        <div class="col-xs-12 col-md-2 col-lg-1">
-          <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10">
+        <div class="col-xs-12 col-md-3 col-lg-3">
+          <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
         </div>
 
-        <div class="col-xs-12 col-md-10 col-lg-11">
+        <div class="col-xs-12 col-md-9 col-lg-9">
           <div class="row row-xs-1 row-md-5 no-gutter">
-            <div class="col-xs-12 col-md-4 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">N° Poliza <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+            <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">N° Poliza <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Estado del Mandato <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+            <div class="col-xs-12 col-md-3 hide-xs show-md"><p class="mg-bottom-0 f-small">Estado del Mandato <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md center-md"><p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
 
             <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Motivo <i class="fa fa-caret-down" aria-hidden="true"></i></p></div>
           </div>
@@ -106,35 +106,35 @@ state-mandate:
       </div>
 
       {{#each state-mandate}}
-        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
-          <div class="col-xs-12 col-md-2 col-lg-1">
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row">
+          <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="col-xs-12">
-              <a href="" class="f-link openContent" data-open-content="toggle-state-mandate{{@index}}">
-                <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+              <a href="" class="f-link openContent openContent--table" data-open-content="toggle-state-mandate{{@index}}">
+                <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                 </span>
                 <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-state-mandate{{@index}}">
+          <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-state-mandate{{@index}}">
             <div class="row row-xs-1 row-md-5 no-gutter mg-top-xs-30">
-              <div class="col-xs-12 col-md-4 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                <p class="mg-bottom-0 f-small">{{name}}</p>
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                <p class="mg-bottom-0 f-small">{{rut}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>N° Póliza</strong></p>
                 <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
+              <div class="col-xs-12 col-md-3 mg-bottom-xs-15" >
                 <p class="hide-md mg-lh-0"><strong>Estados del Mandato</strong></p>
                 <p class="mg-bottom-0 f-small">{{state-mandate}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15 center-md">
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Fecha del Estado</strong></p>
                 <p class="mg-bottom-0 f-small">{{date-state}}</p>
               </div>

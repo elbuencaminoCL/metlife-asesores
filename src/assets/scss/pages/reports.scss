@@ -1,4 +1,6 @@
 
+@import './../global/colors.scss';
+
 .reports-figure{
   min-height: 287px;
 }
@@ -7,6 +9,25 @@
   height: 287px;
   object-fit: cover;
   width: 100%;
+}
+
+.multi-select-checkbox {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+dt {
+  position: relative;
+  .multi-select-ico-arrow::after {
+    content: '\25BE';
+    font-size: 24px;
+    right: 10px;
+    top: 10px;
+    color: $dark-gray-2;
+    position: absolute;
+    z-index: 2;
+  }
 }
 
 

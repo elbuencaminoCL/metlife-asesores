@@ -13,9 +13,9 @@ attention-record:
     request: Ver RI
     adj:
     bit:
-    cs:
-    ao:
-    tt:
+    cs: error
+    ao: error
+    tt: error
   -
     record: 465342657
     date-entry: 17/08/2017 18:56:31
@@ -29,9 +29,9 @@ attention-record:
     request: Ver RI
     adj:
     bit:
-    cs:
-    ao:
-    tt:
+    cs: disabled
+    ao: disabled
+    tt: disabled
   -
     record: 465342657
     date-entry: 17/08/2017 18:56:31
@@ -45,9 +45,9 @@ attention-record:
     request: Ver RI
     adj:
     bit:
-    cs:
-    ao:
-    tt:
+    cs: information 
+    ao: information
+    tt: information
   -
     record: 465342657
     date-entry: 17/08/2017 18:56:31
@@ -61,9 +61,9 @@ attention-record:
     request: Ver RI
     adj:
     bit:
-    cs:
-    ao:
-    tt:
+    cs: success 
+    ao: success
+    tt: success
 ---
 
 
@@ -85,7 +85,7 @@ attention-record:
     </div>
 
     <!-- Contenido del desplegable búsqueda de tus clientes y pólizas -->
-    <section class=" toggleContent no-padding-bottom" data-toggle-content="agency-metrics">
+    <section class=" toggleContent is-open no-padding-bottom" data-toggle-content="agency-metrics">
       <div class="space-bottom support-form-row">
         <div class="fieldParent mg-bottom-15">
 
@@ -136,9 +136,9 @@ attention-record:
   </div>
 
   <!-- Tabla Registro de Atención -->
-  <div class="container table-record">
-    <div class="z-depth-1 space-bottom table-scroll">
-      <div class="row bg-primary-hover f-white pd-10 no-gutter">
+  <div class="container">
+    <div class="z-depth-1 space-bottom scroll-table">
+      <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row">
         <div class="table-100">
           <p class="mg-bottom-0 f-small">Reg de Atención</p>
         </div>
@@ -205,9 +205,9 @@ attention-record:
       </div>
 
       {{#each attention-record}}
-        <div class="row pd-10 table-row no-gutter">
+        <div class="row pd-10 table-row no-gutter scroll-row">
           <div class="table-100">
-            <a href="" class="f-link openContent" data-open-content="toggle-attention-record{{@index}}">
+            <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-attention-record{{@index}}">
               <span class="openContentText is-open f-small" data-rest-text="{{record}}" data-open-text="{{record}}">{{record}}
               </span>
               <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
@@ -218,72 +218,69 @@ attention-record:
             <div class="row mg-top-xs-30">
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Fecha Ingreso</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{date-entry}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{date-entry}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{canal}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15" >
                 <p class="hide-md mg-lh-0"><strong>Sub Canal</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{sub-canal}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{sub-canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Gestión</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{management}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{management}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Área</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{area}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{area}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Categoría</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{category}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{category}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Descripción</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{specifications}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{specifications}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Estado</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{state}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{state}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Requisito Interno</strong></p>
-                <p class="mg-bottom-0 ww f-small"><a href="#">{{request}}</a></p>
+                <p class="mg-bottom-0 word-wrap f-small"><a href="#">{{request}}</a></p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Adj.</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{adj}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{adj}}</p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>BIT</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{bit}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{bit}}</p>
               </div>
 
-              <div class="table-30 bullet-col success">
-                <p class="hide-md mg-lh-0"><strong>CS</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{cs}}</p>
+              <div class="table-30 bullet-col {{cs}}">
+                <p class="hide-md mg-lh-0"><strong>CS</strong></p>                
               </div>
 
-              <div class="table-30">
-                <p class="hide-md mg-lh-0"><strong>AO</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{ao}}</p>
+              <div class="table-30 bullet-col {{ao}}">
+                <p class="hide-md mg-lh-0"><strong>AO</strong></p>                
               </div>
 
-              <div class="table-30">
-                <p class="hide-md mg-lh-0"><strong>TT</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{tt}}</p>
+              <div class="table-30 bullet-col {{tt}}">
+                <p class="hide-md mg-lh-0"><strong>TT</strong></p>                
               </div>
             </div>
           </div>

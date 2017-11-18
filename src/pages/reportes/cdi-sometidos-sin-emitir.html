@@ -91,47 +91,57 @@ cdi:
     </div>
 
     <!-- Tabla CDI sometidos sin emitir -->
-    <div class="z-depth-1 space-bottom">
-      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-15 no-gutter">
-        <div class="col-xs-12 col-md-2 col-lg-1">
-          <p class="mg-bottom-0 f-small">R.U.T.</p>
+    <div class="z-depth-1 space-bottom striped-table">
+      <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter">
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <p class="mg-bottom-0 f-small">Nombre Cliente <i class="fa fa-caret-down" aria-hidden="true"></i></p>
         </div>
 
-        <div class="col-xs-12 col-md-10 col-lg-11">
+        <div class="col-xs-12 col-md-8 col-lg-8">
           <div class="row row-xs-1 row-md-5 no-gutter">
-            <div class="col-xs-12 col-md-4 hide-xs show-md"><p class="mg-bottom-0 f-small">Nombre Cliente</p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small">R.U.T. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">N° de CDI</p></div>
+            <div class="col-xs-12 col-md-3 hide-xs show-md">
+              <p class="mg-bottom-0 f-small">N° de CDI <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Fecha de sometimiento</p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small">Fecha de sometimiento <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Categoria</p></div>
+            <div class="col-xs-12 col-md-3 hide-xs show-md">
+              <p class="mg-bottom-0 f-small">Categoria <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
 
-            <div class="col-xs-12 col-md-2 hide-xs show-md"><p class="mg-bottom-0 f-small">Requisitos</p></div>
+            <div class="col-xs-12 col-md-2 hide-xs show-md">
+              <p class="mg-bottom-0 f-small">Requisitos <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
           </div>
         </div>
       </div>
 
       {{#each cdi}}
-        <div class="row row-xs-1 row-md-2 row-lg-2 pd-15 table-row no-gutter">
-          <div class="col-xs-12 col-md-2 col-lg-1">
+        <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row no-gutter">
+          <div class="col-xs-12 col-md-4 col-lg-4">
             <div class="col-xs-12">
-              <a href="" class="f-link openContent" data-open-content="toggle-cdi{{@index}}">
-                <span class="openContentText is-open f-small" data-rest-text="{{rut}}" data-open-text="{{rut}}">{{rut}}
+              <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-cdi{{@index}}">
+                <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
                 </span>
                 <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-xs-12 col-md-10 col-lg-11 toggleContent toggleContent--responsive" data-toggle-content="toggle-cdi{{@index}}">
+          <div class="col-xs-12 col-md-8 col-lg-8 toggleContent toggleContent--responsive" data-toggle-content="toggle-cdi{{@index}}">
             <div class="row row-xs-1 row-md-5 no-gutter mg-top-xs-30">
-              <div class="col-xs-12 col-md-4 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Nombre Cliente</strong></p>
-                <p class="mg-bottom-0 f-small">{{name}}</p>
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+                <p class="hide-md mg-lh-0"><strong>R.U.T</strong></p>
+                <p class="mg-bottom-0 f-small">{{rut}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>CDI Nº</strong></p>
                 <p class="mg-bottom-0 f-small">{{number-cdi}}</p>
               </div>
@@ -141,7 +151,7 @@ cdi:
                 <p class="mg-bottom-0 f-small">{{submission-date}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
+              <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Categoria</strong></p>
                 <p class="mg-bottom-0 f-small">{{category}}</p>
               </div>

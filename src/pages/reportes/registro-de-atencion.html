@@ -92,8 +92,7 @@ attention-record:
     <h1 class="space-bottom center-xs">Registro de Atención</h1>
   </div>
 
-  <form id="formSearch" class="formValidateChange" data-parsley-validate="">
-    <div class="bg-white space-bottom pd-30">
+  <div class="bg-white space-bottom pd-30">
       <div class="container">
         <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
           <span class="openContentText is-open" data-rest-text="Búsqueda de tus Clientes y Pólizas" data-open-text="Búsqueda de tus Clientes y Pólizas">Búsqueda de tus Clientes y Pólizas</span>
@@ -102,7 +101,7 @@ attention-record:
       </div>
 
       <!-- Contenido del desplegable búsqueda de tus clientes y pólizas -->
-      <section class="toggleContent is-open no-padding-bottom" data-toggle-content="agency-metrics">
+      <section class=" toggleContent is-open no-padding-bottom" data-toggle-content="agency-metrics">
         <div class="space-bottom support-form-row">
           <div class="fieldParent mg-bottom-15">
 
@@ -116,12 +115,34 @@ attention-record:
               </div>
             </div>
 
-            <div>
-              <input type="text" name="">
-            </div>
+            <div class="tabs-content" data-tabs-content="tabsCard">
+              <div class="tabs-panel is-active" id="clients">
+                <form id="formSearchClient" class="formValidateChange" data-parsley-validate="">
+                  <div class="mg-bottom-10 fieldParent">
+                    <span class="input input--ichiro">
+                      <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="registerLoginRut" value="15.765.456-9" required />
+                      <p class="form-error f-tiny pd-top-i-50">Ingresa un Cliente válido.</p>
+                    </span>
+                  </div>
+                  <div class="end-md">
+                    <input type="submit" class="button button--primary button--full-xs" value="Buscar" />
+                  </div>
+                </form>
+              </div>
 
-            <div class="end-xs">
-              <a href="#" class="button button--primary">Buscar</a>
+              <div class="tabs-panel" id="policy">
+                <form id="formSearchPoliza" class="formValidateChange" data-parsley-validate="">
+                  <div class="mg-bottom-10 fieldParent">
+                    <span class="input input--ichiro">
+                      <input class="input__field input__field--ichiro" data-parsley-errors-messages-disabled data-parsley-trigger="input" type="text" id="registerLoginPoliza" value="232" required />
+                      <p class="form-error f-tiny pd-top-i-50">Ingresa un Cliente válido.</p>
+                    </span>
+                  </div>
+                  <div class="end-md">
+                    <input type="submit" class="button button--primary button--full-xs" value="Buscar" />
+                  </div>
+                </form>
+              </div>
             </div>
 
           </div>
@@ -129,72 +150,71 @@ attention-record:
       </section>
       <!-- /Contenido del desplegable búsqueda de tus clientes y pólizas -->
     </div>
-  </form>
 
   <!-- Tabla Registro de Atención -->
   <div class="container striped-table">
     <div class="z-depth-1 space-bottom scroll-table">
       <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row">
         <div class="table-100">
-          <p class="mg-bottom-0 f-small">Reg de Atención</p>
+          <p class="mg-bottom-0 f-small">Reg de Atención <i class="fa fa-caret-down" aria-hidden="true"></i></p>
         </div>
 
         <div class="table-1080">
           <div class="row">
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Fecha Ingreso</p>
+              <p class="mg-bottom-0 f-small">Fecha Ingreso <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Canal</p>
+              <p class="mg-bottom-0 f-small">Canal <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Sub Canal</p>
+              <p class="mg-bottom-0 f-small">Sub Canal <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Gestión</p>
+              <p class="mg-bottom-0 f-small">Gestión <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Área</p>
+              <p class="mg-bottom-0 f-small">Área <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Categoría</p>
+              <p class="mg-bottom-0 f-small">Categoría <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Descripción</p>
+              <p class="mg-bottom-0 f-small">Descripción <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Estado</p>
+              <p class="mg-bottom-0 f-small">Estado <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Req. Interno</p>
+              <p class="mg-bottom-0 f-small">Req. Interno <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-45 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Adj.</p>
+              <p class="mg-bottom-0 f-small">Adj. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-45 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">BIT</p>
+              <p class="mg-bottom-0 f-small">BIT <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-30 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">CS</p>
+              <p class="mg-bottom-0 f-small">CS <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-30 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">AO</p>
+              <p class="mg-bottom-0 f-small">AO <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-30 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">TT</p>
+              <p class="mg-bottom-0 f-small">TT <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
           </div>
         </div>
@@ -203,79 +223,79 @@ attention-record:
       {{#each attention-record}}
         <div class="row pd-10 table-row no-gutter scroll-row">
           <div class="table-100">
-            <a href="" class="f-link openContent" data-open-content="toggle-attention-record{{@index}}">
+            <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-attention-record{{@index}}">
               <span class="openContentText is-open f-small" data-rest-text="{{record}}" data-open-text="{{record}}">{{record}}
               </span>
               <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="table-1080 toggleContent toggleContent--responsive mg-bottom-xs-15" data-toggle-content="toggle-attention-record{{@index}}">
+          <div class="table-1080 toggleContent toggleContent--responsive" data-toggle-content="toggle-attention-record{{@index}}">
             <div class="row mg-top-xs-30">
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Fecha Ingreso</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{date-entry}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{date-entry}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{canal}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15" >
                 <p class="hide-md mg-lh-0"><strong>Sub Canal</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{sub-canal}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{sub-canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Gestión</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{management}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{management}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Área</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{area}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{area}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Categoría</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{category}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{category}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Descripción</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{specifications}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{specifications}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Estado</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{state}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{state}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Requisito Interno</strong></p>
-                <p class="mg-bottom-0 ww f-small"><a href="#">{{request}}</a></p>
+                <p class="mg-bottom-0 word-wrap f-small"><a href="#">{{request}}</a></p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Adj.</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{adj}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{adj}}</p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>BIT</strong></p>
-                <p class="mg-bottom-0 ww f-small">{{bit}}</p>
+                <p class="mg-bottom-0 word-wrap f-small">{{bit}}</p>
               </div>
 
-              <div class="table-30 bullet-col {{cs}}">
+              <div class="table-30 bullet-col mg-bottom-xs-15 {{cs}}">
                 <p class="hide-md mg-lh-0"><strong>CS</strong></p>
               </div>
 
-              <div class="table-30 bullet-col {{ao}}">
+              <div class="table-30 bullet-col mg-bottom-xs-15 {{ao}}">
                 <p class="hide-md mg-lh-0"><strong>AO</strong></p>
               </div>
 
-              <div class="table-30 bullet-col {{tt}}">
+              <div class="table-30 bullet-col mg-bottom-xs-15 {{tt}}">
                 <p class="hide-md mg-lh-0"><strong>TT</strong></p>
               </div>
             </div>
