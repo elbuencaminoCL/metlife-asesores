@@ -55,22 +55,22 @@ service-visits-tab-2:
       <h1 class="center-xs space-bottom">Visitas de Servicio</h1>
     </div>
 
-    <div class="row row-xs-1 row-md-3 middle-xs" data-tabs id="table-service-visits">
-      <!-- Tabs -->
-      <div class="col-xs-12 col-md-5">
-        <div class="row row-xs-1 row-sm-2 no-gutter">
-          <div class="col-xs-12 col-sm-6 tabs-title service-visits-tab is-active center-xs">
-            <a href="#tab-visits-month" aria-selected="true">Visitas del mes</a>
+    <div class="row row-xs-1 row-sm-1 row-md-3 row-lg-3 no-gutter">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+        <div class="tabs pd-0" data-responsive-accordion-tabs="tabs small-accordion medium-accordion large-tabs" id="example-tabs" data-allow-all-closed="true">
+        <!-- Tabs -->           
+          <div class="tabs-title is-active">
+            <a href="#panel1" aria-selected="true">Visitas del mes</a>
           </div>
 
-          <div class="col-xs-12 col-sm-6 mg-bottom-xs-15 tabs-title service-visits-tab center-xs tabDelayed">
-            <a data-tabs-target="tab-delayed-visits" href="#tab-delayed-visits">Visitas rezagadas</a>
+          <div class="tabs-title tabDelayed">
+            <a href="#panel2">Visitas Rezagadas</a>
           </div>
         </div>
-      </div>
+      </div>    
       <!-- Tabs -->
 
-      <div class="col-xs-12 col-md-5 date-picker-row tab-delayed-date-picker">
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 date-picker-row tab-delayed-date-picker hide-xs show-md">
         <div class="row row-xs-1 row-sm-2 row-md-2 middle-xs">
           <div class="col-xs-12 col-sm-6 col-md-6 ">
             <span class="input input--ichiro input--datepicker DatePickerStart">
@@ -86,16 +86,17 @@ service-visits-tab-2:
             </span>
           </div>
         </div>
-      </div>
+      </div>      
 
-      <div class="col-xs-12 col-md-2 end-xs">
+      <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 end-xs center-md end-lg">
         <a href="#" class="f-link f-small">Descargar PDF</a>
       </div>
     </div>
-    
-    <div class="tabs-content" data-tabs-content="table-service-visits">
+   
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
       <!-- Contenido del tab-1 (visitas del mes) -->
-      <div class="tabs-panel is-active" id="tab-visits-month">
+      <div class="tabs-panel is-active" id="panel1">
         <!-- Tabla visitas del mes -->
         <div class="striped-table z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter">
@@ -168,8 +169,27 @@ service-visits-tab-2:
 
 
       <!-- Contenido del tab-2 (visitas rezagadas) -->
-      <div class="tabs-panel" id="tab-delayed-visits">
+      <div class="tabs-panel" id="panel2">
         <!-- Tabla visitas rezagadas -->
+
+        <div class="hide-md col-xs-12 col-sm-12 col-md-5 col-lg-5 date-picker-row tab-delayed-date-picker">
+          <div class="row row-xs-1 row-sm-2 row-md-2 middle-xs">
+            <div class="col-xs-12 col-sm-6 col-md-6 ">
+              <span class="input input--ichiro input--datepicker DatePickerStart">
+                <input class="input__field input__field--ichiro flatpickr flatpickr-input" type="text" data-id="rangePlugin" placeholder="Fecha Desde" readonly>
+                <i class="material-icons">date_range</i>
+              </span>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <span class="input input--ichiro input--datepicker DatePickerEnd">
+                <input class="input__field input__field--ichiro flatpickr flatpickr-input" id="secondRangeInput" type="text" placeholder="Fecha Hasta" readonly>
+                <i class="material-icons">date_range</i>
+              </span>
+            </div>
+          </div>
+        </div> 
+
         <div class="striped-table z-depth-1 space-bottom">
           <div class="row row-xs-1 row-md-2 row-lg-2 bg-primary-hover f-white pd-10 no-gutter">
             <div class="col-xs-12 col-md-4 col-lg-4">
@@ -256,5 +276,13 @@ service-visits-tab-2:
         </div>
       </div>
     </div>
+    
   </div>
 </section>
+
+
+
+
+
+
+

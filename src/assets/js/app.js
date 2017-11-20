@@ -30,6 +30,7 @@ import './components/tabs-banner';
 import './lib/foundation-explicit-pieces';
 import './lib/select';
 import './lib/parsley';
+import './lib/test-accord';
 
 
 
