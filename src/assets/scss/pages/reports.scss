@@ -30,9 +30,9 @@ dt {
   }
 }
 
-.u-select-container {
+.u-select-ico-arrow {
   position: relative;
-  .u-select-ico::after {
+  &::after {
     content: '\25BE';
     font-size: 24px;
     right: 10px;
