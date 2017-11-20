@@ -14,10 +14,15 @@
 
 @media screen and ( min-width: 62em ) {
 
-  .service-visits-tab {
+  .tabs-reports {
     background-color: $dark-gray-3;
     height: 55px;
     margin-top: 5px;
+    &.tab-priority {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  
     a {
       color: white;
       font-size: 16px;
