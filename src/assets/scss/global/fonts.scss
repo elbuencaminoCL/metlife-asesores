@@ -47,7 +47,7 @@ h6 {
   font-size: 16px;
 }
 
-p, span {
+p {
   margin-bottom: 8px;
   &.line_jump {
     line-height: 1.2;
@@ -61,6 +61,22 @@ p, span {
     word-wrap: break-word;
   }
 }
+
+span {
+  &.line_jump {
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+  &.mg-lh-0 {
+    line-height: initial;
+    margin-bottom: 0;
+  }
+  &.word-wrap {
+    word-wrap: break-word;
+  }
+}
+
+
 
 .F {
   text-transform: uppercase;
