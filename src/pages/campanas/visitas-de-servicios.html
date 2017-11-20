@@ -48,15 +48,17 @@ service-visits-tab-2:
 
 {{> header }}
 
-<section class="pd-top-15">
-  <div class="container">
-    <div class="hide-xs show-md">
-      {{> breadcrumb-service-visits}}
-      <h1 class="center-xs space-bottom">Visitas de Servicio</h1>
-    </div>
+<div class="container">
+  <section class="pd-top-15">
+    <div class="table-container">
+      {{> breadcrumb-uncollected-policies}}
+      <div class="center-xs space-bottom">
+        <h1>Visitas de Servicio</h1>
+      </div>
 
-    <div class="row row-xs-1 row-sm-1 row-md-3 row-lg-3 no-gutter bottom-xs">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+
+    <div class="row row-xs-1 row-sm-1 row-md-3 row-lg-4 no-gutter bottom-xs">
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
         <div class="tabs pd-0 bg-none" data-responsive-accordion-tabs="tabs small-accordion medium-accordion large-tabs" id="example-tabs" data-allow-all-closed="true">
         <!-- Tabs -->           
           <div class="tabs-title is-active service-visits-tab">
@@ -70,7 +72,7 @@ service-visits-tab-2:
       </div>    
       <!-- Tabs -->
 
-      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 date-picker-row tab-delayed-date-picker hide-xs show-md">
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 pd-left-20 date-picker-row tab-delayed-date-picker hide-xs show-md">
         <div class="row row-xs-1 row-sm-2 row-md-2">
           <div class="col-xs-12 col-sm-6 col-md-6">
             <span class="input input--ichiro input--datepicker DatePickerStart">
@@ -88,7 +90,7 @@ service-visits-tab-2:
         </div>
       </div>      
 
-      <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 end-xs center-md end-lg pd-bottom-20">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 end-xs pd-bottom-20">
         <a href="#" class="f-link f-small">Descargar PDF</a>
       </div>
     </div>

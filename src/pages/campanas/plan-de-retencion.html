@@ -52,13 +52,13 @@ retention-plan:
 
 <section class="pd-top-15">
   <div class="container">
-    <div class="hide-xs show-md">
+    <div class="">
       {{> breadcrumb-retention-plan}}
       <h1 class="center-xs space-bottom">Plan de Retención</h1>
     </div>
 
     <div class="row row-xs-1 row-sm-2 middle-xs">
-      <div class="col-xs-12 col-sm-3 mg-bottom-15">
+      <div class="col-xs-12 col-sm-4 col-md-3 mg-bottom-15">
         <section class="u-select bg-white">
           <select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
             <option value="login.html" data-link="login.html">Estado de Gestión</option>
@@ -67,7 +67,7 @@ retention-plan:
         </section>
       </div>
 
-      <div class="col-xs-12 col-sm-9 mg-bottom-15">
+      <div class="col-xs-12 col-sm-8 end-xs mg-bottom-15">
         <a href="#" class="f-link f-small">Descargar PDF</a>
       </div>
     </div>
@@ -127,37 +127,37 @@ retention-plan:
           <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-retention-plan{{@index}}">
             <div class="row row-xs-1 row-md-7 no-gutter mg-top-xs-30">
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>R.U.T.</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>R.U.T.</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{rut}}</p>
               </div>
 
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Póliza Nº</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Póliza Nº</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small"><a href="#">{{number-policy}}</a></p>
               </div>
 
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15" >
-                <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Canal</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{canal}}</p>
               </div>
 
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Requerimiento</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Requerimiento</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{request}}</p>
               </div>
 
               <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Descripción</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Descripción</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{description}}</p>
               </div>
 
               <div class="col-xs-12 col-md-1 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Fecha Solicitud</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Fecha Solicitud</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{creation}}</p>
               </div>
 
               <div class="col-xs-12 col-md-1 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Estado Gestion</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Estado Gestion</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{state-management}}</p>
               </div>
             </div>
