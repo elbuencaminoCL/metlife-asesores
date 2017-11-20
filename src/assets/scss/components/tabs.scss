@@ -32,6 +32,11 @@
   position: relative;
   white-space: nowrap;
   width: 100%;
+  &.pd-0 {
+    overflow-x: none;
+    overflow-y: none;
+    padding: 0;
+  }
   &:before {
     display: none;
   }
