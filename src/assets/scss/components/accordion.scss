@@ -20,7 +20,15 @@
   background-color: white;
   border-radius: 3px;
   border: 1px solid $dark-gray;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: white;
+    &:focus {
+      background-color: red;
+    }
+  }
+
+
 	&.is-active {
 		.accordion-title {
       background-color: white;
@@ -35,8 +43,10 @@
 
 .accordion-title {
   border: 0;
-  padding: 14px 40px 14px 0;
+  padding: 10px;
   text-align: left;
+  font-size: 16px;
+  color: $dark-gray;
 	h5 {
 		display: inline-block;
 	}

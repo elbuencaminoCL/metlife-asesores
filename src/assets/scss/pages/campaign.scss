@@ -10,45 +10,51 @@
   object-fit: cover;
 }
 
-.service-visits-tab {
-  background-color: $dark-gray-3;
-  height: 60px;
-  margin-top: 5px;
-  a {
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    outline: none;
-    text-decoration: underline;
-    height: 100%;
-    &:hover {
-      background-color: $primary;
-      color: white;
-    }
-    &.tab-carousel {
-      font-size: 14px;
-      text-transform: none;
-      padding: 13px;
-    }
-  }
-  &.is-active {
-    height: 65px;
-    background-color: $primary-hover;
-    margin-top: 0;
-    box-shadow: none;
+
+
+@media screen and ( min-width: 62em ) {
+
+  .service-visits-tab {
+    background-color: $dark-gray-3;
+    height: 55px;
+    margin-top: 5px;
     a {
-      background-color: transparent;
-      color: $white;
-      font-weight: bold;
-      border: none;
-      text-decoration: none;
-      margin-top: 6px;
-      &.is-focus {
-        background-color: green;
+      color: white;
+      font-size: 16px;
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: underline;
+      height: 100%;
+      &:hover {
+        background-color: $primary;
+        color: white;
+      }
+      &.tab-carousel {
+        font-size: 14px;
+        text-transform: none;
+        padding: 13px;
       }
     }
+    &.is-active {
+      height: 60px;
+      background-color: $primary-hover;
+      margin-top: 0;
+      box-shadow: none;
+      a {
+        background-color: transparent;
+        color: $white;
+        font-weight: bold;
+        border: none;
+        text-decoration: none;
+        margin-top: 6px;
+        &.is-focus {
+          background-color: green;
+        }
+      }
+    }
+    a:before {
+      background-color: $accident;
+    }
   }
-  a:before {
-    background-color: $accident;
-  }
+
 }
