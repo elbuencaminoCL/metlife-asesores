@@ -10,6 +10,19 @@
   object-fit: cover;
 }
 
+dt {
+  position: relative;
+  .multi-select-ico-arrow::after {
+    content: '\25BE';
+    font-size: 24px;
+    right: 10px;
+    top: 8px;
+    color: $dark-gray-2;
+    position: absolute;
+    z-index: 4;
+  }
+}
+
 
 
 @media screen and ( min-width: 62em ) {
