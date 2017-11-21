@@ -70,6 +70,12 @@
 		z-index: 1;
 	}
 
+	.input--datepicker-label {
+		color: $dark-gray;
+		font-size: 12.8px;
+		margin-bottom: 2px;
+	}
+
 	.input--ichiro--currency {
 		position: relative;
 		&:before {
