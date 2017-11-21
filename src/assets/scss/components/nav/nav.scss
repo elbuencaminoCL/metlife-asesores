@@ -34,7 +34,7 @@
 }
 
 .nav-main {
-  height: 60px;
+  
   .nav-main-col {
     &:hover {
       background-color: $primary-hover;
@@ -59,9 +59,7 @@
   }
 }
 
-.nav-main-container {
-  height: 100%
-}
+
 
 .nav-sub {
   background-color: white;
@@ -80,7 +78,7 @@
   .is-stuck {
     .nav-main {
       transition: all 0.3s ease-in-out;
-      height: 30px;
+      
     }
 
     .nav-main-row > div > a {
