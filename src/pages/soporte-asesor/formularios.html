@@ -239,83 +239,85 @@ form-table:
 
 {{> header }}
 
-<div class="container">
-  {{> breadcrumb-support-advisor-form }}
-  <div class="space-bottom center-xs">
-    <h1>Formularios</h1>
-  </div>
-</div>
-
-<form id="forms" class="formValidateChange" data-parsley-validate="">
-  <div class="bg-white space-bottom pd-bottom-30 pd-top-30">
-
-    <div class="container">
-      <a href="" class="openContent f-link f-bigger" data-open-content="form-search">
-        <span class="openContentText is-open" data-rest-text="Quiero buscar formularios por:" data-open-text="Quiero buscar formularios por:">Quiero buscar formularios por:</span>
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
-      </a>
-      <!-- Contenido formulario -->
-      <section class=" toggleContent no-padding-bottom" data-toggle-content="form-search">
-        <div class="space-bottom support-form-row">
-          <section class="space-bottom fieldParent">
-            <span class="input input--ichiro">
-              <input class="input__field input__field--ichiro input-border-radius" data-parsley-errors-messages-disabled data-parsley-trigger="change" type="text" id="loginRut" required />
-              <label class="input__label input__label--ichiro" for="loginRut">
-                <span class="input__label-content input__label-content--ichiro"><span class="inputIchiro">Nombre</span></span>
-              </label>
-              <p class="form-error f-tiny">Debes ingresar un nombre.</p>
-            </span>
-          </section>
-
-          <div class="fieldParent space-bottom">
-            <section class="u-select-ico-arrow" data-parsley-trigger="change">
-              <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
-                <option value="cat1">cat1</option>
-                <option value="cat2">cat2</option>
-                <option value selected>Área de Soporte</option>
-              </select>
-            </section>
-            <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
-          </div>
-
-          <div class="fieldParent space-bottom">
-            <section class="u-select-ico-arrow">
-              <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value selected>Fecha de Publicación</option>
-              </select>
-            </section>
-            <p class="form-error f-tiny">Debes seleccionar una fecha.</p>
-          </div>
-
-          <div class="col-xs-12 col-sm-4 end-sm">
-            <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
-          </div>
-        </div>
-      </section>
-      <!-- /Contenido formulario -->
+<section class="pd-top-15">
+  <div class="container">
+    <div class="hide-xs show-md">
+      {{> breadcrumb-support-advisor-form }}
     </div>
+    <h1 class="space-bottom center-xs">Formularios</h1>
   </div>
-</form>
 
-<div class="container space-bottom-small">
-  <h6>341 resultados encontrados</h6>
-</div>
+  <form id="forms" class="formValidateChange" data-parsley-validate="">
+    <div class="bg-white space-bottom pd-bottom-30 pd-top-30">
 
-<div class="pd-15 bg-primary hide-md">
-  <p class="no-space f-white"><strong>Nombre del Formulario</strong></p>
-</div>
+      <div class="container">
+        <a href="" class="openContent f-link f-bigger" data-open-content="form-search">
+          <span class="openContentText is-open" data-rest-text="Quiero buscar formularios por:" data-open-text="Quiero buscar formularios por:">Quiero buscar formularios por:</span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+        <!-- Contenido formulario -->
+        <section class=" toggleContent no-padding-bottom" data-toggle-content="form-search">
+          <div class="space-bottom support-form-row">
+            <section class="space-bottom fieldParent">
+              <span class="input input--ichiro">
+                <input class="input__field input__field--ichiro input-border-radius" data-parsley-errors-messages-disabled data-parsley-trigger="change" type="text" id="loginRut" required />
+                <label class="input__label input__label--ichiro" for="loginRut">
+                  <span class="input__label-content input__label-content--ichiro"><span class="inputIchiro">Nombre</span></span>
+                </label>
+                <p class="form-error f-tiny">Debes ingresar un nombre.</p>
+              </span>
+            </section>
 
-<div class="bg-white">
-  <!-- Tabla de formularios -->
-    {{> support-advisor-forms-table }}
-  <!-- Tabla de formularios -->
+            <div class="fieldParent space-bottom">
+              <section class="u-select-ico-arrow" data-parsley-trigger="change">
+                <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+                  <option value="cat1">cat1</option>
+                  <option value="cat2">cat2</option>
+                  <option value selected>Área de Soporte</option>
+                </select>
+              </section>
+              <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
+            </div>
 
-  <section class="pagination mg-bottom-60">
-    {{> pagination }}
-  </section>
-</div>
+            <div class="fieldParent space-bottom">
+              <section class="u-select-ico-arrow">
+                <select class="cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled required="">
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value selected>Fecha de Publicación</option>
+                </select>
+              </section>
+              <p class="form-error f-tiny">Debes seleccionar una fecha.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 end-sm">
+              <input class="button button--primary button--full-xs" type="submit" value="Buscar" />
+            </div>
+          </div>
+        </section>
+        <!-- /Contenido formulario -->
+      </div>
+    </div>
+  </form>
+
+  <div class="container space-bottom-small">
+    <h6>341 resultados encontrados</h6>
+  </div>
+
+  <div class="pd-15 bg-primary hide-md">
+    <p class="no-space f-white"><strong>Nombre del Formulario</strong></p>
+  </div>
+
+  <div class="bg-white">
+    <!-- Tabla de formularios -->
+      {{> support-advisor-forms-table }}
+    <!-- Tabla de formularios -->
+
+    <section class="pagination mg-bottom-60">
+      {{> pagination }}
+    </section>
+  </div>
+</section>
 
 
 
