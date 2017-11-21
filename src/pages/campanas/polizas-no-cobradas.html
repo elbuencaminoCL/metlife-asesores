@@ -160,6 +160,7 @@ uncollected-policies:
                 <p class="mg-bottom-0 f-small">{{bounty-pending}}</p>
               </div>
 
+<<<<<<< HEAD
               <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Monto UF</strong></p>
                 <p class="mg-bottom-0 f-small">{{amount-uf}}</p>
@@ -168,6 +169,14 @@ uncollected-policies:
               <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Pagado Hasta</strong></p>
                 <p class="mg-bottom-0 f-small">{{paid-until}}</p>
+=======
+              <div class="col-xs-12 col-md-1 col-lg-1 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18 end-md">Monto<br>Pend. UF <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              </div>
+
+              <div class="col-xs-12 col-md-2 col-lg-2 hide-xs show-md">
+                <p class="mg-bottom-0 f-small lh-18 end-md pd-right-30">Pagado<br> Hasta <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+>>>>>>> e4ff9528f32f8d329f0f84b2838b9715fc472b15
               </div>
 
               <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
@@ -181,9 +190,64 @@ uncollected-policies:
     </div>
     <!-- /Tabla de pólizas no cobradas -->
 
+<<<<<<< HEAD
     <div class="pagination__table">
       <div class="pagination">
         {{> pagination }}
+=======
+        {{#each uncollected-policies}}
+          <div class="row row-xs-1 row-md-2 row-lg-2 pd-10 table-row no-gutter scroll-row">
+            <div class="col-xs-12 col-md-3 col-lg-3">
+              <div class="col-xs-12">
+                <a href="" class="f-link openContent openContent--table f-small lh-inherit" data-open-content="toggle-uncollected-policies{{@index}}">
+                  <span class="openContentText is-open" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
+                  </span>
+                  <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-9 col-lg-9 toggleContent toggleContent--responsive" data-toggle-content="toggle-uncollected-policies{{@index}}">
+              <div class="row row-xs-1 row-md-7 row-lg-7 no-gutter mg-top-xs-30">
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>R.U.T.</strong></p>
+                  <p class="mg-bottom-0 f-small"><a href="#">{{rut}}</p>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>N° Póliza</strong></p>
+                  <p class="mg-bottom-0 f-small"><a href="#">{{number-policy}}</a></p>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15" >
+                  <p class="hide-md mg-lh-0 f-small"><strong>Frecuencia de Pago</strong></p>
+                  <p class="mg-bottom-0 f-small">{{freq-pay}}</p>
+                </div>
+
+                <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>Primas Pendientes</strong></p>
+                  <p class="mg-bottom-0 f-small end-md pd-right-30">{{bounty-pending}}</p>
+                </div>
+
+                <div class="col-xs-12 col-md-1 col-lg-1 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>Monto Pendiente UF</strong></p>
+                  <p class="mg-bottom-0 f-small end-md">{{amount-uf}}</p>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>Pagado Hasta</strong></p>
+                  <p class="mg-bottom-0 f-small end-md pd-right-30">{{paid-until}}</p>
+                </div>
+
+                <div class="col-xs-12 col-md-2 col-lg-2 mg-bottom-xs-15">
+                  <p class="hide-md mg-lh-0 f-small"><strong>Motivo</strong></p>
+                  <p class="mg-bottom-0 f-small">{{reason}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+>>>>>>> e4ff9528f32f8d329f0f84b2838b9715fc472b15
       </div>
 
       <div class="pagination__select pd-top-10">
