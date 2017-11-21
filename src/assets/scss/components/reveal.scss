@@ -1,12 +1,20 @@
 
 .reveal {
-  max-width: 100%;
+  min-width: 100%;
   min-height: 200px;
   padding: 30px;    
-  width: 700px;
 }
 
 .reveal__content {
   max-width: 470px;
   margin: 0 auto;
+}
+
+
+
+@media screen and ( min-width: 868px ) {
+  .reveal {
+    min-width: 700px;   
+  }
+
 }
