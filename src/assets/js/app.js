@@ -20,7 +20,6 @@ flatpickr(".flatpickr", {
 
 // Components
 import './components/detect-ie';
-import './components/detect-ios';
 import './components/select';
 import './components/open-content';
 import './components/input-text';
