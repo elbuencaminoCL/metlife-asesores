@@ -1,0 +1,85 @@
+---
+breadcrumb:
+  -
+    title: Home
+    link: home.html
+  -
+    title: Productos
+    link: false
+
+products:
+  -
+    categories:
+      -
+        cat: Metlife Full Protección
+        title: Seguro Protección Accidental Full
+        slug: metlife-full-proteccion
+      -
+        cat: Metlife Full Protección
+        title: Metlife Seguro Full Protección
+        slug: metlife-full-proteccion
+      -
+        cat: Metlife Full Protección
+        title: Seguro Protección Accidental Básico
+        slug: metlife-full-proteccion
+      -
+        cat: Metlife Full Protección
+        title: Metlife Seguro Salud
+        slug: metlife-full-proteccion
+  -
+    categories:
+      -
+        cat: Metlife Grandes Sueños
+        title: Metlife Seguro de Vida y Ahorro
+        slug: metlife-grandes-suenos
+      -
+        cat: Metlife Grandes Sueños
+        title: Metlife Seguro de Vida y Ahorro Executive
+        slug: metlife-grandes-suenos
+      -
+        cat: Metlife Grandes Sueños
+        title: Metlife Seguro de Vida y Ahorro Premium
+        slug: metlife-grandes-suenos
+      -
+        cat: Metlife Grandes Sueños
+        title: Metlife Vida y Ahorro Familia Protegida
+        slug: metlife-grandes-suenos
+  -
+    categories:
+      -
+        cat: Metlife Educación
+        title: Metlife Seguro Universitario Plus
+        slug: metlife-educacion
+  -
+    categories:
+      -
+        cat: Metlife Jubilación
+        title: Metlife Seguro de Vida APV
+        slug: metlife-jubilacion
+      -
+        cat: Metlife Jubilación
+        title: Metlife Seguro de Vida APV Executive
+        slug: metlife-jubilacion
+      -
+        cat: Metlife Jubilación
+        title: Metlife Seguro de Vida APV Premium
+        slug: metlife-jubilacion
+
+---
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container">
+    <div class="hide-xs show-md">
+			{{> breadcrumbs}}
+		</div>
+    <h1 class="center-xs space-bottom">Productos</h1>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		{{> products-seguro-proteccion}}
+	</div>
+</section>

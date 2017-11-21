@@ -1,0 +1,44 @@
+
+	{{#each products}}
+		<div class="card bg-white">
+		{{#each categories}}
+			<!-- Card row -->
+			<section>
+				<div class="row row-xs-1 row-md-2 middle-md u-divider-bottom">
+					<div class="col-xs-12 col-md-8">
+						<h3>{{title}}</h3>
+						<p><em>{{cat}}</em></p>
+					</div>
+					<div class="col-xs-12 col-md-4 end-xs">
+			      <a href="" class="f-link openContent" data-open-content="{{slug}}-{{@index}}">
+			        <span class="openContentText is-open f-small" data-rest-text="Más información y documentos" data-open-text="Cerrar">Más información y documentos</span>
+			        <i class="fa fa-angle-down" aria-hidden="true"></i>
+			      </a>
+					</div>
+				</div>
+
+				<div class="toggleContent" data-toggle-content="{{slug}}-{{@index}}">
+					<p class="space-bottom">La protección que tu familia necesita con la flexibilidad que buscas.</p>
+					<div class="row">
+						<div class="pd-right-30">
+							<a href="#" class="f-link f-small">Descarga "Letra grande y simple"</a>
+						</div>
+						<div class="pd-right-30">
+							<a href="#" class="f-link f-small">Descarga "Ficha técnica"</a>
+						</div>
+						<div class="pd-right-30">
+							<a href="#" class="f-link f-small">Descarga "Ficha Comercial"</a>
+						</div>
+						<div class="pd-right-30">
+							<a href="#" class="f-link f-small">Descarga Vídeo Promocional</a>
+						</div>
+						<div class="pd-right-30">
+							<a href="#" class="f-link f-small">Descarga Condicionado General</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- / Card row -->
+		{{/each}}
+		</div>
+	{{/each}}

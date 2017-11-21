@@ -1,0 +1,22 @@
+
+<div class="breadcrumb">
+  <ul class="row middle-xs">
+    {{#each breadcrumb}}
+    <li>
+      {{#if link}}
+      <a href="{{root}}{{link}}" class="f-link f-tiny"> {{title}} </a>
+      {{/if}}
+
+      {{#compare link false operator='=='}}
+      <p class="f-tiny"> {{title}} </p>
+      {{/compare}}
+    </li>
+
+    {{#compare @last false operator='=='}}
+    <li>
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </li>
+    {{/compare}}
+    {{/each}}
+  </ul>
+</div>
