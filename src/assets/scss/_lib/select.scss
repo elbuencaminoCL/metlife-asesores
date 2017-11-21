@@ -34,6 +34,7 @@ select {
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 0;
 }
 
 /* Placeholder and selected option */
@@ -125,7 +126,7 @@ div.cs-active {
   line-height: 24px;
   overflow: hidden;
   border: 0;
-  width: 272px;
+  width: auto;
   height: 39px;
 }
 
@@ -145,7 +146,7 @@ div.cs-active {
   padding: 10px;
   position: absolute;
   top: 2px;
-  width: 272px;
+  width: 100%;
   list-style: none;
   height: 145px;
   overflow: auto;
@@ -228,7 +229,6 @@ div.cs-active {
   border-top: 0;
   color: $dark-gray-2;
   font-size: 13px;
-  font-weight: bold;
   padding: 10px;
 }
 .cs-skin-border .cs-options li span:hover,

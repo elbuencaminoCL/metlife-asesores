@@ -88,20 +88,22 @@ attention-record:
 
 <section class="pd-top-15">
   <div class="container">
-    {{> breadcrumb-attention-record}}
+    <div class="hide-xs show-md"> 
+      {{> breadcrumb-attention-record}}
+    </div>
     <h1 class="space-bottom center-xs">Registro de Atención</h1>
   </div>
 
   <div class="bg-white space-bottom pd-30">
       <div class="container">
-        <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
+        <a href="" class="openContent f-link f-bigger" data-open-content="attention-record">
           <span class="openContentText is-open" data-rest-text="Búsqueda de tus Clientes y Pólizas" data-open-text="Búsqueda de tus Clientes y Pólizas">Búsqueda de tus Clientes y Pólizas</span>
           <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
       </div>
 
       <!-- Contenido del desplegable búsqueda de tus clientes y pólizas -->
-      <section class=" toggleContent is-open no-padding-bottom" data-toggle-content="agency-metrics">
+      <section class=" toggleContent is-open no-padding-bottom" data-toggle-content="attention-record">
         <div class="space-bottom support-form-row">
           <div class="fieldParent mg-bottom-15">
 
@@ -186,7 +188,7 @@ attention-record:
             </div>
 
             <div class="table-100 hide-xs show-md">
-              <p class="mg-bottom-0 f-small">Descripción <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+              <p class="mg-bottom-0 f-small">Especific. <i class="fa fa-caret-down" aria-hidden="true"></i></p>
             </div>
 
             <div class="table-100 hide-xs show-md">
@@ -233,70 +235,70 @@ attention-record:
           <div class="table-1080 toggleContent toggleContent--responsive" data-toggle-content="toggle-attention-record{{@index}}">
             <div class="row mg-top-xs-30">
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Fecha Ingreso</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Fecha Ingreso</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{date-entry}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Canal</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Canal</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15" >
-                <p class="hide-md mg-lh-0"><strong>Sub Canal</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Sub Canal</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{sub-canal}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Gestión</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Gestión</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{management}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Área</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Área</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{area}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Categoría</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Categoría</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{category}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Descripción</strong></p>
+                <p class="hide-md mg-lh-0"><strong>Especific.</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{specifications}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Estado</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Estado</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{state}}</p>
               </div>
 
               <div class="table-100 mg-bottom-xs-15">
                 <p class="hide-md mg-lh-0"><strong>Requisito Interno</strong></p>
-                <p class="mg-bottom-0 word-wrap f-small"><a href="#">{{request}}</a></p>
+                <p class="mg-bottom-0 word-wrap f-small">{{request}}</p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>Adj.</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>Adj.</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{adj}}</p>
               </div>
 
               <div class="table-45 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>BIT</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>BIT</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">{{bit}}</p>
               </div>
 
               <div class="table-30 bullet-col mg-bottom-xs-15 {{cs}}">
-                <p class="hide-md mg-lh-0"><strong>CS</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>CS</strong></p>
               </div>
 
               <div class="table-30 bullet-col mg-bottom-xs-15 {{ao}}">
-                <p class="hide-md mg-lh-0"><strong>AO</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>AO</strong></p>
               </div>
 
               <div class="table-30 bullet-col mg-bottom-xs-15 {{tt}}">
-                <p class="hide-md mg-lh-0"><strong>TT</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>TT</strong></p>
               </div>
             </div>
           </div>
