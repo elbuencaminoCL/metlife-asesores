@@ -313,9 +313,22 @@ form-table:
       {{> support-advisor-forms-table }}
     <!-- Tabla de formularios -->
 
-    <section class="pagination mg-bottom-60">
-      {{> pagination }}
-    </section>
+   <div class="container pagination__table mg-bottom-60">
+      <div class="pagination">
+        {{> pagination }}
+      </div>
+
+      <div class="pagination__select pd-top-10 space-bottom">
+        <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>10 items por página</option>
+            <option value="cat1">20 items por página</option>
+            <option value="cat2">30 items por página</option>
+          </select>
+        </section>
+        <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
+      </div>
+    </div>
   </div>
 </section>
 
