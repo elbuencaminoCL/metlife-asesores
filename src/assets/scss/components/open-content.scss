@@ -1,15 +1,14 @@
 
-
-	@media screen and (min-width: 62em) {
-		.openContent {
-      &.openContent--table {
-  			color: #333;
-  			cursor: default;
-  			&:hover,
-  			&:focus {
-  				border-bottom: 0;
-  				color: #333;
-  			}
-      }
-		}
+@media only screen and (min-width: 62em) {
+	.openContent {
+    &.openContent--table {
+			color: #333;
+			cursor: default;
+			&:hover,
+			&:focus {
+				border-bottom: 0;
+				color: #333;
+			}
+    }
 	}
+}

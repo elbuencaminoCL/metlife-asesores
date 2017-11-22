@@ -179,7 +179,7 @@ $space-bottom-small-lg: 15px;
 
 
 
-@media screen and (min-width: 48em) {
+@media only screen and (min-width: 720px) {
 
   .container {
     padding: 0 15px;
@@ -305,7 +305,7 @@ $space-bottom-small-lg: 15px;
 }
 
 
-@media screen and (min-width: 62em) {
+@media only screen and (min-width: 960px) {
 
   .container {
     padding: 0 15px;
@@ -434,10 +434,10 @@ $space-bottom-small-lg: 15px;
 
 }
 
-@media screen and (min-width: 75em) {
+@media only screen and (min-width: 1200px) {
 
   .container {
-    padding: 0 15px;
+    padding: 0;
   }
 
   .section {
@@ -560,7 +560,7 @@ $space-bottom-small-lg: 15px;
 
 }
 
-@media screen and (min-width: 90em) {
+@media only screen and (min-width: 1440px) {
 
   .container {
     padding: 0;

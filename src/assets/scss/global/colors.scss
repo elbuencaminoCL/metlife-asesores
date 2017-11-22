@@ -147,7 +147,7 @@
 
 
 
-  @media screen and (min-width: 62em) {
+  @media only screen and (min-width: 62em) {
     .bg-clarity {
       background-color: rgba(255, 255 , 255, 0.85);
     }

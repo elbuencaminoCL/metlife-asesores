@@ -160,7 +160,7 @@ span {
 
 
 
-@media screen and ( min-width: 48em ) {
+@media only screen and ( min-width: 48em ) {
 
   h1 {
     font-size: 42px;
@@ -178,7 +178,7 @@ span {
 
 
 
-@media screen and ( min-width: 62em ) {
+@media only screen and ( min-width: 62em ) {
   
   h1 {
     font-size: 48px;

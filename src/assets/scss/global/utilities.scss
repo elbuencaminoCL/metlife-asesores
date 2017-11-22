@@ -265,7 +265,7 @@
 
 
 
-@media screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) {
 
   .mg-right-sm-15 {
     margin-right: 15px;
@@ -283,7 +283,7 @@
 
 
 
-@media screen and (min-width: 62em) {
+@media only screen and (min-width: 62em) {
 
   .container-full-xs {
     padding: 0 15px;
@@ -317,7 +317,7 @@
 
 
 
-@media screen and (min-width: 90em) {
+@media only screen and (min-width: 90em) {
 
   .container-full-xs {
     padding: 0;
