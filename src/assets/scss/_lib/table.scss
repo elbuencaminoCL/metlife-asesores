@@ -84,13 +84,15 @@
 
 
 
-@media only screen and ( min-width: 48em ) {
-  
+@media only screen and ( min-width: 868px ) {
+
+ 
+
 }
 
 
 
-@media only screen and ( min-width: 868px ) {
+@media only screen and ( min-width: 960px ) {
 
   .scroll-row {
     width: 1200px;
@@ -100,12 +102,6 @@
     overflow-x: auto;
     overflow-y: hidden;
   }
-
-}
-
-
-
-@media only screen and ( min-width: 62em ) {
 
 	.toggleContent {
 		&.is-open {
@@ -150,7 +146,7 @@
 
 
 
-@media screen and (min-width: 75em ) {
+@media screen and ( min-width: 1200px ) {
   [class="table-*"] {
     width: 90%;
   }
