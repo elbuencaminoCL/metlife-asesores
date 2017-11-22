@@ -1,38 +1,47 @@
 
 <div class="reveal" id="supportAdvisorFormSend" data-reveal>
-  <div class="reveal__content space-top">
-    <h4 class="space-bottom center-xs">Envío por Correo Electrónico</h4>
+  <form id="homeUpdate" class="formValidateInput" data-parsley-validate>
+    <div class="reveal__content space-top">
+      <h4 class="space-bottom center-xs">Envío por Correo Electrónico</h4>
 
-    <section class="space-bottom">
-      <span class="input input--ichiro">
-        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="supportFormEmail" required />
-        <label class="input__label input__label--ichiro" for="supportFormEmail">
-          <span class="input__label-content input__label-content--ichiro">Correo Electrónico:</span>
-        </label>
+
+      <div class="mg-bottom-15 fieldParent">
+        <div class="input-group">
+          <span class="input input--ichiro mg-top-16 input-group-field">
+            <input class="input__field input__field--ichiro input-email" data-parsley-trigger="change" data-parsley-errors-messages-disabled type="text" value="camila.galvez.leonard" id="modalPhoneEmail" required="">
+            <label class="input__label input__label--ichiro" for="modalPhoneEmail">
+              <span class="input__label-content input__label-content--ichiro"><strong class="inputIchiro f-black">Correo Electrónico:</strong></span>
+            </label>
+          </span>
+          <span class="input-group-label mg-top-16 f-dark-gray inputEmailMetlife">@metlife.cl</span>
+        </div>
         <p class="form-error f-tiny">Por favor, revisa que esté correcto el correo electrónico.</p>
-      </span>
-    </section>
-
-    <section class="space-bottom">
-      <span class="input input--ichiro">
-        <input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="supportFormAffair" required />
-        <label class="input__label input__label--ichiro" for="supportFormAffair">
-          <span class="input__label-content input__label-content--ichiro">Asunto:</span>
-        </label>
-        <p class="form-error f-tiny">Falta Ingresar Asunto.</p>
-      </span>
-    </section>
-
-    <div class="row middle-xs center-xs end-sm">
-      <div class="mg-right-sm-15 mg-top-xs-15">
-        <a data-close aria-label="Close modal" class="f-link">Cancelar</a>
       </div>
 
-      <button class="button button--primary button--full-xs first-xs last-sm clientProfileUpdateData" data-close aria-label="Close modal" type="button">Enviar</button>
-    </div>
-  </div>
+      <section class="space-bottom fieldParent">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro"  data-parsley-trigger="input" data-parsley-errors-messages-disabled type="text" id="supportFormAffair" required />
+          <label class="input__label input__label--ichiro" for="supportFormAffair">
+            <span class="input__label-content input__label-content--ichiro"><strong class="inputIchiro f-black">Asunto:</strong></span>
+          </label>
+          <p class="form-error f-tiny">Falta Ingresar Asunto.</p>
+        </span>
+      </section>
 
-  <button class="close-button" data-close aria-label="Cerrar modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+      <div class="row middle-xs center-xs end-sm">
+        <div class="mg-right-sm-15 mg-top-xs-15">
+          <a data-close aria-label="Close modal" class="f-link">Cancelar</a>
+        </div>
+
+        <div>
+          <input type="submit" class="button button--primary button--full clientProfileUpdateData" value="Enviar" />
+        </div>
+
+      </div>
+    </div>
+
+    <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </form>
 </div>
