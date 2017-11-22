@@ -125,9 +125,12 @@ div.cs-active {
   min-height: 25px;
   line-height: 24px;
   overflow: hidden;
-  border: 0;
+  border: 1px solid $medium-gray;
   width: auto;
   height: 39px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .dropdown dt a span,
@@ -139,8 +142,8 @@ div.cs-active {
 
 .dropdown dd ul {
   background-color: $white-light;
-  border: 0;
   color: #333;
+  font-size: 14px;
   display: none;
   left: 0px;
   padding: 10px;
@@ -148,7 +151,7 @@ div.cs-active {
   top: 2px;
   width: 100%;
   list-style: none;
-  height: 145px;
+  min-height: 105px;
   overflow: auto;
   border: 1px solid $medium-gray;
 }
