@@ -507,7 +507,7 @@ div.active {
 
 //Breakpoint small (sm)
 
-@media screen and ( min-width: 48em ) {
+@media only screen and ( min-width: 720px ) {
 
 	.u-select-sticky .is-stuck.sticky {
 		display: none;

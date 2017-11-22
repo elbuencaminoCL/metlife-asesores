@@ -122,17 +122,8 @@
 
 
 
-// Breakpoint small (sm)
-@media screen and ( min-width: 48em ) {
-
-
-}
-
-
-
 // Breakpoint medium (md)
-
-@media screen and ( min-width: 62em ) {
+@media only screen and ( min-width: 960px ) {
 
   .banner-content {
     left: 0;
