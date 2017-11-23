@@ -51,10 +51,6 @@
   &.is-active {
     .accordion-title {
       border-bottom: 0;
-      font-family: "Georgia", sans-serif;
-      font-weight: bold;
-      color: $dark-gray-2;
-      font-size: 18px; 
       padding: 10px;
     }
   }
@@ -77,6 +73,9 @@
 	&:hover {
 		background-color: white;
 	}
+  &.arrow-ico::before {
+    font: normal normal normal 16px/1 FontAwesome;
+  }
 }
 
 .accordion-title:hover, 
