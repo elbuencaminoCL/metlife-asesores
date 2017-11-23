@@ -10,13 +10,18 @@
 .accordion-content {
 	border: 0;
 	padding: 15px 0;
+  color: $dark-gray-2;
+  &.pd-10 {
+    padding: 10px;
+  }
 	.tabs-subtitle {
 		border-bottom: 0;
 		padding-bottom: 0;
 	}
 }
 
-.accordion-item {
+.accordion-item,
+.accordion-item-products {
   background-color: white;
   border-radius: 3px;
   border: 0;
@@ -28,17 +33,31 @@
     }
   }
 
-
-	&.is-active {
-		.accordion-title {
+  &.is-active {
+    .accordion-title {
       background-color: white;
       border-bottom: 2px solid $primary;
       color: $black;
-			&:before {
-				content: "\f077";
-			}
-		}
-	}
+      &:before {
+        content: "\f077";
+      }
+    }
+  }
+}
+
+.accordion-item--products {
+  border: 1px solid $dark-gray-2;
+  border-radius: 0;
+  &.is-active {
+    .accordion-title {
+      border-bottom: 0;
+      font-family: "Georgia", sans-serif;
+      font-weight: bold;
+      color: $dark-gray-2;
+      font-size: 18px; 
+      padding: 10px;
+    }
+  }
 }
 
 .accordion-title {

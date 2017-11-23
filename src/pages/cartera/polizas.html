@@ -35,27 +35,29 @@ breadcrumb:
 
 	<section>
 	  <div class="container">
-	    <h3>José Echevarría Soto</h3>
-	    <div class="row row-xs-2 u-divider-bottom">
-	      <div class="col-xs-4">
-	        <p>14.765.342-9</p>
-	      </div>
-	      <div class="col-xs-8">
-	        <p><a href="" class="f-link">jose.echevarria.s@miempresa.cl</a></p>
-	      </div>
-	    </div>
-	    <div class="row row-xs-2 space-bottom">
-	      <div class="col-xs-4">
-	        <p>+56 9 7456 789</p>
-	      </div>
-	      <div class="col-xs-8">
-	        <p>+56 2 2456 789</p>
-	      </div>
-	    </div>
-	    <p class="f-bigger">Ver información para:</p>
+	    <h4>José Echevarría Soto</h4>
+      <div class="row row-xs-2 u-divider-bottom">
+        <div class="col-xs-2">
+          <p class="mg-lh-0">14.765.342-9</p>
+        </div>
+        <div class="col-xs-10">
+          <p class="mg-lh-0"><a href="" class="f-link"><strong>jose.echevarria.s@miempresa.cl</strong></a></p>
+        </div>
+      </div>
 
-	    <section class="u-select" data-parsley-trigger="change">
-	      <select class="f-small-i cs-select cs-skin-border bg-white GeneralSelect" data-parsley-errors-messages-disabled="" required="">
+      <div class="row row-xs-2 pd-top-5 space-bottom">
+        <div class="col-xs-2">
+          <p><img src="{{root}}assets/images/icons/cel.png" class="max-width-10 mg-right-10 mg-top-2">+56 9 7456 789</p>
+        </div>
+        <div class="col-xs-10">
+          <p><i class="fa fa-phone phone-ico" aria-hidden="true"></i> +56 2 2456 789</p>
+        </div>
+      </div>
+
+	    <p class="f-bigger"><strong>Ver información para:</strong></p>
+
+	    <section class="u-select-ico-arrow bg-white mg-bottom-15" data-parsley-trigger="change">
+	      <select class="f-small-i cs-select cs-skin-border GeneralSelect" data-parsley-errors-messages-disabled="" required="">
 	        <option value="cat1">cat1</option>
 	        <option value="cat2">cat2</option>
 	        <option value="" selected="">Metlife Seguro de Vida Dotal - Póliza Nº: 312036709700</option>
@@ -65,19 +67,23 @@ breadcrumb:
 	</section>
 
 
-	<section class="bg-white">
-		<div class="container">
-			{{> policies-info}}
+	
+	<div class="container bg-white">
+    <div class="card card--pink z-depth-1">
+      <div class="pd-10"> 
+  		  {{> policies-info}}
+      </div>
 
-			<ul class="accordion" data-accordion>
-				{{> policies-data}}
-				{{> policies-pay}}
-				{{> policies-beneficiaries}}
-				{{> policies-balance}}
-				{{> policies-alternatives}}
-				{{> policies-rescue}}
-				{{> policies-cartolas}}
-				{{> policies-siniestros}}
-			</ul>
-		</div>
-	</section>
+  		<ul class="accordion pd-10" data-accordion>
+        {{> policies-data}}
+  			{{> policies-pay}}
+  			{{> policies-beneficiaries}}
+  			{{> policies-balance}}
+  			{{> policies-alternatives}}
+  			{{> policies-rescue}}
+  			{{> policies-cartolas}}
+  			{{> policies-siniestros}}
+  		</ul>
+    </div>
+	</div>
+	
