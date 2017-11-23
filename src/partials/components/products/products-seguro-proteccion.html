@@ -1,13 +1,13 @@
 
 	{{#each products}}
-		<div class="card bg-white {{class}}">
+		<div class="card bg-white {{card-color}} pd-10-30 z-depth-1 space-bottom">
 		{{#each categories}}
 			<!-- Card row -->
 			<section>
-				<div class="row row-xs-1 row-md-2 middle-md u-divider-bottom">
-					<div class="col-xs-12 col-md-8">
-						<h3>{{title}}</h3>
-						<p><em>{{cat}}</em></p>
+				<div class="row row-xs-1 row-md-2 middle-md {{division-line}}">
+					<div class="col-xs-12 col-md-8 mg-20-0">
+						<h5>{{title}}</h5>
+						<p class="mg-lh-0"><em>{{cat}}</em></p>
 					</div>
 					<div class="col-xs-12 col-md-4 end-xs">
 			      <a href="" class="f-link openContent" data-open-content="{{slug}}-{{@index}}">
@@ -17,7 +17,7 @@
 					</div>
 				</div>
 
-				<div class="toggleContent" data-toggle-content="{{slug}}-{{@index}}">
+				<div class="toggleContent u-divider-bottom" data-toggle-content="{{slug}}-{{@index}}">
 					<p class="space-bottom">La protección que tu familia necesita con la flexibilidad que buscas.</p>
 					<div class="row">
 						<div class="pd-right-30">
