@@ -89,6 +89,10 @@
       padding: 15px 0;
     }
 
+    .pd-30-0 {
+      padding: 30px 0;
+    }
+
     .pd-0-15 {
       padding: 0px 15px;
     }
@@ -249,6 +253,14 @@
 
 
 /* Dividing lines */
+.u-divider-container {
+  section {
+    .line-div:last-of-type {
+      border-bottom: 3px solid red;
+    }
+  }
+}
+
 .u-divider {
   border-bottom: 1px solid $gray;
 }
@@ -264,8 +276,8 @@
 }
 
 .u-divider-top {
-  border-bottom: 1px solid $gray;
-  padding-top: 8px;
+  border-top: 1px solid $gray;
+  padding-top: 15px;
 }
 
 .u-divider-top-15 {
@@ -298,6 +310,10 @@
     margin-top: 20px;
   }
 
+  .pd-left-sm-10 {
+    padding-left: 10px;
+  }
+
 }
 
 
@@ -310,6 +326,10 @@
 
   .pd-0-15-md {
     padding: 0 15px;
+  }
+
+  .pd-left-md-10 {
+    padding-left: 10px;
   }
 
   .pd-left-md-20 {
@@ -332,6 +352,14 @@
     margin-top: -20px;
   }
 
+  .mg-bottom-md-30 {
+    margin-bottom: 30px;
+  }
+
+  .mg-bottom-md-15 {
+    margin-bottom: 15px;
+  }
+
 }
 
 
@@ -341,4 +369,5 @@
   .container-full-xs {
     padding: 0;
   }
+
 }
