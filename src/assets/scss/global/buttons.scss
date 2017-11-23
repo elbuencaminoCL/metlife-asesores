@@ -69,6 +69,64 @@
 }
 
 
+.button--gray, 
+.button--green, 
+.button--pink, 
+.button--yellow {
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  height: 40px;
+  padding: 5px;
+  span {
+    position: relative;
+  }
+  &:hover {
+    color: white;
+  }
+}
+
+.button--gray {
+  background-color: $medium-gray;
+  span {
+    top: 4px;
+  }
+  &:hover {
+    background-color: $dark-gray-3;
+  }
+}
+
+.button--green {
+  background-color: $accident;
+  span {
+    top: 4px;
+  }
+  &:hover {
+    background-color: #0dd7c5;
+  }
+}
+
+.button--pink {
+  background-color: $pink;
+  span {
+    top: 10px;
+  }
+  &:hover {
+    background-color: $pink-accent;
+  }
+}
+
+.button--yellow {
+  background-color: $annuities-light;
+  span {
+    top: 10px;
+  }
+  &:hover {
+    background-color: $information;
+  }
+}
+
+
 
 //button size
 
