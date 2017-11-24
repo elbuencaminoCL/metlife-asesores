@@ -193,4 +193,11 @@ span {
     }
   }
 
+  p {
+    &.mg-lh-md-0 {
+      margin-bottom: 0;
+      line-height: initial;
+    }
+  }
+
 }
