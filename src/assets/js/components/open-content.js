@@ -76,3 +76,9 @@
     }
 
   });
+
+$( '.openContentDivider' ).on('click', (e) => {
+  if( $( '.openContentDivider' ).hasClass('is-open') ) {
+    find('.divLine').removeClass('u-divider')
+  }
+});

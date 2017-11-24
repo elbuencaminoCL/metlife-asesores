@@ -140,6 +140,10 @@
     margin-bottom: 16px;
   }
 
+  .mg-bottom-20 {
+    margin-bottom: 20px;
+  }
+
   .mg-bottom-22 {
     margin-bottom: 22px;
   }
@@ -254,9 +258,9 @@
 
 /* Dividing lines */
 .u-divider-container {
-  section {
-    .line-div:last-of-type {
-      border-bottom: 3px solid red;
+  section:last-of-type {
+    .u-divider {
+      border-bottom: 0;
     }
   }
 }
