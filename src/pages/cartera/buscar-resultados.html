@@ -7,6 +7,42 @@ attention-record:
         caption: José Alfonso Genaro Rossel Palma
         class: table-200
       -
+        title: Póliza Nº
+        caption: 312036709700
+        link: http://sdjn.cm
+        class: table-130
+      -
+        title: Producto
+        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
+        class: table-250
+      -
+        title: Fecha Emisión
+        caption: 18/07/2017
+        class: table-100
+      -
+        title: Estado
+        caption: Anulado
+        class: table-100
+      -
+        title: Pag. Hasta
+        caption: 18/07/2017
+        class: table-100
+      -
+        title: Frec. Pago
+        caption: Mensual
+        class: table-100
+      -
+        title: Ultim. Pago
+        caption: Salud/otros
+        class: table-100
+  -
+    content:
+      -
+        title: Nombre Cliente
+        caption: José Alfonso Genaro Rossel Palma
+        class: table-200
+        link: http://sdjn.cm
+      -
         title: Nº de Póliza
         caption: 312036709700
         link: http://sdjn.cm
@@ -40,44 +76,10 @@ attention-record:
       -
         title: Nombre Cliente
         caption: José Alfonso Genaro Rossel Palma
-        class: table-200
-      -
-        title: Nº de Póliza
-        caption: 312036709700
         link: http://sdjn.cm
-        class: table-130
-      -
-        title: Producto
-        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
-        class: table-250
-      -
-        title: Emisión
-        caption: 18/07/2017
-        class: table-100
-      -
-        title: Estado
-        caption: Anulado
-        class: table-100
-      -
-        title: Pag. Hasta
-        caption: 18/07/2017
-        class: table-100
-      -
-        title: Frec. Pago
-        caption: Mensual
-        class: table-100
-      -
-        title: Ultim. Pago
-        caption: Salud/otros
-        class: table-100
-  -
-    content:
-      -
-        title: Nombre Cliente
-        caption: José Alfonso Genaro Rossel Palma
         class: table-200
       -
-        title: Nº de Póliza
+        title: Póliza Nº
         caption: 312036709700
         link: http://sdjn.cm
         class: table-130
@@ -174,14 +176,14 @@ heading:
 
 <section class="pd-top-15">
   <div class="container">
-    {{> breadcrumb-attention-record}}
-    <h1 class="space-bottom center-xs">Cartera</h1>
+    {{> portfolio-breadcrumb-search}}
+    <h1 class="space-bottom center-xs">Cartera de Clientes</h1>
   </div>
 
   <div class="bg-white space-bottom pd-30">
     <div class="container">
       <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
-        <span class="openContentText is-open" data-rest-text="Búsqueda de tus Clientes y Pólizas" data-open-text="Búsqueda de tus Clientes y Pólizas">Búsqueda de tus Clientes y Pólizas</span>
+        <span class="openContentText is-open" data-rest-text="Quiero buscar información de mi Cartera por:" data-open-text="Quiero buscar información de mi Cartera por:">Quiero buscar información de mi Cartera por:</span>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </a>
     </div>
@@ -195,8 +197,8 @@ heading:
     <div class="row row-xs-1 row-sm-3 row-md-6 middle-xs">
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
         <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
-          <select class="cs-select cs-skin-border GeneralSelect select__field--no-border" data-parsley-errors-messages-disabled required="">
-            <option value selected>Filtrar por último Pa</option>
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>Último Pago</option>
             <option value="cat1">20 items por página</option>
             <option value="cat2">30 items por página</option>
           </select>
@@ -205,8 +207,8 @@ heading:
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
         <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
-          <select class="cs-select cs-skin-border GeneralSelect select__field--no-border" data-parsley-errors-messages-disabled required="">
-            <option value selected>Filtrar por Producto</option>
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>Producto</option>
             <option value="cat1">20 items por página</option>
             <option value="cat2">30 items por página</option>
           </select>
@@ -215,8 +217,8 @@ heading:
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
         <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
-          <select class="cs-select cs-skin-border GeneralSelect select__field--no-border" data-parsley-errors-messages-disabled required="">
-            <option value selected>Filtrar por Estado</option>
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>Estado</option>
             <option value="cat1">20 items por página</option>
             <option value="cat2">30 items por página</option>
           </select>
@@ -225,8 +227,8 @@ heading:
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
         <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
-          <select class="cs-select cs-skin-border GeneralSelect select__field--no-border" data-parsley-errors-messages-disabled required="">
-            <option value selected>Filtrar por Categoría</option>
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>Categoría</option>
             <option value="cat1">20 items por página</option>
             <option value="cat2">30 items por página</option>
           </select>
@@ -235,8 +237,8 @@ heading:
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15">
         <section class="u-select-ico-arrow bg-white" data-parsley-trigger="change">
-          <select class="cs-select cs-skin-border GeneralSelect select__field--no-border" data-parsley-errors-messages-disabled required="">
-            <option value selected>Filtrar por Frecuencia</option>
+          <select class="cs-select cs-skin-border GeneralSelect select__field" data-parsley-errors-messages-disabled required="">
+            <option value selected>Frecuencia Pago</option>
             <option value="cat1">20 items por página</option>
             <option value="cat2">30 items por página</option>
           </select>
@@ -244,17 +246,17 @@ heading:
         <p class="form-error f-tiny">Debes seleccionar una categoría.</p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2 mg-bottom-15 end-xs">
-        <a href="" class="f-link">Descargar PDF</a>
+        <a href="" class="f-link f-small">Descargar en PDF</a>
       </div>
     </div>
   </div>
 
   <!-- Tabla Registro de Atención -->
   <div class="container">
-    <div class="z-depth-1 space-bottom scroll-table">
+    <div class="z-depth-1 space-bottom scroll-table striped-table">
       <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row">
         <div class="table-100">
-          <p class="mg-bottom-0 f-small">RUT Cliente</p>
+          <p class="mg-bottom-0 f-small">RUT</p>
         </div>
 
         <div class="table-1080">
