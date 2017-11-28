@@ -3,9 +3,10 @@ attention-record:
   -
     content:
       -
-        title: Nombre Cliente
-        caption: José Alfonso Genaro Rossel Palma
-        class: table-200
+        title: R.U.T.
+        caption: 15.367.219-5
+        link:  http://sdjn.cm
+        class: table-100
       -
         title: Póliza Nº
         caption: 312036709700
@@ -13,8 +14,8 @@ attention-record:
         class: table-130
       -
         title: Producto
-        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
-        class: table-250
+        caption: Seguro de Vida y Ahorro
+        class: table-200
       -
         title: Fecha Emisión
         caption: 18/07/2017
@@ -38,10 +39,10 @@ attention-record:
   -
     content:
       -
-        title: Nombre Cliente
-        caption: José Alfonso Genaro Rossel Palma
-        class: table-200
-        link: http://sdjn.cm
+        title: R.U.T.
+        caption: 15.367.219-5
+        link:  http://sdjn.cm
+        class: table-100
       -
         title: Nº de Póliza
         caption: 312036709700
@@ -49,8 +50,8 @@ attention-record:
         class: table-130
       -
         title: Producto
-        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
-        class: table-250
+        caption: Seguro de Vida y Ahorro
+        class: table-200
       -
         title: Emisión
         caption: 18/07/2017
@@ -74,10 +75,10 @@ attention-record:
   -
     content:
       -
-        title: Nombre Cliente
-        caption: José Alfonso Genaro Rossel Palma
-        link: http://sdjn.cm
-        class: table-200
+        title: R.U.T.
+        caption: 15.367.219-5
+        link:  http://sdjn.cm
+        class: table-100
       -
         title: Póliza Nº
         caption: 312036709700
@@ -85,8 +86,8 @@ attention-record:
         class: table-130
       -
         title: Producto
-        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
-        class: table-250
+        caption: Seguro de Vida y Ahorro
+        class: table-200
       -
         title: Emisión
         caption: 18/07/2017
@@ -110,9 +111,10 @@ attention-record:
   -
     content:
       -
-        title: Nombre Cliente
-        caption: José Alfonso Genaro Rossel Palma
-        class: table-200
+        title: R.U.T.
+        caption: 15.367.219-5
+        link: http://sdjn.cm
+        class: table-100
       -
         title: Nº de Póliza
         caption: 312036709700
@@ -120,8 +122,8 @@ attention-record:
         class: table-130
       -
         title: Producto
-        caption: Metlife Seguro de Vida y Ahorro Cras Venaltis Maltis Fermemtum
-        class: table-250
+        caption: Seguro de Vida y Ahorro
+        class: table-200
       -
         title: Emisión
         caption: 18/07/2017
@@ -145,14 +147,14 @@ attention-record:
 
 heading:
   -
-    title: Nombre Cliente
-    class: table-200
+    title: R.U.T.
+    class: table-100
   -
     title: Nº Poliza
     class: table-130
   -
     title: Producto
-    class: table-250
+    class: table-200
   -
     title: Emisión
     class: table-100
@@ -255,11 +257,11 @@ heading:
   <div class="container">
     <div class="z-depth-1 space-bottom scroll-table striped-table">
       <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row">
-        <div class="table-100">
-          <p class="mg-bottom-0 f-small">RUT</p>
+        <div class="table-200">
+          <p class="mg-bottom-0 f-small">Nombre Cliente</p>
         </div>
 
-        <div class="table-1080">
+        <div class="table-980">
           <div class="row">
 
             {{#each heading}}
@@ -274,22 +276,21 @@ heading:
 
       {{#each attention-record}}
         <div class="row pd-10 table-row no-gutter scroll-row">
-          <div class="table-100">
+          <div class="table-200">
             <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-attention-record{{@index}}">
-              <span class="openContentText is-open f-small" data-rest-text="16357872-7" data-open-text="16357872-7">16357872-7
-              </span>
+              <span class="openContentText is-open f-small" data-rest-text="Esteban Martinez Miranda" data-open-text="Esteban Martinez Miranda">Esteban Martinez Miranda</span>
               <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="table-1080 toggleContent toggleContent--responsive" data-toggle-content="toggle-attention-record{{@index}}">
+          <div class="table-980 toggleContent toggleContent--responsive" data-toggle-content="toggle-attention-record{{@index}}">
             <div class="row mg-top-xs-30">
               {{#each content}}
               <div class="{{class}} mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0"><strong>{{title}}</strong></p>
+                <p class="hide-md mg-lh-0 f-small"><strong>{{title}}</strong></p>
                 <p class="mg-bottom-0 word-wrap f-small">
                   {{#if link}}
-                    <a href="{{link}}" class="f-link">
+                    <a href="{{link}}" class="f-link f-small">
                   {{/if}}
                     {{caption}}
                   {{#if link}}
