@@ -100,18 +100,19 @@
 
 
 
-@media only screen and ( min-width: 868px ) {
-
- 
-
-}
-
-
-
 @media only screen and ( min-width: 960px ) {
 
   .scroll-row {
     width: 1200px;
+  }
+
+  .scroll-row--policies {
+    width: 1148px;
+  }
+
+  .scroll-row--policies-info,
+  .scroll-row--products {
+    width: 1170px;
   }
 
   .scroll-table {
