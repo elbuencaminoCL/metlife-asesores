@@ -1,5 +1,5 @@
 
-	
+
   <h4 class="space-bottom">Información de la Póliza</h4>
 	<p class="mg-bottom-20"><strong>Póliza Nº:</strong> <a href="" class="f-link">3120367097000</a></p>
   <div class="row row-xs-1 row-md-6 mg-bottom-10">
@@ -29,75 +29,3 @@
     </div>
   </div>
 
-	<p class="u-divider-bottom space-bottom"><strong>Detalle Prima Total</strong></p>
-  <div class="row row-xs-1 row-md-4 space-bottom">
-    <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
-      <p class="mg-lh-0 f-small"><strong>Prima Básica:</strong></p>
-      <p class="mg-lh-0 f-small">UF 15,02</p>
-    </div>
-    <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
-      <p class="mg-lh-0 f-small"><strong>Prima en Exceso:</strong></p>
-      <p class="mg-lh-0 f-small">UF 2,15 / $ 52.000</p>
-    </div>
-    <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
-      <p class="mg-lh-0 f-small"><strong>Aportes:</strong></p>
-      <p class="mg-lh-0 f-small">UF 2,15 / $ 52.000</p>
-    </div>
-    <div class="col-xs-12 col-md-3">
-      <p class="mg-lh-0 f-small"><strong>Aportes Extraordinarios Recurrentes:</strong></p>
-      <p class="mg-lh-0 f-small">UF 2,15 / $ 52.000</p>
-    </div>
-  </div>
-
-	 <p class="u-divider-bottom space-bottom"><strong>Composición Prima Básica</strong></p>
-        <!-- Tabla Producto-1 -->
-        <div class="striped-table z-depth-1 space-bottom scroll-table">
-          <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row--policies-info">
-
-            <div class="table-1170">
-              <div class="row">
-
-                {{#each heading}}
-                  <div class="{{class}} hide-xs show-md">
-                    <p class="mg-bottom-0 f-small">{{title}}</p>
-                  </div>
-                {{/each}}
-
-              </div>
-            </div>
-          </div>
-
-          {{#each attention-record}}
-            <div class="row pd-10 table-row no-gutter scroll-row--policies-info">
-              <div class="table-240">
-                <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-{{@index}}">
-                  <span class="openContentText is-open f-small" data-rest-text="Nombre" data-open-text="Nombre">Nombre
-                  </span>
-                  <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
-                </a>
-              </div>
-
-              <div class="table-950 toggleContent toggleContent--responsive" data-toggle-content="toggle-{{@index}}">
-                <div class="row mg-top-xs-30">
-                  {{#each content}}
-                  {{#compare @index '1' operator='>'}}
-                  <div class="{{class}} mg-bottom-xs-15">
-                    <p class="hide-md mg-lh-0"><strong>{{title}}</strong></p>
-                    <p class="mg-bottom-0 word-wrap f-small">
-                      {{#if link}}
-                        <a href="{{link}}" class="f-link">
-                      {{/if}}
-                        {{caption}}
-                      {{#if link}}
-                        </a>
-                      {{/if}}
-                    </p>
-                  </div>
-                  {{/compare}}
-                  {{/each}}
-                </div>
-              </div>
-            </div>
-          {{/each}}
-        </div>
-      <!-- / Row -->
