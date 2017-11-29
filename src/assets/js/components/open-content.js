@@ -78,7 +78,12 @@
   });
 
 $( '.openContentDivider' ).on('click', (e) => {
-  if( $( '.openContentDivider' ).hasClass('is-open') ) {
-    find('.divLine').removeClass('u-divider')
+  $( e.currentTarget ).toggleClass( 'has-divider' );
+
+  if( $(e.currentTarget).hasClass('has-divider') ) {
+    $(e.currentTarget).closest('.divLine').removeClass('u-divider')
+  }
+  else {
+    $(e.currentTarget).closest('.divLine').addClass('u-divider')
   }
 });
