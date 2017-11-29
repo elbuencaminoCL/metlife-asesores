@@ -29,7 +29,7 @@
   &:hover {
     background-color: white;
     &:focus {
-      background-color: red;
+      background-color: white;
     }
   }
 
@@ -46,7 +46,7 @@
 }
 
 .accordion-item--products {
-  border: 1px solid $dark-gray-2;
+  border: 1px solid $gray;
   border-radius: 0;
   &.is-active {
     .accordion-title {

@@ -14,6 +14,7 @@ attention-record:
         title: Asegurado
         caption: Carmen Gloria Cuevas Pavez
         class: table-250
+        link: link.com
       -
         title: Tipo
         caption: Titular
@@ -103,7 +104,7 @@ heading:
 	    <h1 class="center-xs space-bottom">Cartera Clientes</h1>
 		</div>
 
-		<div class="bg-white space-bottom pd-30-0">
+		<div class="bg-white space-bottom pd-30">
 		  <div class="container">
 		    <a href="" class="openContent f-link f-bigger" data-open-content="agency-metrics">
 		      <span class="openContentText is-open" data-rest-text="Quiero buscar información de mi Cartera por:" data-open-text="Quiero buscar información de mi Cartera por:">Quiero buscar información de mi Cartera por:</span>
@@ -159,7 +160,7 @@ heading:
   		  {{> policies-info}}
       </div>
 
-  		<ul class="accordion pd-10" data-accordion>
+  		<ul class="accordion pd-10" data-accordion data-multi-expand="true" data-allow-all-closed="true">
         {{> policies-data}}
   			{{> policies-pay}}
   			{{> policies-beneficiaries}}
