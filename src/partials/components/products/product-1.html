@@ -73,11 +73,11 @@
         <!-- Tabla Producto-1 -->
         <div class="striped-table z-depth-1 space-bottom scroll-table">
           <div class="row bg-primary-hover f-white pd-10 no-gutter scroll-row--products">
-            <div class="table-200">
+            <div class="table-300 hide-md">
               <p class="mg-bottom-0 f-small">Asegurado</p>
             </div>
 
-            <div class="table-950">
+            <div class="table-1170">
               <div class="row">
 
                 {{#each heading}}
@@ -92,7 +92,7 @@
 
           {{#each attention-record}}
             <div class="row pd-10 table-row no-gutter scroll-row--products">
-              <div class="table-200">
+              <div class="table-300">
                 <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-credito-hipotecario{{@index}}">
                   <span class="openContentText is-open f-small" data-rest-text="Carlos Pavez Erickson" data-open-text="Carlos Pavez Erickson">Carlos Pavez Erickson
                   </span>
@@ -100,9 +100,10 @@
                 </a>
               </div>
 
-              <div class="table-950 toggleContent toggleContent--responsive" data-toggle-content="toggle-credito-hipotecario{{@index}}">
+              <div class="table-850 toggleContent toggleContent--responsive" data-toggle-content="toggle-credito-hipotecario{{@index}}">
                 <div class="row mg-top-xs-30">
                   {{#each content}}
+                  {{#compare @index '0' operator='>'}}
                   <div class="{{class}} mg-bottom-xs-15">
                     <p class="hide-md mg-lh-0"><strong>{{title}}</strong></p>
                     <p class="mg-bottom-0 word-wrap f-small">
@@ -115,6 +116,7 @@
                       {{/if}}
                     </p>
                   </div>
+                  {{/compare}}
                   {{/each}}
                 </div>
               </div>
