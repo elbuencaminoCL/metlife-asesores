@@ -12,6 +12,7 @@
 
 .footer__container {
   border-top: 1px solid $medium-gray;
+  margin-top: 3rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -49,3 +50,8 @@
 }
 
 
+@media only screen and (min-width: 960px) {
+  .footer__container {
+    margin-top: 0;
+  }
+}
