@@ -1,0 +1,224 @@
+---
+tab-persistence-head-title:
+  -
+    title: Pólizas
+  -
+    title: Prima Básica Mensual
+  -
+    title: Prima Exceso Mensual
+  -
+    title: Persistencia de Cosecha
+
+tab-persistence-head-subtitle:
+  -
+    class-row: row-md-3
+    subtitles:
+      -
+        class-col: col-md-4
+        subtitle: Emitidas
+      -
+        class-col: col-md-4
+        subtitle: Caducas
+      -
+        class-col: col-md-4
+        subtitle: Vig. Sin pago
+  -
+    class-row: row-md-3
+    subtitles:
+      -
+        class-col: col-md-4
+        subtitle: Emitidas
+      -
+        class-col: col-md-4
+        subtitle: Vigentes
+      -
+        class-col: col-md-4
+        subtitle: Cobradas
+  -
+    class-row: row-md-3
+    subtitles:
+      -
+        class-col: col-md-4
+        subtitle: Emitida
+      -
+        class-col: col-md-4
+        subtitle: Vigente
+      -
+        class-col: col-md-4
+        subtitle: Cobrada
+  -
+    class-row: row-md-2
+    subtitles:
+      -
+        class-col: col-md-6
+        subtitle: Básica
+      -
+        class-col: col-md-6
+        subtitle: Exceso
+
+tab-persistence-body:
+  -
+    name: Resumen de persistencia 1
+    values:
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,15
+        value-2: 1,15
+        value-3: 1,15
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,15
+        value-2: 1,15
+        value-3: 1,15
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,15
+        value-2: 1,15
+        value-3: 1,15
+      -
+        class-row: row-md-2
+        class-col: col-md-6 last-col
+        value: 5,66%
+        value-2: 1,34%
+  -
+    name: Resumen de persistencia 2
+    values:
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,14
+        value-2: 1,14
+        value-3: 1,14
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,14
+        value-2: 1,14
+        value-3: 1,14
+      -
+        class-row: row-md-3
+        class-col: col-md-4
+        value: 1,14
+        value-2: 1,14
+        value-3: 1,14
+      -
+        class-row: row-md-2
+        class-col: col-md-6 last-col
+        value: 5,66%
+        value-2: 1,34%
+---
+
+
+{{> header }}
+
+<section class="pd-top-15">
+  <div class="container">
+    <div class="hide-xs show-md">
+      {{> breadcrumb-service-visits}}
+    </div>
+
+    <div class="center-xs space-bottom">
+	    <h1>Smart 24</h1>
+	    <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
+	  </div>
+
+    <div class="row row-xs-1 no-gutter">
+      <div class="col-xs-12">
+        <div class="tabs pd-0 bg-none" data-responsive-accordion-tabs="tabs small-accordion medium-accordion large-tabs" id="smart-24" data-allow-all-closed="true">
+          <div class="tabs-title is-active tabs-reports">
+            <a href="#persistence" aria-selected="true"><h6 class="font-normal">Cuadro de Persistencia</h6></a>
+          </div>
+
+          <div class="tabs-title tabDelayed tabs-reports">
+            <a href="#smart-detail"><h6 class="font-normal">Detalle smart cobranza 24</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tabs-content" data-tabs-content="smart-24">
+      <div class="tabs-panel is-active" id="persistence">
+				<p>Cuadro Resumen de Persistencia</p>
+
+				<div class="striped-table z-depth-1 space-bottom">
+					<div class="hide-xs show-md bg-primary-hover f-white pd-10">
+					  <div class="row row-xs-1 row-md-4 no-gutter center-xs">
+					  	{{#each tab-persistence-head-title}}
+						    <div class="col-xs-12 col-md-3">
+						      <p class="mg-bottom-0 f-small"><strong>{{title}}</strong></p>
+						    </div>
+					    {{/each}}
+					  </div>
+
+					  <div class="row row-xs-1 row-md-4">
+							{{#each tab-persistence-head-subtitle}}
+						  	<div class="col-xs-12 col-md-3">
+						  		<div class="row row-xs-1 {{class-row}} no-gutter">
+							  		{{#each subtitles}}
+							  			<div class="col-xs-12 {{class-col}}">
+									  		<p class="mg-bottom-0 f-small">{{subtitle}}</p>
+									  	</div>
+								  	{{/each}}
+							  	</div>
+						  	</div>
+						  {{/each}}
+					  </div>
+					</div>
+
+				  {{#each tab-persistence-body}}
+				    <div class="row row-xs-1 row-md-1 pd-10 table-row no-gutter">
+				      <div class="col-xs-12 hide-md">
+			          <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-service-visits-tab-1{{@index}}">
+			            <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
+			            </span>
+			            <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
+			          </a>
+				      </div>
+
+				      <div class="col-xs-12 col-md-12 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
+				        <div class="row row-xs-2 row-md-4 mg-top-xs-30">
+						      {{#each values}}
+					          <div class="col-xs-6 col-md-3 mg-bottom-xs-15">
+					          	<div class="row row-xs-1 {{class-row}} no-gutter">
+					          		<div class="col-xs-12 {{class-col}}">
+							            <p class="hide-md mg-lh-0 f-small"><strong>Fecha</strong></p>
+							            <p class="mg-bottom-0 f-small">{{value}}</p>
+							          </div>
+
+					          		<div class="col-xs-12 {{class-col}}">
+							            <p class="hide-md mg-lh-0 f-small"><strong>Fecha</strong></p>
+							            <p class="mg-bottom-0 f-small">{{value-2}}</p>
+							          </div>
+
+					          		<div class="col-xs-12 {{class-col}}">
+							            <p class="hide-md mg-lh-0 f-small"><strong>Fecha</strong></p>
+							            <p class="mg-bottom-0 f-small">{{value-3}}</p>
+							          </div>
+							        </div>
+					          </div>
+						      {{/each}}
+				        </div>
+				      </div>
+				    </div>
+				  {{/each}}
+				</div>
+
+      </div>
+
+      <div class="tabs-panel" id="smart-detail">
+        BBBBBBBB
+      </div>
+    </div>
+
+    <div class="pagination__table">
+      <div class="pagination">
+        {{> pagination }}
+      </div>
+    </div>
+
+  </div>
+</section>
