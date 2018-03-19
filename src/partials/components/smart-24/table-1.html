@@ -9,7 +9,7 @@
 	    {{/each}}
 	  </div>
 
-	  <div class="row row-xs-1 row-md-4">
+	  <div class="row row-xs-1 row-md-4 center-md">
 			{{#each tab-persistence-head-subtitle}}
 		  	<div class="col-xs-12 col-md-3">
 		  		<div class="row row-xs-1 {{class-row}} no-gutter">
@@ -25,16 +25,16 @@
 	</div>
 
   {{#each tab-persistence-body}}
-    <div class="row row-xs-1 row-md-1 pd-10 table-row no-gutter">
+    <div class="row row-xs-1 row-md-1 pd-10 table-row no-gutter center-md">
       <div class="col-xs-12 hide-md">
-        <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-service-visits-tab-1{{@index}}">
+        <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-tab-1-table-1{{@index}}">
           <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
           </span>
           <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
         </a>
       </div>
 
-      <div class="col-xs-12 col-md-12 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
+      <div class="col-xs-12 col-md-12 toggleContent toggleContent--responsive" data-toggle-content="toggle-tab-1-table-1{{@index}}">
         <div class="row row-xs-2 row-md-4 mg-top-xs-30">
 		      {{#each values}}
 	          <div class="col-xs-6 col-md-3 mg-bottom-xs-15">

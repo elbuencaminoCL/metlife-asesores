@@ -121,7 +121,7 @@ tab-persistence-body:
             value: 1,15
             subtitle: Exceso
   -
-    name: Resumen de persistencia 1
+    name: Resumen de persistencia 2
     values:
       -
         title: Polizas
@@ -183,6 +183,203 @@ tab-persistence-body:
             class-col: col-md-6
             value: 1,15
             subtitle: Exceso
+
+tab-1-table-2-head-title:
+  -
+    title: Pólizas
+  -
+    title: Prima Básica Mensual
+  -
+    title: Prima Exceso Mensual
+  -
+    title: Persistencia de Cosecha
+
+tab-1-table-2-col-1-head-subtitle:
+  -
+    class-col: start-xs
+    subtitle: Mes de Emisión
+  -
+    class-col: hide-xs show-md
+    subtitle: Mes Restante Cons. Pers.
+
+tab-1-table-2-col-2:
+  -
+    class-row: row-md-3
+    tab-1-table-2-col-2-head-subtitle:
+      -
+        class-col: col-md-4
+        subtitle: Emitidas
+      -
+        class-col: col-md-4
+        subtitle: Caducas
+      -
+        class-col: col-md-4
+        subtitle: Vig. Sin Pago
+  -
+    class-row: row-md-3
+    tab-1-table-2-col-2-head-subtitle:
+      -
+        class-col: col-md-4
+        subtitle: Emitidas
+      -
+        class-col: col-md-4
+        subtitle: Caducas
+      -
+        class-col: col-md-4
+        subtitle: Cobradas
+  -
+    class-row: row-md-3
+    tab-1-table-2-col-2-head-subtitle:
+      -
+        class-col: col-md-4
+        subtitle: Emitida
+      -
+        class-col: col-md-4
+        subtitle: Vigente
+      -
+        class-col: col-md-4
+        subtitle: Cobrada
+  -
+    class-row: row-md-2
+    tab-1-table-2-col-2-head-subtitle:
+      -
+        class-col: col-md-6
+        subtitle: Básica
+      -
+        class-col: col-md-6
+        subtitle: Exceso
+
+tab-1-table-2-body:
+  -
+    month: Enero
+    subtitle: Mes Restante Cons. Pers.
+    value: 12
+    body-col-2:
+      -
+        title: Pólizas
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitidas
+            value: 1a
+          -
+            class-col: col-md-4
+            subtitle: Caducas
+            value: 1b
+          -
+            class-col: col-md-4
+            subtitle: Vig. Sin Pago
+            value: 1c
+      -
+        title: Prima Básica Mensual
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitidas
+            value: 2a
+          -
+            class-col: col-md-4
+            subtitle: Vigentes
+            value: 2b
+          -
+            class-col: col-md-4
+            subtitle: Cobradas
+            value: 2c
+      -
+        title: Prima Exceso Mensual
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitida
+            value: 3a
+          -
+            class-col: col-md-4
+            subtitle: Vigente
+            value: 3b
+          -
+            class-col: col-md-4
+            subtitle: Cobrada
+            value: 3c
+      -
+        title: Persistencia
+        class-row: row-md-2
+        body-values:
+          -
+            class-col: col-md-6
+            subtitle: Básica
+            value: 4a
+          -
+            class-col: col-md-6
+            subtitle: Exceso
+            value: 4b
+  -
+    month: Febrero
+    subtitle: Mes Restante Cons. Pers.
+    value: 12
+    body-col-2:
+      -
+        title: Pólizas
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitidas
+            value: 1a
+          -
+            class-col: col-md-4
+            subtitle: Caducas
+            value: 1b
+          -
+            class-col: col-md-4
+            subtitle: Vig. Sin Pago
+            value: 1c
+      -
+        title: Prima Básica Mensual
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitidas
+            value: 2a
+          -
+            class-col: col-md-4
+            subtitle: Vigentes
+            value: 2b
+          -
+            class-col: col-md-4
+            subtitle: Cobradas
+            value: 2c
+      -
+        title: Prima Exceso Mensual
+        class-row: row-md-3
+        body-values:
+          -
+            class-col: col-md-4
+            subtitle: Emitida
+            value: 3a
+          -
+            class-col: col-md-4
+            subtitle: Vigente
+            value: 3b
+          -
+            class-col: col-md-4
+            subtitle: Cobrada
+            value: 3c
+      -
+        title: Persistencia
+        class-row: row-md-2
+        body-values:
+          -
+            class-col: col-md-6
+            subtitle: Básica
+            value: 4a
+          -
+            class-col: col-md-6
+            subtitle: Exceso
+            value: 4b
 ---
 
 
@@ -199,7 +396,7 @@ tab-persistence-body:
 	    <p><strong>Vigencia:</strong> 12/06/2017 al 30/08/2017</p>
 	  </div>
 
-    <div class="row row-xs-1 no-gutter">
+    <div class="row row-xs-1 no-gutter space-bottom">
       <div class="col-xs-12">
         <div class="tabs pd-0 bg-none" data-responsive-accordion-tabs="tabs small-accordion medium-accordion large-tabs" id="smart-24" data-allow-all-closed="true">
           <div class="tabs-title is-active tabs-reports">
@@ -218,12 +415,62 @@ tab-persistence-body:
       <div class="tabs-panel is-active" id="persistence">
 				<p>Cuadro Resumen de Persistencia</p>
 				{{> table-1}}
-
+        <p>Cuadro de Gestión de Persistencia</p>
+        {{> table-2}}
       </div>
 
 			<!-- Detalle smart cobranza 24 ( Tab-2 ) -->
       <div class="tabs-panel" id="smart-detail">
-        BBBBBBBB
+        <p>Resumen</p>
+        <div class="row row-xs-1 row-md-2">
+          <div class="col-xs-12 col-md-6 bg-white pd-10">
+            <div class="row row-xs-2">
+              <div class="col-xs-6">
+                <p>Prima Basica</p>
+                <p>Prima Vigente UF (*)</p>
+                <p>Prima Emitida UF (*)</p>
+                <p>Prima Cobrada</p>
+                <p>Prima Basica</p>
+              </div>
+
+              <div class="col-xs-6 end-xs">
+                <p>Totales</p>
+                <p>UF 86.63</p>
+                <p>UF 86.63</p>
+                <p>UF 86.63</p>
+                <p>UF 90.01%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 bg-white pd-10">
+            <div class="row row-xs-2">
+              <div class="col-xs-6">
+                <p>Prima Basica</p>
+                <p>Prima Vigente UF (*)</p>
+                <p>Prima Emitida UF (*)</p>
+                <p>Prima Cobrada</p>
+                <p>Prima Basica</p>
+              </div>
+
+              <div class="col-xs-6 end-xs">
+                <p>Totales</p>
+                <p>UF 86.63</p>
+                <p>UF 86.63</p>
+                <p>UF 86.63</p>
+                <p>UF 90.01%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <em>(*) Prima Neta Mensual de IVA</em>
+
+        <p>Detalle</p>
+        {{> table-3 }}
+
+
+
       </div>
     </div>
 
