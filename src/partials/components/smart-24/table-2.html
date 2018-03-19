@@ -1,0 +1,69 @@
+
+<div class="striped-table z-depth-1 space-bottom">
+	<div class="hide-xs show-md bg-primary-hover f-white pd-10">
+	  <div class="row row-xs-1 row-md-4 no-gutter center-xs">
+	  	{{#each tab-persistence-head-title}}
+		    <div class="col-xs-12 col-md-3">
+		      <p class="mg-bottom-0 f-small"><strong>{{title}}</strong></p>
+		    </div>
+	    {{/each}}
+	  </div>
+
+	  <div class="row row-xs-1 row-md-4">
+			{{#each tab-persistence-head-subtitle}}
+		  	<div class="col-xs-12 col-md-3">
+		  		<div class="row row-xs-1 {{class-row}} no-gutter">
+			  		{{#each subtitles}}
+			  			<div class="col-xs-12 {{class-col}}">
+					  		<p class="mg-bottom-0 f-small">{{subtitle}}</p>
+					  	</div>
+				  	{{/each}}
+			  	</div>
+		  	</div>
+		  {{/each}}
+	  </div>
+	</div>
+
+  {{#each tab-persistence-body}}
+    <div class="row row-xs-1 row-md-1 pd-10 table-row no-gutter">
+      <div class="col-xs-12 hide-md">
+        <a href="" class="f-link openContent openContent--table lh-inherit" data-open-content="toggle-service-visits-tab-1{{@index}}">
+          <span class="openContentText is-open f-small" data-rest-text="{{name}}" data-open-text="{{name}}">{{name}}
+          </span>
+          <i class="fa fa-angle-down hide-md" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-md-12 toggleContent toggleContent--responsive" data-toggle-content="toggle-service-visits-tab-1{{@index}}">
+        <div class="row row-xs-2 row-md-4 mg-top-xs-30">
+		      {{#each values}}
+	          <div class="col-xs-6 col-md-3 mg-bottom-xs-15">
+	          	<div class="row row-xs-1 {{class-row}} no-gutter">
+	          		<div class="col-xs-12 {{class-col}}">
+			            <p class="hide-md mg-lh-0 f-small"><strong>{{title}}</strong></p>
+			            <p class="mg-bottom-0 f-small">{{value}}</p>
+			          </div>
+
+	          		<div class="col-xs-12 {{class-col}}">
+			            <p class="hide-md mg-lh-0 f-small"><strong>{{title}}</strong></p>
+			            <p class="mg-bottom-0 f-small">{{value-2}}</p>
+			          </div>
+
+	          		<div class="col-xs-12 {{class-col}}">
+			            <p class="hide-md mg-lh-0 f-small"><strong>{{title}}</strong></p>
+			            <p class="mg-bottom-0 f-small">{{value-3}}</p>
+			          </div>
+			        </div>
+	          </div>
+		      {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="pagination__table">
+  <div class="pagination">
+    {{> pagination }}
+  </div>
+</div>
