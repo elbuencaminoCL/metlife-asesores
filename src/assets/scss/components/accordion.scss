@@ -7,6 +7,10 @@
 	}
 }
 
+.accordion-wrap {
+  padding: 0 15px;
+}
+
 .accordion-content {
 	border: 0;
 	padding: 15px 0;
@@ -78,10 +82,19 @@
   }
 }
 
-.accordion-title:hover, 
+.accordion-title:hover,
 .accordion-title:focus {
   background-color: white;
   color: $dark-gray-2;
 }
 
+
+
+@media only screen and ( min-width: 960px ) {
+
+  .accordion-wrap {
+    padding: 0;
+  }
+
+}
 

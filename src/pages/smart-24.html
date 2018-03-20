@@ -605,18 +605,22 @@ tab-2-table-3-body:
     <div class="tabs-content" data-tabs-content="smart-24">
     	<!-- Cuadro de persistencia ( Tab-1 ) -->
       <div class="tabs-panel is-active" id="persistence">
-				<h5 class="mg-bottom-15 pd-0-15">Cuadro Resumen de Persistencia</h5>
-				{{> table-1}}
-        <h5 class="mg-bottom-15 pd-0-15">Cuadro de Gestión de Persistencia</h5>
-        {{> table-2}}
+        <div class="accordion-wrap">
+  				<h5 class="mg-bottom-15">Cuadro Resumen de Persistencia</h5>
+  				{{> table-1}}
+          <h5 class="mg-bottom-15">Cuadro de Gestión de Persistencia</h5>
+          {{> table-2}}
+        </div>
       </div>
 
 			<!-- Detalle smart cobranza 24 ( Tab-2 ) -->
       <div class="tabs-panel" id="smart-detail">
-        <h5 class="mg-bottom-15 pd-0-15">Resumen</h5>
-        {{> summary-cards}}
-        <h5 class="mg-bottom-15 pd-0-15">Detalle</h5>
-        {{> table-3 }}
+        <div class="accordion-wrap">
+          <h5 class="mg-bottom-15">Resumen</h5>
+          {{> summary-cards}}
+          <h5 class="mg-bottom-15">Detalle</h5>
+          {{> table-3 }}
+        </div>
       </div>
     </div>
 

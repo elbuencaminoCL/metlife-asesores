@@ -1,5 +1,5 @@
 
-<div class="striped-table z-depth-1 space-bottom pd-0-15">
+<div class="striped-table z-depth-1 space-bottom">
 	<div class="bg-primary-hover f-white pd-10">
 	  <div class="row row-xs-1 row-md-2">
 	  	{{#each tab-2-table-3-head}}
@@ -53,9 +53,9 @@
 		      {{/each}}
 		    </div>
 
-      	<div class="row row-xs-2 {{class-row}}">
+      	<div class="row row-xs-1 {{class-row}}">
 					{{#each body-col-2}}
-          	<div class="col-xs-6 {{class-col}} AAAA">
+          	<div class="col-xs-12 {{class-col}} AAAA">
           		<p class="hide-md"><strong>{{title}}</strong></p>
           		<div class="row row-xs-1 {{class-row}}">
 	          		{{#each body-col-values}}
@@ -81,15 +81,15 @@
         	  	</div>
 
       	  		<div class="col-xs-12 col-md-6 u-select-ico-arrow bg-white mg-bottom-xs-15">
-      	  		  <select class="cs-select cs-skin-border GeneralSelect">
-      	  		    <option value="login.html" data-link="login.html">Selecciona un Estado</option>
-      	  		    <option value="login-empresas.html" data-link="login-empresas.html">Estado</option>
-      	  		    <option value="login-empresas.html" data-link="login-empresas.html">Estado 2</option>
+      	  		  <select class="cs-select cs-skin-border GeneralSelect selectSelected">
+      	  		    <option value="">Selecciona un Estado</option>
+      	  		    <option value="">Estado</option>
+      	  		    <option value="">Estado 2</option>
       	  		  </select>
       	  		</div>
 
-      	  		<div class="col-xs-12 col-md-3 mg-bottom-xs-15">
-        	  		<a href="#" class="button button-primary">Aceptar</a>
+      	  		<div class="col-xs-12 col-md-3 mg-bottom-xs-15 end-sm start-md">
+        	  		<a href="#" class="button button--full-xs button-primary disabled buttonOptionSelected">Aceptar</a>
         	  	</div>
         	  </div>
         	</div>
