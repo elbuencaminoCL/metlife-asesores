@@ -8,7 +8,7 @@
 		    		{{#each tab-2-table-3-head-title}}
 			    		<div class="col-xs-12 {{class-col}}">
 			    			<p class="mg-bottom-0 f-small"><strong>{{title}}</strong></p>
-								<div class="row row-xs-1 {{class-irow}}">
+								<div class="row row-xs-1 {{class-irow}} max-width-222">
 									{{#each tab-2-table-3-head-subtitle}}
 										<div class="col-xs-12 {{class-icol}}">
 											<p class="mg-bottom-0 f-small">{{subtitle}}</p>
@@ -53,13 +53,13 @@
 		      {{/each}}
 		    </div>
 
-      	<div class="row row-xs-1 {{class-row}}">
+      	<div class="row row-xs-1 {{class-row}} center-md">
 					{{#each body-col-2}}
-          	<div class="col-xs-12 {{class-col}} AAAA">
+          	<div class="col-xs-12 {{class-col}}">
           		<p class="hide-md"><strong>{{title}}</strong></p>
-          		<div class="row row-xs-1 {{class-row}}">
+          		<div class="row row-xs-1 {{class-row}} max-width-222">
 	          		{{#each body-col-values}}
-	          			<div class="col-xs-12 {{class-col}} BBBBB">
+	          			<div class="col-xs-12 {{class-col}}">
 		            		<p class="mg-lh-0 f-small"><strong class="hide-md">{{subtitle}} </strong>{{value}}</p>
 		            	</div>
 		            {{/each}}
@@ -68,13 +68,13 @@
           {{/each}}
 
         	<div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-        		<a href="" class="f-link openContent f-small" data-open-content="toggle-test{{@index}}">
+        		<a href="" class="f-link openContent f-small" data-open-content="toggle-table-3{{@index}}">
   		        <span class="openContentText is-open f-small" data-rest-text="{{value}}" data-open-text="Cancelar">{{value}}</span>
   		        <i class="fa fa-angle-down" aria-hidden="true"></i>
   		      </a>
         	</div>
 
-        	<div class="col-xs-12 pd-10 toggleContent" data-toggle-content="toggle-test{{@index}}">
+        	<div class="col-xs-12 pd-10 toggleContent" data-toggle-content="toggle-table-3{{@index}}">
         	  <div class="row row-xs-1 row-md-3 middle-xs">
         	  	<div class="col-xs-12 col-md-3 mg-bottom-xs-15">
         	  		<p class="mg-lh-0 f-small"><strong>Editar Estado</strong></p>
