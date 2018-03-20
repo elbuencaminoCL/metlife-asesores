@@ -35,7 +35,11 @@ dt {
       flex-basis: 25%;
       max-width: 25%;
     }
-  
+    &.tab-only {
+      a {
+        padding: 20px 30px;
+      }
+    }
     a {
       color: white;
       font-size: 16px;
@@ -73,6 +77,10 @@ dt {
     a:before {
       background-color: $accident;
     }
+  }
+
+  .tab-border {
+    border-bottom: 5px solid $primary-hover;
   }
 
 }
