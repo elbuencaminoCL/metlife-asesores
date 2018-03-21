@@ -16,6 +16,10 @@
       padding: 10px;
     }
 
+    .pd-xs-10 {
+      padding: 10px;
+    }
+
     .pd-15 {
       padding: 15px;
     }
@@ -329,6 +333,11 @@
     padding: 0 15px;
   }
 
+  .pd-xs-10 {
+    padding: 0px;
+  }
+
+
   .pd-0-15-md {
     padding: 0 15px;
   }
@@ -371,6 +380,69 @@
 
   .max-width-982 {
     max-width: 982px;
+  }
+
+  .col-title {
+    padding: 10px 10px 0;
+    &:nth-child(1) {
+      border-right: 1px solid;
+      &.b-left {
+        border-left: 1px solid;
+      }
+    }
+    &:nth-child(2) {
+      border-right: 1px solid;
+    }
+    &:nth-child(3) {
+      border-right: 1px solid;
+    }
+  }
+
+  .col-subtitle {
+    padding: 0 10px 10px;
+
+    &:nth-child(1) {
+      border-right: 1px solid;
+      &.b-left {
+        border-left: 1px solid;
+      }
+    }
+    &:nth-child(2) {
+      border-right: 1px solid;
+    }
+    &:nth-child(3) {
+      border-right: 1px solid;
+    }
+  }
+
+  .col-subtitle-only {
+    padding: 0px 10px 10px;
+  }
+
+  .b-right {
+    &:nth-child(1) {
+      border-right: 1px solid;
+      .col-3-b-right {
+        padding: 10px;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          border-right: 1px solid;
+        }
+      }
+    }
+    &:nth-child(2) {
+      border-right: 0;
+    }
+  }
+
+  .col-3-b-right {
+    padding: 10px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-right: 1px solid;
+    }
   }
 
 }
