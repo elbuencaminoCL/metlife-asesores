@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metlife Asesores</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+  </head>
+  <body class="bg-white-light">
+
+    
+    
+      <div class="nav-single-sticky" data-sticky-container>
+        <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+          <nav class="nav-single">
+            <div class="col-xs-12">
+              <figure class="nav-single-logo text-center">
+                <a href="../index.html">
+                  <img src="../assets/images/login/logo.png" alt="Logotipo Metlife" width="170px" />
+                </a>
+              </figure>
+            </div>
+          </nav>
+        </div>
+      </div>
+    <section class="login">
+    
+    	<div class="login__container">
+    		<div class="login__row row row-xs-1 row-sm-1 row-md-2 row-lg-2 dual">
+    
+    			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        		<div class="row row-xs-1 row-sm-2 row-md-2 no-gutter">
+      				<div class="col-xs-12 col-sm-6 col-md-8">
+      					<figure class="login__image login__image-complement">
+      						<img src="../assets/images/login/login-advisor.jpg" class="login-advisor-img objFit" alt="Imagen login" />
+      					</figure>
+      				</div>
+      				<div class="col-xs-12 col-sm-6 col-md-4 hide-xs show-sm">
+      					<figure class="login__image login__image-2-complement">
+      						<img src="../assets/images/login/login-advisor-2.jpg" class="login-advisor-img objFit" alt="Imagen login" />
+      					</figure>
+      				</div>
+        		</div>
+    			</div>
+    
+    			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xs-full dual__content">
+    				<div class="login__content section">
+    					<h3 class="login__title space-bottom center-xs"><strong>Acceso para Asesores</strong></h3>
+    
+    
+    
+    					<form class="login__form" id="loginForm" action="../home.html" data-abide novalidate data-live-validate="true">
+    						<section class="u-select-ico-arrow space-bottom fieldParent">
+                  <span class="u-select-ico"></span>
+    							<select class="cs-select cs-skin-border GeneralSelect" onchange="location = this.value;">
+    								<option value="login.html" data-link="login.html">Personas</option>
+    								<option value="login-empresas.html" data-link="login-empresas.html">Corredores y Empresas</option>
+    								<option value="login-intermediarios.html" data-link="login-intermediarios.html">Intermediarios Rentas Vitalicias</option>
+    								<option value="login-asesores.html" data-link="login-asesores.html" selected>Asesores</option>
+    							</select>
+    						</section>
+    
+    						<section class="space-bottom fieldParent">
+    							<span class="input input--ichiro">
+    								<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required class="input-data full" />
+    								<label class="input__label input__label--ichiro" for="loginRut">
+    									<span class="input__label-content input__label-content--ichiro"><span class="inputIchiro">Ingrese su RUT</span></span>
+    								</label>
+    								<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+    							</span>
+    						</section>
+    
+    						<section class="space-bottom login__form-pass fieldParent">
+    							<span class="input input--ichiro">
+    								<input class="input__field input__field--ichiro" data-live-validate="true" type="password" id="loginPass" required />
+    								<label class="input__label input__label--ichiro" for="loginPass">
+    									<span class="input__label-content input__label-content--ichiro"><span class="inputIchiro">Ingrese su clave</span></span>
+    								</label>
+    								<p class="form-error f-tiny">La clave ingresada es incorrecta.<br/>Por favor, vuelve a ingresarla.</p>
+    							</span>
+    						</section>
+    
+    						<section class="row row-xs-1">
+    							<div class="col-xs-12 f-small space-bottom">
+    								<a href="../2-recuperacion-clave/recover-pass.html" class="f-link">¿Olvidaste tu clave?</a>
+    							</div>
+    
+    							<div class="col-xs-12 end-xs">
+    								<input type="submit" id="loginSubmit" class="button button--full button--primary" value="Ingresar">
+    							</div>
+    						</section>
+    					</form>
+    
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    
+      <div class="reveal" id="loginModal" data-reveal>
+        <h4 class="center-xs space-bottom">Cierre de Sesión</h4>
+        <p>Cerraste tu sesión de forma exitosa. 
+    Recuerda que por seguridad debes usar siempre la opción SALIR cuando dejes de trabajar en tu Portal de Asesores.</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="row row-xs-1 row-md-3">
+            <div class="col-xs-12 col-md-2">
+              <div class="row row-xs-2">
+                <div class="col-xs-6 ">
+                  <figure class="mg-bottom-10 footer__figure-logo">
+                    <img src="../assets/images/login/logo.png" width="120px" alt="Logitpo Metlife">
+                  </figure>
+                </div>
+    
+                <div class="col-xs-6 hide-md">
+                  <ul class="row end-xs middle-xs">
+                    <li class="f-small mg-right-15">Siguenos</li>
+    
+                    <li class="mg-right-15">
+                      <a href="https://es-la.facebook.com/MetLifeCl/" target="_blank">
+                        <i class="fa fa-facebook f-link-ico" aria-hidden="true"></i>
+                      </a>
+                    </li>
+    
+                    <li>
+                      <a href="https://twitter.com/metlife" target="_blank">
+                        <i class="fa fa-twitter f-link-ico" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-xs-12 center-xs start-md f-small">
+                <a href="tel:+566003903000" class="f-link">600 390 3000</a>
+              </div>
+            </div>
+    
+            <div class="col-xs-12 col-md-8">
+              <div class="row center-xs start-md">
+                <li class="mg-right-15 line-h-2.5">
+                  <a href="https://w3.metlife.cl/sobre-metlife/quienes-somos/informacion-corporativa" target="_blank" class="f-tiny f-link">Información Corporativa </a>
+                </li>
+    
+                <li class="mg-right-15 bullet-item_footer">
+                  <a href="https://w3.metlife.cl/privacidad/" target="_blank" class="f-link f-tiny"> Política de Privacidad</a>
+                </li>
+    
+                <li class="mg-right-15 bullet-item_footer">
+                  <a href="https://w3.metlife.cl/circular/" target="_blank" class="f-link f-tiny"> Circular Nº 2131</a>
+                </li>
+    
+                <li class="mg-right-15 bullet-item_footer">
+                  <a href="http://www.ddachile.cl/v5/Inicio.aspx" target="_blank" class="f-link f-tiny"> Defensor del Asegurado </a>
+                </li>
+    
+                <li class="mg-bottom-xs-30 bullet-item_footer">
+                  <a href="https://w3.metlife.cl/content/dam/metlifecom/cl/pdfs/carta_codigo_atorregulacion_y_compendio_buenas_practicas.pdf" target="_blank" class="f-link f-tiny">Consejo de Autorregulación</a>
+                </li>
+              </div>
+    
+              <div class="center-xs start-sm">
+                <p class="f-legal center-xs start-md">© 2017 Metlife Chile, Agustinas 640, Santiago, Chile. Desde teléfonos celulares o desde el extranjero al
+                  <span class="show-xs hide-sm"></span>
+                  <a href="tel:+56228264790" class="f-link">+56 2 2826 47 90</a>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-xs-12 col-md-2 hide-xs show-md">
+              <ul class="row end-xs middle-xs">
+                <li class="f-small mg-right-15">Siguenos</li>
+    
+                <li class=" mg-right-15">
+                  <a href="https://es-la.facebook.com/MetLifeCl/" target="_blank">
+                    <i class="fa fa-facebook f-link-ico" aria-hidden="true"></i>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://twitter.com/metlife" target="_blank">
+                    <i class="fa fa-twitter f-link-ico" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
