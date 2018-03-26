@@ -8,7 +8,7 @@ retention-plan:
     request: Nombre del requerimiento
     description: Descripción mas larga
     creation: 12/05/2017
-    state-management: Estado AAA
+    state-management: Pendiente
   -
     rut: 16357872-7
     name:  Alfonso Genaro Rossel Palma
@@ -17,7 +17,7 @@ retention-plan:
     request: Nombre del requerimiento
     description: Descripción
     creation: 12/05/2017
-    state-management: Estado BBB
+    state-management: Pendiente
   -
     rut: 16357872-7
     name: Constanza Isabel Palma Richardson Corvalan
@@ -26,7 +26,7 @@ retention-plan:
     request: Nombre del requerimiento
     description: Descripción
     creation: 12/05/2017
-    state-management: Estado CCC
+    state-management: Pendiente
   -
     rut: 16357872-7
     name:  Alfonso Genaro Rossel Palma
@@ -35,7 +35,7 @@ retention-plan:
     request: Nombre del requerimiento
     description: Descripción
     creation: 12/05/2017
-    state-management: Estado DDD
+    state-management: Pendiente
   -
     rut: 16357872-7
     name: Jose Alfonso Genaro  Palma
@@ -44,7 +44,7 @@ retention-plan:
     request: Nombre del requerimiento
     description: Descripción
     creation: 12/05/2017
-    state-management: Estado HHH
+    state-management: Pendiente
 ---
 
 {{>header}}
@@ -154,10 +154,38 @@ retention-plan:
                 <p class="mg-bottom-0 word-wrap f-small end-md">{{creation}}</p>
               </div>
 
-              <div class="col-xs-12 col-md-2 mg-bottom-xs-15">
-                <p class="hide-md mg-lh-0 f-small"><strong>Estado Gestion</strong></p>
-                <p class="mg-bottom-0 word-wrap f-small end-md">{{state-management}}</p>
+              <div class="col-xs-12 col-md-2 mg-bottom-xs-15 end-md">
+                <a href="" class="f-link openContent f-small" data-open-content="toggle-table-retention-state{{@index}}">
+                  <span class="openContentText is-open f-small" data-rest-text="{{state-management}}" data-open-text="Cancelar">{{state-management}}</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
               </div>
+
+              <div class="col-xs-12">
+                <div class="row row-xs-1 row-md-1 end-md">
+                  <div class="col-xs-12 col-md-6 mg-right-10-i">
+                    <div class="row row-xs-1 row-md-3 middle-xs toggleContent" data-toggle-content="toggle-table-retention-state{{@index}}">
+                      <div class="col-xs-12 col-md-3 mg-bottom-xs-15">
+                        <p class="mg-lh-0 f-small"><strong>Editar Estado</strong></p>
+                      </div>
+
+                      <div class="col-xs-12 col-md-6 u-select-ico-arrow bg-white mg-bottom-xs-15">
+                        <select class="cs-select cs-skin-border GeneralSelect selectSelected">
+                          <option value="">Selecciona un Estado</option>
+                          <option value="">Estado</option>
+                          <option value="">Estado 2</option>
+                        </select>
+                      </div>
+
+                      <div class="col-xs-12 col-md-3 mg-bottom-xs-15 end-sm start-md">
+                        <a href="#" class="button button--full-xs button-primary disabled buttonOptionSelected">Aceptar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
